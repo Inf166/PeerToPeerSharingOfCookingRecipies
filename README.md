@@ -9,5 +9,5 @@ EPWS2020CobanMai
 ### 1. Gesellschaftliche Relevanz
 
 ### 2. Wirtschaftliche Relevanz
-test
+
 ### 3. Wissenschaftliche Relevanz
