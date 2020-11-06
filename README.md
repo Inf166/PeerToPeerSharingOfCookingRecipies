@@ -14,9 +14,12 @@ EPWS2020CobanMai </br></br>
 ## Warum ist dieses Projekt relevant?
 ### 1. Gesellschaftliche Relevanz
 Das Kultur- und Traditions Sharing am Beispiel von generationsübergreifendem Kochen ist heutzutage allzu gering.
-Es gibt viele alte Rezepte, die in Vergessenheit geraten. Dies fällt meistens erst dann auf, wenn man bei der Oma zu Besuch ist und sie dir zum Beispiel eine Kaltschale zubereitet. 
-Die Rezepte aus der Kindheit von Mama oder Oma kann man nicht mit einem Rezept aus dem Kochbuch vergleichen, daher bittet man die ältere Generation immer um ihren Rat.
-Die ältere Generation sollte wieder mehr wertgeschätzt und ein Teil unserer Gesellschaft werden. Durch das Austauschen der Rezepte wird die Beziehung auch zwischen den Generationen gestärkt, weil dies letztendlich zu einer Verbundenheit führt. Die Oma gibt dem Enkelkind ihren Geheimtipp mit, welches für den Feingeschmack der Rezepte dient. Diese Zutat wird in der Zukunft vom Enkel auch beim Kochen dazugegeben und demgemäß wird auch die nächste Generation mit dem Tipp bereichert. 
+
+Es gibt viele alte Rezepte, die in Vergessenheit geraten. Dies fällt meistens erst dann auf, wenn man die ältere Generation besucht und sie dir zum Beispiel eine Kaltschale zubereiten. 
+Man schlägt das Kochbuch auf und kocht mit den dort genau angegebenen Zutaten ein Gericht nach. Jedoch schmeckt das Gericht nicht so wie man es aus der Kindheit kennt. Es fehlt nun vielleicht der Geheimtipp für den Feingeschmack. Die ältere Generation kennt verschiedene Rezepte, die von der eigenen Kultur und Tradition stammen. Hierbei geht es darum, dass man zum Beispiel verschiedene Kräuter benutzt hat.
+Mit den weitergegebenen Geheimtipps und Tricks kann man die nächste Generation damit bereichern.
+Die ältere Generation sollte wieder mehr wertgeschätzt und ein Teil unserer Gesellschaft werden. Durch das Austauschen der Rezepte wird die Beziehung auch zwischen den Generationen gestärkt, weil dies letztendlich zu einer Verbundenheit führt. 
+
 
 ### 2. Wirtschaftliche Relevanz
 Tatsächlich ist uns bei der Recherche nach bisherigen Produken, die unseren Problemraum adressieren, aufgefallen, dass es wenig, bis keine Konkurrenz gibt und wir somit eine ziemlich deutliche Marktlücke aufgedeckt haben. In unserem Bekanntenkreis besteht ein großes Interesse daran, Rezepte exklusiv mit der eigenen Familie zu teilen und trotzdem in der Verfügung über die eigenen Rezepte nicht eingeschränkt zu sein. Ob tatsächlich auch die Allgemeinheit ein Interesse an dem Produkt hat, lässt sich wohl nur durch weitere Forschung und Umfragen feststellen. Wir wünschen uns, dass wir den Dienst möglichst kostengering und für die Allgemeinheit anbieten können, dabei würden wir gerne auf störende Werbeanzeigen verzichten. Sollte dies möglich sein, würden somit eine innovative Geschäftsidee unterstützen, an welcher sich andere Dienste orientieren könnten. Für eine bessere und sozialere Welt in der das Wohl vor dem maximieren von Ertrag steht. Sollte es sich herausstellen, dass wir im Irrtum über die Tragbarkeit eines solchen Geschäftsmodells liegen, ziehen wir diese Aussage zurück. 
