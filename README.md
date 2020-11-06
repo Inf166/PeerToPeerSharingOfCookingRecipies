@@ -3,7 +3,7 @@ EPWS2020CobanMai </br></br>
 # Traditions- und Kultur Sharing am Beispiel: </br>  Generationsübergreifendes Kochen
 
 ## Was ist unser Problemraum?
-
+![Domänenmodell Version 1](Artefakte/Domänenmodell.png)
 ## Unsere Vision?
 
 ## Warum ist dieses Projekt relevant?
