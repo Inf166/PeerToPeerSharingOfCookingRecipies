@@ -23,6 +23,17 @@ Mit unserem Produkt wollen wir wieder mehr Kommunikation zwischen den Generation
 
 ### 2. Wirtschaftliche Relevanz
 Tatsächlich ist uns bei der Recherche nach bisherigen Produken, die unseren Problemraum adressieren, aufgefallen, dass es wenig, bis keine Konkurrenz gibt und wir somit eine ziemlich deutliche Marktlücke aufgedeckt haben. In unserem Bekanntenkreis besteht ein großes Interesse daran, Rezepte exklusiv mit der eigenen Familie zu teilen und trotzdem in der Verfügung über die eigenen Rezepte nicht eingeschränkt zu sein. Ob tatsächlich auch die Allgemeinheit ein Interesse an dem Produkt hat, lässt sich wohl nur durch weitere Forschung und Umfragen feststellen. Wir wünschen uns, dass wir den Dienst möglichst kostengering und für die Allgemeinheit anbieten können, dabei würden wir gerne auf störende Werbeanzeigen verzichten. Sollte dies möglich sein, würden somit eine innovative Geschäftsidee unterstützen, an welcher sich andere Dienste orientieren könnten. Für eine bessere und sozialere Welt in der das Wohl vor dem maximieren von Ertrag steht. Sollte es sich herausstellen, dass wir im Irrtum über die Tragbarkeit eines solchen Geschäftsmodells liegen, ziehen wir diese Aussage zurück. 
+</br>
+#### Beispiele für bisherige Konkurrenzprodukte
+- [Recipe Keeper](https://play.google.com/store/apps/details?id=com.tudorspan.recipekeeper) </br> lokales Speichern von selbst angelegten, importierten, gescannten Rezepten
+
+- [My Cookbook](https://play.google.com/store/apps/details?id=com.aduilio.recipes) </br> lokales Speichern von Rezepten
+
+- [Cookpad](https://apps.apple.com/de/app/cookpad-rezepte-teilen/id585332633) </br> Community teilt öffentlich Rezepte und bietet das teilen von Rezepten mit anderen Communitymitgliedern
+
+- [Cooking Cloud](https://play.google.com/store/apps/details?id=com.cookingcloud.app&hl=de) </br> Sammeln von externen Rezepten und das Teilen mit der Community
+
+- [Kitchen Stories Rezepte](https://apps.apple.com/de/app/kitchen-stories-rezepte/id771068291) </br> Videoaufnahmen von Kochprozess mit der Community teilen
 
 ### 3. Wissenschaftliche Relevanz
 Durch die Nutzung state-of-the-art Technologie, wie Progressive-Web-Applikationen (kurz PWA), werden wir diese weiter voran treiben. Es ist abzusehen, dass auch in Zukunft weitere Plattformen und Dienste im Web, PWA's in ihr Repertoire aufnehmen werden. Bekannte Beispiele für PWA's sind beispielsweise Instagram und Twitter, welche auch im mobilen Browser sich wie eine vanilla App verhalten, inklusive Animationen und übergänge. Diese lassen sich einfach über das Browsermenu zu dem Startbildschirm des Nutzers hinzufügen, ab da ist der Unterschied kaum noch zu bemerken.
