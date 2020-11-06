@@ -15,6 +15,7 @@ EPWS2020CobanMai </br></br>
 Relevanz
 
 Das Kultur- und Traditions Sharing am Beispiel von generationsübergreifendem Kochen ist heutzutage allzu gering.
+<<<<<<< HEAD
 Es gibt viele alte Rezepte, die in Vergessenheit geraten. Dies fällt meistens erst dann auf, wenn man die ältere Generation besucht und sie dir zum Beispiel eine Kaltschale zubereiten. 
 Man schlägt das Kochbuch auf und kocht mit den dort genau angegebenen Zutaten ein Gericht nach. Jedoch schmeckt das Gericht nicht so wie man es aus der Kindheit kennt. Es fehlt nun vielleicht der Geheimtipp für den Feingeschmack. Die ältere Generation kennt verschiedene Rezepte, die von der eigenen Kultur und Tradition stammen. Hierbei geht es darum, dass man zum Beispiel verschiedene Kräuter benutzt hat.
 Mit den weitergegebenen Geheimtipps und Tricks kann man die nächste Generation damit bereichern.
