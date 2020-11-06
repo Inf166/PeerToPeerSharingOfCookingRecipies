@@ -21,7 +21,6 @@ Mit den weitergegebenen Geheimtipps und Tricks kann man die nächste Generation 
 Die ältere Generation sollte wieder mehr wertgeschätzt und ein Teil unserer Gesellschaft werden. Durch das Austauschen der Rezepte wird die Beziehung auch zwischen den Generationen gestärkt, weil dies letztendlich zu einer Verbundenheit führt. 
 
 
-
 ### 1. Gesellschaftliche Relevanz
 
 ### 2. Wirtschaftliche Relevanz
