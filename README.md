@@ -15,9 +15,12 @@ EPWS2020CobanMai </br></br>
 Relevanz
 
 Das Kultur- und Traditions Sharing am Beispiel von generationsübergreifendem Kochen ist heutzutage allzu gering.
-Es gibt viele alte Rezepte, die in Vergessenheit geraten. Dies fällt meistens erst dann auf, wenn man bei der Oma zu Besuch ist und sie dir zum Beispiel eine Kaltschale zubereitet. 
-Die Rezepte aus der Kindheit von Mama oder Oma kann man nicht mit einem Rezept aus dem Kochbuch vergleichen, daher bittet man die ältere Generation immer um ihren Rat.
-Die ältere Generation sollte wieder mehr wertgeschätzt und ein Teil unserer Gesellschaft werden. Durch das Austauschen der Rezepte wird die Beziehung auch zwischen den Generationen gestärkt, weil dies letztendlich zu einer Verbundenheit führt. Die Oma gibt dem Enkelkind ihren Geheimtipp mit, welches für den Feingeschmack der Rezepte dient. Diese Zutat wird in der Zukunft vom Enkel auch beim Kochen dazugegeben und demgemäß wird auch die nächste Generation mit dem Tipp bereichert. 
+Es gibt viele alte Rezepte, die in Vergessenheit geraten. Dies fällt meistens erst dann auf, wenn man die ältere Generation besucht und sie dir zum Beispiel eine Kaltschale zubereiten. 
+Man schlägt das Kochbuch auf und kocht mit den dort genau angegebenen Zutaten ein Gericht nach. Jedoch schmeckt das Gericht nicht so wie man es aus der Kindheit kennt. Es fehlt nun vielleicht der Geheimtipp für den Feingeschmack. Die ältere Generation kennt verschiedene Rezepte, die von der eigenen Kultur und Tradition stammen. Hierbei geht es darum, dass man zum Beispiel verschiedene Kräuter benutzt hat.
+Mit den weitergegebenen Geheimtipps und Tricks kann man die nächste Generation damit bereichern.
+Die ältere Generation sollte wieder mehr wertgeschätzt und ein Teil unserer Gesellschaft werden. Durch das Austauschen der Rezepte wird die Beziehung auch zwischen den Generationen gestärkt, weil dies letztendlich zu einer Verbundenheit führt. 
+
+
 
 ### 1. Gesellschaftliche Relevanz
 
