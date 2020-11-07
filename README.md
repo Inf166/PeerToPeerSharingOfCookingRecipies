@@ -54,6 +54,7 @@ Ziel des Projekts ist es anhand von Prototypen und Forschung ein Produkt zu konz
 ### 1. Gesellschaftliche Relevanz
 Das Kultur- und Traditions Sharing von generationsübergreifendem Kochen wird in der Praxis **aktuell mangelhaft** praktiziert.
 Mit unserem Produkt wollen wir wieder **mehr Kommunikation** zwischen den Generationen innerhalb der Familie stärken. Es soll wieder eine **Verbindung** wieder zwischen den einfachen Texten und Bildern und der eigenen Vergangheit hergestellt werden. Daher wird der von uns bereitgestellte Dienst die **Zukunft von Tradition und Kultur** weitgehend sichern, sofern er aktiv von der Community genutz und gefüllt wird. Ein gesellschaftliches Umdenken, wenn auch nur Andersdenken, zur eigenen Ernährung und Planung von sozialen Treffen der Familie ist unser Hauptziel.
+</br> Aus dem Kreis der Ehrenamtlichen für die Flüchtlingsbetreuung wurde tatsächlich auch schon berichtet, dass hier der Wunsch nach kulturellen Austausch zwischen Helfern und Flüchtlingen besteht. Die Gemeinschaft dort würde sich darüber freuen einen bequemen Weg zu finden, Rezepte und die gewissen Feinheiten der Zubereitung untereinander auszutauschen. Der traditionelle Weg über Papier - sei etwas umständlich. Auch wenn das nicht die angepeilte Nutzungsweise des Produkts wäre, so besteht kein Zweifel darin, dass das Produkt auch diese Nutzergruppe zufrieden stellen würde.
 > Ergänzung folgt (unzureichende Begründung, da unser Hauptgrund #ökosoziale Transformation)
 
 ### 2. Wirtschaftliche Relevanz
