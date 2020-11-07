@@ -72,5 +72,5 @@ Durch die Nutzung **state-of-the-art Technologie**, wie Progressive-Web-Applikat
 </br> Sämtliche Erfahrungen die wir bei der Konzipierung und Implementierung machen, werden dazu **beitragen**, dass diese Konzepte und Frameworks in Zukunft wahrscheinlich noch öfter genutzt werden.
 
 ### Autoren
-- [Derya Coban](https://github.com/deryacbn), inf???, 1111????
+- [Derya Coban](https://github.com/deryacbn), inf540, 11117424
 - [Joel Maximilian Mai](https://github.com/Inf166), inf166, 11118561
