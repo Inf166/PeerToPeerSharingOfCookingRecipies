@@ -4,7 +4,7 @@ EPWS2020CobanMai </br></br>
 
 ## Was ist unser Problemraum?
 ### Domänenmodell des Problemraums
-![Domänenmodell Version 1](Artefakte/Domänenmodell_v2.png)
+![Domänenmodell Version 3](Artefakte/Domänenmodell_v3.png)
 ### Problemraum
 Viele traditionelle oder familiäre Rezepte, fallen zur Zeit immer weiter in Vergessenheit. </br>
 Dies fällt meist erst dann auf, wenn man die ältere Generation besucht und sie dir zum Beispiel eine Kaltschale zubereiten. 
