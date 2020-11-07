@@ -7,11 +7,11 @@ EPWS2020CobanMai </br></br>
 ![Domänenmodell Version 3](Artefakte/Domänenmodell_v3.png)
 
 ### Problemraum
-Viele traditionelle oder familiäre Rezepte, fallen zur Zeit immer weiter in Vergessenheit. </br>
-Dies fällt meist erst dann auf, wenn man die ältere Generation besucht und sie dir zum Beispiel eine Kaltschale zubereiten. 
-Man schlägt das Kochbuch auf und kocht mit den dort genau angegebenen Zutaten ein Gericht nach. Jedoch schmeckt das Gericht nicht so wie man es aus der Kindheit kennt. Es fehlt nun vielleicht der Geheimtipp für den Feingeschmack. Die ältere Generation kennt verschiedene Rezepte, die von der eigenen Kultur und Tradition stammen. Hierbei geht es darum, dass man zum Beispiel verschiedene Kräuter benutzt hat.
-Mit den weitergegebenen Geheimtipps und Tricks kann man die nächste Generation damit bereichern.
-Die ältere Generation sollte wieder mehr wertgeschätzt und ein Teil unserer Gesellschaft werden. Durch das Austauschen der Rezepte wird die Beziehung auch zwischen den Generationen gestärkt, weil dies letztendlich zu einer Verbundenheit führt. 
+Viele traditionelle oder familiäre Rezepte fallen zur Zeit immer weiter in Vergessenheit. </br>
+Dies fällt meistens erst dann auf, wenn die ältere Generation besucht wird und zum Beispiel eine Kaltschale zubereitet. 
+Es wird das Kochbuch aufgeschlagen und mit den dort genau angegebenen Zutaten ein Gericht nachgekocht. Jedoch schmeckt es nicht so wie es aus der Kindheit bekannt war. Es fehlt der Geheimtipp für den richtigen Geschmack. Ältere Generationen kennen verschiedene Rezepte, die aus der eigenen Kultur und Tradition stammen. Ein Beispiel dafür wäre die Nutzung heimischer Kräuter.
+Mit den weitergegebenen Tipps und Tricks würde die neue Generation bereichert werden.
+Die ältere Generation sollte wieder mehr wertgeschätzt und ein wichtiger Teil der familiären Kochkultur werden. Durch den Austausch der Rezepte, angereichert durch die Kommentare erfahrener Köche, würde auch die Beziehung zwischen den Generationen gestärkt werden, weil dies letztendlich zu einer verstärkten Verbundenheit führt. 
 > Ergänzung folgt (Existenz und Beschreibung werden durch Quellen begründet - Was soll warum behandelt werden)
 
 ### Begriff Definition
