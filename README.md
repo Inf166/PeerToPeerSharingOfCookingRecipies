@@ -22,7 +22,28 @@ Die ältere Generation sollte wieder mehr wertgeschätzt und ein Teil unserer Ge
 > Folgt (Mehrwert, technologieunabhängig)
 
 ### Und wie eigentlich genau?
-> Folgt (Grundlage für Evaluation und Einschätzung der Zielerreichung)
+> Disclaimer: Die genaue Umsetzung ist bisher nicht mit den Mentoren abgesprochen, daher sind sämtliche Angaben unverbindlich und nur der erste Lösungsvorschlag resultierend aus den oben beschriebenen Problemraum.
+
+Ziel des Projekts ist es anhand von Prototypen und Forschung ein Produkt zu konzipieren, welches die Registrierung und dadurch auch Verifizierung des Nutzers benötigt um exklusive Gruppen, mit anderen Communitymitgliedern, baumartig aufzubauen und dann über die, von Nutzern individuell anpassbare, Anwendungslogik, die Rezepte aus verschiedenen Generationen geteilt zu bekommen. Jedes Rezept wird dem Autor zugeordnet und nur die exklusive Gruppe erhält Zugriff auf das Rezept. Diese sollen versehen sein mit verschiedensten Kommentaren die die Bindung zu dem Rezept und den Familienmitgliedern stärken soll. Wichtig ist, dass das Produkt generationsübergreifend Nutzbar ist und nicht einen bestimmten Wissensstand vorraussetzt der bekanntlich nicht von bestimmten Generationen erbracht werden kann. Das Produkt soll von diversen Standorten aus benutzt werden können und soll die, von den Nutzern bereitgestellten, Rezepte sicher verwahren und an Mitglieder der Gruppe verteilt werden. Eigene Rezepte sollen angelegt werden können und stehts vorschläge für das Ausfüllen der benötigten Formulare, für die einheitliche Verteilung des Rezepts, angeboten werden. Das Eingetragne/Hinzugefügte/Erstellte soll wenn möglich nur gering eingeschränkt werden (Einschränkung nur wenn System relevant).
+> Ergänzungen folgen (Grundlage für Evaluation und Einschätzung der Zielerreichung)
+
+</br> **Mögliche Erweiterungen der Grundidee sind:**
+- Anleitung über Videotutorial
+- Abwandlungen des ursprünglichen Rezepts mit Verweis auf das Original sichern (Beispiel git)
+- Druckvorlagen bereitstellen
+- Teilen mit nicht-Gruppenmitgliedern (import / export)
+- Das Familienkochbuch komplett drucken
+- Favorisieren von Rezepten -> Bald Kochen Liste
+- Verfügbarkeit der Zutaten -> Bestellbar über -> Verknüpfung mit einem externen Service
+- Kochplan -> Einkaufsliste -> Erleichterter Bestellprozess
+- Suche mit Filtermaske (Filteroptionen bitte dem Modell entnehmen)
+- Personalisierbarkeit der Visualisierung des Rezepts und Kochbuch (Sammlung der Gruppenrezepte)
+- Geschichten der Familie (Andenken an beispielsweise Feiertage)
+- Vorratskammer (Was sollte man immer zu Hause haben)
+- Einheiten-Umrechner
+- Portionen-Umrechner
+- Übersetzen des Rezepts in andere Sprachen
+- Anleitung vorlesen lassen (pausieren, stoppen, abspielen, überspringen, zurückspringen)
 
 ## Warum ist dieses Projekt relevant?
 ### 1. Gesellschaftliche Relevanz
