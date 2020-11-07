@@ -8,8 +8,8 @@ EPWS2020CobanMai </br></br>
 
 ### Problemraum
 Viele traditionelle oder familiäre Rezepte fallen zur Zeit immer weiter in Vergessenheit. </br>
-Dies fällt meistens erst dann auf, wenn die ältere Generation besucht wird und zum Beispiel eine Kaltschale zubereitet. 
-Es wird das Kochbuch aufgeschlagen und mit den dort genau angegebenen Zutaten ein Gericht nachgekocht. Jedoch schmeckt es nicht so wie es aus der Kindheit bekannt war. Es fehlt der Geheimtipp für den richtigen Geschmack. Ältere Generationen kennen verschiedene Rezepte, die aus der eigenen Kultur und Tradition stammen. Ein Beispiel dafür wäre die Nutzung heimischer Kräuter.
+Dies fällt meistens erst dann auf, wenn die ältere Generation besucht und zum Beispiel eine Kaltschale zubereitet wird. 
+Es wird das Kochbuch aufgeschlagen und mit den angegebenen Zutaten ein Gericht nachgekocht. Jedoch schmeckt es nicht so wie es aus der Kindheit bekannt war. Es fehlt der Geheimtipp für den richtigen Geschmack. Ältere Generationen kennen verschiedene Rezepte, die aus der eigenen Kultur und Tradition stammen. Ein Beispiel dafür wäre die Nutzung heimischer Kräuter.
 Mit den weitergegebenen Tipps und Tricks würde die neue Generation bereichert werden.
 Die ältere Generation sollte wieder mehr wertgeschätzt und ein wichtiger Teil der familiären Kochkultur werden. Durch den Austausch der Rezepte, angereichert durch die Kommentare erfahrener Köche, würde auch die Beziehung zwischen den Generationen gestärkt werden, weil dies letztendlich zu einer verstärkten Verbundenheit führt. 
 > Ergänzung folgt (Existenz und Beschreibung werden durch Quellen begründet - Was soll warum behandelt werden)
