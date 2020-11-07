@@ -7,11 +7,16 @@ EPWS2020CobanMai </br></br>
 ![Domänenmodell Version 3](Artefakte/Domänenmodell_v3.png)
 
 ### Problemraum
+#### Szenario
 Viele traditionelle oder familiäre Rezepte fallen zur Zeit immer weiter in Vergessenheit. </br>
 Dies fällt meistens erst dann auf, wenn die ältere Generation besucht und zum Beispiel eine Kaltschale zubereitet wird. 
 Es wird das Kochbuch aufgeschlagen und mit den angegebenen Zutaten ein Gericht nachgekocht. Jedoch schmeckt es nicht so wie es aus der Kindheit bekannt war. Es fehlt der Geheimtipp für den richtigen Geschmack. Ältere Generationen kennen verschiedene Rezepte, die aus der eigenen Kultur und Tradition stammen. Ein Beispiel dafür wäre die Nutzung heimischer Kräuter.
 Mit den weitergegebenen Tipps und Tricks würde die neue Generation bereichert werden.
 Die ältere Generation sollte wieder mehr wertgeschätzt und ein wichtiger Teil der familiären Kochkultur werden. Durch den Austausch der Rezepte, angereichert durch die Kommentare erfahrener Köche, würde auch die Beziehung zwischen den Generationen gestärkt werden, weil dies letztendlich zu einer verstärkten Verbundenheit führt. 
+#### Recherche Ergebnisse
+Bisher war es nötig das Familien ihre Rezepte in handgeschrieben oder digitalen Dokumenten niederschreiben und diese Verwahren bis sie endweder kopiert oder weitergegeben werden. Gerade bei Familienzusammenführungen kann dieser Vorgang schnell unübersichtlich bleiben und erfordert viel Mühe und Hingabe. 
+Es besteht offensichtliches Interesse in der Jugend und im Kindesalter Kontakt an der eigenen Kulturellenvergangenheit. So haben beispielsweise der Malteserbund mit ihrer Broschüre zu [Crossing Generations](https://www.malteserjugend.de/fileadmin/Files_sites/Malteserjugend/Malteserjugend/Publikationen/Broschuere_Crossing_Generation.pdf) und die Technische Hochschule Ostwestfalen-Lippe mit ihrem Artikel zu "[Großmutters Topf](https://www.th-owl.de/forschung/gruender-labor/gruendergeschichten/gruendung/detail/aus-grossmutters-topf-gemeinsam-essen-macht-mehr-spass/)" auf ihre Weise das Problem adressiert. Leider ist bisher das technische [Know-How](https://www.piqd.de/loesungen/wie-wir-technik-brucken-bauen-die-generationen-verbinden) bei der älteren Generation noch mangelhaft um die Nutzung bisheriger Lösungen von digitaler Pflege eines privaten Kochbuches ein unausweichliches Problem. Und [uneinheitliche Lösungen](https://www.organisation-mit-sabine.de/rezepte-sammeln-und-erstellen-mit-dem-smartphone-4-apps-im-test/) was dieses Betrifft, macht es Nutzern nicht einfacher.</br> Große Plattformen und Dienstleister zeugen mit ihren vordefinierten gefilterten Sammlungen von [Großelterns-](https://www.chefkoch.de/rs/s0/gro%C3%9Feltern/Rezepte.html), [Familien-](https://www.edeka.de/rezepte/genussthemen/familienrezepte.jsp) und [Traditionsrezepten](https://www.chefkoch.de/magazin/artikel/6338/Chefkoch/fast-vergessene-rezepte-und-alte-schaetze.html#main_38680_6) dass es hier Nutzeranfragen gab und diese somit vorerst über die bereitgestellten Sammlungen befriedigt wurden. </br>
+**Aus den Ergebnissen folgt, dass hier ein Bedürfnis für eine zufriedenstellendernde Lösung gibt.**
 > Ergänzung folgt (Existenz und Beschreibung werden durch Quellen begründet - Was soll warum behandelt werden)
 
 ### Begriff Definition
