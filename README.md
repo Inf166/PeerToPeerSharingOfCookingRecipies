@@ -25,11 +25,10 @@ Es besteht offensichtliches Interesse in der Jugend und im Kindesalter Kontakt a
 ## Unsere Vision?
 ### Die Idee und das Ziel
 Der Mehrwert ist die nachhaltige Speicherung und Verwahrung von Wissen, der erleichterte Austausch und die einfache Nutzung und Anwendung des Wissens.
-Durch das Nacherleben des Wissens entwickelt sich eine persönliche Bindung, bei der man die Verantwortung trägt, dieses Wissen zu wahren. 
-Das Wissen zu dem bestimmten Thema sollte man an einem Ort bündeln, um nicht verschiedene physische Bücher aufzubewahren, welche auch verloren oder zerstört werden könnten.
+Durch das Nacherleben des Wissens entwickelt sich eine persönliche Bindung, bei der die Verantwortung getragen wird, dieses Wissen zu wahren. 
+Das Wissen zu dem bestimmten Thema sollte an einem Ort gebündelt werden, um nicht verschiedene physische Bücher aufzubewahren, welche auch verloren oder zerstört werden könnten.
 Das Erreichen des Mehrwertes ist der Wille zum Nachkochen der Rezepte, weil beispielsweise schon ein Erlebnis damit verbunden ist. Dieses Erlebnis fängt damit an, indem man beispielsweise als Kind von der älteren Generation bekocht wird.
 Ein weiterer Grund des Nachkochens ist die Verbundenheit und Wertschätzung der älteren Generation, weil man in der Vergangenheit persönliche Gefühle bei diesen Rezepten entwickelt hat. 
-Zunächst kann auch das Altenheim besucht werden, um mit der älteren Generation gemeinsam zu kochen. Im Altenheim sind auch andere Generationen, die weitere Tipps kennen könnten. Somit erlernt man auch die Kochkünste von verschiedenen Traditionen und Kulturen.
 Um diesen Mehrwert weiterhin zu erhalten, kann ein Projekt entwickelt werden, in der es um ein soziales Unternehmen geht. In der Kantine eines Unternehmens kann man die Rezepte von der älteren Generation nachkochen. Hierbei geht es darum, dass die Menschen aufgrund der Arbeit zu Hause weniger Zeit zum Kochen haben und trotzdem Gerichte aus der älteren Generation essen können und diese in der Zukunft nicht vergessen.
 Die Kommunikation und der Austausch von Wissen über Kochen und die sichere und nachhaltige Verwahrung dessen ist technologieunabhängig.
 
