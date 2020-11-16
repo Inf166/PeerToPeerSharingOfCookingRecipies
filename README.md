@@ -4,6 +4,7 @@ EPWS2020CobanMai </br></br>
 
 ## Was ist unser Problemraum?
 ### Domänenmodell des Problemraums
+
 ![Domänenmodell Version 3](Artefakte/WS2020_Coban_Mai_Domänenmodell_v7.png)
 
 ### Problemraum
