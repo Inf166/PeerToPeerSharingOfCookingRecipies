@@ -73,17 +73,36 @@ Unter Globaliserungen verstehen wir die globale Verschwimmungen und den Austausc
 
 
 ## Unsere Vision und Ziel
-
+Wir werden mit diesem Projekt den Traditions- und Kultur Austausch sowie die Weitergabe von Wissen und Erfahrung im Kontext Kochen antreiben und erleichtern. Maßgeblich für den Erfolg des Projekts ist die Nutzerfreundlichkeit und die Anforderungsanalyse, so das ein breites Spektrum an Nutzergruppen sich aktiv an dem Austausch und der Weitergabe von Wissen und Erfahrung beteiligen. 
+Die Nutzer sollen mindestens die Möglichkeit haben, Rezepte untereinander auszutauschen und mit Kommentaren, wie Bildern, Videos und Text sowie Audioaufnahmen, versehen zu können. Des Weiteren sollen sie Rezepte iterieren können so dass der Ursprung nicht verloren geht aber Änderungen am Original möglich sind, hierbei zu beachten ist die Transparenz darüber, welcher Nutzer welche Iteration verfasst hat. 
+Das Projekt soll zur Folge haben, dass Familien sich intensiver mit ihrer kulturellen Herkunft beschäftigen und insgesamt ein größeres Gefühl von Verbundenheit herrscht. Traditionen sollen sich etablieren und wachsen können, so dass diese nachhaltig gesichert werden.
+Rezepte sollen von überall eingsehen werden können, um mögliche Anwendungsfälle abzudecken.
+Zu Beachten ist, dass das Projekt nicht eine weitere Kochbuch/Rezepte Plattform als Ziel hat, sondern eine exklusive Gruppe von Menschen, die eine gemeinsame Historie teilen und diese akribisch dokumentieren möchten um ihre Traditionen und Kultur zu wahren, und gemeinsam an einer Sammlung dieser Erfahrungen und Wissen zu arbeiten.
+Ziel des Projekts ist es anhand von Prototypen und Forschung ein Produkt zu konzipieren, welches die Registrierung und dadurch auch Verifizierung des Nutzers benötigt um exklusive Gruppen, mit anderen Communitymitgliedern, baumartig aufzubauen und dann über die, von Nutzern individuell anpassbare, Anwendungslogik, die Rezepte aus verschiedenen Generationen geteilt zu bekommen. Jedes Rezept wird dem Autor zugeordnet und nur die exklusive Gruppe erhält Zugriff auf das Rezept. Diese sollen versehen sein mit verschiedensten Kommentaren die die Bindung zu dem Rezept und den Familienmitgliedern stärken soll. Wichtig ist, dass das Produkt generationsübergreifend Nutzbar ist und nicht einen bestimmten Wissensstand vorraussetzt der bekanntlich nicht von bestimmten Generationen erbracht werden kann. Das Produkt soll von diversen Standorten aus benutzt werden können und soll die, von den Nutzern bereitgestellten, Rezepte sicher verwahren und an Mitglieder der Gruppe verteilt werden. Eigene Rezepte sollen angelegt werden können und stehts vorschläge für das Ausfüllen der benötigten Formulare, für die einheitliche Verteilung des Rezepts, angeboten werden. Das Eingetragne/Hinzugefügte/Erstellte soll wenn möglich nur gering eingeschränkt werden (Einschränkung nur wenn System relevant).
 
 ## Warum ist dieses Projekt relevant?
 ### 1. Gesellschaftliche Relevanz
-
+Mit unserem Produkt wollen wir wieder **mehr Kommunikation** zwischen den Generationen innerhalb der Familie stärken. Die **Weitergabe und Austausch** von Wissen und seine Nutzung sind eine Bedienung dafür, dass Kulturen und Gesellschaften entstehen und bestehen bleiben.
+Dieses Produkt unterstützt die Befriedigung individueller Neugier, persönliche Bildung und Horizonterweiterung. 
+Es soll wieder eine **Verbindung** wieder zwischen den einfachen Texten und Bildern und der eigenen Vergangheit hergestellt werden. Daher wird der von uns bereitgestellte Dienst die **Zukunft von Tradition und Kultur** weitgehend sichern, sofern er aktiv von der Community genutz und gefüllt wird. Ein gesellschaftliches Umdenken, wenn auch nur Andersdenken, zur eigenen Ernährung und Planung von sozialen Treffen der Familie ist unser Hauptziel. Durch kulturellen Austausch wachsen Gemeinsamkeiten und Verständnis gegenüber anderen Kulturen, die helfen können Konfliktpotentiale zu verringern und Kompromisse zu erarbeiten. 
+</br> Aus dem Kreis der Ehrenamtlichen für die Flüchtlingsbetreuung wurde tatsächlich auch schon berichtet, dass hier der Wunsch nach kulturellen Austausch zwischen Helfern und Flüchtlingen besteht. Die Gemeinschaft dort würde sich darüber freuen einen bequemen Weg zu finden, Rezepte und die gewissen Feinheiten der Zubereitung untereinander auszutauschen. Der traditionelle Weg über Papier - sei etwas umständlich. Auch wenn das nicht die angepeilte Nutzungsweise des Produkts wäre, so besteht kein Zweifel darin, dass das Produkt auch diese Nutzergruppe zufrieden stellen würde.
 
 ### 2. Wirtschaftliche Relevanz
+Tatsächlich ist uns bei der Recherche nach bisherigen Produken, die unseren Problemraum adressieren, aufgefallen, dass es wenig, bis keine Konkurrenz gibt und wir somit eine ziemlich deutliche Marktlücke aufgedeckt haben. In unserem Bekanntenkreis besteht ein großes Interesse daran, Rezepte **exklusiv** mit der **eigenen Familie** zu teilen und trotzdem in der Verfügung über die eigenen Rezepte **nicht eingeschränkt** zu sein. Ob tatsächlich auch die Allgemeinheit ein Interesse an dem Produkt hat, lässt sich wohl nur durch weitere Forschung und Umfragen feststellen. Wir wünschen uns, dass wir den Dienst möglichst **kostengering** und für die Allgemeinheit anbieten können, dabei würden wir gerne auf störende Werbeanzeigen verzichten. Sollte dies möglich sein, würden somit eine innovative Geschäftsidee unterstützen, an welcher sich andere Dienste orientieren könnten. Für eine **bessere und sozialere Welt** in der das Wohl vor dem maximieren von Ertrag steht. Sollte es sich herausstellen, dass wir im Irrtum über die Tragbarkeit eines solchen Geschäftsmodells liegen, ziehen wir diese Aussage zurück. 
 
+#### Beispiele für bisherige Konkurrenzprodukte
+- [Recipe Keeper](https://play.google.com/store/apps/details?id=com.tudorspan.recipekeeper) </br> Lokales Speichern von selbst angelegten, importierten, gescannten Rezepten
+
+- [My Cookbook](https://play.google.com/store/apps/details?id=com.aduilio.recipes) </br> Lokales Speichern von Rezepten
+
+- [Cookpad](https://apps.apple.com/de/app/cookpad-rezepte-teilen/id585332633) </br> Community teilt öffentlich Rezepte und bietet das teilen von Rezepten mit anderen Communitymitgliedern
+
+- [Cooking Cloud](https://play.google.com/store/apps/details?id=com.cookingcloud.app&hl=de) </br> Sammeln von externen Rezepten und das Teilen mit der Community
+
+- [Kitchen Stories Rezepte](https://apps.apple.com/de/app/kitchen-stories-rezepte/id771068291) </br> Videoaufnahmen von Kochprozess mit der Community teilen
 
 ### 3. Wissenschaftliche Relevanz
-
+Wissenschafltich relevant ist nur die Bestätigung der Theorie, dass das Produkt eine positive Wirkung auf die Verbundenheit von Familien hat im Kontext Kochen. Eventuelle Nutzung moderner Technologien würde zwar die Verbreitung dieser Unterstützen, ist aber zum aktuellen Zeitpunkt noch nicht beschlossen.
 
 ### Autoren
 - [Derya Coban](https://github.com/deryacbn), inf540, 11117424
