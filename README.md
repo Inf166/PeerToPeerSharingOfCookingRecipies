@@ -25,6 +25,57 @@ Es besteht offensichtliches Interesse in der Jugend und im Kindesalter Kontakt a
 
 ### Begriff Definition
 > Folgt (Domänen erklären und ihre Relevanz für das Projekt beschreiben)
+#### Generation
+
+
+#### Erinnerung
+
+
+#### Familienessen - bestimmer Ablauf
+
+
+#### Erfahrung
+
+
+#### Wissen
+
+
+#### Tradition
+
+
+#### Kultur
+
+
+#### Geschichte
+
+
+#### Religion
+
+
+#### Selbstwirksamkeit
+
+
+#### Gestaltung persönlicher Identität
+
+
+#### Weitergabe
+
+
+#### Austausch
+
+
+#### Teilen
+
+
+#### Lernen
+
+
+#### Community of Interest
+
+
+#### Globalisierung
+
+
 
 ## Unsere Vision?
 ### Die Idee und das Ziel
