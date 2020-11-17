@@ -5,7 +5,7 @@ EPWS2020CobanMai </br></br>
 ## Was ist unser Problemraum?
 ### Domänenmodell des Problemraums
 
-![Domänenmodell Version 3](Artefakte/WS2020_Coban_Mai_Domänenmodell_v7.png)
+![Domänenmodell Version 3](Artefakte/Domänenmodell/WS2020_Coban_Mai_Domänenmodell_v7.png)
 
 ### Problemraum
 Viele traditionelle oder familiäre Rezepte fallen zurzeit immer weiter in Vergessenheit. 
