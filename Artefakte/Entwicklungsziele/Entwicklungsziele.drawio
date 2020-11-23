@@ -1,44 +1,131 @@
-<mxfile host="app.diagrams.net" modified="2020-11-23T17:51:27.521Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.193 Safari/537.36" etag="Mj1XXDE0w-PjtpMyQ02o" version="13.10.1" type="github">
+<mxfile host="app.diagrams.net" modified="2020-11-23T19:09:13.003Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.193 Safari/537.36" etag="IX4lmu3Jxg6seE8ykJCM" version="13.10.1" type="github">
   <diagram name="Page-1" id="97916047-d0de-89f5-080d-49f4d83e522f">
-    <mxGraphModel dx="4220.5" dy="945" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
+    <mxGraphModel dx="8743.5" dy="2677" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="1169" pageHeight="827" background="#ffffff" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="IA3jvU3uNQat7jcpuoW0-75" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=32;fillColor=#fff2cc;opacity=50;strokeColor=none;allowArrows=0;editable=0;movable=0;" parent="1" vertex="1">
-          <mxGeometry x="-399.5" y="720" width="2150" height="1160" as="geometry" />
+          <mxGeometry x="-1120" y="640" width="3880" height="520" as="geometry" />
         </mxCell>
         <mxCell id="IA3jvU3uNQat7jcpuoW0-69" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=32;fillColor=#d5e8d4;opacity=50;strokeColor=none;allowArrows=0;editable=0;movable=0;" parent="1" vertex="1">
-          <mxGeometry x="-400" y="360" width="2150" height="360" as="geometry" />
+          <mxGeometry x="-1120" y="360" width="3880" height="280" as="geometry" />
         </mxCell>
         <mxCell id="IA3jvU3uNQat7jcpuoW0-68" value="" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;fontSize=32;fillColor=#dae8fc;opacity=50;strokeColor=none;allowArrows=0;editable=0;movable=0;" parent="1" vertex="1">
-          <mxGeometry x="-400" width="2150" height="360" as="geometry" />
-        </mxCell>
-        <mxCell id="IA3jvU3uNQat7jcpuoW0-58" value="Wir wollen den Austausch über Kultur und Traditionen im Kontext Kochen anregen" style="rounded=1;fillColor=#10739E;strokeColor=none;shadow=1;gradientColor=none;fontStyle=1;fontColor=#FFFFFF;fontSize=14;html=1;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="720" y="40" width="320" height="110" as="geometry" />
+          <mxGeometry x="-1130" width="3890" height="360" as="geometry" />
         </mxCell>
         <mxCell id="IA3jvU3uNQat7jcpuoW0-59" value="Unser strategisches Ziel:" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=32;fontColor=#66B2FF;labelBorderColor=none;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="-410" y="77.5" width="400" height="55" as="geometry" />
+          <mxGeometry x="-1081.5" y="82.5" width="400" height="55" as="geometry" />
         </mxCell>
         <mxCell id="IA3jvU3uNQat7jcpuoW0-60" value="Unsere taktischen Ziele:" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=32;fontColor=#66B2FF;labelBorderColor=none;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="-399.5" y="499.5" width="400" height="55" as="geometry" />
+          <mxGeometry x="-1071" y="504.5" width="400" height="55" as="geometry" />
         </mxCell>
         <mxCell id="IA3jvU3uNQat7jcpuoW0-61" value="Unsere operativen Ziele:" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=32;fontColor=#66B2FF;labelBorderColor=none;labelBackgroundColor=none;" parent="1" vertex="1">
-          <mxGeometry x="-399.5" y="880" width="400" height="55" as="geometry" />
+          <mxGeometry x="-1071" y="885" width="400" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="gunOKHIYSJDINgIafA28-32" style="edgeStyle=elbowEdgeStyle;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;elbow=vertical;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;shadow=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;strokeColor=#4D85BF;strokeWidth=6;fontSize=32;fontColor=#66B2FF;" edge="1" parent="1" source="IA3jvU3uNQat7jcpuoW0-66" target="gunOKHIYSJDINgIafA28-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gunOKHIYSJDINgIafA28-33" style="edgeStyle=elbowEdgeStyle;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;elbow=vertical;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;shadow=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;strokeColor=#4D85BF;strokeWidth=6;fontSize=32;fontColor=#66B2FF;" edge="1" parent="1" source="IA3jvU3uNQat7jcpuoW0-66" target="IA3jvU3uNQat7jcpuoW0-71">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gunOKHIYSJDINgIafA28-34" style="edgeStyle=elbowEdgeStyle;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;elbow=vertical;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;shadow=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;strokeColor=#4D85BF;strokeWidth=6;fontSize=32;fontColor=#66B2FF;" edge="1" parent="1" source="IA3jvU3uNQat7jcpuoW0-66" target="gunOKHIYSJDINgIafA28-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gunOKHIYSJDINgIafA28-35" style="edgeStyle=elbowEdgeStyle;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;elbow=vertical;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;shadow=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;strokeColor=#4D85BF;strokeWidth=6;fontSize=32;fontColor=#66B2FF;" edge="1" parent="1" source="IA3jvU3uNQat7jcpuoW0-66" target="gunOKHIYSJDINgIafA28-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gunOKHIYSJDINgIafA28-36" style="edgeStyle=elbowEdgeStyle;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;elbow=vertical;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;shadow=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;strokeColor=#4D85BF;strokeWidth=6;fontSize=32;fontColor=#66B2FF;" edge="1" parent="1" source="IA3jvU3uNQat7jcpuoW0-66" target="gunOKHIYSJDINgIafA28-5">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="IA3jvU3uNQat7jcpuoW0-66" value="Wir entwickeln Benutzerzentriert nach der&amp;nbsp;&lt;br&gt;&lt;div&gt;DIN EN ISO 9241-210&lt;/div&gt;" style="rounded=1;fillColor=#10739E;strokeColor=none;shadow=1;gradientColor=none;fontStyle=1;fontColor=#FFFFFF;fontSize=14;html=1;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="140" y="460" width="320" height="110" as="geometry" />
+          <mxGeometry x="-283.5" y="400" width="320" height="110" as="geometry" />
         </mxCell>
         <mxCell id="IA3jvU3uNQat7jcpuoW0-70" value="&amp;nbsp;Wir wollen unsere Nutzergruppen verstanden haben" style="rounded=1;fillColor=#10739E;strokeColor=none;shadow=1;gradientColor=none;fontStyle=1;fontColor=#FFFFFF;fontSize=14;html=1;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="130" y="760" width="320" height="110" as="geometry" />
+          <mxGeometry x="1234" y="820" width="220" height="160" as="geometry" />
         </mxCell>
         <mxCell id="IA3jvU3uNQat7jcpuoW0-71" value="Wir wollen das Evaluierung ein wichtiger Teil der Entwicklung ist" style="rounded=1;fillColor=#10739E;strokeColor=none;shadow=1;gradientColor=none;fontStyle=1;fontColor=#FFFFFF;fontSize=14;html=1;whiteSpace=wrap;" parent="1" vertex="1">
-          <mxGeometry x="130" y="890" width="320" height="110" as="geometry" />
+          <mxGeometry x="-369" y="820" width="190" height="160" as="geometry" />
         </mxCell>
         <mxCell id="gunOKHIYSJDINgIafA28-5" value="Wir wollen Social Coding als wichtigen Bestandteil unserer Zusammenarbeit" style="rounded=1;fillColor=#10739E;strokeColor=none;shadow=1;gradientColor=none;fontStyle=1;fontColor=#FFFFFF;fontSize=14;html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="670" y="460" width="320" height="110" as="geometry" />
+          <mxGeometry x="329" y="820" width="180" height="160" as="geometry" />
         </mxCell>
-        <mxCell id="gunOKHIYSJDINgIafA28-6" value="Wir wollen Social Coding als wichtigen Bestandteil unserer Zusammenarbeit" style="rounded=1;fillColor=#10739E;strokeColor=none;shadow=1;gradientColor=none;fontStyle=1;fontColor=#FFFFFF;fontSize=14;html=1;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="1200" y="460" width="320" height="110" as="geometry" />
+        <mxCell id="gunOKHIYSJDINgIafA28-37" style="edgeStyle=elbowEdgeStyle;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;elbow=vertical;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;shadow=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;strokeColor=#4D85BF;strokeWidth=6;fontSize=32;fontColor=#66B2FF;" edge="1" parent="1" source="gunOKHIYSJDINgIafA28-6" target="IA3jvU3uNQat7jcpuoW0-70">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gunOKHIYSJDINgIafA28-38" style="edgeStyle=elbowEdgeStyle;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;elbow=vertical;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;shadow=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;strokeColor=#4D85BF;strokeWidth=6;fontSize=32;fontColor=#66B2FF;" edge="1" parent="1" source="gunOKHIYSJDINgIafA28-6" target="gunOKHIYSJDINgIafA28-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gunOKHIYSJDINgIafA28-39" style="edgeStyle=elbowEdgeStyle;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;elbow=vertical;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;shadow=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;strokeColor=#4D85BF;strokeWidth=6;fontSize=32;fontColor=#66B2FF;" edge="1" parent="1" source="gunOKHIYSJDINgIafA28-6" target="gunOKHIYSJDINgIafA28-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gunOKHIYSJDINgIafA28-40" style="edgeStyle=elbowEdgeStyle;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;elbow=vertical;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;shadow=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;strokeColor=#4D85BF;strokeWidth=6;fontSize=32;fontColor=#66B2FF;" edge="1" parent="1" source="gunOKHIYSJDINgIafA28-6" target="gunOKHIYSJDINgIafA28-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gunOKHIYSJDINgIafA28-42" style="edgeStyle=elbowEdgeStyle;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;elbow=vertical;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;shadow=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;strokeColor=#4D85BF;strokeWidth=6;fontSize=32;fontColor=#66B2FF;" edge="1" parent="1" source="gunOKHIYSJDINgIafA28-6" target="gunOKHIYSJDINgIafA28-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gunOKHIYSJDINgIafA28-43" style="edgeStyle=elbowEdgeStyle;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;elbow=vertical;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;shadow=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;strokeColor=#4D85BF;strokeWidth=6;fontSize=32;fontColor=#66B2FF;" edge="1" parent="1" source="gunOKHIYSJDINgIafA28-6" target="gunOKHIYSJDINgIafA28-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gunOKHIYSJDINgIafA28-6" value="Wir wollen unsere Nutzergruppe dazu anregen unser Produkt aktiv zu nutzen" style="rounded=1;fillColor=#10739E;strokeColor=none;shadow=1;gradientColor=none;fontStyle=1;fontColor=#FFFFFF;fontSize=14;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1716.5" y="400" width="320" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="gunOKHIYSJDINgIafA28-23" style="edgeStyle=elbowEdgeStyle;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;elbow=vertical;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;shadow=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;strokeColor=#4D85BF;strokeWidth=6;fontSize=32;fontColor=#66B2FF;" edge="1" parent="1" source="gunOKHIYSJDINgIafA28-7" target="IA3jvU3uNQat7jcpuoW0-66">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gunOKHIYSJDINgIafA28-24" style="edgeStyle=elbowEdgeStyle;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;elbow=vertical;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;shadow=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;strokeColor=#4D85BF;strokeWidth=6;fontSize=32;fontColor=#66B2FF;" edge="1" parent="1" source="gunOKHIYSJDINgIafA28-7" target="gunOKHIYSJDINgIafA28-21">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gunOKHIYSJDINgIafA28-25" style="edgeStyle=elbowEdgeStyle;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;elbow=vertical;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;shadow=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;strokeColor=#4D85BF;strokeWidth=6;fontSize=32;fontColor=#66B2FF;" edge="1" parent="1" source="gunOKHIYSJDINgIafA28-7" target="gunOKHIYSJDINgIafA28-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gunOKHIYSJDINgIafA28-7" value="Wir wollen, dass der Austausch über Kultur und Tradition im Kontext Kochen langfristig Thema unserer Nutzergruppen wird" style="rounded=1;fillColor=#10739E;strokeColor=none;shadow=1;gradientColor=none;fontStyle=1;fontColor=#FFFFFF;fontSize=14;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="656.5" y="77.5" width="440" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="gunOKHIYSJDINgIafA28-12" value="Wir gestalten unser Produkt attraktiv und zeitgemäß" style="rounded=1;fillColor=#10739E;strokeColor=none;shadow=1;gradientColor=none;fontStyle=1;fontColor=#FFFFFF;fontSize=14;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="2410" y="820" width="180" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="gunOKHIYSJDINgIafA28-13" value="Wir wollen das Nutzer sich gegenseitig motivieren" style="rounded=1;fillColor=#10739E;strokeColor=none;shadow=1;gradientColor=none;fontStyle=1;fontColor=#FFFFFF;fontSize=14;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1465" y="820" width="220" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="gunOKHIYSJDINgIafA28-15" value="&amp;nbsp;Wir übernehmen eine Garantenstellung für Benachteiligte" style="rounded=1;fillColor=#10739E;strokeColor=none;shadow=1;gradientColor=none;fontStyle=1;fontColor=#FFFFFF;fontSize=14;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1706" y="820" width="200" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="gunOKHIYSJDINgIafA28-16" value="Wir wollen die abwechslungsreiche und gesunde Ernährung der Nutzer unterstützen" style="rounded=1;fillColor=#10739E;strokeColor=none;shadow=1;gradientColor=none;fontStyle=1;fontColor=#FFFFFF;fontSize=14;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="2169" y="820" width="200" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="gunOKHIYSJDINgIafA28-17" value="Wir wollen moderne Technologien nutzen" style="rounded=1;fillColor=#10739E;strokeColor=none;shadow=1;gradientColor=none;fontStyle=1;fontColor=#FFFFFF;fontSize=14;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1938" y="820" width="200" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="gunOKHIYSJDINgIafA28-18" value="Wir wollen das System ergonomisch gestalten" style="rounded=1;fillColor=#10739E;strokeColor=none;shadow=1;gradientColor=none;fontStyle=1;fontColor=#FFFFFF;fontSize=14;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-600" y="820" width="189.5" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="gunOKHIYSJDINgIafA28-19" value="Wir wollen das Iteration ein wichtiger Teil der Entwicklung ist" style="rounded=1;fillColor=#10739E;strokeColor=none;shadow=1;gradientColor=none;fontStyle=1;fontColor=#FFFFFF;fontSize=14;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="98" y="820" width="180" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="gunOKHIYSJDINgIafA28-20" value="Wir wollen eine intensive, deep-dive Anforderungsanalyse durchführen" style="rounded=1;fillColor=#10739E;strokeColor=none;shadow=1;gradientColor=none;fontStyle=1;fontColor=#FFFFFF;fontSize=14;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="-133" y="820" width="180" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="gunOKHIYSJDINgIafA28-29" style="edgeStyle=elbowEdgeStyle;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;elbow=vertical;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;shadow=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;strokeColor=#4D85BF;strokeWidth=6;fontSize=32;fontColor=#66B2FF;" edge="1" parent="1" source="gunOKHIYSJDINgIafA28-21" target="gunOKHIYSJDINgIafA28-26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gunOKHIYSJDINgIafA28-30" style="edgeStyle=elbowEdgeStyle;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;elbow=vertical;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;shadow=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;strokeColor=#4D85BF;strokeWidth=6;fontSize=32;fontColor=#66B2FF;" edge="1" parent="1" source="gunOKHIYSJDINgIafA28-21" target="gunOKHIYSJDINgIafA28-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gunOKHIYSJDINgIafA28-31" style="edgeStyle=elbowEdgeStyle;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;elbow=vertical;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;shadow=0;startArrow=classic;startFill=1;endArrow=none;endFill=0;strokeColor=#4D85BF;strokeWidth=6;fontSize=32;fontColor=#66B2FF;" edge="1" parent="1" source="gunOKHIYSJDINgIafA28-21" target="gunOKHIYSJDINgIafA28-28">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="gunOKHIYSJDINgIafA28-21" value="Wir legen den ausschließlichen Fokus auf den Austausch von Kultur und Tradition mit dem Kontext Kochen&amp;nbsp;" style="rounded=1;fillColor=#10739E;strokeColor=none;shadow=1;gradientColor=none;fontStyle=1;fontColor=#FFFFFF;fontSize=14;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="716.5" y="420" width="320" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="gunOKHIYSJDINgIafA28-26" value="Wir diskutieren verschiedene Methoden zum Austausch von Tradition und Kultur" style="rounded=1;fillColor=#10739E;strokeColor=none;shadow=1;gradientColor=none;fontStyle=1;fontColor=#FFFFFF;fontSize=14;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="536" y="820" width="214" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="gunOKHIYSJDINgIafA28-27" value="Wir nutzen ausgewählte Methoden des Austauschs im aktuellen Zeitgeist" style="rounded=1;fillColor=#10739E;strokeColor=none;shadow=1;gradientColor=none;fontStyle=1;fontColor=#FFFFFF;fontSize=14;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="767" y="820" width="223" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="gunOKHIYSJDINgIafA28-28" value="Wir bieten essentielle Schnittstellen für die den Kontext Kochen" style="rounded=1;fillColor=#10739E;strokeColor=none;shadow=1;gradientColor=none;fontStyle=1;fontColor=#FFFFFF;fontSize=14;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="1003" y="820" width="220" height="160" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
