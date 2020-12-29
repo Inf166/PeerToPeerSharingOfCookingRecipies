@@ -72,6 +72,16 @@ i {
     justify-content: space-around;
     padding: 0;
   }
+  #nav a {
+    width: calc(100% / 4 - 2rem);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  #nav a.router-link-exact-active {
+    color: var(--main-bg-color);
+    background-color: var(--main-white-color);
+  }
   #nav a i {
     font-size: 2rem;
   }
