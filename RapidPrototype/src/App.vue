@@ -1,32 +1,32 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/"
-        ><i class="fas fa-home"></i
-        ><span class="nav-label">Entdecken</span></router-link
-      >
-      <router-link to="/savedrecipies"
-        ><i class="far fa-bookmark"></i
-        ><span class="nav-label">Gespeicherte Rezepte</span></router-link
-      >
-      <router-link to="/newrecipe"
-        ><i class="fas fa-plus"></i
-        ><span class="nav-label">Neues Rezept</span></router-link
-      >
-      <router-link to="/profile"
-        ><i class="fas fa-user-alt"></i
-        ><span class="nav-label">Mein Profil</span></router-link
-      >
+      <router-link to="/">
+        <i class="fas fa-home"></i>
+        <span class="nav-label">Entdecken</span>
+      </router-link>
+      <router-link to="/savedrecipies">
+        <i class="far fa-bookmark"></i>
+        <span class="nav-label">Gespeicherte Rezepte</span>
+      </router-link>
+      <router-link to="/newrecipe">
+        <i class="fas fa-plus"></i>
+        <span class="nav-label">Neues Rezept</span>
+      </router-link>
+      <router-link to="/profile">
+        <i class="fas fa-user-alt"></i>
+        <span class="nav-label">Mein Profil</span>
+      </router-link>
     </div>
     <div class="content">
-      <router-view />
+      <router-view></router-view>
     </div>
   </div>
 </template>
 
 <style>
 :root {
-  --main-bg-color: #358a66;
+  --main-bg-color: #407961;
   --main-white-color: #e2e9dc;
   --main-black-color: #161811;
   --highlight-green: #6ebf94;
