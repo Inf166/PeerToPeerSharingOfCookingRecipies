@@ -1,10 +1,22 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/"><i class="fas fa-home"></i><span class="nav-label">Entdecken</span></router-link>
-      <router-link to="/savedrecipies"><i class="far fa-bookmark"></i><span class="nav-label">Gespeicherte Rezepte</span></router-link>
-      <router-link to="/newrecipe"><i class="fas fa-plus"></i><span class="nav-label">Neues Rezept</span></router-link>
-      <router-link to="/profile"><i class="fas fa-user-alt"></i><span class="nav-label">Mein Profil</span></router-link> 
+      <router-link to="/"
+        ><i class="fas fa-home"></i
+        ><span class="nav-label">Entdecken</span></router-link
+      >
+      <router-link to="/savedrecipies"
+        ><i class="far fa-bookmark"></i
+        ><span class="nav-label">Gespeicherte Rezepte</span></router-link
+      >
+      <router-link to="/newrecipe"
+        ><i class="fas fa-plus"></i
+        ><span class="nav-label">Neues Rezept</span></router-link
+      >
+      <router-link to="/profile"
+        ><i class="fas fa-user-alt"></i
+        ><span class="nav-label">Mein Profil</span></router-link
+      >
     </div>
     <div class="content">
       <router-view />
@@ -14,11 +26,11 @@
 
 <style>
 :root {
-  --main-bg-color: #1a5e42;
+  --main-bg-color: #358a66;
   --main-white-color: #e2e9dc;
   --main-black-color: #161811;
   --highlight-green: #6ebf94;
-  --highlight-orange: #FF8133;
+  --highlight-orange: #ff8133;
 }
 
 body {
@@ -59,7 +71,7 @@ body {
 i {
   margin: 4px;
 }
-@media screen and (max-width:720px) {
+@media screen and (max-width: 720px) {
   .nav-label {
     display: none;
   }
