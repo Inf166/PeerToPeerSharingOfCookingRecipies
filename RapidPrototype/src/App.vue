@@ -73,7 +73,7 @@ i {
     padding: 0;
   }
   #nav a {
-    width: calc(100% / 4 - 2rem);
+    
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
