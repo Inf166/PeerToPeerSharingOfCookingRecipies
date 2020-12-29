@@ -8,7 +8,7 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "heroku-postbuild": "npm run build",
-    "deploy-heroku": "npm run build && git add -A && git commit && git push meinkochbuch AuditDrei:main"
+    "deploy-heroku": "npm run build && git add -A && git commit && git push heroku AuditDrei:main"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.1",
