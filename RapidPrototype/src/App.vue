@@ -21,8 +21,27 @@
     <div class="content">
       <router-view></router-view>
     </div>
+    <Footer></Footer>
   </div>
 </template>
+
+<script>
+// @ is an alias to /src
+import Footer from "@/components/Footer.vue";
+
+export default {
+  name: "App",
+  components: {
+    Footer
+  },
+  mounted() {
+    var firebase = require("firebase");
+    var firebaseui = require("firebaseui");
+  },
+  methods: {
+  }
+};
+</script>
 
 <style>
 :root {
@@ -37,7 +56,7 @@ body {
   margin: 0 !important;
   padding: 0 !important;
   width: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -51,6 +70,7 @@ body {
   background: var(--main-bg-color);
   display: flex;
   padding: 1rem;
+  position: sticky;
 }
 
 #nav a {
