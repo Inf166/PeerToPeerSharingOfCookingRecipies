@@ -1,7 +1,7 @@
 {
-    "root": "RapidPrototype/dist",
-    "clean_urls": true,
-    "routes": {
-      "/**": "index.html"
-    }
+  "root": "RapidPrototype/dist",
+  "clean_urls": true,
+  "routes": {
+    "/**": "index.html"
   }
+}
