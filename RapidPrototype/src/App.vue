@@ -17,10 +17,6 @@
         <i class="fas fa-user-alt"></i>
         <span class="nav-label">Mein Profil</span>
       </router-link>
-      <router-link to="/translaterecipe">
-        <i class="fas fa-plus"></i>
-        <span class="nav-label">Rezepte übersetzen</span>
-      </router-link>
     </div>
     <div class="content">
       <router-view></router-view>
@@ -37,12 +33,6 @@ export default {
   name: "App",
   components: {
     Footer
-  },
-  mounted() {
-    var firebase = require("firebase");
-    var firebaseui = require("firebaseui");
-  },
-  methods: {
   }
 };
 </script>
