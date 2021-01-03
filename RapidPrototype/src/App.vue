@@ -17,15 +17,6 @@
         <i class="fas fa-user-alt"></i>
         <span class="nav-label">Mein Profil</span>
       </router-link>
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-      <router-link to="/translaterecipe">
-        <span class="nav-label">Rezepte übersetzen</span>
-      </router-link>
-=======
->>>>>>> 657bc1a45c31a6886bf439661fde7aec9af06c77
->>>>>>> Stashed changes
     </div>
     <div class="content">
       <router-view></router-view>
