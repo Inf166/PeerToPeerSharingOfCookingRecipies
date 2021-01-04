@@ -3,41 +3,41 @@
     <h1>This is an SAVED RECIPE page</h1>
     <hr>
     <h2>Meine Rezepte</h2>
-<div class="gallery">
-  <a target="_blank" href="img_5terre.jpg">
-    <img src="img_5terre.jpg" alt="Nudelauflauf" width="600" height="400">
-  </a>
-  <div class="desc">Title</div>
-  <div class="desc">Author</div>
-  <div class="desc">creation time</div>
-</div>
+      <div class="gallery">
+        <a target="_blank" href="https://via.placeholder.com/600x400.png">
+          <img src="https://via.placeholder.com/600x400.png" alt="Nudelauflauf" width="600" height="400">
+        </a>
+        <div class="desc">Title</div>
+        <div class="desc">Author</div>
+        <div class="desc">creation time</div>
+      </div>
 
-<div class="gallery">
-  <a target="_blank" href="img_forest.jpg">
-    <img src="img_forest.jpg" alt="Linsensuppe" width="600" height="400">
-  </a>
-<div class="desc">Title</div>
-  <div class="desc">Author</div>
-  <div class="desc">creation time</div>
-</div>
+      <div class="gallery">
+        <a target="_blank" href="https://via.placeholder.com/600x400.png">
+          <img src="https://via.placeholder.com/600x400.png" alt="Linsensuppe" width="600" height="400">
+        </a>
+      <div class="desc">Title</div>
+        <div class="desc">Author</div>
+        <div class="desc">creation time</div>
+      </div>
 
-<div class="gallery">
-  <a target="_blank" href="img_lights.jpg">
-    <img src="img_lights.jpg" alt="Weihnachtskekse" width="600" height="400">
-  </a>
-  <div class="desc">Title</div>
-  <div class="desc">Author</div>
-  <div class="desc">creation time</div>
-</div>
+      <div class="gallery">
+        <a target="_blank" href="https://via.placeholder.com/600x400.png">
+          <img src="https://via.placeholder.com/600x400.png" alt="Weihnachtskekse" width="600" height="400">
+        </a>
+        <div class="desc">Title</div>
+        <div class="desc">Author</div>
+        <div class="desc">creation time</div>
+      </div>
 
-<div class="gallery">
-  <a target="_blank" href="img_mountains.jpg">
-    <img src="img_mountains.jpg" alt="Käsespätzle" width="600" height="400">
-  </a>
-<div class="desc">Title</div>
-  <div class="desc">Author</div>
-  <div class="desc">creation time</div>
-</div>
+      <div class="gallery">
+        <a target="_blank" href="https://via.placeholder.com/600x400.png">
+          <img src="https://via.placeholder.com/600x400.png" alt="Käsespätzle" width="600" height="400">
+        </a>
+      <div class="desc">Title</div>
+        <div class="desc">Author</div>
+        <div class="desc">creation time</div>
+      </div>
     </div>
 </template>
 
