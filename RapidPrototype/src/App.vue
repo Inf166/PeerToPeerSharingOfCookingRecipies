@@ -52,6 +52,23 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
+
+h3 {
+  margin-top: 40px;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  display: inline-block;
+  margin: 0 10px;
+}
+a {
+  color: #42b983;
+  text-decoration: none;
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -127,4 +144,5 @@ i {
     font-size: 2rem;
   }
 }
+
 </style>
