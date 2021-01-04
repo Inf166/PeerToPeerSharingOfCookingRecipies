@@ -22,19 +22,5 @@ form label {
 form input {
   width: 100%;
 }
-form button {  
-  padding: 0.5rem;
-  margin: 1rem;
-  border-radius: 4px;
-  border: 1px solid;
-  color: var(--main-white-color);
-}
-.primary-button {
-  background-color: green;
-  border-color: darkgreen;
-}
-.secondary-button {
-  background-color: red;
-  border-color: darkred;
-}
+
 </style>

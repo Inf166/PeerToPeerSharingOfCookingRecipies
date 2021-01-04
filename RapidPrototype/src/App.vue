@@ -81,7 +81,22 @@ body {
 .content {
   margin: 0.5rem 2rem;
 }
-
+button {  
+  padding: 0.5rem;
+  margin-top: 1rem;
+  margin-right: 0.5rem;
+  border-radius: 4px;
+  border: 4px solid;
+  color: var(--main-white-color);
+}
+.primary-button {
+  background-color: var(--main-bg-color);
+  border-color: darkgreen;
+}
+.secondary-button {
+  background-color: var(--highlight-orange);
+  border-color: red;
+}
 i {
   margin: 4px;
 }

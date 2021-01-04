@@ -1,65 +1,89 @@
 <template>
   <div class="savedrecipe">
-    <h1>This is an SAVED RECIPE page</h1>
-    <hr>
     <h2>Meine Rezepte</h2>
-      <div class="gallery">
-        <a target="_blank" href="https://via.placeholder.com/600x400.png">
+
+      <div class="recipe-teaser">
+        <div class="recipe-teaser-img">
+          <a href="#" target="_">
+            <img src="https://via.placeholder.com/600x400.png" alt="Nudelauflauf" width="600" height="400">
+          </a>
+        </div>
+        <div class="recipe-teaser-desc">
+          <h3>Ein spannender Rezeptname</h3>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</p>
+          <p><strong>Geschrieben von: </strong><a href="#" target="_blank">Peter Lustig</a></p>
+          <p><strong>Erstellt am: </strong>3.1.2020 14:00</p>
+          <button type="button" class="primary-button"><i class="fas fa-utensils"></i>Rezept kochen</button>
+          <button type="button" class="secondary-button"><i class="fas fa-trash"></i>Rezept verwerfen</button>
+        </div>
+      </div>
+      <hr>
+
+      <div class="recipe-teaser">
+        <div class="recipe-teaser-img">
           <img src="https://via.placeholder.com/600x400.png" alt="Nudelauflauf" width="600" height="400">
-        </a>
-        <div class="desc">Title</div>
-        <div class="desc">Author</div>
-        <div class="desc">creation time</div>
+        </div>
+        <div class="recipe-teaser-desc">
+          <h3>Ein spannender Rezeptname</h3>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</p>
+          <p><strong>Geschrieben von: </strong><a href="#" target="_blank">Peter Lustig</a></p>
+          <p><strong>Erstellt am: </strong>3.1.2020 14:00</p>
+          <button type="button" class="primary-button"><i class="fas fa-utensils"></i>Rezept kochen</button>
+          <button type="button" class="secondary-button"><i class="fas fa-trash"></i>Rezept verwerfen</button>
+        </div>
       </div>
-
-      <div class="gallery">
-        <a target="_blank" href="https://via.placeholder.com/600x400.png">
-          <img src="https://via.placeholder.com/600x400.png" alt="Linsensuppe" width="600" height="400">
-        </a>
-      <div class="desc">Title</div>
-        <div class="desc">Author</div>
-        <div class="desc">creation time</div>
-      </div>
-
-      <div class="gallery">
-        <a target="_blank" href="https://via.placeholder.com/600x400.png">
-          <img src="https://via.placeholder.com/600x400.png" alt="Weihnachtskekse" width="600" height="400">
-        </a>
-        <div class="desc">Title</div>
-        <div class="desc">Author</div>
-        <div class="desc">creation time</div>
-      </div>
-
-      <div class="gallery">
-        <a target="_blank" href="https://via.placeholder.com/600x400.png">
-          <img src="https://via.placeholder.com/600x400.png" alt="Käsespätzle" width="600" height="400">
-        </a>
-      <div class="desc">Title</div>
-        <div class="desc">Author</div>
-        <div class="desc">creation time</div>
-      </div>
+      <hr>
     </div>
 </template>
 
 <style>
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 180px;
-}
+  .savedrecipe {
+  }
+  .recipe-teaser {
+    display: grid;
+    grid-template-columns: 600px 1fr;
+  }
+  .recipe-teaser-img {
+    grid-column: 1 / 2;
+    display: block;
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 34.37% 0 0 0; /* 34.37% = 100 / (w / h) = 100 / (640 / 220) */
+  }
+  .recipe-teaser-img img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .recipe-teaser-desc {
+    grid-column: 2 / 3;
+    margin: 2rem;
+  }
+  .recipe-teaser-desc a{
+    text-decoration: none;
+    color: var(--main-bg-color);
+  }
 
-div.gallery:hover {
-  border: 1px solid #777;
-}
+  @media screen and (max-width: 1100px) {
+  .recipe-teaser {
+    display: block;
+  }
+  .recipe-teaser-img {
+    width: 100%;
+    height: auto;
+  }
+  .recipe-teaser-img img {
 
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
+  }
+  .recipe-teaser-desc {
+    margin: 0.5rem;
+  }
+  }
 </style>
