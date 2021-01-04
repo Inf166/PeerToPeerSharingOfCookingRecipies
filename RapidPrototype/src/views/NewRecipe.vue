@@ -8,8 +8,19 @@
       <button type="button" class="primary-button">Neue Zutat hinzuf&uuml;gen</button>
       <button type="button" class="secondary-button">Abbrechen</button>
     </form>
+    <HelloWorld></HelloWorld>
   </div>
 </template>
+
+<script>
+import HelloWorld from "@/components/HelloWorld.vue";
+export default {
+  name: "NewRecipe",
+  components: {
+    HelloWorld
+  }
+};
+</script>
 
 <style>
 form {

@@ -20,8 +20,8 @@
     </div>
     <div class="content">
       <router-view></router-view>
+      <Footer></Footer>
     </div>
-    <Footer></Footer>
   </div>
 </template>
 
@@ -79,7 +79,8 @@ body {
 }
 
 .content {
-  margin: 0.5rem 2rem;
+  margin: auto;
+  width: 1200px;
 }
 button {  
   padding: 0.5rem;
