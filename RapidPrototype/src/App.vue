@@ -13,7 +13,7 @@
         <i class="fas fa-plus"></i>
         <span class="nav-label">Neues Rezept</span>
       </router-link>
-      <router-link to="/profile">
+      <router-link to="/profile" onclick="checkUserLoginState()">
         <i class="fas fa-user-alt"></i>
         <span class="nav-label">Mein Profil</span>
       </router-link>
@@ -40,7 +40,7 @@ export default {
 <style>
 :root {
   --main-bg-color: #407961;
-  --main-white-color: #e2e9dc;
+  --main-white-color: #f5f7f4;
   --main-black-color: #161811;
   --highlight-green: #6ebf94;
   --highlight-orange: #ff8133;
@@ -50,7 +50,10 @@ body {
   margin: 0 !important;
   padding: 0 !important;
   width: 100%;
+  background: var(--main-white-color);
   overflow-x: hidden;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
 }
 
 h3 {
@@ -65,12 +68,12 @@ li {
   margin: 0 10px;
 }
 a {
-  color: #42b983;
+  color: var(--highlight-green);
   text-decoration: none;
 }
 
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Nunito', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: var(--main-black-color);
@@ -99,13 +102,42 @@ a {
   margin: auto;
   width: 1200px;
 }
+input {
+  display: block;
+  border: 1px solid var(--highlight-orange);
+  border-radius: 5px;
+  background: var(--main-white-color);
+  padding: 15px;
+  outline: none;
+  width: 100%;
+  margin-bottom: 20px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+}
+input:focus {
+  border: 1px solid var(--main-black-color);
+}
 button {  
-  padding: 0.5rem;
   margin-top: 1rem;
   margin-right: 0.5rem;
-  border-radius: 4px;
-  border: 4px solid;
+  border-radius: 5px;
+  padding: 15px;
+  display: block;
+  width: fit-content;
+  font-weight: 700;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  background: var(--highlight-orange);
   color: var(--main-white-color);
+  border: 1px solid var(--highlight-orange);
+}
+button:hover {
+  background: var(--main-white-color);
+  color: var(--highlight-orange);
+  border: 1px solidvar(--highlight-orange);
+  cursor: pointer;
 }
 .other-button {
   background-color:gray;
@@ -115,9 +147,17 @@ button {
   background-color: var(--main-bg-color);
   border-color: darkgreen;
 }
+.primary-button:hover{
+  color: var(--main-bg-color);
+  border-color: var(--main-bg-color);
+}
 .secondary-button {
   background-color: var(--highlight-orange);
   border-color: red;
+}
+.secondary-button:hover {
+  color: var(--highlight-orange);
+  border-color: var(--highlight-orange);
 }
 i {
   margin: 4px;

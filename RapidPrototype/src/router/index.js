@@ -48,6 +48,24 @@ const routes = [
     name: "Nutzungsbedinungen",
     component: () =>
       import("../views/Nutzungsbedingungen.vue")
+  },
+  {
+    path: "/login",
+    name: "LogIn",
+    component: () =>
+      import("../views/LogIn.vue")
+  },
+  {
+    path: "/logout",
+    name: "LogOut",
+    component: () =>
+      import("../views/LogOut.vue")
+  },
+  {
+    path: "/signin",
+    name: "SignIn",
+    component: () =>
+      import("../views/SignIn.vue")
   }
 ];
 

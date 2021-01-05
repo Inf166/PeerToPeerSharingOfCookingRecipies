@@ -1,15 +1,29 @@
 <template>
   <div class="profile">
-    <h1>This is an PROFILE page</h1>
-    <div id="firebaseui-auth-container"></div>
-    <div id="loader">Loading...</div>
+    <h1 id="greetUser">This is an PROFILE page</h1>
+    <!-- <image id="userprofileimage"></image> -->
+    <UserLoginState></UserLoginState>
+    
   </div>
 </template>
 
 <script>
+import UserLoginState from "@/components/UserLoginState.vue";
 export default {
   name: "Profile",
-  mounted() {
+  components: {
+    UserLoginState
+  },
+mounted() {
   }
 };
 </script>
+
+<style>
+.currentuser {
+  display: none;
+}
+.newuser {
+  display: none;
+}
+</style>
