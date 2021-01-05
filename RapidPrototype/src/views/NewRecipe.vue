@@ -51,9 +51,63 @@
   <input type="text" id="fname" name="fname" value=""><br>
   <button type="button" class="primary-button"> Speichern</button>
       <button type="button" class="secondary-button">Abbrechen</button>
-      
 </form> 
+<br/>
+<p><b>Arbeitszeit</b></p>
+<form>
+  <label for="fname"></label><br>
+  <input type="text" id="fname" name="fname" value=""> 
+ 
+  <label for="fname">Std.</label>
+   <input type="text" id="fname" name="fname" value=""> 
+ 
+    <label for="fname">Min.</label>
+    <br />
+  <button type="button" class="primary-button"> Speichern</button>
+      <button type="button" class="secondary-button">Abbrechen</button>
+</form> 
+<p><b>Koch-/ Backzeit</b></p>
+<form>
+  <label for="fname"></label><br>
+  <input type="text" id="fname" name="fname" value=""> 
+ 
+  <label for="fname">Std.</label>
+   <input type="text" id="fname" name="fname" value=""> 
+  
+    <label for="fname">Min.</label>
+    <br />
+  <button type="button" class="primary-button"> Speichern</button>
+      <button type="button" class="secondary-button">Abbrechen</button>
+</form> 
+<p><b>Ruhezeit</b></p>
+<form>
+  <label for="fname"></label><br>
+   <input type="text" id="fname" name="fname" value=""> 
 
+  <label for="fname">Tage</label>
+  <input type="text" id="fname" name="fname" value=""> 
+ 
+  <label for="fname">Std.</label>
+   <input type="text" id="fname" name="fname" value=""> 
+    <label for="fname">Min.</label>
+    <br />
+  <button type="button" class="primary-button"> Speichern</button>
+      <button type="button" class="secondary-button">Abbrechen</button>
+</form> 
+<br />
+ <p><b>Schwierigkeitsgrad</b></p>
+<form>
+<label for="schwierigkeitsgrad">Schwierigkeitsgrad:</label> 
+   <select id="schwierigkeitsgrad" name="schwierigkeitsgrad">
+    <option value=""></option>
+    <option value="simpel">simpel</option>
+    <option value="mittel">mittel</option>
+    <option value="schwer">schwer</option>
+     </select>
+      <br />
+  <button type="button" class="primary-button"> Speichern</button>
+      <button type="button" class="secondary-button">Abbrechen</button>
+</form> 
 
     <HelloWorld></HelloWorld>
   </div>
@@ -79,5 +133,4 @@ form label {
 form input {
   width: 100%;
 }
-
 </style>
