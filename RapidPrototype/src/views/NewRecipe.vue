@@ -5,6 +5,7 @@
     <form>
       <label for="rezept1"><b></b></label>
       <input type="text" id="rezept1" name="neueZutat1" required size="255" placeholder="Neue Zutat hier">
+      <br />
       <button type="button" class="primary-button">Speichern</button>
       <button type="button" class="secondary-button">Abbrechen</button>
     </form>
@@ -44,11 +45,41 @@
    <button type="button" class="primary-button"> Speichern</button>
       <button type="button" class="secondary-button">Abbrechen</button>
 </form>
+<br />
+   <p><b>Alternative Zutat</b></p>
+    <form>
+     <label for="Zutat">Zutat:</label> 
+  <input type="text" id="fname" name="fname" value="">
+  <br />
+    <label for="Zutatenname">kann mit dieser Zutat ersetzt werden:</label> 
+  <input type="text" id="fname" name="fname" value="">
+     <br />
+   <button type="button" class="other-button"> Weitere Zutat ersetzen</button>
+  <br />
+   <button type="button" class="primary-button"> Speichern</button>
+      <button type="button" class="secondary-button">Abbrechen</button>
+      </form>
+       <br /> 
+   <p><b>Herkunft der Zutat</b></p>
+    <form>
+     <label for="Zutat">Zutat:</label> 
+  <input type="text" id="fname" name="fname" value="">
+  <br />
+    <label for="Zutatenname">die Herkunft von dieser Zutat ist:</label> 
+  <input type="text" id="fname" name="fname" value="">
+     <br />
+   <button type="button" class="other-button"> Weitere Zutate angeben</button>
+  <br/>
+   <button type="button" class="primary-button"> Speichern</button>
+      <button type="button" class="secondary-button">Abbrechen</button>
+      </form>
 <br/>
  <p><b>Rezeptzubereitung</b></p>
  <form action="/action_page.php">
   <label for="fname">Hier kannst du beschreiben, welche Schritte für die Zubereitung des Rezeptes notwendig sind. </label><br>
-  <input type="text" id="fname" name="fname" value=""><br>
+  <br />
+      <textarea id="text" name="text" cols="50" rows="20"></textarea> 	
+      <br />
   <button type="button" class="primary-button"> Speichern</button>
       <button type="button" class="secondary-button">Abbrechen</button>
 </form> 
@@ -108,7 +139,45 @@
   <button type="button" class="primary-button"> Speichern</button>
       <button type="button" class="secondary-button">Abbrechen</button>
 </form> 
-
+<br/>
+ <p><b>Haushaltsger&auml;te</b></p>
+    <form>
+      <label for="portion">Bitte gebe hier alle benötigte Haushaltsger&auml;te für das Rezept an. </label>
+      <input type="text" id="fname" name="fname" value=""><br> 
+       <br /> 
+       <button type="button" class="primary-button">Speichern</button>
+      <button type="button" class="secondary-button">Abbrechen</button>
+   </form>
+    <br /> 
+<p><b>Geschichtlicher Hinweis</b></p>
+<form>
+  <label for="fname">Hier kannst du alle Geschichtliche Hinweise zu diesem Rezept reinschreiben. </label><br>
+  <br />
+      <textarea id="text" name="text" cols="50" rows="20"></textarea> 	
+  <button type="button" class="primary-button"> Speichern</button>
+      <button type="button" class="secondary-button">Abbrechen</button>
+</form> 
+ <br /> 
+   <p><b>Tipps und Tricks</b></p>
+    <form>
+     <label for="Zutat">Hier können Sie beschreiben, mit welchen Tipps und Tricks die Zubereitung dieses Rezeptes hilfreich sein könnte. </label> 
+      <br />
+      <textarea id="text" name="text" cols="50" rows="20"></textarea> 	
+     <br />
+   <button type="button" class="primary-button"> Speichern</button>
+      <button type="button" class="secondary-button">Abbrechen</button>
+      </form>
+     
+<br/>
+<p><b>Rezeptbild hochladen</b></p>
+<label for="fname">Wähle die passende Datei (JPG) aus deiner Festplatte aus. </label>
+<br />
+<img src="https://via.placeholder.com/600x400.png" alt="Bild" width="600" height="400">
+<form action="upload.php" method="post"  enctype="multipart/form-data">
+<input type="file" name="datei"><br>
+<button type="button" class="primary-button"> Hochladen</button>
+      <button type="button" class="secondary-button">Abbrechen</button>
+</form>
     <HelloWorld></HelloWorld>
   </div>
 </template>
