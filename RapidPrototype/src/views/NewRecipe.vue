@@ -51,6 +51,20 @@
     <form>
       <label for="alternativezuatat">Mit welcher alternativen Zutat kann die Zutat {Name} ersetzt werden?</label> 
       <input type="text" id="alternativezuatat" name="alternativezuatat" value="" placeholder="Limette">
+      <label for="mengenangabe">Wie viel wird davon benötigt?</label> 
+      <input type="text" id="mengenangabe" name="mengenangabe" value="" placeholder="2">
+      <label for="einheit">Ein welcher Einheit ist deine Angabe?</label> 
+      <select id="einheit" name="einheit">
+        <option value="stk">Stück</option>
+        <option value="kg">Kilogramm</option>
+        <option value="g">Gramm</option>
+        <option value="ml">Milliliter</option>
+        <option value="mg">Milligramm</option>
+        <option value="pck">Packung</option>
+        <option value="prise">Prisen</option>
+        <option value="tl">Teelöffel</option>
+        <option value="el">Esslöffel</option>
+      </select>
       <button type="button" class="other-button"> Weitere Alternativen angeben</button>
       <button type="button" class="primary-button"> Speichern</button>
       <button type="button" class="secondary-button">Abbrechen</button>
