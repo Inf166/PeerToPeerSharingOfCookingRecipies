@@ -1,6 +1,6 @@
 <template>
   <div class="newrecipe">
-    <h1>This is an NEW RECIPE page</h1>
+    <h1>Hier kannst du dein neues Rezept anlegen</h1>
 
     <h3>Rezeptname</h3>
     <form>
@@ -28,7 +28,7 @@
       <input type="text" id="zutatname" name="zutatname" value="" placeholder="Zitrone">
       <label for="mengenangabe">Wie viel wird davon benötigt?</label> 
       <input type="text" id="mengenangabe" name="mengenangabe" value="" placeholder="2">
-      <label for="einheit">Einheit:</label> 
+      <label for="einheit">Ein welcher Einheit ist deine Angabe?</label> 
       <select id="einheit" name="einheit">
         <option value="stk">Stück</option>
         <option value="kg">Kilogramm</option>
@@ -68,8 +68,9 @@
 
     <h3>Rezeptzubereitung</h3>
     <form>
-      <label for="zubereitungsschritt">Hier kannst du beschreiben, welche Schritte für die Zubereitung des Rezeptes notwendig sind. </label>
-      <textarea id="zubereitungsschritt" name="zubereitungsschritt" cols="50" rows="20"></textarea> 	
+      <label for="zubereitungsschritt">Welche nächsten Schritte sind notwendig? </label>
+      <input type="text" id="zubereitungsschritt" name="zubereitungsschritt" value="" placeholder="Die Zitronen schälen und genießen.">
+      <button type="button" class="other-button"> N&auml;chsten Schritt angeben</button>
       <button type="button" class="primary-button"> Speichern</button>
       <button type="button" class="secondary-button">Abbrechen</button>
     </form> 
@@ -77,8 +78,10 @@
 
     <h3>Arbeitszeit</h3>
     <form>
-      <label for="arbeitszeit">Wie viele Stunden braucht man für das Vorbereiten des Gerichts?</label>
-      <input type="text" id="arbeitszeit" name="arbeitszeit" value="" placeholder="0.5">
+      <label for="arbeitszeitmin">Wie viele Minuten braucht man für das Vorbereiten des Gerichts?</label>
+      <input type="text" id="arbeitszeitmin" name="arbeitszeitmin" value="" placeholder="2">
+      <label for="arbeitszeitstd">(Optional) Wie viele Stunden braucht man für das Vorbereiten des Gerichts?</label>
+      <input type="text" id="arbeitszeitstd" name="arbeitszeitstd" value="" placeholder="4">
       <button type="button" class="primary-button"> Speichern</button>
       <button type="button" class="secondary-button">Abbrechen</button>
     </form> 
@@ -86,10 +89,10 @@
 
     <h3>Koch-/ Backzeit</h3>
     <form>
-      <label for="backzeitstd">Wie viele Stunden braucht man für das Kochen/Backen des Gerichts?</label>
-      <input type="text" id="backzeitstd" name="backzeitstd" value="" placeholder="2"> 
-      <label for="backzeitmin">(Optional) Wie viele Minuten braucht man für das Kochen/Backen des Gerichts?</label>
+      <label for="backzeitmin">Wie viele Minuten braucht man für das Kochen/Backen des Gerichts?</label>
       <input type="text" id="backzeitmin" name="backzeitmin" value="" placeholder="34"> 
+      <label for="backzeitstd">(Optional) Wie viele Stunden braucht man für das Kochen/Backen des Gerichts?</label>
+      <input type="text" id="backzeitstd" name="backzeitstd" value="" placeholder="2"> 
       <button type="button" class="primary-button"> Speichern</button>
       <button type="button" class="secondary-button">Abbrechen</button>
     </form> 
@@ -97,12 +100,12 @@
 
     <h3>Ruhezeit</h3>
     <form>
-      <label for="ruhezeittage">Wie viele Tage soll das Gericht ruhen?</label>
-      <input type="text" id="ruhezeittage" name="ruhezeittage" value="" placeholder="1"> 
-      <label for="ruhezeitstd">Wie viele Stunden soll das Gericht ruhen?</label>
-      <input type="text" id="ruhezeitstd" name="ruhezeitstd" value="" placeholder="4"> 
       <label for="ruhezeitmin">Wie viele Minuten soll das Gericht ruhen?</label>
       <input type="text" id="ruhezeitmin" name="ruhezeitmin" value="" placeholder="20"> 
+      <label for="ruhezeitstd">(Optional) Wie viele Stunden soll das Gericht ruhen?</label>
+      <input type="text" id="ruhezeitstd" name="ruhezeitstd" value="" placeholder="4"> 
+      <label for="ruhezeittage">(Optional) Wie viele Tage soll das Gericht ruhen?</label>
+      <input type="text" id="ruhezeittage" name="ruhezeittage" value="" placeholder="1"> 
       <button type="button" class="primary-button"> Speichern</button>
       <button type="button" class="secondary-button">Abbrechen</button>
     </form> 
@@ -154,6 +157,7 @@
     <img src="https://via.placeholder.com/600x400.png" alt="Bild" width="600" height="400" style="display: block; margin-bottom: 1rem;">
     <form action="upload.php" method="post" enctype="multipart/form-data">
       <input type="file" name="datei">
+      <button type="button" class="other-button">Weitere Bilder hochladen</button>
       <button type="button" class="primary-button"> Hochladen</button>
       <button type="button" class="secondary-button">Abbrechen</button>
     </form>
