@@ -103,6 +103,7 @@ a {
   width: 1200px;
 }
 input {
+  font-family: 'Nunito', sans-serif;
   display: block;
   border: 1px solid var(--highlight-orange);
   border-radius: 5px;
@@ -110,20 +111,49 @@ input {
   padding: 15px;
   outline: none;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
   transition: 0.3s;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
+  font-size: 16px;
 }
 input:focus {
   border: 1px solid var(--main-black-color);
+}
+select {
+  font-family: 'Nunito', sans-serif;
+  border: 1px solid var(--highlight-orange);
+  border-radius: 5px;
+  background: var(--main-white-color);
+  padding: 15px;
+  outline: none;
+  width: 100%;
+  margin-bottom: 2rem;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  font-size: 16px;
+}
+textarea {
+  font-family: 'Nunito', sans-serif;
+  border: 1px solid var(--highlight-orange);
+  border-radius: 5px;
+  background: var(--main-white-color);
+  padding: 15px;
+  outline: none;
+  width: 100%;
+  margin-bottom: 2rem;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  font-size: 16px;
 }
 button {  
   margin-top: 1rem;
   margin-right: 0.5rem;
   border-radius: 5px;
   padding: 15px;
-  display: block;
+  display: inline-block;
   width: fit-content;
   font-weight: 700;
   transition: 0.3s;
@@ -131,17 +161,23 @@ button {
   -moz-transition: 0.3s;
   background: var(--highlight-orange);
   color: var(--main-white-color);
-  border: 1px solid var(--highlight-orange);
+  border: 2px solid var(--highlight-orange);
 }
 button:hover {
   background: var(--main-white-color);
   color: var(--highlight-orange);
-  border: 1px solidvar(--highlight-orange);
+  border: 2px solid var(--highlight-orange);
   cursor: pointer;
 }
 .other-button {
-  background-color:gray;
+  background-color: var(--main-white-color);
   border-color:black;
+  color: var(--main-bg-color);
+}
+.other-button:hover {
+  background-color: var(--main-white-color);
+  border-color: var(--main-bg-color);
+  color: var(--main-bg-color);
 }
 .primary-button {
   background-color: var(--main-bg-color);
