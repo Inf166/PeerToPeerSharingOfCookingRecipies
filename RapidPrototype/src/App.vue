@@ -107,6 +107,10 @@ button {
   border: 4px solid;
   color: var(--main-white-color);
 }
+.other-button {
+  background-color:gray;
+  border-color:black;
+}
 .primary-button {
   background-color: var(--main-bg-color);
   border-color: darkgreen;
