@@ -44,6 +44,16 @@
    <button type="button" class="primary-button"> Speichern</button>
       <button type="button" class="secondary-button">Abbrechen</button>
 </form>
+<br/>
+ <p><b>Rezeptzubereitung</b></p>
+ <form action="/action_page.php">
+  <label for="fname">Hier kannst du beschreiben, welche Schritte für die Zubereitung des Rezeptes notwendig sind. </label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+  <button type="button" class="primary-button"> Speichern</button>
+      <button type="button" class="secondary-button">Abbrechen</button>
+      
+</form> 
+
 
     <HelloWorld></HelloWorld>
   </div>
