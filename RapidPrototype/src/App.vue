@@ -169,6 +169,16 @@ button:hover {
   border: 2px solid var(--highlight-orange);
   cursor: pointer;
 }
+.marked-button {
+  background-color: var(--main-white-color);
+  border-color: red;
+  color: black;
+}
+.marked-button:hover {
+  background-color: var(--main-white-color);
+  border-color: var(--main-bg-color);
+  color:black;
+}
 .other-button {
   background-color: var(--main-white-color);
   border-color:black;
