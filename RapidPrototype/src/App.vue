@@ -205,6 +205,14 @@ button:hover {
   color: var(--highlight-orange);
   border-color: var(--highlight-orange);
 }
+.search-button {
+   background-color: var(--highlight-orange);
+  border-color: gray;
+}
+.search-button:hover{
+  color: var(--highlight-orange);
+  border-color: var(--main-bg-color);
+}
 i {
   margin: 4px;
 }

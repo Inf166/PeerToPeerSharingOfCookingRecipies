@@ -7,6 +7,7 @@
         <button type="button" class="search-button"><i class="fas fa-search"></i> Search</button>
         </form>
        </div>
+      <hr>
      <div class="recipe-teaser">
         <div class="recipe-teaser-img">
         <img src="https://via.placeholder.com/300x300.png" alt="Rezept2" width="300" height="300">
@@ -37,6 +38,7 @@
         <button type="button" class="marked-button"><i class="fas fa-marker"></i>Rezept markieren</button>
       </div>
     </div>
+
     <hr>
     <div class="recipe-teaser">
       <div class="recipe-teaser-img">
@@ -101,10 +103,16 @@
 </template>
 
 <style>
+.search-button {
+  border: none;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
   .savedrecipe {
-  }
-  #search-container {
-    right: 200;
+
   }
   .recipe-teaser {
     display: grid;
