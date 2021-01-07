@@ -105,7 +105,7 @@ a {
 input {
   font-family: 'Nunito', sans-serif;
   display: block;
-  border: 1px solid var(--highlight-orange);
+  border: 1px solid var(--main-black-color);
   border-radius: 5px;
   background: var(--main-white-color);
   padding: 15px;
@@ -117,8 +117,8 @@ input {
   -moz-transition: 0.3s;
   font-size: 16px;
 }
-input:focus {
-  border: 1px solid var(--main-black-color);
+input:focus:focus-within {
+  border: 1px solid var(--highlight-orange);
 }
 select {
   font-family: 'Nunito', sans-serif;
@@ -136,7 +136,7 @@ select {
 }
 textarea {
   font-family: 'Nunito', sans-serif;
-  border: 1px solid var(--highlight-orange);
+  border: 1px solid var(--main-black-color);
   border-radius: 5px;
   background: var(--main-white-color);
   padding: 15px;
@@ -161,12 +161,12 @@ button {
   -moz-transition: 0.3s;
   background: var(--highlight-orange);
   color: var(--main-white-color);
-  border: 2px solid var(--highlight-orange);
+  border: 1px solid var(--highlight-orange);
 }
 button:hover {
   background: var(--main-white-color);
   color: var(--highlight-orange);
-  border: 2px solid var(--highlight-orange);
+  border: 1px solid var(--highlight-orange);
   cursor: pointer;
 }
 .marked-button {

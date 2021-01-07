@@ -13,14 +13,12 @@
     
     <h3>Portionen</h3>   
     <form>
-      <label for="name">Für wie viele Personen ist das Rezept ausgelegt?</label>
-      <div class="input-group">
-      <input type="button" value="-" class="button-minus" data-field="quantity">
-      <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
-      <input type="button" value="+" class="button-plus" data-field="quantity">
+      <label for="portion">Für wie viele Personen ist das Rezept ausgelegt?</label>
+      <!-- <input type="button" value="-" class="button-minus" data-field="quantity"> -->
+      <input type="number" id="portion" name="portion" placeholder="1">
+      <!-- <input type="button" value="+" class="button-plus" data-field="quantity"> -->
       <button type="button" class="primary-button">Speichern</button>
       <button type="button" class="secondary-button">Abbrechen</button>
-      </div>
     </form>
 
 
@@ -231,22 +229,13 @@ export default {
 
 <style>
 
-input,
-textarea {
-  border: 1px solid #eeeeee;
-  box-sizing: border-box;
-  margin: 0;
-  outline: none;
-  padding: 10px;
-}
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
 .input-group input[type='button'] {
-  background-color: #eeeeee;
+  background-color: var(--main-white-color);
   min-width: 38px;
   width: auto;
   transition: all 300ms ease;
