@@ -10,7 +10,7 @@
       <hr>
      <div class="recipe-teaser">
         <div class="recipe-teaser-img">
-        <img src="https://via.placeholder.com/300x300.png" alt="Rezept2" width="300" height="300">
+        <img src="https://via.placeholder.com/300x300.png" alt="Rezept1" width="300" height="300">
       </div>
       <div class="recipe-teaser-desc">
         <h3>Ein spannender Rezeptname</h3>
@@ -73,7 +73,7 @@
     <div class="recipe-teaser">
       <div class="recipe-teaser-img">
         <img src="https://via.placeholder.com/300x300.png" alt="Rezept2" width="300" height="300">
-      </div>
+       </div>
       <div class="recipe-teaser-desc">
         <h3>Ein spannender Rezeptname</h3>
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</p>

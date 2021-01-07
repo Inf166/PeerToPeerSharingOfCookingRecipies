@@ -11,16 +11,18 @@
       <button type="button" class="secondary-button">Abbrechen</button>
     </form>
     
-
-    <h3>Portionen</h3>
+    <h3>Portionen</h3>   
     <form>
-      <label for="portion">Für wie viele Personen ist das Rezept ausgelegt?</label>
-      <input type="text" id="fname" name="fname" value="" placeholder="1 oder 2 oder 3 oder ..."> 
-      <!-- Ich glaube hier macht eher ein Element Sinn wo man plus minus drücken kann und der Wert größer oder kleiner wird -->
+      <label for="name">Für wie viele Personen ist das Rezept ausgelegt?</label>
+      <div class="input-group">
+      <input type="button" value="-" class="button-minus" data-field="quantity">
+      <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+      <input type="button" value="+" class="button-plus" data-field="quantity">
       <button type="button" class="primary-button">Speichern</button>
       <button type="button" class="secondary-button">Abbrechen</button>
+      </div>
     </form>
-    
+
 
     <h3>Zutaten und Mengenangaben</h3>
     <form>
@@ -92,38 +94,74 @@
 
     <h3>Arbeitszeit</h3>
     <form>
-      <label for="arbeitszeitmin">Wie viele Minuten braucht man für das Vorbereiten des Gerichts?</label>
-      <input type="text" id="arbeitszeitmin" name="arbeitszeitmin" value="" placeholder="2">
-      <label for="arbeitszeitstd">(Optional) Wie viele Stunden braucht man für das Vorbereiten des Gerichts?</label>
-      <input type="text" id="arbeitszeitstd" name="arbeitszeitstd" value="" placeholder="4">
+      <label for="einheit">Wie lange dauert das Vorbereiten dieses Gerichts?</label> 
+      <select id="einheit" name="einheit">
+        <option value="stk">0 Min</option>
+        <option value="stk">0-5Min</option>
+        <option value="kg">5-10Min</option>
+        <option value="g">10-15Min</option>
+        <option value="ml">15-20Min</option>
+        <option value="mg">20-25Min</option>
+        <option value="pck">25-30Min</option>
+        <option value="prise">30-35Min</option>
+        <option value="tl">35-40Min</option>
+        <option value="el">40-45Min</option>
+        <option value="el">45-50Min</option>
+        <option value="el">50-55Min</option>
+        <option value="el">55-60Min</option>
+        <option value="el"></option>
+      </select>
       <button type="button" class="primary-button"> Speichern</button>
       <button type="button" class="secondary-button">Abbrechen</button>
-    </form> 
+    </form>
     
-
-    <h3>Koch-/ Backzeit</h3>
-    <form>
-      <label for="backzeitmin">Wie viele Minuten braucht man für das Kochen/Backen des Gerichts?</label>
-      <input type="text" id="backzeitmin" name="backzeitmin" value="" placeholder="34"> 
-      <label for="backzeitstd">(Optional) Wie viele Stunden braucht man für das Kochen/Backen des Gerichts?</label>
-      <input type="text" id="backzeitstd" name="backzeitstd" value="" placeholder="2"> 
-      <button type="button" class="primary-button"> Speichern</button>
-      <button type="button" class="secondary-button">Abbrechen</button>
-    </form> 
-    
-
     <h3>Ruhezeit</h3>
     <form>
-      <label for="ruhezeitmin">Wie viele Minuten soll das Gericht ruhen?</label>
-      <input type="text" id="ruhezeitmin" name="ruhezeitmin" value="" placeholder="20"> 
-      <label for="ruhezeitstd">(Optional) Wie viele Stunden soll das Gericht ruhen?</label>
-      <input type="text" id="ruhezeitstd" name="ruhezeitstd" value="" placeholder="4"> 
-      <label for="ruhezeittage">(Optional) Wie viele Tage soll das Gericht ruhen?</label>
-      <input type="text" id="ruhezeittage" name="ruhezeittage" value="" placeholder="1"> 
+      <label for="einheit">Wie lange soll das Gericht ruhen?</label> 
+      <select id="einheit" name="einheit">
+        <option value="stk">0 Min</option>
+        <option value="stk">0-5Min</option>
+        <option value="kg">5-10Min</option>
+        <option value="g">10-15Min</option>
+        <option value="ml">15-20Min</option>
+        <option value="mg">20-25Min</option>
+        <option value="pck">25-30Min</option>
+        <option value="prise">30-35Min</option>
+        <option value="tl">35-40Min</option>
+        <option value="el">40-45Min</option>
+        <option value="el">45-50Min</option>
+        <option value="el">50-55Min</option>
+        <option value="el">55-60Min</option>
+        <option value="el"></option>
+      </select>
       <button type="button" class="primary-button"> Speichern</button>
       <button type="button" class="secondary-button">Abbrechen</button>
     </form> 
-    
+
+
+   <h3>Koch-/ Backzeit</h3>
+   <form>
+      <label for="einheit">Wie lange das Kochen/Backen dieses Gerichts?</label> 
+      <select id="einheit" name="einheit">
+        <option value="stk">0 Min</option>
+        <option value="stk">0-5Min</option>
+        <option value="kg">5-10Min</option>
+        <option value="g">10-15Min</option>
+        <option value="ml">15-20Min</option>
+        <option value="mg">20-25Min</option>
+        <option value="pck">25-30Min</option>
+        <option value="prise">30-35Min</option>
+        <option value="tl">35-40Min</option>
+        <option value="el">40-45Min</option>
+        <option value="el">45-50Min</option>
+        <option value="el">50-55Min</option>
+        <option value="el">55-60Min</option>
+        <option value="el"></option>
+      </select>
+      <button type="button" class="primary-button"> Speichern</button>
+      <button type="button" class="secondary-button">Abbrechen</button>
+    </form> 
+  
 
     <h3>Schwierigkeitsgrad</h3>
     <form>
@@ -192,6 +230,32 @@ export default {
 </script>
 
 <style>
+
+input,
+textarea {
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
+  margin: 0;
+  outline: none;
+  padding: 10px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.input-group input[type='button'] {
+  background-color: #eeeeee;
+  min-width: 38px;
+  width: auto;
+  transition: all 300ms ease;
+}
+
+.button-plus {
+  left: -23px;
+}
+
 form {
  
 }
