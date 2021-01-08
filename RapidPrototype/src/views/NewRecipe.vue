@@ -6,7 +6,7 @@
     <form>
       <!-- so sollte das aussehen -->
       <label for="rezeptname">Gebe hier deinen gewünschten Rezeptnamen an:</label>
-      <input type="text" id="rezeptname" name="rezeptname" required size="255" placeholder="Ein fantastisches Rezept">
+      <input type="text" id="rezeptname" name="rezeptname" required placeholder="Ein fantastisches Rezept">
       <button type="button" class="primary-button">Speichern</button>
       <button type="button" class="secondary-button">Abbrechen</button>
     </form>
@@ -229,29 +229,4 @@ export default {
 
 <style>
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-
-.input-group input[type='button'] {
-  background-color: var(--main-white-color);
-  min-width: 38px;
-  width: auto;
-  transition: all 300ms ease;
-}
-
-.button-plus {
-  left: -23px;
-}
-
-form {
- 
-}
-form label {
-  width: 100%;
-}
-form input {
-  width: 100%;
-}
 </style>

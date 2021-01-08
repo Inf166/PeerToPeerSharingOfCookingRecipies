@@ -13,6 +13,8 @@
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</p>
         <p><strong>Geschrieben von: </strong><a href="#" target="_blank">Peter Lustig</a></p>
         <p><strong>Erstellt am: </strong>3.1.2020 14:00</p>
+      </div>
+      <div class="recipe-teaser-buttons">
         <button type="button" class="primary-button"><i class="fas fa-utensils"></i>Rezept kochen</button>
         <button type="button" class="secondary-button"><i class="fas fa-trash"></i>Rezept verwerfen</button>
       </div>
@@ -29,6 +31,8 @@
         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</p>
         <p><strong>Geschrieben von: </strong><a href="#" target="_blank">Peter Lustig</a></p>
         <p><strong>Erstellt am: </strong>3.1.2020 14:00</p>
+      </div>
+      <div class="recipe-teaser-buttons">
         <button type="button" class="primary-button"><i class="fas fa-utensils"></i>Rezept kochen</button>
         <button type="button" class="secondary-button"><i class="fas fa-trash"></i>Rezept verwerfen</button>
       </div>
