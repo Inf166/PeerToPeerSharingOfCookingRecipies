@@ -1,6 +1,6 @@
 <template>
   <div class="savedrecipe">
-    <h2>Meine Rezepte</h2>
+    <h2>Hier findest du deine gespeicherten Rezepte</h2>
 
     <div class="recipe-teaser">
       <div class="recipe-teaser-img">

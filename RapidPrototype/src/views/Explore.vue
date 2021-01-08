@@ -1,6 +1,6 @@
 <template>
   <div class="explore">
-    <h1>This is an EXPLORE page</h1> 
+    <h1>Entdecke deine Kultur</h1> 
     <div class="search-container">
       <form>
         <input type="text" id="search" name="search" required placeholder="Search..">

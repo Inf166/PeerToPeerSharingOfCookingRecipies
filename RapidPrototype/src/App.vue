@@ -334,7 +334,9 @@ i {
 }
 @media screen and (max-width: 720px) {
   .content {
+    position: relative;
     margin: auto;
+    margin-bottom: 200px;
     width: 600px;
     top: 0px;
   }

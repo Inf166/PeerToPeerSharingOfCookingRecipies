@@ -28,5 +28,6 @@
     ],
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#1a5e42"
+    "background_color": "#1a5e42",
+    "gcm_sender_id": "1081676854603"
 }
