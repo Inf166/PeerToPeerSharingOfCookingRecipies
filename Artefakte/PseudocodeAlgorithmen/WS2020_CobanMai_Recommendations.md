@@ -25,5 +25,4 @@ Gib Vorschläge()
 --> Wenn zwischen gespeicherte Rezepte Rezepte enthält die alle drei Anforderungen erfüllen (kommt drei mal vor)
 ---> UND nicht bereits gekocht wurde.
 ---> Dann gib zurück diese ausgewählten Rezepte
-
 ```
