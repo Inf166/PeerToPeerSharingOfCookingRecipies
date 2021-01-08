@@ -1,4 +1,3 @@
-
 <template> 
  <div class="recipe-view">
     <h1>Oma Friedas beste Lebkuchen</h1>
@@ -120,7 +119,7 @@ export default {
     align-items: center;
 }
 .row {
-   border: black;
+   border: var(--main-black-color);
    padding: 3px 20px; 
 }
 

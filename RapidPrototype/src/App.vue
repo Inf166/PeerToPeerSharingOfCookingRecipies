@@ -42,9 +42,11 @@ export default {
   --main-bg-color: #407961;
   --main-white-color: #f5f7f4;
   --main-black-color: #161811;
+  --main-grey-color: #6a6b6b;
   --highlight-green: #6ebf94;
   --highlight-orange: #ff8133;
   --highlight-orange-2: #ff6933;
+  --highlight-green-2: #183b29;
 }
 
 body {
@@ -174,19 +176,9 @@ button:hover {
   border: 1px solid var(--highlight-orange);
   cursor: pointer;
 }
-.marked-button {
-  background-color: var(--main-white-color);
-  border-color: red;
-  color: black;
-}
-.marked-button:hover {
-  background-color: var(--main-white-color);
-  border-color: var(--main-bg-color);
-  color:black;
-}
 .other-button {
   background-color: var(--main-white-color);
-  border-color:black;
+  border-color:var(--main-black-color);
   color: var(--main-bg-color);
 }
 .other-button:hover {
@@ -196,7 +188,7 @@ button:hover {
 }
 .primary-button {
   background-color: var(--main-bg-color);
-  border-color: darkgreen;
+  border-color: var(--highlight-green-2);
 }
 .primary-button:hover{
   color: var(--main-bg-color);

@@ -34,11 +34,13 @@
         <option value="kg">Kilogramm</option>
         <option value="g">Gramm</option>
         <option value="ml">Milliliter</option>
+        <option value="cl">Centiliter</option>
         <option value="mg">Milligramm</option>
         <option value="pck">Packung</option>
         <option value="prise">Prisen</option>
         <option value="tl">Teelöffel</option>
         <option value="el">Esslöffel</option>
+        <option value="prise">Prise</option>
       </select>
       <button type="button" class="other-button"> Alternative Zuatat angeben</button>
       <button type="button" class="other-button"> Weitere Zutat hinzuf&uuml;gen</button>
