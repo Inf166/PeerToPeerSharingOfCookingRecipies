@@ -56,15 +56,14 @@
       <label for="einheit">Ein welcher Einheit ist deine Angabe?</label> 
       <select id="einheit" name="einheit">
         <option value="stk">Stück</option>
-        <option value="kg">kg</option>
-        <option value="g">g</option>
-        <option value="ml">ml</option>
-        <option value="mg">mg</option>
+        <option value="kg">Kilogramm</option>
+        <option value="g">Gramm</option>
+        <option value="ml">Milliliter</option>
+        <option value="mg">Milligramm</option>
         <option value="pck">Packung</option>
-        <option value="prise">Prise</option>
-        <option value="tl">TL</option>
-        <option value="el">EL</option>
-         <option value="cl">cl</option>
+        <option value="prise">Prisen</option>
+        <option value="tl">Teelöffel</option>
+        <option value="el">Esslöffel</option>
       </select>
       <button type="button" class="other-button"> Weitere Alternativen angeben</button>
       <button type="button" class="primary-button"> Speichern</button>
