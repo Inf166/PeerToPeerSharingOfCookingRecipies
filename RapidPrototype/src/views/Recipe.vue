@@ -63,26 +63,30 @@
     </div>
 
     <hr>
-
-    <h2>Zubereitung <i class="fas fa-clock"></i></h2>
+       <h2>Zubereitung <i class="fas fa-clock"></i></h2>
        <div class="comment">
          <button type="button" class="others-button"><i class="fas fa-clock"></i> Arbeitszeit ca. 30 Minuten</button>
          <button type="button" class="others-button"><i class="fas fa-clock"></i> Ruhezeit ca. 2 Stunden</button>
          <button type="button" class="others-button"><i class="fas fa-clock"></i> Koch-/Backzeit ca. 20 Minuten</button>
        </div>
-       <p>Honig und Zucker erwärmen. Unter Rühren das Fett, die Gewürze und den Zitronenabrieb dazugeben. Vom Herd nehmen und leicht abkühlen lassen. 
-          Nach und nach die Honig-Zucker-Masse mit dem Mehl und dem Kakao verrühren und gut verkneten. Eier leicht verquirlen und unter den Teig mischen. Pottasche behutsam im Kirschwasser verrühren, gut auflösen und unter den Teig mischen. 
-          Eine Kugel formen und den Teig mindestens 1 Stunde ruhen lassen.
-       </p>
-       <p>
-         Vor dem Ausrollen nochmals richtig fest durchkneten und dann auf bemehlter Fläche fingerdick ausrollen. 
-         Mit Hilfe einer Schablone (Opa durfte sie anfertigen) oder mit einem Herzausstecher den Teig ausschneiden. Diese Gebilde nochmals 1 - 2 Stunden ruhen lassen. 
-         Auf Backpapier (oder leicht gefettetes, bemehltes Blech) im vorgeheizten Ofen, mittlere Schiene, backen. 
-         Hin- und wieder die Farbe prüfen, denn der Lebkuchen darf nicht zu dunkel werden, sonst schmeckt er bitter. Die Hitze evtl. reduzieren. 
-         Backzeit etwa 20 Minuten bei 180 - 200 °C. Heißluft etwas weniger, Gas Stufe 2 - 3 
-         Die Menge reicht für ein normales Blech. Lebkuchen sofort auf einem Rost auskühlen lassen. Wenn die Oberfläche glänzen soll, dann kurz vor Backzeitende mit Zuckerwasser bestreichen. Ansonsten die abgekühlten Lebkuchen mit Zuckerglasur verzieren. 
-         Wer mit Mandeln verzieren möchte, sollte diese schon vor dem Backen leicht in den Teig drücken. 
-       </p>
+
+       <ol>
+        <li>Honig und Zucker erwärmen. Unter Rühren das Fett, die Gewürze und den Zitronenabrieb dazugeben. Vom Herd nehmen und leicht abkühlen lassen.
+           Nach und nach die Honig-Zucker-Masse mit dem Mehl und dem Kakao verrühren und gut verkneten. Eier leicht verquirlen und unter den Teig mischen. Pottasche behutsam im Kirschwasser verrühren, gut auflösen und unter den Teig mischen.
+           Eine Kugel formen und den Teig mindestens 1 Stunde ruhen lassen.
+        </li>
+
+        <li>Vor dem Ausrollen nochmals richtig fest durchkneten und dann auf bemehlter Fläche fingerdick ausrollen. Mit Hilfe einer Schablone (Opa durfte sie anfertigen) oder mit einem Herzausstecher den Teig ausschneiden. Diese Gebilde nochmals 1 - 2 Stunden ruhen lassen.
+           Auf Backpapier (oder leicht gefettetes, bemehltes Blech) im vorgeheizten Ofen, mittlere Schiene, backn.
+           Hin- und wieder die Farbe prüfen, denn der Lebkuchen darf nicht zu dunkel werden, sonst schmeckt er bitter. Die Hitze evtl. reduzieren.
+           Backzeit etwa 20 Minuten bei 180 - 200 °C. Heißluft etwas weniger, Gas Stufe 2 - 3. 
+        </li>
+
+        <li> Die Menge reicht für ein normales Blech. Lebkuchen sofort auf einem Rost auskühlen lassen. Wenn die Oberfläche glänzen soll, dann kurz vor Backzeitende mit Zuckerwasser bestreichen. Ansonsten die abgekühlten Lebkuchen mit Zuckerglasur verzieren. Wer mit Mandeln verzieren möchte, sollte diese schon vor dem Backen leicht in den Teig drücken.   
+        </li>
+       </ol>
+
+       
     <hr>
 
    <h2>Geschichtlicher Hinweis <i class="fas fa-history"></i></h2>
@@ -99,6 +103,8 @@
          Am besten, man setzt die Knethaken des Handmixers ein, oder besser noch die Küchenmaschine. 
        </p>
  </div>
+
+ 
 </template>
 
 <script>
@@ -125,5 +131,9 @@ export default {
 
 .row:hover {
    background-color: var(--main-white-color);
+}
+
+.ol {
+   list-style-type: decimal;
 }
 </style>
