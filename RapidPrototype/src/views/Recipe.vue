@@ -71,18 +71,19 @@
        </div>
 
        <ol>
-        <li>Honig und Zucker erwärmen. Unter Rühren das Fett, die Gewürze und den Zitronenabrieb dazugeben. Vom Herd nehmen und leicht abkühlen lassen.
-           Nach und nach die Honig-Zucker-Masse mit dem Mehl und dem Kakao verrühren und gut verkneten. Eier leicht verquirlen und unter den Teig mischen. Pottasche behutsam im Kirschwasser verrühren, gut auflösen und unter den Teig mischen.
-           Eine Kugel formen und den Teig mindestens 1 Stunde ruhen lassen.
+        <li>Erwärme bitte zuerst den Honig und den Zucker. Danach rührst du das Fett unter und gibst die Gewürze und den Zitronenabrieb dazu. Diesen nimmst du dann vom Herd und lässt es leicht abkühlen.
+           Nach und nach verrührst du die Honig-Zucker-Masse mit dem Mehl und dem Kakao, damit es gut verknetet. Anschließend verquirlst du leicht die Eier und mischst den unter den Teig. Die Pottasche verrürst du behutsam im Kirschwasser, damit sich das gut auflöst und mischst es dann unter den Teig.
+           Zuletzt formst du eine Kugel und lässt den Teig mindestens für 1 Stunde ruhen.
         </li>
 
-        <li>Vor dem Ausrollen nochmals richtig fest durchkneten und dann auf bemehlter Fläche fingerdick ausrollen. Mit Hilfe einer Schablone (Opa durfte sie anfertigen) oder mit einem Herzausstecher den Teig ausschneiden. Diese Gebilde nochmals 1 - 2 Stunden ruhen lassen.
-           Auf Backpapier (oder leicht gefettetes, bemehltes Blech) im vorgeheizten Ofen, mittlere Schiene, backn.
-           Hin- und wieder die Farbe prüfen, denn der Lebkuchen darf nicht zu dunkel werden, sonst schmeckt er bitter. Die Hitze evtl. reduzieren.
-           Backzeit etwa 20 Minuten bei 180 - 200 °C. Heißluft etwas weniger, Gas Stufe 2 - 3. 
+        <li>Vor dem Ausrollen nochmals richtig fest durchkneten und dann auf bemehlter Fläche fingerdick ausrollen. Mit Hilfe einer Schablone (Opa durfte sie anfertigen) oder mit einem Herzausstecher schneidest du den Teig aus. Dieses Gebilde lässt du nochmals für 1 - 2 Stunden ruhen.
+           Nun kannst du auf Backpapier (oder leicht gefettetes, bemehltes Blech) im vorgeheizten Ofen, mittlere Schiene, backen.
+           Die Menge reicht für ein normales Blech. 
+           Prüfe hin- und wieder die Farbe, denn der Lebkuchen darf nicht zu dunkel werden, sonst schmeckt er bitter. Reduziere die Hitze eventuell.
+           Die Backzeit ist etwa 20 Minuten bei 180 - 200 °C. Heißluft etwas weniger, Gas Stufe 2 - 3. 
         </li>
 
-        <li> Die Menge reicht für ein normales Blech. Lebkuchen sofort auf einem Rost auskühlen lassen. Wenn die Oberfläche glänzen soll, dann kurz vor Backzeitende mit Zuckerwasser bestreichen. Ansonsten die abgekühlten Lebkuchen mit Zuckerglasur verzieren. Wer mit Mandeln verzieren möchte, sollte diese schon vor dem Backen leicht in den Teig drücken.   
+        <li> Des Weiteren lässt du die Lebkuchen sofort auf einem Rost auskühlen. Wenn du möchtest, dass die Oberfläche glänzen soll, dann bestreich diese kurz vor Backzeitende mit Zuckerwasser. Ansonsten verzierst du die abgekühlten Lebkuchen mit Zuckerglasur. Wenn du die Lebkuchen mit Mandeln verzieren möchtest, solltest du diese schon vor dem Backen leicht in den Teig drücken.   
         </li>
        </ol>
 
