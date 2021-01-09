@@ -63,30 +63,30 @@
     </div>
 
     <hr>
-       <h2>Zubereitung <i class="fas fa-clock"></i></h2>
        <div class="comment">
          <button type="button" class="others-button"><i class="fas fa-clock"></i> Arbeitszeit ca. 30 Minuten</button>
          <button type="button" class="others-button"><i class="fas fa-clock"></i> Ruhezeit ca. 2 Stunden</button>
          <button type="button" class="others-button"><i class="fas fa-clock"></i> Koch-/Backzeit ca. 20 Minuten</button>
        </div>
-
-       <ol>
-        <li>Erwärme bitte zuerst den Honig und den Zucker. Danach rührst du das Fett unter und gibst die Gewürze und den Zitronenabrieb dazu. Diesen nimmst du dann vom Herd und lässt es leicht abkühlen.
+      
+       <h2> Zubereitung <i class="fas fa-clock"></i></h2>
+       <dl>
+       <dt><b>1.Schritt</b></dt>
+           <dd>Erwärme bitte zuerst den Honig und den Zucker. Danach rührst du das Fett unter und gibst die Gewürze und den Zitronenabrieb dazu. Diesen nimmst du dann vom Herd und lässt es leicht abkühlen.
            Nach und nach verrührst du die Honig-Zucker-Masse mit dem Mehl und dem Kakao, damit es gut verknetet. Anschließend verquirlst du leicht die Eier und mischst den unter den Teig. Die Pottasche verrürst du behutsam im Kirschwasser, damit sich das gut auflöst und mischst es dann unter den Teig.
            Zuletzt formst du eine Kugel und lässt den Teig mindestens für 1 Stunde ruhen.
-        </li>
-
-        <li>Vor dem Ausrollen nochmals richtig fest durchkneten und dann auf bemehlter Fläche fingerdick ausrollen. Mit Hilfe einer Schablone (Opa durfte sie anfertigen) oder mit einem Herzausstecher schneidest du den Teig aus. Dieses Gebilde lässt du nochmals für 1 - 2 Stunden ruhen.
+           </dd>
+       <dt><b>2.Schritt</b></dt>   
+           <dd>Vor dem Ausrollen nochmals richtig fest durchkneten und dann auf bemehlter Fläche fingerdick ausrollen. Mit Hilfe einer Schablone (Opa durfte sie anfertigen) oder mit einem Herzausstecher schneidest du den Teig aus. Dieses Gebilde lässt du nochmals für 1 - 2 Stunden ruhen.
            Nun kannst du auf Backpapier (oder leicht gefettetes, bemehltes Blech) im vorgeheizten Ofen, mittlere Schiene, backen.
            Die Menge reicht für ein normales Blech. 
            Prüfe hin- und wieder die Farbe, denn der Lebkuchen darf nicht zu dunkel werden, sonst schmeckt er bitter. Reduziere die Hitze eventuell.
            Die Backzeit ist etwa 20 Minuten bei 180 - 200 °C. Heißluft etwas weniger, Gas Stufe 2 - 3. 
-        </li>
-
-        <li> Des Weiteren lässt du die Lebkuchen sofort auf einem Rost auskühlen. Wenn du möchtest, dass die Oberfläche glänzen soll, dann bestreich diese kurz vor Backzeitende mit Zuckerwasser. Ansonsten verzierst du die abgekühlten Lebkuchen mit Zuckerglasur. Wenn du die Lebkuchen mit Mandeln verzieren möchtest, solltest du diese schon vor dem Backen leicht in den Teig drücken.   
-        </li>
-       </ol>
-
+           </dd>
+       <dt><b>3.Schritt</b></dt>    
+           <dd> Des Weiteren lässt du die Lebkuchen sofort auf einem Rost auskühlen. Wenn du möchtest, dass die Oberfläche glänzen soll, dann bestreich diese kurz vor Backzeitende mit Zuckerwasser. Ansonsten verzierst du die abgekühlten Lebkuchen mit Zuckerglasur. Wenn du die Lebkuchen mit Mandeln verzieren möchtest, solltest du diese schon vor dem Backen leicht in den Teig drücken.   
+           </dd>
+       </dl>
        
     <hr>
 
@@ -134,7 +134,4 @@ export default {
    background-color: var(--main-white-color);
 }
 
-.ol {
-   list-style-type: decimal;
-}
 </style>
