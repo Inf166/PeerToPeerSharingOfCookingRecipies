@@ -9,6 +9,16 @@
 * Verfügbarkeit des Services -> Server offline -> keine Synchronisierung unter Nutzern
 * Schwere Implementierung -> Als zweier Team sollte die Integration einzelner Komponenten für uns möglichst einfach sein
 * Einfaches Finden und Installieren der PWA
+* Client Server Architektur:
+  * kann nicht beliebig skaliert werden 
+  * Netzausfall (z.b. wenn der Server überbelastet ist) 
+  * es wird eine große Bandbreite benötigt
+  * möglicher Kontrollverlust über bereitgestellte Daten 
+* Peer to Peer Architektur:
+  * kaum Sicherheit (nur bei geringer Anzahl von Computer geeignet) 
+  * bei Aktualisierungen müssen alle beteiligte Endgeräte reagieren
+  * Verschlüsselung der Daten
+
 
 ### Wie handeln wir, wenn sich die Anforderungen dramatisch ändern?
 * Anforderungen neu ermitteln, System abgleichen und Release planen
@@ -27,5 +37,5 @@
 
 ### Welche Systemrisiken müssen wir abdecken (Interaktion)?
 * Barrierefreiheit
-* etablierte Interaktionspatterns gegebenfalls nutzen
+* etablierte Interaktionspatterns gegebenenfalls nutzen
 * erleichterte Nutzung der Plattform -> Interaktionspatterns und Metaphern

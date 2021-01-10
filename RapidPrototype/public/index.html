@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <!-- Stylesheets -->
+    <script src="https://kit.fontawesome.com/94ab407ad2.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+  </head>
+  <body>
+    <noscript>
+      <strong>We"re sorry but <%= htmlWebpackPlugin.options.title %> doesn"t work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- VUE built files will be auto injected -->
+    <script src="/__/firebase/8.2.1/firebase-app.js"></script>
+    <script src="/__/firebase/8.2.1/firebase-analytics.js"></script>
+    <script src="/__/firebase/8.2.1/firebase-messaging.js"></script>
+    <script src="/__/firebase/8.2.1/firebase-auth.js"></script>
+    <script src="/__/firebase/8.2.1/firebase-firestore.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        try {
+          let app = firebase.app();
+          let features = [
+            "auth", 
+            "database", 
+            "firestore",
+            "functions",
+            "messaging", 
+            "storage", 
+            "analytics", 
+            "remoteConfig",
+            "performance",
+          ].filter(feature => typeof app[feature] === "function");
+        } catch (e) {
+          console.error(e);
+        }
+      });
+    </script>
+    <!-- Firebase Config -->
+    <script src="/__/firebase/init.js"></script>
+    <!-- My Script -->
+    <script src="js/index.js"></script>
+    <script>
+      const messaging = firebase.messaging();
+        messaging
+            .requestPermission()
+            .then(function () {
+                console.log("Notification permission granted.");
+                // get the token in the form of promise
+                return messaging.getToken({vapidKey: 'BLp8X9VOtO33mCBL0PKzAmL38ldpCe781WRvmYvrmzxu4VTNGQtYFAx7dqjGn5PTEsFQcpXcAMgrFuYLwmrIYK0'})
+            })
+            .then(function(token) {
+                console.log(token);
+            })
+            .catch(function (err) {
+                console.log("Unable to get permission to notify.", err);
+            });
+    </script>
+  </body>
+</html>
