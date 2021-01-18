@@ -43,6 +43,7 @@
         <option value="prise">Prise</option>
       </select>
       <button type="button" class="other-button"> Alternative Zuatat angeben</button>
+      <button type="button" class="other-button"> Herkunft angeben</button>
       <button type="button" class="other-button"> Weitere Zutat hinzuf&uuml;gen</button>
       <button type="button" class="primary-button"> Speichern</button>
       <button type="button" class="secondary-button">Abbrechen</button>
@@ -70,7 +71,6 @@
         <option value="prise">Prise</option>
       </select>
       <button type="button" class="other-button"> Weitere Alternativen angeben</button>
-      <button type="button" class="other-button"> Herkunft angeben</button>
       <button type="button" class="primary-button"> Speichern</button>
       <button type="button" class="secondary-button">Abbrechen</button>
     </form>
@@ -173,6 +173,10 @@
       <button type="button" class="primary-button"> Hochladen</button>
       <button type="button" class="secondary-button">Abbrechen</button>
     </form>
+
+
+    <button type="button" class="primary-button"> Rezept veröffentlichen</button>
+    <button type="button" class="primary-button"> Abbrechen</button>
 </div>
 </template>
 

@@ -5,7 +5,7 @@
     <div class="recipe-teaser">
       <div class="recipe-teaser-img">
         <a href="#" target="_">
-          <img src="https://via.placeholder.com/300x300.png" alt="Nudelauflauf" width="600" height="400">
+          <img src="https://via.placeholder.com/1920x1080.png" alt="Rezept2" >
         </a>
       </div>
       <div class="recipe-teaser-desc">
@@ -24,7 +24,7 @@
 
     <div class="recipe-teaser">
       <div class="recipe-teaser-img">
-        <img src="https://via.placeholder.com/300x300.png" alt="Nudelauflauf" width="600" height="400">
+        <img src="https://via.placeholder.com/1920x1080.png" alt="Rezept2" >
       </div>
       <div class="recipe-teaser-desc">
         <h3>Ein spannender Rezeptname</h3>

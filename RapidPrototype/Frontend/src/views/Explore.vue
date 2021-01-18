@@ -10,7 +10,7 @@
 
     <div class="recipe-teaser">
       <div class="recipe-teaser-img">
-        <img src="https://via.placeholder.com/300x300.png" alt="Rezept2" width="300" height="300">
+        <img src="https://via.placeholder.com/1920x1080.png" alt="Rezept2" >
       </div>
       <div class="recipe-teaser-desc">
         <h3>Ein spannender Rezeptname</h3>
@@ -28,7 +28,7 @@
 
     <div class="recipe-teaser">
       <div class="recipe-teaser-img">
-        <img src="https://via.placeholder.com/300x300.png" alt="Rezept2" width="300" height="300">
+        <img src="https://via.placeholder.com/1920x1080.png" alt="Rezept2" >
       </div>
       <div class="recipe-teaser-desc">
         <h3>Ein spannender Rezeptname</h3>
@@ -46,7 +46,7 @@
 
     <div class="recipe-teaser">
       <div class="recipe-teaser-img">
-        <img src="https://via.placeholder.com/300x300.png" alt="Rezept3" width="300" height="300">
+        <img src="https://via.placeholder.com/1920x1080.png" alt="Rezept2" >
       </div>
       <div class="recipe-teaser-desc">
         <h3>Ein spannender Rezeptname</h3>
@@ -64,7 +64,7 @@
 
     <div class="recipe-teaser">
       <div class="recipe-teaser-img">
-        <img src="https://via.placeholder.com/300x300.png" alt="Rezept2" width="300" height="300">
+        <img src="https://via.placeholder.com/1920x1080.png" alt="Rezept2" >
       </div>
       <div class="recipe-teaser-desc">
         <h3>Ein spannender Rezeptname</h3>
@@ -82,7 +82,7 @@
 
     <div class="recipe-teaser">
       <div class="recipe-teaser-img">
-        <img src="https://via.placeholder.com/300x300.png" alt="Rezept2" width="300" height="300">
+        <img src="https://via.placeholder.com/1920x1080.png" alt="Rezept2" >
       </div>
       <div class="recipe-teaser-desc">
         <h3>Ein spannender Rezeptname</h3>
@@ -102,7 +102,7 @@
     
     <div class="recipe-teaser">
       <div class="recipe-teaser-img">
-        <img src="https://via.placeholder.com/300x300.png" alt="Rezept2" width="300" height="300">  
+        <img src="https://via.placeholder.com/1920x1080.png" alt="Rezept2" > 
       </div>
       <div class="recipe-teaser-desc">
         <h3>Ein spannender Rezeptname</h3>
