@@ -61,13 +61,16 @@
         <option value="kg">Kilogramm</option>
         <option value="g">Gramm</option>
         <option value="ml">Milliliter</option>
+        <option value="cl">Centiliter</option>
         <option value="mg">Milligramm</option>
         <option value="pck">Packung</option>
         <option value="prise">Prisen</option>
         <option value="tl">Teelöffel</option>
         <option value="el">Esslöffel</option>
+        <option value="prise">Prise</option>
       </select>
       <button type="button" class="other-button"> Weitere Alternativen angeben</button>
+      <button type="button" class="other-button"> Herkunft angeben</button>
       <button type="button" class="primary-button"> Speichern</button>
       <button type="button" class="secondary-button">Abbrechen</button>
     </form>
@@ -87,6 +90,8 @@
       <label for="zubereitungsschritt">Welche nächsten Schritte sind notwendig? </label>
       <input type="text" id="zubereitungsschritt" name="zubereitungsschritt" value="" placeholder="Die Zitronen schälen und genießen.">
       <button type="button" class="other-button"> N&auml;chsten Schritt angeben</button>
+      <button type="button" class="other-button"> Geschichtlichen Hinweis angeben</button>
+      <button type="button" class="other-button"> Tipp oder Trick angeben</button>
       <button type="button" class="primary-button"> Speichern</button>
       <button type="button" class="secondary-button">Abbrechen</button>
     </form> 
@@ -94,46 +99,16 @@
 
     <h3>Arbeitszeit</h3>
     <form>
-      <label for="einheit">Wie lange dauert das Vorbereiten dieses Gerichts?</label> 
-      <select id="einheit" name="einheit">
-        <option value="stk">0 Min</option>
-        <option value="stk">0-5Min</option>
-        <option value="kg">5-10Min</option>
-        <option value="g">10-15Min</option>
-        <option value="ml">15-20Min</option>
-        <option value="mg">20-25Min</option>
-        <option value="pck">25-30Min</option>
-        <option value="prise">30-35Min</option>
-        <option value="tl">35-40Min</option>
-        <option value="el">40-45Min</option>
-        <option value="el">45-50Min</option>
-        <option value="el">50-55Min</option>
-        <option value="el">55-60Min</option>
-        <option value="el"></option>
-      </select>
+      <label for="arbeitszeit">Wie lange dauert das Vorbereiten dieses Gerichts?</label> 
+      <input type="text" id="arbeitszeit" name="arbeitszeit" value="" placeholder="15 min">
       <button type="button" class="primary-button"> Speichern</button>
       <button type="button" class="secondary-button">Abbrechen</button>
     </form>
     
     <h3>Ruhezeit</h3>
     <form>
-      <label for="einheit">Wie lange soll das Gericht ruhen?</label> 
-      <select id="einheit" name="einheit">
-        <option value="stk">0 Min</option>
-        <option value="stk">0-5Min</option>
-        <option value="kg">5-10Min</option>
-        <option value="g">10-15Min</option>
-        <option value="ml">15-20Min</option>
-        <option value="mg">20-25Min</option>
-        <option value="pck">25-30Min</option>
-        <option value="prise">30-35Min</option>
-        <option value="tl">35-40Min</option>
-        <option value="el">40-45Min</option>
-        <option value="el">45-50Min</option>
-        <option value="el">50-55Min</option>
-        <option value="el">55-60Min</option>
-        <option value="el"></option>
-      </select>
+      <label for="ruhezeit">Wie lange soll das Gericht ruhen?</label> 
+      <input type="text" id="ruhezeit" name="ruhezeit" value="" placeholder="2 Stunden">
       <button type="button" class="primary-button"> Speichern</button>
       <button type="button" class="secondary-button">Abbrechen</button>
     </form> 
@@ -141,23 +116,8 @@
 
    <h3>Koch-/ Backzeit</h3>
    <form>
-      <label for="einheit">Wie lange das Kochen/Backen dieses Gerichts?</label> 
-      <select id="einheit" name="einheit">
-        <option value="stk">0 Min</option>
-        <option value="stk">0-5Min</option>
-        <option value="kg">5-10Min</option>
-        <option value="g">10-15Min</option>
-        <option value="ml">15-20Min</option>
-        <option value="mg">20-25Min</option>
-        <option value="pck">25-30Min</option>
-        <option value="prise">30-35Min</option>
-        <option value="tl">35-40Min</option>
-        <option value="el">40-45Min</option>
-        <option value="el">45-50Min</option>
-        <option value="el">50-55Min</option>
-        <option value="el">55-60Min</option>
-        <option value="el"></option>
-      </select>
+      <label for="kochzeit">Wie lange das Kochen/Backen dieses Gerichts?</label> 
+      <input type="text" id="kochzeit" name="kochzeit" value="" placeholder="10 Minuten">
       <button type="button" class="primary-button"> Speichern</button>
       <button type="button" class="secondary-button">Abbrechen</button>
     </form> 
@@ -213,19 +173,12 @@
       <button type="button" class="primary-button"> Hochladen</button>
       <button type="button" class="secondary-button">Abbrechen</button>
     </form>
-    
-
-    <HelloWorld></HelloWorld>
 </div>
 </template>
 
 <script>
-import HelloWorld from "@/components/HelloWorld.vue";
 export default {
   name: "NewRecipe",
-  components: {
-    HelloWorld
-  }
 };
 </script>
 

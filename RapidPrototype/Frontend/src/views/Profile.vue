@@ -3,7 +3,6 @@
     <h1 id="greetUser">This is an PROFILE page</h1>
     <!-- <image id="userprofileimage"></image> -->
     <UserLoginState></UserLoginState>
-    
   </div>
 </template>
 
