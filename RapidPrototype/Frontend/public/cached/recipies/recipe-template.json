@@ -15,85 +15,112 @@
     "prepTime": "PT20M",
     "cookTime": "PT30M",
     "restTime": "PT50M",
+    "difficultyLevel": ["simpel", "middle", "heavy"],
     "keywords": "cake for a party, coffee",
     "recipeYield": "10",
-    "nutrition": 
+    "historicalNote":
+    {
+    "author":"" ,
+    "note": "Grandma and grandpa ate these cookies for their anniversary."
+    },
+  "Ingredients": 
   {
-    "@type": "NutritionInformation",
-    "calories": "270 calories"
+    "name": "flour",
+    "einheit": ["stk.", "kg", "g", "ml", "cl", "mg", "pck", "prise", "tl", "el"]
   },
-  "recipeIngredient": [
-    "500g flour",
-    "200g white sugar",
-    "2 teaspoons baking powder",
-    "1/2 teaspoon salt",
-    "50g butter",
-    "2 eggs",
-    "200ml milk"
-    ],
-    "ingredientOrigin": "Germany",
-    "alternativeIngredient":
+  "Ingredient2": 
   {
-    "alternativeIngredient": "200g white sugar= 250g brown sugar "
+    "name": "sugar",
+    "einheit": ["stk.", "kg", "g", "ml", "cl", "mg", "pck", "prise", "tl", "el"]
+  },  
+  "Ingredient3": 
+  {
+    "name": "baking powder",
+    "einheit": ["stk.", "kg", "g", "ml", "cl", "mg", "pck", "prise", "tl", "el"]
+  },  
+  "Ingredient4":
+  {
+    "name": "butter",
+    "einheit": ["stk.", "kg", "g", "ml", "cl", "mg", "pck", "prise", "tl", "el"]
+  },   
+  "Ingredient5":
+  {
+    "name": "egg",
+    "einheit": ["stk.", "kg", "g", "ml", "cl", "mg", "pck", "prise", "tl", "el"]
+  }, 
+  "Ingredient6":
+  {
+    "name": "milk",
+    "einheit": ["stk.", "kg", "g", "ml", "cl", "mg", "pck", "prise", "tl", "el"]
+  }, 
+    "alternativeIngredients":
+  {
+    "name": "",
+    "einheit": ["stk.", "kg", "g", "ml", "cl", "mg", "pck", "prise", "tl", "el"]
+  }, 
+    "ingredientOrigin": "",
+    "domesticAppliances": "",
+    "tipsAndTricks": "",
+  
+    "recipeInstructions": 
+  [
+  {
+    "@type": "FirstStep",
+    "name": "Preheat",
+    "text": "Preheat the oven to 350 degrees F. Grease and flour a 9x9 inch pan.",
+    "url": "https://example.com/party-coffee-cake#step1",
+    "image": "https://example.com/photos/party-coffee-cake/step1.jpg"
   },
-    "recipeInstructions": [
-    {
-      "@type": "FirstStep",
-      "name": "Preheat",
-      "text": "Preheat the oven to 350 degrees F. Grease and flour a 9x9 inch pan.",
-      "url": "https://example.com/party-coffee-cake#step1",
-      "image": "https://example.com/photos/party-coffee-cake/step1.jpg"
-    },
-    {
-      "@type": "SecondStep",
-      "name": "Mix dry ingredients",
-      "text": "In a large bowl, combine flour, sugar, baking powder, and salt.",
-      "url": "https://example.com/party-coffee-cake#step2",
-      "image": "https://example.com/photos/party-coffee-cake/step2.jpg"
-    },
-    {
-      "@type": "ThirdStep",
-      "name": "Add wet ingredients",
-      "text": "Mix in the butter, eggs, and milk.",
-      "url": "https://example.com/party-coffee-cake#step3",
-      "image": "https://example.com/photos/party-coffee-cake/step3.jpg"
-    },
-    {
-      "@type": "FourthStep",
-      "name": "Spread into pan",
-      "text": "Spread into the prepared pan.",
-      "url": "https://example.com/party-coffee-cake#step4",
-      "image": "https://example.com/photos/party-coffee-cake/step4.jpg"
-    },
-    {
-      "@type": "FifthStep",
-      "name": "Bake",
-      "text": "Bake for 30 to 35 minutes, or until firm.",
-      "url": "https://example.com/party-coffee-cake#step5",
-      "image": "https://example.com/photos/party-coffee-cake/step5.jpg"
-    },
-    {
-      "@type": "SixthStep",
-      "name": "Enjoy",
-      "text": "Allow to cool and enjoy.",
-      "url": "https://example.com/party-coffee-cake#step6",
-      "image": "https://example.com/photos/party-coffee-cake/step6.jpg"
-    }
+  {
+    "@type": "SecondStep",
+    "name": "Mix dry ingredients",
+    "text": "In a large bowl, combine flour, sugar, baking powder, and salt.",
+    "url": "https://example.com/party-coffee-cake#step2",
+    "image": "https://example.com/photos/party-coffee-cake/step2.jpg"
+  },
+  {
+    "@type": "ThirdStep",
+    "name": "Add wet ingredients",
+    "text": "Mix in the butter, eggs, and milk.",
+    "url": "https://example.com/party-coffee-cake#step3",
+    "image": "https://example.com/photos/party-coffee-cake/step3.jpg"
+  },
+  {
+    "@type": "FourthStep",
+    "name": "Spread into pan",
+    "text": "Spread into the prepared pan.",
+    "url": "https://example.com/party-coffee-cake#step4",
+    "image": "https://example.com/photos/party-coffee-cake/step4.jpg"
+  },
+  {
+    "@type": "FifthStep",
+    "name": "Bake",
+    "text": "Bake for 30 to 35 minutes, or until firm.",
+    "url": "https://example.com/party-coffee-cake#step5",
+    "image": "https://example.com/photos/party-coffee-cake/step5.jpg"
+  },
+  {
+    "@type": "SixthStep",
+    "name": "Enjoy",
+    "text": "Allow to cool and enjoy.",
+    "url": "https://example.com/party-coffee-cake#step6",
+    "image": "https://example.com/photos/party-coffee-cake/step6.jpg"
+  }
   ],
-      "recipeHistorical":
-      {"@type": "HistoricalNode",
-      "node": "Grandma and grandpa ate these cookies for their anniversary." 
-  },
-      "FavouriteStatistic": 
+    "pictures": 
+  [
+     "https://example.com/photos/1x1/photo.jpg",
+     "https://example.com/photos/4x3/photo.jpg",
+     "https://example.com/photos/16x9/photo.jpg"
+  ],
+     "aggregateFavourites": 
   {
-      "@type": "FavouriteCounter",
-      "interactionType": { "@type": "http://meinkochbuch.de/Favourites" },
-      "userFavouriteCount": 27
+     "@type": "AggregateFavourites",
+     "favouriteCount": "18"
   },
-      "CommentStatistic": 
+     "aggregateComments": 
   {
-      "@type": "CommentCounter",
-      "interactionType": { "@type": "http://meinkochbuch.de/Comments" },
-      "userFavouriteCount": 16
-}
+    "@type": "AggregateComments",
+    "favouriteCount": "10"
+  }
 }
