@@ -1,133 +1,66 @@
 {
     "@type": "Recipe",
     "title": "Party Coffee Cake",
-    "image": [
-    "https://example.com/photos/1x1/photo.jpg",
-    "https://example.com/photos/4x3/photo.jpg",
-    "https://example.com/photos/16x9/photo.jpg"
-  ],
     "author": {
-    "@type": "Person",
-    "name": "Mary Stone"
-  },
+        "name": "Mary Stone"
+    },
     "datePublished": "2018-03-10",
     "description": "This coffee cake is awesome and perfect for parties.",
-    "prepTime": "PT20M",
-    "cookTime": "PT30M",
-    "restTime": "PT50M",
-    "difficultyLevel": ["simpel", "middle", "heavy"],
-    "keywords": "cake for a party, coffee",
-    "recipeYield": "10",
-    "historicalNote":
-    {
-    "author":"" ,
-    "note": "Grandma and grandpa ate these cookies for their anniversary."
-    },
-  "Ingredients": 
-  {
-    "name": "flour",
-    "menge": "500",
-    "einheit": "g"
-  },
-  "Ingredient2": 
-  {
-    "name": "sugar",
-    "menge": "200",
-    "einheit": "g"
-  },  
-  "Ingredient3": 
-  {
-    "name": "baking powder",
-    "menge": "2",
-    "einheit": "el"
-  },  
-  "Ingredient4":
-  {
-    "name": "butter",
-    "menge": "50",
-    "einheit": "g"
-  },   
-  "Ingredient5":
-  {
-    "name": "egg",
-    "menge": "2",
-    "einheit": "stk."
-  }, 
-  "Ingredient6":
-  {
-    "name": "milk",
-    "menge": "200",
-    "einheit": "ml"
-  }, 
-    "alternativeIngredients":
-  {
-    "name": "",
-    "menge": "",
-    "einheit": ["stk.", "kg", "g", "ml", "cl", "mg", "pck", "prise", "tl", "el"]
-  }, 
-    "ingredientOrigin": "",
-    "domesticAppliances": "",
-    "tipsAndTricks": "",
-  
-    "recipeInstructions": 
-  [
-  {
-    "@type": "FirstStep",
-    "name": "Preheat",
-    "text": "Preheat the oven to 350 degrees F. Grease and flour a 9x9 inch pan.",
-    "url": "https://example.com/party-coffee-cake#step1",
-    "image": "https://example.com/photos/party-coffee-cake/step1.jpg"
-  },
-  {
-    "@type": "SecondStep",
-    "name": "Mix dry ingredients",
-    "text": "In a large bowl, combine flour, sugar, baking powder, and salt.",
-    "url": "https://example.com/party-coffee-cake#step2",
-    "image": "https://example.com/photos/party-coffee-cake/step2.jpg"
-  },
-  {
-    "@type": "ThirdStep",
-    "name": "Add wet ingredients",
-    "text": "Mix in the butter, eggs, and milk.",
-    "url": "https://example.com/party-coffee-cake#step3",
-    "image": "https://example.com/photos/party-coffee-cake/step3.jpg"
-  },
-  {
-    "@type": "FourthStep",
-    "name": "Spread into pan",
-    "text": "Spread into the prepared pan.",
-    "url": "https://example.com/party-coffee-cake#step4",
-    "image": "https://example.com/photos/party-coffee-cake/step4.jpg"
-  },
-  {
-    "@type": "FifthStep",
-    "name": "Bake",
-    "text": "Bake for 30 to 35 minutes, or until firm.",
-    "url": "https://example.com/party-coffee-cake#step5",
-    "image": "https://example.com/photos/party-coffee-cake/step5.jpg"
-  },
-  {
-    "@type": "SixthStep",
-    "name": "Enjoy",
-    "text": "Allow to cool and enjoy.",
-    "url": "https://example.com/party-coffee-cake#step6",
-    "image": "https://example.com/photos/party-coffee-cake/step6.jpg"
-  }
-  ],
-    "pictures": 
-  [
-     "https://example.com/photos/1x1/photo.jpg",
-     "https://example.com/photos/4x3/photo.jpg",
-     "https://example.com/photos/16x9/photo.jpg"
-  ],
-     "aggregateFavourites": 
-  {
-     "@type": "AggregateFavourites",
-     "favouriteCount": "18"
-  },
-     "aggregateComments": 
-  {
-    "@type": "AggregateComments",
-    "favouriteCount": "10"
-  }
+    "prepTime": "10 Minuten",
+    "cookTime": "20 Minuten",
+    "restTime": "15 Minuten",
+    "difficultyLevel": "simpel",
+    "portion": "2",
+    "Ingredients": [
+        {
+            "name": "flour",
+            "amount": "500",
+            "unit": "g",
+            "origin": "Rewe",
+            "alternativeIngredients": [
+                {
+                    "name": "Dinkel",
+                    "amount": "500",
+                    "unit": "g",
+                    "origin": "Lidl"
+                }
+            ]       
+        },
+        {
+            "name": "sugar",
+            "amount": "200",
+            "unit": "g",
+            "origin": "Rewe, Lidl, Aldi"       
+        }
+    ],
+    "householdUtensils": [
+        {
+            "name": "Ein beliebiger Handmixer"
+        }
+    ],
+    "recipeInstructions":[
+        {
+            "step": "1",
+            "description": "Preheat the oven to 350 degrees F. Grease and flour a 9x9 inch pan.",
+            "tipsAndTricks": [
+                {
+                    "author": "Peter Lustig",
+                    "text": "Use a nonstick Pan"
+                }
+            ],
+            "historicalNote": [
+                {
+                    "author": "Peter Lustig",
+                    "text": "I broke my pan on Christmas, it was fun tho."
+                }
+            ]
+        }
+    ],
+    "images":[
+        {
+            "name": "Holger der Depp der sich die Pfanne an den Kopf haut",
+            "author": "Gutrut Mesus",
+            "source":"https://example.com/photos/16x9/photo.jpg"
+        }
+    ]
 }
