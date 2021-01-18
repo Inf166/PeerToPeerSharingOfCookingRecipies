@@ -1,22 +1,22 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "54a4793e2a9124b89948",
-    "url": "/css/app.b151dfdd.css"
+    "revision": "fbc1f657b2a55750c60e1e8693ebee86",
+    "url": "/cached/recipies/recipe-template.json"
   },
   {
-    "revision": "d1e84a1834de1f42435f",
+    "revision": "d198efbd74cd4b45a049",
+    "url": "/css/app.df09f665.css"
+  },
+  {
+    "revision": "7d9914c6a30b23f8f72f",
     "url": "/css/chunk-40fa87f4.bf415ed1.css"
-  },
-  {
-    "revision": "3b8072a0ef248d4c2747",
-    "url": "/css/chunk-a6f47b60.870be7cb.css"
   },
   {
     "revision": "b6783ce1a6de8ce267990b3232cbf124",
     "url": "/firebase-messaging-sw.js"
   },
   {
-    "revision": "4872c042b42838b40e56ab385a2bf4e3",
+    "revision": "d684defac9a7918633843eecce1e1a8b",
     "url": "/index.html"
   },
   {
@@ -24,12 +24,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/js/about.e4110cc5.js"
   },
   {
-    "revision": "54a4793e2a9124b89948",
-    "url": "/js/app.9dbb6262.js"
+    "revision": "d198efbd74cd4b45a049",
+    "url": "/js/app.dd73d674.js"
   },
   {
     "revision": "8259bab51e2c8b50076b",
     "url": "/js/chunk-2d0aedb5.858f1554.js"
+  },
+  {
+    "revision": "5e9d4cfbfc177eca3973",
+    "url": "/js/chunk-2d0bd908.3c1e60cf.js"
   },
   {
     "revision": "f03f212e971a98dd4d24",
@@ -40,28 +44,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/js/chunk-2d0c8842.44af2dc5.js"
   },
   {
-    "revision": "9ee7982bcc074f945f6f",
-    "url": "/js/chunk-2d0d6f50.e42b3f43.js"
+    "revision": "0ce11f32203d6552686f",
+    "url": "/js/chunk-2d0d6f50.07f34d3b.js"
   },
   {
     "revision": "a001687924f10429e423",
     "url": "/js/chunk-2d0f0e03.36ea48f5.js"
   },
   {
-    "revision": "3aad1c71e9ae5f3fa29b",
-    "url": "/js/chunk-2d213164.4fab5c65.js"
+    "revision": "ac1fc90784208bb1165e",
+    "url": "/js/chunk-2d213164.b737f413.js"
   },
   {
-    "revision": "d1e84a1834de1f42435f",
-    "url": "/js/chunk-40fa87f4.d25db240.js"
+    "revision": "7d9914c6a30b23f8f72f",
+    "url": "/js/chunk-40fa87f4.015c692c.js"
   },
   {
     "revision": "4ed785de9826d8828191",
     "url": "/js/chunk-7726dafa.47aa921f.js"
-  },
-  {
-    "revision": "3b8072a0ef248d4c2747",
-    "url": "/js/chunk-a6f47b60.e2b5ab2b.js"
   },
   {
     "revision": "74604bf4a3fc84913688",
