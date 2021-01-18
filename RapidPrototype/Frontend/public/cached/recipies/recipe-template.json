@@ -1,0 +1,99 @@
+{
+    "@type": "Recipe",
+    "title": "Party Coffee Cake",
+    "image": [
+    "https://example.com/photos/1x1/photo.jpg",
+    "https://example.com/photos/4x3/photo.jpg",
+    "https://example.com/photos/16x9/photo.jpg"
+  ],
+    "author": {
+    "@type": "Person",
+    "name": "Mary Stone"
+  },
+    "datePublished": "2018-03-10",
+    "description": "This coffee cake is awesome and perfect for parties.",
+    "prepTime": "PT20M",
+    "cookTime": "PT30M",
+    "restTime": "PT50M",
+    "keywords": "cake for a party, coffee",
+    "recipeYield": "10",
+    "nutrition": 
+  {
+    "@type": "NutritionInformation",
+    "calories": "270 calories"
+  },
+  "recipeIngredient": [
+    "500g flour",
+    "200g white sugar",
+    "2 teaspoons baking powder",
+    "1/2 teaspoon salt",
+    "50g butter",
+    "2 eggs",
+    "200ml milk"
+    ],
+    "ingredientOrigin": "Germany",
+    "alternativeIngredient":
+  {
+    "alternativeIngredient": "200g white sugar= 250g brown sugar "
+  },
+    "recipeInstructions": [
+    {
+      "@type": "FirstStep",
+      "name": "Preheat",
+      "text": "Preheat the oven to 350 degrees F. Grease and flour a 9x9 inch pan.",
+      "url": "https://example.com/party-coffee-cake#step1",
+      "image": "https://example.com/photos/party-coffee-cake/step1.jpg"
+    },
+    {
+      "@type": "SecondStep",
+      "name": "Mix dry ingredients",
+      "text": "In a large bowl, combine flour, sugar, baking powder, and salt.",
+      "url": "https://example.com/party-coffee-cake#step2",
+      "image": "https://example.com/photos/party-coffee-cake/step2.jpg"
+    },
+    {
+      "@type": "ThirdStep",
+      "name": "Add wet ingredients",
+      "text": "Mix in the butter, eggs, and milk.",
+      "url": "https://example.com/party-coffee-cake#step3",
+      "image": "https://example.com/photos/party-coffee-cake/step3.jpg"
+    },
+    {
+      "@type": "FourthStep",
+      "name": "Spread into pan",
+      "text": "Spread into the prepared pan.",
+      "url": "https://example.com/party-coffee-cake#step4",
+      "image": "https://example.com/photos/party-coffee-cake/step4.jpg"
+    },
+    {
+      "@type": "FifthStep",
+      "name": "Bake",
+      "text": "Bake for 30 to 35 minutes, or until firm.",
+      "url": "https://example.com/party-coffee-cake#step5",
+      "image": "https://example.com/photos/party-coffee-cake/step5.jpg"
+    },
+    {
+      "@type": "SixthStep",
+      "name": "Enjoy",
+      "text": "Allow to cool and enjoy.",
+      "url": "https://example.com/party-coffee-cake#step6",
+      "image": "https://example.com/photos/party-coffee-cake/step6.jpg"
+    }
+  ],
+      "recipeHistorical":
+      {"@type": "HistoricalNode",
+      "node": "Grandma and grandpa ate these cookies for their anniversary." 
+  },
+      "FavouriteStatistic": 
+  {
+      "@type": "FavouriteCounter",
+      "interactionType": { "@type": "http://meinkochbuch.de/Favourites" },
+      "userFavouriteCount": 27
+  },
+      "CommentStatistic": 
+  {
+      "@type": "CommentCounter",
+      "interactionType": { "@type": "http://meinkochbuch.de/Comments" },
+      "userFavouriteCount": 16
+}
+}
