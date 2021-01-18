@@ -26,36 +26,43 @@
   "Ingredients": 
   {
     "name": "flour",
-    "einheit": ["stk.", "kg", "g", "ml", "cl", "mg", "pck", "prise", "tl", "el"]
+    "menge": "500",
+    "einheit": "g"
   },
   "Ingredient2": 
   {
     "name": "sugar",
-    "einheit": ["stk.", "kg", "g", "ml", "cl", "mg", "pck", "prise", "tl", "el"]
+    "menge": "200",
+    "einheit": "g"
   },  
   "Ingredient3": 
   {
     "name": "baking powder",
-    "einheit": ["stk.", "kg", "g", "ml", "cl", "mg", "pck", "prise", "tl", "el"]
+    "menge": "2",
+    "einheit": "el"
   },  
   "Ingredient4":
   {
     "name": "butter",
-    "einheit": ["stk.", "kg", "g", "ml", "cl", "mg", "pck", "prise", "tl", "el"]
+    "menge": "50",
+    "einheit": "g"
   },   
   "Ingredient5":
   {
     "name": "egg",
-    "einheit": ["stk.", "kg", "g", "ml", "cl", "mg", "pck", "prise", "tl", "el"]
+    "menge": "2",
+    "einheit": "stk."
   }, 
   "Ingredient6":
   {
     "name": "milk",
-    "einheit": ["stk.", "kg", "g", "ml", "cl", "mg", "pck", "prise", "tl", "el"]
+    "menge": "200",
+    "einheit": "ml"
   }, 
     "alternativeIngredients":
   {
     "name": "",
+    "menge": "",
     "einheit": ["stk.", "kg", "g", "ml", "cl", "mg", "pck", "prise", "tl", "el"]
   }, 
     "ingredientOrigin": "",
