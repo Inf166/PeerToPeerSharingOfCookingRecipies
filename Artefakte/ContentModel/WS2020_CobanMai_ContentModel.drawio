@@ -1,98 +1,98 @@
-<mxfile host="app.diagrams.net" modified="2021-01-21T10:21:06.909Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.1 Safari/605.1.15" etag="mvebEh3gm8fZuFtL_-xt" version="14.2.5" type="github">
+<mxfile host="app.diagrams.net" modified="2021-01-21T10:29:24.374Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.1 Safari/605.1.15" etag="jfNGgnDDxDY5zyIJHo4J" version="14.2.5" type="github">
   <diagram id="-CBC_xEpUSiYS634QbAH" name="Page-1">
     <mxGraphModel dx="1892" dy="1290" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="fJXJtTNsG8uW6gC0Ecf4-26" value="" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;fontSize=25;" parent="1" vertex="1">
+        <mxCell id="fJXJtTNsG8uW6gC0Ecf4-26" value="" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#d79b00;fontSize=25;fillColor=#ffe6cc;" parent="1" vertex="1">
           <mxGeometry x="55" y="10" width="380" height="720" as="geometry" />
         </mxCell>
-        <mxCell id="fJXJtTNsG8uW6gC0Ecf4-30" value="&lt;font style=&quot;font-size: 18px&quot;&gt;Rezepttitel&lt;br&gt;Autor&lt;br&gt;Portion&lt;br&gt;Zutat&lt;br&gt;vereinheitliche Zutatenangabe&lt;br&gt;Mengeneingabe&lt;br&gt;Einheit&lt;br&gt;Alternative Zutat&lt;br&gt;Weitere Alternative Zutat&lt;br&gt;Zutatsherkunft&lt;br&gt;spezielle Zutat hervorheben&lt;br&gt;Zubereitungsschritte&lt;br&gt;Arbeitszeit&lt;br&gt;Ruhezeit&lt;br&gt;Koch-/Backzeit&lt;br&gt;Schwierigkeitsgrad&amp;nbsp;&lt;br&gt;Haushaltsgeräte&lt;br&gt;Geschichtlicher Hinweis&lt;br&gt;Tipps und Tricks&lt;br&gt;Bild/Video hochladen&lt;br&gt;Speichern&lt;br&gt;Abbrechen&lt;br&gt;Datenschutz&lt;br&gt;Nutzungsbedienung&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;fontSize=20;" parent="1" vertex="1">
+        <mxCell id="fJXJtTNsG8uW6gC0Ecf4-30" value="&lt;font style=&quot;font-size: 20px&quot;&gt;Rezepttitel&lt;br&gt;Autor&lt;br&gt;Portion&lt;br&gt;Zutat&lt;br&gt;vereinheitliche Zutatenangabe&lt;br&gt;Mengeneingabe&lt;br&gt;Einheit&lt;br&gt;Alternative Zutat&lt;br&gt;Weitere Alternative Zutat&lt;br&gt;Zutatsherkunft&lt;br&gt;spezielle Zutat hervorheben&lt;br&gt;Zubereitungsschritte&lt;br&gt;Arbeitszeit&lt;br&gt;Ruhezeit&lt;br&gt;Koch-/Backzeit&lt;br&gt;Schwierigkeitsgrad&amp;nbsp;&lt;br&gt;Haushaltsgeräte&lt;br&gt;Geschichtlicher Hinweis&lt;br&gt;Tipps und Tricks&lt;br&gt;Rezepte offline anlegen&lt;br&gt;Bild/Video hochladen&lt;br&gt;Speichern&lt;br&gt;Abbrechen&lt;br&gt;Datenschutz&lt;br&gt;Nutzungsbedienung&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;fontSize=20;" parent="1" vertex="1">
           <mxGeometry x="30" y="390" width="410" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="U5SIsRYiuy2qULQXZPos-1" value="" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;fontSize=25;" vertex="1" parent="1">
-          <mxGeometry x="650" y="10" width="380" height="540" as="geometry" />
+        <mxCell id="U5SIsRYiuy2qULQXZPos-1" value="" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#6c8ebf;fontSize=25;fillColor=#dae8fc;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="40" width="380" height="680" as="geometry" />
         </mxCell>
-        <mxCell id="U5SIsRYiuy2qULQXZPos-2" value="" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;fontSize=25;" vertex="1" parent="1">
-          <mxGeometry x="1230" y="10" width="380" height="540" as="geometry" />
+        <mxCell id="U5SIsRYiuy2qULQXZPos-2" value="" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#666666;fontSize=25;fillColor=#f5f5f5;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="650" y="20" width="380" height="260" as="geometry" />
         </mxCell>
-        <mxCell id="U5SIsRYiuy2qULQXZPos-3" value="" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;fontSize=25;" vertex="1" parent="1">
-          <mxGeometry x="1241" y="620" width="380" height="530" as="geometry" />
+        <mxCell id="U5SIsRYiuy2qULQXZPos-3" value="" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#b85450;fontSize=25;fillColor=#f8cecc;" vertex="1" parent="1">
+          <mxGeometry x="1200" y="785" width="380" height="370" as="geometry" />
         </mxCell>
-        <mxCell id="U5SIsRYiuy2qULQXZPos-4" value="" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;fontSize=25;" vertex="1" parent="1">
-          <mxGeometry x="660" y="630" width="380" height="520" as="geometry" />
+        <mxCell id="U5SIsRYiuy2qULQXZPos-4" value="" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#d6b656;fontSize=25;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="660" y="410" width="380" height="740" as="geometry" />
         </mxCell>
-        <mxCell id="U5SIsRYiuy2qULQXZPos-5" value="" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#000000;fontSize=25;" vertex="1" parent="1">
-          <mxGeometry x="60" y="790" width="380" height="360" as="geometry" />
+        <mxCell id="U5SIsRYiuy2qULQXZPos-5" value="" style="rounded=0;whiteSpace=wrap;html=1;shadow=0;strokeColor=#82b366;fontSize=25;fillColor=#d5e8d4;" vertex="1" parent="1">
+          <mxGeometry x="60" y="760" width="380" height="380" as="geometry" />
         </mxCell>
-        <mxCell id="U5SIsRYiuy2qULQXZPos-9" value="" style="endArrow=none;html=1;exitX=1.003;exitY=0.098;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="fJXJtTNsG8uW6gC0Ecf4-26">
+        <mxCell id="U5SIsRYiuy2qULQXZPos-9" value="" style="endArrow=none;html=1;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="275" y="70" as="sourcePoint" />
+            <mxPoint x="436" y="70" as="sourcePoint" />
             <mxPoint x="55" y="70" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="U5SIsRYiuy2qULQXZPos-10" value="" style="endArrow=none;html=1;exitX=1.003;exitY=0.098;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1031.1399999999999" y="59.99999999999996" as="sourcePoint" />
-            <mxPoint x="650" y="61.2" as="targetPoint" />
+            <mxPoint x="1581.14" y="89.99999999999996" as="sourcePoint" />
+            <mxPoint x="1200.0000000000002" y="91.2" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="U5SIsRYiuy2qULQXZPos-11" value="" style="endArrow=none;html=1;exitX=1.003;exitY=0.098;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1609.9999999999998" y="69.99999999999996" as="sourcePoint" />
-            <mxPoint x="1228.86" y="71.2" as="targetPoint" />
+            <mxPoint x="1030" y="79.99999999999994" as="sourcePoint" />
+            <mxPoint x="648.86" y="81.19999999999999" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="U5SIsRYiuy2qULQXZPos-12" value="" style="endArrow=none;html=1;exitX=1.003;exitY=0.098;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="439.9999999999999" y="850" as="sourcePoint" />
-            <mxPoint x="58.86" y="851.2" as="targetPoint" />
+            <mxPoint x="441.1399999999999" y="820" as="sourcePoint" />
+            <mxPoint x="60" y="821.2" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="U5SIsRYiuy2qULQXZPos-13" value="" style="endArrow=none;html=1;exitX=1.003;exitY=0.098;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1041.1399999999999" y="690" as="sourcePoint" />
-            <mxPoint x="660" y="691.2" as="targetPoint" />
+            <mxPoint x="1041.1399999999999" y="470" as="sourcePoint" />
+            <mxPoint x="660" y="471.20000000000005" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="U5SIsRYiuy2qULQXZPos-14" value="" style="endArrow=none;html=1;exitX=1.003;exitY=0.098;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="1620.9999999999998" y="690" as="sourcePoint" />
-            <mxPoint x="1239.86" y="691.2" as="targetPoint" />
+            <mxPoint x="1579.9999999999995" y="840" as="sourcePoint" />
+            <mxPoint x="1198.8599999999997" y="841.2" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="U5SIsRYiuy2qULQXZPos-15" value="&lt;font style=&quot;font-size: 23px&quot;&gt;Rezept hinzufügen&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="130" y="30" width="210" height="20" as="geometry" />
+        <mxCell id="U5SIsRYiuy2qULQXZPos-15" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;Rezept hinzufügen&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="80" y="30" width="310" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="U5SIsRYiuy2qULQXZPos-18" value="&lt;font style=&quot;font-size: 23px&quot;&gt;Profil&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="710" y="20" width="210" height="20" as="geometry" />
+        <mxCell id="U5SIsRYiuy2qULQXZPos-18" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;Profil&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="1298.75" y="60" width="210" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="U5SIsRYiuy2qULQXZPos-19" value="&lt;font style=&quot;font-size: 23px&quot;&gt;Home&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="1310" y="30" width="210" height="20" as="geometry" />
+        <mxCell id="U5SIsRYiuy2qULQXZPos-19" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;Home&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="725" y="50" width="210" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="U5SIsRYiuy2qULQXZPos-20" value="&lt;font style=&quot;font-size: 23px&quot;&gt;Explore&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="145" y="810" width="210" height="20" as="geometry" />
+        <mxCell id="U5SIsRYiuy2qULQXZPos-20" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;Explore&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="145" y="780" width="210" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="U5SIsRYiuy2qULQXZPos-21" value="&lt;font style=&quot;font-size: 23px&quot;&gt;Rezept&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="735" y="650" width="210" height="20" as="geometry" />
+        <mxCell id="U5SIsRYiuy2qULQXZPos-21" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;Rezept&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="745" y="430" width="210" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="U5SIsRYiuy2qULQXZPos-22" value="&lt;font style=&quot;font-size: 23px&quot;&gt;Gespeicherte Rezepte&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="1300" y="650" width="290" height="20" as="geometry" />
+        <mxCell id="U5SIsRYiuy2qULQXZPos-22" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;Gespeicherte Rezepte&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontStyle=1;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="1235" y="800" width="290" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="U5SIsRYiuy2qULQXZPos-23" value="&lt;font style=&quot;font-size: 18px&quot;&gt;Vorname&lt;br&gt;Nachname&lt;br&gt;Geburtsdatum&lt;br&gt;Adresse&lt;br&gt;Profilbild&lt;br&gt;Meine Freunde&lt;br&gt;Meine Gruppen&lt;br&gt;Meine Rezepte&lt;br&gt;Meine Rezeptbilder-/videos&lt;br&gt;Mitgliedsdatum&lt;br&gt;Kochstatus&lt;br&gt;Kochplan erstellen&lt;br&gt;Speichern&lt;br&gt;Abbrechen&lt;br&gt;essentielle Zutaten&lt;br&gt;Benachrichtigung aktivieren&lt;br&gt;Familienmitglieder suchen&lt;br&gt;Familienmitglieder einladen&lt;br&gt;Familienmitglieder hinzufügen&lt;br&gt;Familienmitglieder löschen&lt;br&gt;Einstellungen&lt;br&gt;Profilgestaltung&lt;br&gt;Datenschutz&lt;br&gt;Nutzungsbedienung&lt;br&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="697.5" y="300" width="247.5" height="20" as="geometry" />
+        <mxCell id="U5SIsRYiuy2qULQXZPos-23" value="&lt;font style=&quot;font-size: 20px&quot;&gt;Vorname&lt;br&gt;Nachname&lt;br&gt;Geburtsdatum&lt;br&gt;Adresse&lt;br&gt;Profilbild&lt;br&gt;Meine Freunde&lt;br&gt;Meine Gruppen&lt;br&gt;Meine Rezepte&lt;br&gt;Meine Rezeptbilder-/videos&lt;br&gt;Mitgliedsdatum&lt;br&gt;Kochstatus&lt;br&gt;Kochplan erstellen&lt;br&gt;Speichern&lt;br&gt;Abbrechen&lt;br&gt;essentielle Zutaten&lt;br&gt;Benachrichtigung aktivieren&lt;br&gt;Familienmitglieder suchen&lt;br&gt;Familienmitglieder einladen&lt;br&gt;Familienmitglieder hinzufügen&lt;br&gt;Familienmitglieder löschen&lt;br&gt;Einstellungen&lt;br&gt;Profilgestaltung&lt;br&gt;Datenschutz&lt;br&gt;Nutzungsbedienung&lt;br&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1280" y="410" width="247.5" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="U5SIsRYiuy2qULQXZPos-27" value="&lt;font style=&quot;font-size: 19px&quot;&gt;Registrieren&lt;br&gt;Einführung&lt;br&gt;Anmelden&lt;br&gt;Abmelden&lt;br&gt;Datenschutz&lt;br&gt;Nutzungsbedienungen&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="1340" y="240" width="190" height="20" as="geometry" />
+        <mxCell id="U5SIsRYiuy2qULQXZPos-27" value="&lt;font style=&quot;font-size: 20px&quot;&gt;Registrieren&lt;br&gt;Einführung&lt;br&gt;Anmelden&lt;br&gt;Abmelden&lt;br&gt;Datenschutz&lt;br&gt;Nutzungsbedienungen&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="735" y="180" width="190" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="U5SIsRYiuy2qULQXZPos-28" value="&lt;font style=&quot;font-size: 18px&quot;&gt;Rezepttitel&lt;br&gt;Rezeptbild-/video&lt;br&gt;Anleitung(Video/Memo)stoppen, wiederholen..&lt;br&gt;Rezept drucken&lt;br&gt;Rezept markieren&lt;br&gt;Rezept teilen&lt;br&gt;Portionen&lt;br&gt;Autor&lt;br&gt;Schwierigkeitsgrad&lt;br&gt;Zutaten&lt;br&gt;Haushaltsgeräte&lt;br&gt;Arbeitszeit&lt;br&gt;Ruhezeit&lt;br&gt;Koch-/Backzeit&lt;br&gt;Zubereitungsschritte&lt;br&gt;Geschichtlicher Hinweis&lt;br&gt;Tipps und Tricks&lt;br&gt;Offline Rezepte&lt;br&gt;Übersetzung&lt;br&gt;Zutat direkt bestellen&lt;br&gt;Filtern&lt;br&gt;Kategorie&lt;br&gt;Kommentarfunktion&lt;br&gt;Datenschutz&lt;br&gt;Nutzungsbedienungen&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="745" y="900" width="285" height="20" as="geometry" />
+        <mxCell id="U5SIsRYiuy2qULQXZPos-28" value="&lt;font style=&quot;font-size: 20px&quot;&gt;Rezepttitel&lt;br&gt;Rezeptbild-/video&lt;br&gt;Anleitung(Video/Memo)stoppen, wiederholen..&lt;br&gt;Rezept drucken&lt;br&gt;Rezept markieren&lt;br&gt;Rezept teilen&lt;br&gt;Portionen&lt;br&gt;Autor&lt;br&gt;Schwierigkeitsgrad&lt;br&gt;Zutaten&lt;br&gt;Haushaltsgeräte&lt;br&gt;Arbeitszeit&lt;br&gt;Ruhezeit&lt;br&gt;Koch-/Backzeit&lt;br&gt;Zubereitungsschritte&lt;br&gt;Geschichtlicher Hinweis&lt;br&gt;Tipps und Tricks&lt;br&gt;Offline Rezepte&lt;br&gt;Übersetzung&lt;br&gt;Zutat direkt bestellen&lt;br&gt;Filtern&lt;br&gt;Kategorie&lt;br&gt;Kommentarfunktion&lt;br&gt;Datenschutz&lt;br&gt;Nutzungsbedienungen&lt;/font&gt;" style="text;html=1;strokeColor=#d6b656;fillColor=#fff2cc;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="710" y="790" width="285" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="U5SIsRYiuy2qULQXZPos-29" value="&lt;font style=&quot;font-size: 18px&quot;&gt;Rezeptbild-/video&lt;br&gt;Rezepttitel&lt;br&gt;Rezept kochen&lt;br&gt;Rezept verwerfen&lt;br&gt;Rezeptbeschreibung&lt;br&gt;Ersellungsdatum&lt;br&gt;Autor&lt;br&gt;Filtern&lt;br&gt;Kategorie&lt;br&gt;Offline Rezepte&lt;br&gt;persönliche Abwandlung eines Rezeptes&lt;br&gt;Datenschutz&lt;br&gt;Nutzungsbedienungen&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="1170" y="880" width="500" height="20" as="geometry" />
+        <mxCell id="U5SIsRYiuy2qULQXZPos-29" value="&lt;font style=&quot;font-size: 20px&quot;&gt;Rezeptbild-/video&lt;br&gt;Rezepttitel&lt;br&gt;Rezept kochen&lt;br&gt;Rezept verwerfen&lt;br&gt;Rezeptbeschreibung&lt;br&gt;Ersellungsdatum&lt;br&gt;Autor&lt;br&gt;Filtern&lt;br&gt;Kategorie&lt;br&gt;Offline Rezepte&lt;br&gt;persönliche Abwandlung eines Rezeptes&lt;br&gt;Datenschutz&lt;br&gt;Nutzungsbedienungen&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1150" y="990" width="500" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="U5SIsRYiuy2qULQXZPos-30" value="&lt;font style=&quot;font-size: 18px&quot;&gt;Suche&lt;br&gt;Rezepttitel&lt;br&gt;Autor&lt;br&gt;Erstellungsdatum&lt;br&gt;Top-Rezepte vorschlagen&lt;br&gt;Rezeptbeschreibung&lt;br&gt;Rezept kochen&lt;br&gt;Rezept markieren&lt;br&gt;Rezept verwerfen&amp;nbsp;&lt;br&gt;Rezeptbild-/video&lt;br&gt;Datenschutz&lt;br&gt;Nutzungsbedienungen&lt;br&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="120" y="1010" width="250" height="20" as="geometry" />
+        <mxCell id="U5SIsRYiuy2qULQXZPos-30" value="&lt;font style=&quot;font-size: 20px&quot;&gt;Suche&lt;br&gt;Rezepttitel&lt;br&gt;Autor&lt;br&gt;Erstellungsdatum&lt;br&gt;Top-Rezepte vorschlagen&lt;br&gt;Rezeptbeschreibung&lt;br&gt;Rezept kochen&lt;br&gt;Rezept markieren&lt;br&gt;Rezept verwerfen&amp;nbsp;&lt;br&gt;Rezeptbild-/video&lt;br&gt;Datenschutz&lt;br&gt;Nutzungsbedienungen&lt;br&gt;&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="120" y="980" width="250" height="20" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
