@@ -15,8 +15,8 @@
         <p><strong>Erstellt am: </strong>3.1.2020 14:00</p>
       </div>
       <div class="recipe-teaser-buttons">
-        <button type="button" class="primary-button"><i class="fas fa-utensils"></i>Rezept kochen</button>
-        <button type="button" class="secondary-button"><i class="fas fa-trash"></i>Rezept verwerfen</button>
+        <button type="button" class="primary-button"><i class="fas fa-utensils"></i>Jetzt kochen</button>
+        <button type="button" class="secondary-button"><i class="fas fa-trash"></i>Löschen</button>
       </div>
     </div>
     
@@ -33,8 +33,8 @@
         <p><strong>Erstellt am: </strong>3.1.2020 14:00</p>
       </div>
       <div class="recipe-teaser-buttons">
-        <button type="button" class="primary-button"><i class="fas fa-utensils"></i>Rezept kochen</button>
-        <button type="button" class="secondary-button"><i class="fas fa-trash"></i>Rezept verwerfen</button>
+        <button type="button" class="primary-button"><i class="fas fa-utensils"></i>Jetzt kochen</button>
+        <button type="button" class="secondary-button"><i class="fas fa-trash"></i>Löschen</button>
       </div>
     </div>
     <hr>

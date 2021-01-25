@@ -1,4 +1,4 @@
-importScripts("/precache-manifest.57431eaa112555a6d0a43ba707641e64.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("/precache-manifest.c342b1027d7d071212cb8c8ba9f9663d.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 /**
  * Welcome to your Workbox-powered service worker!
@@ -12,8 +12,6 @@ importScripts("/precache-manifest.57431eaa112555a6d0a43ba707641e64.js", "https:/
  * and re-run your build process.
  * See https://goo.gl/2aRDsh
  */
-
-importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 workbox.setConfig({
   debug: true
@@ -36,7 +34,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
 workbox.routing.registerRoute(
-  /^https:\/\/netdna\.bootstrapcdn\.com\/font-awesome\/4\.7\.0\//,
+  new RegExp('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'),
   new workbox.strategies.CacheFirst({
       cacheName: 'fontawesome-fonts-stylesheets',
       plugins: [

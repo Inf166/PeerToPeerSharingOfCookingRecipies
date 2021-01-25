@@ -166,7 +166,11 @@
 
     <h3>Rezeptbild hochladen</h3>
     <p>Wähle die passende Datei (JPG) aus deiner Festplatte aus.</p>
-    <img src="https://via.placeholder.com/600x400.png" alt="Bild" width="600" height="400" style="display: block; margin-bottom: 1rem;">
+    <div class="recipe-teaser-img">
+      <a href="#" target="_">
+        <img src="https://via.placeholder.com/1920x1080.png" alt="Rezept2" >
+      </a>
+    </div>
     <form action="upload.php" method="post" enctype="multipart/form-data">
       <input type="file" name="datei">
       <button type="button" class="other-button">Weitere Bilder hochladen</button>
