@@ -1,0 +1,82 @@
+{
+    "@type": "Recipe",
+    "title": "Party Coffee Cake",
+    "author": {
+        "name": "Mary Stone"
+    },
+    "datePublished": "2018-03-10",
+    "description": "This coffee cake is awesome and perfect for parties.",
+    "prepTime": 10,
+    "cookTime": 20,
+    "restTime": 15,
+    "difficultyLevel": "simpel",
+    "portion": 2,
+    "Ingredients": [
+        {
+            "name": "flour",
+            "amount": "500",
+            "unit": "g",
+            "origin": "Rewe",
+            "alternativeIngredients": [
+                {
+                    "name": "Dinkel",
+                    "amount": "500",
+                    "unit": "g",
+                    "origin": "Lidl"
+                }
+            ]       
+        },
+        {
+            "name": "sugar",
+            "amount": "200",
+            "unit": "g",
+            "origin": "Rewe, Lidl, Aldi"       
+        }
+    ],
+    "householdUtensils": [
+        {
+            "name": "Ein beliebiger Handmixer"
+        }
+    ],
+    "recipeInstructions":[
+        {
+            "step": "1",
+            "description": "Preheat the oven to 350 degrees F. Grease and flour a 9x9 inch pan.",
+            "tipsAndTricks": [
+                {
+                    "author": "Peter Lustig",
+                    "text": "Use a nonstick Pan"
+                }
+            ],
+            "historicalNote": [
+                {
+                    "author": "Peter Lustig",
+                    "text": "I broke my pan on Christmas, it was fun tho."
+                }
+            ]
+        },
+        {
+            "step": "2",
+            "description": "Enjoy your Coffee!",
+            "tipsAndTricks": [
+                {
+                    "author": "Peter Lustig",
+                    "text": "Use a nonstick Pan"
+                }
+            ],
+            "historicalNote": [
+                {
+                    "author": "Peter Lustig",
+                    "text": "I broke my pan on Christmas, it was fun tho."
+                }
+            ]
+        }
+    ],
+    "images":[
+        {
+            "name": "Holger der Depp der sich die Pfanne an den Kopf haut",
+            "author": "Gutrut Mesus",
+            "source":"https://example.com/photos/16x9/photo.jpg"
+        }
+    ]
+}
