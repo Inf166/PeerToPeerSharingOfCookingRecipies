@@ -101,4 +101,24 @@ function checkUserLoginState() {
       document.getElementById("newuser").style.display = "block";
     }
   });
+
+  const peer = new Peer('someid', {
+    host: 'localhost',
+    port: 9000,
+    path: '/myapp'
+  });
+  // peer.on('open', function() {
+  //     console.log('My peerjsPeer ID is: ', peerjsPeer.id);
+  //   });
+  
+  // peer.on('connection', function(peerjsConnection) {
+  //   peerjsConnection.on('open', function() {
+  //     // Receive messages
+  //     peerjsConnection.on('data', function(data) {
+  //       console.log('Received', data);
+  //     });
+  //     // Send messages
+  //     peerjsConnection.send('Hello from markers-page!');
+  //   });
+  // });
 }
