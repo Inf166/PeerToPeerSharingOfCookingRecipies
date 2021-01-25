@@ -1,4 +1,5 @@
 **/.DS_Store
 .DS_Store
+RapidPrototype/Frontend/dist/**
 RapidPrototype/Frontend/node_modules/**
 RapidPrototype/PeerToPeerServer/node_modules/**
