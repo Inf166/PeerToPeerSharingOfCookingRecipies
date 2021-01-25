@@ -1,0 +1,31 @@
+<!DOCTYPE html><html lang="de"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><!--[if IE]><link rel="icon" href="/favicon.ico"><![endif]--><title>Mein Kochbuch</title><script src="https://kit.fontawesome.com/94ab407ad2.js" crossorigin="anonymous"></script><link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet"><link href="/css/chunk-40fa87f4.bf415ed1.css" rel="prefetch"><link href="/js/about.e4110cc5.js" rel="prefetch"><link href="/js/chunk-2d0aedb5.858f1554.js" rel="prefetch"><link href="/js/chunk-2d0c2117.59f45a13.js" rel="prefetch"><link href="/js/chunk-2d0c8842.44af2dc5.js" rel="prefetch"><link href="/js/chunk-2d0d6f50.2a849865.js" rel="prefetch"><link href="/js/chunk-2d0f0e03.36ea48f5.js" rel="prefetch"><link href="/js/chunk-2d213164.e11e4eba.js" rel="prefetch"><link href="/js/chunk-40fa87f4.015c692c.js" rel="prefetch"><link href="/js/chunk-7726dafa.47aa921f.js" rel="prefetch"><link href="/js/chunk-befbc4f2.308679a4.js" rel="prefetch"><link href="/css/app.9b87f532.css" rel="preload" as="style"><link href="/js/app.25bdc096.js" rel="preload" as="script"><link href="/js/chunk-vendors.18e2dc8b.js" rel="preload" as="script"><link href="/css/app.9b87f532.css" rel="stylesheet"><link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png"><link rel="manifest" href="/manifest.json"><meta name="theme-color" content="#4DBA87"><meta name="apple-mobile-web-app-capable" content="no"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="apple-mobile-web-app-title" content="meinkochbuch"><link rel="apple-touch-icon" href="/img/icons/apple-touch-icon-152x152.png"><link rel="mask-icon" href="/img/icons/safari-pinned-tab.svg" color="#4DBA87"><meta name="msapplication-TileImage" content="/img/icons/msapplication-icon-144x144.png"><meta name="msapplication-TileColor" content="#000000"></head><body><noscript><strong>We"re sorry but Mein Kochbuch doesn"t work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"></div><script src="/__/firebase/8.2.1/firebase-app.js"></script><script src="/__/firebase/8.2.1/firebase-analytics.js"></script><script src="/__/firebase/8.2.1/firebase-messaging.js"></script><script src="/__/firebase/8.2.1/firebase-auth.js"></script><script src="/__/firebase/8.2.1/firebase-firestore.js"></script><script>document.addEventListener("DOMContentLoaded", function() {
+        try {
+          let app = firebase.app();
+          let features = [
+            "auth", 
+            "database", 
+            "firestore",
+            "functions",
+            "messaging", 
+            "storage", 
+            "analytics", 
+            "remoteConfig",
+            "performance",
+          ].filter(feature => typeof app[feature] === "function");
+        } catch (e) {
+          console.error(e);
+        }
+      });</script><script src="/__/firebase/init.js"></script><script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script><script src="js/index.js"></script><script>const messaging = firebase.messaging();
+        messaging
+            .requestPermission()
+            .then(function () {
+                console.log("Notification permission granted.");
+                // get the token in the form of promise
+                return messaging.getToken({vapidKey: 'BLp8X9VOtO33mCBL0PKzAmL38ldpCe781WRvmYvrmzxu4VTNGQtYFAx7dqjGn5PTEsFQcpXcAMgrFuYLwmrIYK0'})
+            })
+            .then(function(token) {
+                console.log(token);
+            })
+            .catch(function (err) {
+                console.log("Unable to get permission to notify.", err);
+            });</script><script src="/js/chunk-vendors.18e2dc8b.js"></script><script src="/js/app.25bdc096.js"></script></body></html>
