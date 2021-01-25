@@ -419,8 +419,11 @@ i {
     color: var(--main-bg-color);
     background-color: var(--main-white-color);
   }
+  #nav a  {
+    padding: 1rem;
+  }
   #nav a i {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .content {
     max-width: 100vw;
