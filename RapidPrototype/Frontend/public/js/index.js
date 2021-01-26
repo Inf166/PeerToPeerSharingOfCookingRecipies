@@ -117,18 +117,31 @@ window.onload = () => {
 }
 
 // Peer to Peer Communication
-
 var lastPeerId = null;
 var peer = null; // Own peer object
 var peerId = null;
 var conn = null;
-var isSender = (document.getElementById("otherpeerid").value.length != 0) ? true : false;
+var isSender = false;
 
 function initialize() {
+  isSender = (document.getElementById("otherpeerid").value.length != 0) ? true : false;
   // Create own peer object with connection to shared PeerJS server
   peer = new Peer(null, {
-      debug: 2
-  });
+      debug: 3    
+  }, {
+    config: {
+      "iceServers": [
+        {
+            urls: "stun:numb.viagenie.ca"
+        },
+        {
+            urls: "turn:numb.viagenie.ca",
+            username: "joel_maximilian.mai@smail.th-koeln.de"
+        },
+    ]
+    }
+  }
+  );
 
   peer.on("open", function (id) {
       // Workaround for peer.reconnect deleting previous id
@@ -140,17 +153,44 @@ function initialize() {
       }
 
       console.log("ID: " + peer.id);
-      document.getElementById("mypeerid").innerHTML = "ID: " + peer.id;
-      console.log("Awaiting connection...");
+      document.getElementById("mypeerid").innerHTML = "My ID: " + peer.id;
+      if(!isSender)console.log("Awaiting connection...");
+      peer.on("connection", function (c) {
+        console.log("Connecting...");
+          if(isSender){
+            // Disallow incoming connections
+            c.on("open", function() {
+              c.send("Sender does not accept incoming connections");
+              setTimeout(function() { c.close(); }, 500);
+            });
+          } else {
+            console.log("Pending Connection...");
+            // Allow only a single connection
+            if (conn && conn.open) {
+              c.on("open", function() {
+                  c.send("Already connected to another client");
+                  setTimeout(function() { c.close(); }, 500);
+              });
+              return;
+            }
+    
+            conn = c;
+            console.log("Connected to: " + conn.peer);
+            console.log("Connected");
+            ready();
+          }      
+      });
   });
   peer.on("connection", function (c) {
+    console.log("Connecting...");
       if(isSender){
         // Disallow incoming connections
-        c.on('open', function() {
+        c.on("open", function() {
           c.send("Sender does not accept incoming connections");
           setTimeout(function() { c.close(); }, 500);
         });
       } else {
+        console.log("Pending Connection...");
         // Allow only a single connection
         if (conn && conn.open) {
           c.on("open", function() {
@@ -183,44 +223,44 @@ function initialize() {
       alert("" + err);
   });
   
-  console.log("Value of textfield: " + document.getElementById("otherpeerid").value.length);
-  if(document.getElementById("otherpeerid").value.length != 0){
+  console.log("Client is Sender: " + isSender);
+  if(isSender){
     join();
   }
 };
 
 function ready() {
-  conn.on('data', function (data) {
+  console.log("Connection ready...");
+  conn.on("data", function (data) {
     console.log("Data recieved");
     addMessage(data);
   });
-  conn.on('close', function () {
+  conn.on("close", function () {
       document.getElementById("mypeerid").innerHTML.innerHTML = "Connection reset<br>Awaiting connection...";
       conn = null;
+      console.log("Connection closed");
   });
 };
 
 function join() {
-  console.log("I did join() - nice!" + document.getElementById("otherpeerid").value);
+  console.log("I did join() - nice! " + document.getElementById("otherpeerid").value);
   // Close old connection
   if (conn) {
       conn.close();
-      document.getElementById("mypeerid").innerHTML = "Connection reseted";
-      conn = null;
-      console.log('Connection destroyed');
   }
   conn = peer.connect(document.getElementById("otherpeerid").value, {
       reliable: true
   });
-  conn.on('open', function () {
+  console.log("Connection object after connecting to peer: " + conn)
+  conn.on("open", function () {
       console.log("Connected to: " + conn.peer);
       conn.send("Hey " + document.getElementById("otherpeerid").value);
   });
-  conn.on('data', function (data) {
+  conn.on("data", function (data) {
     console.log("Data recieved");
     addMessage(data);
   });
-  conn.on('close', function () {
+  conn.on("close", function () {
     document.getElementById("mypeerid").innerHTML = "Connection closed";
   });
 };
@@ -244,3 +284,9 @@ function addMessage(msg) {
 
   console.log(h + ":" + m + ":" + s + " " + msg);
 };
+
+function sendText() {
+  console.log(conn);
+  conn.send(document.getElementById("chatText").value);
+  console.log("Text gesendet: " + document.getElementById("chatText").value);
+}
