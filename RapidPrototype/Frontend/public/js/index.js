@@ -112,34 +112,4 @@ function checkUserLoginState() {
       userloggedin = false;
     }
   });
-
-  var peer = new Peer(); 
-  var conn = peer.connect('another-peers-id');
-  // on open will be launch when you successfully connect to PeerServer
-  conn.on('open', function(){
-    // here you have conn.id
-    console.log("sending Data");
-    conn.send('hi!');
-  });
-  peer.on('connection', function(conn) {
-    conn.on('data', function(data){
-      // Will print 'hi!'
-      console.log("receiving Data");
-      console.log(data);
-    });
-  });
-  // peer.on('open', function() {
-  //     console.log('My peerjsPeer ID is: ', peerjsPeer.id);
-  //   });
-  
-  // peer.on('connection', function(peerjsConnection) {
-  //   peerjsConnection.on('open', function() {
-  //     // Receive messages
-  //     peerjsConnection.on('data', function(data) {
-  //       console.log('Received', data);
-  //     });
-  //     // Send messages
-  //     peerjsConnection.send('Hello from markers-page!');
-  //   });
-  // });
 }
