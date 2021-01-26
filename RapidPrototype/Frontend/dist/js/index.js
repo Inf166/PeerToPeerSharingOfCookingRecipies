@@ -113,13 +113,23 @@ function checkUserLoginState() {
     }
   });
 
-  var peer = new Peer(); 
-  var conn = peer.connect('another-peers-id');
+  var peer = new Peer(null, {
+    debug: 2
+  }); 
+  var conn = peer.connect('01008054646eincock', {
+    reliable: true
+  });
   // on open will be launch when you successfully connect to PeerServer
-  conn.on('open', function(){
-    // here you have conn.id
-    console.log("sending Data");
-    conn.send('hi!');
+  conn.on('open', function(id){
+    // Workaround for peer.reconnect deleting previous id
+    if (peer.id === null) {
+      console.log('Received null id from peer open');
+      peer.id = lastPeerId;
+  } else {
+      lastPeerId = peer.id;
+  }
+
+  console.log('ID: ' + peer.id);
   });
   peer.on('connection', function(conn) {
     conn.on('data', function(data){
