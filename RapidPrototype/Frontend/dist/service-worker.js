@@ -1,4 +1,4 @@
-importScripts("/precache-manifest.f995ba069c08873deb726daa96c2f130.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
+importScripts("/precache-manifest.7ecfc26a5f46a822e2d8178e899bee04.js", "https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 /**
  * Welcome to your Workbox-powered service worker!
@@ -34,34 +34,34 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerRoute(
-  new RegExp('https://kit.fontawesome.com/94ab407ad2.js'),
-  new workbox.strategies.CacheFirst({
-      cacheName: 'fontawesome-fonts-js',
-      plugins: [
-          new workbox.expiration.Plugin({
-              maxEntries: 30,
-          }),
-          new workbox.cacheableResponse.Plugin({
-              statuses: [0, 200]
-          })
-      ]
-  }),
-);
-workbox.routing.registerRoute(
-  new RegExp('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'),
-  new workbox.strategies.CacheFirst({
-      cacheName: 'fontawesome-fonts-stylesheets',
-      plugins: [
-          new workbox.expiration.Plugin({
-              maxEntries: 30,
-          }),
-          new workbox.cacheableResponse.Plugin({
-              statuses: [0, 200]
-          })
-      ]
-  }),
-);
+// workbox.routing.registerRoute(
+//   new RegExp('https://kit.fontawesome.com/94ab407ad2.js'),
+//   new workbox.strategies.CacheFirst({
+//       cacheName: 'fontawesome-fonts-js',
+//       plugins: [
+//           new workbox.expiration.Plugin({
+//               maxEntries: 30,
+//           }),
+//           new workbox.cacheableResponse.Plugin({
+//               statuses: [0, 200]
+//           })
+//       ]
+//   }),
+// );
+// workbox.routing.registerRoute(
+//   new RegExp('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'),
+//   new workbox.strategies.CacheFirst({
+//       cacheName: 'fontawesome-fonts-stylesheets',
+//       plugins: [
+//           new workbox.expiration.Plugin({
+//               maxEntries: 30,
+//           }),
+//           new workbox.cacheableResponse.Plugin({
+//               statuses: [0, 200]
+//           })
+//       ]
+//   }),
+// );
 
 workbox.routing.registerRoute(
   new RegExp('https://fonts.(?:googleapis|gstatic).com/(.*)'),

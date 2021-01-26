@@ -1,6 +1,6 @@
 <template>
   <div class="profile">
-    <h1 id="greetUser">This is an PROFILE page</h1>
+    <h1 id="greetUser">Willkommen zu deinem Kochbuch</h1>
     <!-- <image id="userprofileimage"></image> -->
     <UserLoginState></UserLoginState>
   </div>
