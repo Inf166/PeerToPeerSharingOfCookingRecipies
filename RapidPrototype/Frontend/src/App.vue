@@ -125,6 +125,15 @@ svg {
   width: auto;
   height: 1rem; 
 }
+.page-nav-link {
+  display: -webkit-flex; /* Safari */  
+  display: flex;
+  -webkit-align-items: center; /* Safari 7.0+ */
+  align-items: center;
+  color: var(--main-bg-color);
+  fill: var(--main-bg-color);
+  margin-bottom: 1rem;
+}
 .content {
   position: relative;
   top: 100px;
@@ -180,7 +189,7 @@ textarea {
   background: var(--main-white-color);
   padding: 15px;
   outline: none;
-  width: 100%;
+  width: calc(100% - 2rem);
   margin-bottom: 2rem;
   transition: 0.3s;
   -webkit-transition: 0.3s;
@@ -484,6 +493,12 @@ i {
     max-width: 100vw;
     overflow: hidden;
   }
+  form {
+    padding: 0.5rem;
+  }
+  h3 {
+    padding: 0.5rem;
+  }
   .search-container{
     margin: 1rem 0.5rem;
     border: 1px solid var(--main-black-color);
@@ -500,6 +515,7 @@ i {
   }
   .search-button {
     margin: 0;
+    margin-right: 1rem;
     justify-self: right;
   }
   .recipe-teaser {

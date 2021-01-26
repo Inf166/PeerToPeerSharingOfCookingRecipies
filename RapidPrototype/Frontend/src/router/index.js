@@ -44,6 +44,12 @@ const routes = [
       import("../views/Profile.vue")
   },
   {
+    path: "/settings",
+    name: "Settings",
+    component: () =>
+      import("../views/Settings.vue")
+  },
+  {
     path: "/datenschutz",
     name: "Datenschutz",
     component: () =>

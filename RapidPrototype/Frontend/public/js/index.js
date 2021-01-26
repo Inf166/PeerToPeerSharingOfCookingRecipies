@@ -78,8 +78,8 @@ function logout(){
 }
 
 window.onload = () => {
-  console.log("Window Loaded");
-  checkUserLoginState()
+   console.log("Window Loaded");
+   if(document.body.contains(document.getElementById("currentuser")) || document.body.contains(document.getElementById("newuser")))checkUserLoginState();
 }
 
 function checkUserLoginState() {
@@ -89,17 +89,17 @@ function checkUserLoginState() {
       console.log("A User was found");
       document.getElementById("currentuser").style.display = "block";
       document.getElementById("newuser").style.display = "none";
-  
+      userloggedin = true;
+
       var user = firebase.auth().currentUser;
   
-      if(userloggedin){
+      if(user){
         email = user.email;
         photoUrl = user.photoURL;
         emailVerified = user.emailVerified;
         uid = user.uid;  
         document.getElementById("greetUser").innerHTML = "Hallo " + email + "!";
         console.log("Hello and Welcome " + email);
-        userloggedin = true;
         // document.getElementById("userprofileimage").setAttribute("src", photoUrl);
         // console.log("UserProfile " + photoUrl);
       }
