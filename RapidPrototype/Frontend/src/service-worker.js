@@ -17,6 +17,7 @@ workbox.setConfig({
 
 workbox.core.setCacheNameDetails({prefix: "meinkochbuch"});
 
+// workbox.skipWaiting();
 self.addEventListener('message', (event) => {
   if (event.data && event.data.type === 'SKIP_WAITING') {
     self.skipWaiting();
@@ -31,6 +32,20 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
+workbox.routing.registerRoute(
+  new RegExp('https://kit.fontawesome.com/94ab407ad2.js'),
+  new workbox.strategies.CacheFirst({
+      cacheName: 'fontawesome-fonts-js',
+      plugins: [
+          new workbox.expiration.Plugin({
+              maxEntries: 30,
+          }),
+          new workbox.cacheableResponse.Plugin({
+              statuses: [0, 200]
+          })
+      ]
+  }),
+);
 workbox.routing.registerRoute(
   new RegExp('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'),
   new workbox.strategies.CacheFirst({
@@ -48,7 +63,7 @@ workbox.routing.registerRoute(
 
 workbox.routing.registerRoute(
   new RegExp('https://fonts.(?:googleapis|gstatic).com/(.*)'),
-  workbox.strategies.cacheFirst({
+  new workbox.strategies.CacheFirst({
       cacheName: 'google-fonts',
       plugins: [
           new workbox.expiration.Plugin({

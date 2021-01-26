@@ -1,7 +1,7 @@
 {
     "name": "Mein Kochbuch",
     "short_name": "Mein Kochbuch",
-    "theme_color": "#1a5e42",
+    "theme_color": "#407961",
     "icons": [
         {
             "src": "./img/icons/android-chrome-192x192.png",
@@ -28,6 +28,6 @@
     ],
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#1a5e42",
+    "background_color": "#f5f7f4",
     "gcm_sender_id": "1081676854603"
 }
