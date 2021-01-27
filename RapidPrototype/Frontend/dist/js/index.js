@@ -127,21 +127,19 @@ function initialize() {
   isSender = (document.getElementById("otherpeerid").value.length != 0) ? true : false;
   // Create own peer object with connection to shared PeerJS server
   peer = new Peer(null, {
-      debug: 3    
-  }, {
-    config: {
-      "iceServers": [
-        {
-            urls: "stun:numb.viagenie.ca"
-        },
-        {
-            urls: "turn:numb.viagenie.ca",
-            username: "joel_maximilian.mai@smail.th-koeln.de"
-        },
-    ]
-    }
-  }
-  );
+      debug: 3,
+      config: {
+        iceServers: [
+          {
+              urls: "stun:stun.stunprotocol.org"
+          },
+          {
+              urls: 'turn:numb.viagenie.ca',
+              credential: 'epws2020cobanmai',
+              username: 'joel_maximilian.mai@smail.th-koeln.de'
+          },
+      ]}    
+  });
 
   peer.on("open", function (id) {
       // Workaround for peer.reconnect deleting previous id
@@ -155,31 +153,12 @@ function initialize() {
       console.log("ID: " + peer.id);
       document.getElementById("mypeerid").innerHTML = "My ID: " + peer.id;
       if(!isSender)console.log("Awaiting connection...");
-      peer.on("connection", function (c) {
-        console.log("Connecting...");
-          if(isSender){
-            // Disallow incoming connections
-            c.on("open", function() {
-              c.send("Sender does not accept incoming connections");
-              setTimeout(function() { c.close(); }, 500);
-            });
-          } else {
-            console.log("Pending Connection...");
-            // Allow only a single connection
-            if (conn && conn.open) {
-              c.on("open", function() {
-                  c.send("Already connected to another client");
-                  setTimeout(function() { c.close(); }, 500);
-              });
-              return;
-            }
-    
-            conn = c;
-            console.log("Connected to: " + conn.peer);
-            console.log("Connected");
-            ready();
-          }      
-      });
+      console.log('#######################');
+      console.log(peer);
+      console.log('#######################');
+      console.log('#######################');
+      console.log(conn);
+      console.log('#######################');
   });
   peer.on("connection", function (c) {
     console.log("Connecting...");
@@ -254,6 +233,12 @@ function join() {
   console.log("Connection object after connecting to peer: " + conn)
   conn.on("open", function () {
       console.log("Connected to: " + conn.peer);
+
+      conn.on("data", function (data) {
+        console.log("Data recieved");
+        addMessage(data);
+      });
+
       conn.send("Hey " + document.getElementById("otherpeerid").value);
   });
   conn.on("data", function (data) {
