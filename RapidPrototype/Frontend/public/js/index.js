@@ -118,162 +118,194 @@ window.onload = () => {
 
 // Peer to Peer Communication
 var lastPeerId = null;
-var peer = null; // Own peer object
+var peer = null;
 var peerId = null;
 var conn = null;
 var isSender = false;
+var myId = document.getElementById("my-id");
+var recvIdInput = document.getElementById("receiver-id");
+var sendMessageBox = document.getElementById("sendMessageBox");
+var connectButton = document.getElementById("connect-button");
+var sendButton = document.getElementById("sendButton");
+var initializeButton = document.getElementById("initializeButton");
 
-function initialize() {
-  isSender = (document.getElementById('otherpeerid').value.length != 0) ? true : false;
-  // Create own peer object with connection to shared PeerJS server
-  peer = new Peer(null, {
-      debug: 3,
-      config: {
-        iceServers: [
-          {
-              urls: 'stun:stun.stunprotocol.org'
-          },
-          {
-              urls: 'turn:numb.viagenie.ca',
-              credential: 'epws2020cobanmai',
-              username: 'joel_maximilian.mai@smail.th-koeln.de'
-          },
-      ]}    
-  });
+/**
+ * Create the Peer object for our end of the connection.
+ *
+ * Sets up callbacks that handle any events related to our
+ * peer object.
+ */
+  function initialize() {
+    myId = document.getElementById("my-id");
+    recvIdInput = document.getElementById("receiver-id");
+    sendMessageBox = document.getElementById("sendMessageBox");
+    connectButton = document.getElementById("connect-button");
+    sendButton = document.getElementById("sendButton");
+    initializeButton = document.getElementById("initializeButton");
+    isSender = (recvIdInput.value.length != 0) ? true : false;
+    // Create own peer object with connection to shared PeerJS server
+    peer = new Peer(null, {
+        debug: 3,
+        config: {
+            iceServers: [
+            {
+                urls: 'stun:stun.stunprotocol.org'
+            },
+            {
+                urls: 'turn:numb.viagenie.ca',
+                credential: 'epws2020cobanmai',
+                username: 'joel_maximilian.mai@smail.th-koeln.de'
+            },
+        ]}    
+    });
 
-  peer.on('open', function (id) {
-      // Workaround for peer.reconnect deleting previous id
-      if (peer.id === null) {
-          console.log('Received null id from peer open');
-          peer.id = lastPeerId;
-      } else {
-          lastPeerId = peer.id;
-      }
-
-      console.log('ID: ' + peer.id);
-      document.getElementById('mypeerid').innerHTML = 'My ID: ' + peer.id;
-      if(!isSender)console.log('Awaiting connection...');
-      console.log('#######################');
-      console.log(peer);
-      console.log('#######################');
-      console.log('#######################');
-      console.log(conn);
-      console.log('#######################');
-  });
-  peer.on('connection', function (c) {
-    console.log('Connecting...');
-      if(isSender){
-        // Disallow incoming connections
-        c.on('open', function() {
-          c.send('Sender does not accept incoming connections');
-          setTimeout(function() { c.close(); }, 500);
-        });
-      } else {
-        console.log('Pending Connection...');
-        // Allow only a single connection
-        if (conn && conn.open) {
-          c.on('open', function() {
-              c.send('Already connected to another client');
-              setTimeout(function() { c.close(); }, 500);
-          });
-          return;
+    peer.on('open', function (id) {
+        // Workaround for peer.reconnect deleting previous id
+        if (peer.id === null) {
+            console.log('Received null id from peer open');
+            peer.id = lastPeerId;
+        } else {
+            lastPeerId = peer.id;
         }
 
-        conn = c;
-        console.log('Connected to: ' + conn.peer);
-        console.log('Connected');
-        ready();
-      }      
-  });
-  peer.on('disconnected', function () {
-      console.log('Connection lost. Please reconnect');
+        console.log('ID: ' + peer.id);
+        document.getElementById("my-id").value = "ID: " + peer.id;
+        status.innerHTML = "Awaiting connection...";
+    });
+    peer.on('connection', function (c) {
+        console.log('Connecting...');
+        if(isSender){
+            // Disallow incoming connections
+            c.on('open', function() {
+            c.send('Sender does not accept incoming connections');
+            setTimeout(function() { c.close(); }, 500);
+            });
+        } else {
+            console.log('Pending Connection...');
+            // Allow only a single connection
+            if (conn && conn.open) {
+            c.on('open', function() {
+                c.send('Already connected to another client');
+                setTimeout(function() { c.close(); }, 500);
+            });
+            return;
+            }
 
-      // Workaround for peer.reconnect deleting previous id
-      peer.id = lastPeerId;
-      peer._lastServerId = lastPeerId;
-      peer.reconnect();
-  });
-  peer.on('close', function() {
-      conn = null;
-      console.log('Connection destroyed');
-  });
-  peer.on('error', function (err) {
-      console.log(err);
-      alert('' + err);
-  });
-  
-  console.log('Client is Sender: ' + isSender);
-  if(isSender){
-    join();
-  }
+            conn = c;
+            console.log('Connected to: ' + conn.peer);
+            console.log('Connected');
+            ready();
+        }     
+    });
+    peer.on('disconnected', function () {
+        console.log('Connection lost. Please reconnect');
+
+        // Workaround for peer.reconnect deleting previous id
+        peer.id = lastPeerId;
+        peer._lastServerId = lastPeerId;
+        peer.reconnect();
+    });
+    peer.on('close', function() {
+        conn = null;
+        console.log('Connection destroyed');
+    });
+    peer.on('error', function (err) {
+        console.log(err);
+        alert('' + err);
+    });
 };
 
+/**
+  * Triggered once a connection has been achieved.
+  * Defines callbacks to handle incoming data and connection events.
+  */
 function ready() {
-  console.log('Connection ready...');
-  conn.on('data', function (data) {
-    console.log('Data recieved');
-    addMessage(data);
-  });
-  conn.on('close', function () {
-      document.getElementById('mypeerid').innerHTML.innerHTML = 'Connection reset<br>Awaiting connection...';
-      conn = null;
-      console.log('Connection closed');
-  });
-};
+    conn.on('data', function (data) {
+        console.log("Data recieved: " + data);
+    });
+    conn.on('close', function () {
+        status.innerHTML = "Connection reset<br>Awaiting connection...";
+        conn = null;
+    });
+}
+/**
+  * Create the connection between the two Peers.
+  *
+  * Sets up callbacks that handle any events related to the
+  * connection and data received on it.
+  */
+  function join() {
+    // Close old connection
+    if (conn) {
+        conn.close();
+    }
 
-function join() {
-  console.log('I did join() - nice! ' + document.getElementById('otherpeerid').value);
-  // Close old connection
-  // if (conn) {
-  //     conn.close();
-  // }
-  conn = peer.connect(document.getElementById('otherpeerid').value, {
-      reliable: true
-  });
-  console.log('Connection object after connecting to peer: ' + conn)
-  conn.on('open', function () {
-      console.log('Connected to: ' + conn.peer);
+    // Create connection to destination peer specified in the input field
+    conn = peer.connect(recvIdInput.value, {
+        reliable: true
+    });
 
-      conn.on('data', function (data) {
-        console.log('Data recieved');
+    conn.on('open', function () {
+        console.log("Connected to: " + conn.peer);
+    });
+    // Handle incoming data (messages only since this is the signal sender)
+    conn.on('data', function (data) {
         addMessage(data);
-      });
-
-      conn.send('Hey ' + document.getElementById('otherpeerid').value);
-  });
-  conn.on('data', function (data) {
-    console.log('Data recieved');
-    addMessage(data);
-  });
-  conn.on('close', function () {
-    document.getElementById('mypeerid').innerHTML = 'Connection closed';
-  });
+    });
+    conn.on('close', function () {
+        status.innerHTML = "Connection closed";
+    });
 };
 
 function addMessage(msg) {
-  var now = new Date();
-  var h = now.getHours();
-  var m = addZero(now.getMinutes());
-  var s = addZero(now.getSeconds());
+    var now = new Date();
+    var h = now.getHours();
+    var m = addZero(now.getMinutes());
+    var s = addZero(now.getSeconds());
 
-  if (h > 12)
-      h -= 12;
-  else if (h === 0)
-      h = 12;
+    if (h > 12)
+        h -= 12;
+    else if (h === 0)
+        h = 12;
 
-  function addZero(t) {
-      if (t < 10)
-          t = '0' + t;
-      return t;
-  };
+    function addZero(t) {
+        if (t < 10)
+            t = "0" + t;
+        return t;
+    };
 
-  console.log(h + ':' + m + ':' + s + ' ' + msg);
-};
-
+    console.log(h + ':' + m + ':' + s + ' ' + msg);
+}
 function sendText() {
-  console.log('#######CONNECTION OBJEKT########');
-  console.log(conn);
-  console.log('################################');
-  conn.send(document.getElementById('chatText').value);
-  console.log('Text gesendet: ' + document.getElementById('chatText').value);
-};
+  if (conn && conn.open) {
+    var msg = sendMessageBox.value;
+    sendMessageBox.value = "";
+    conn.send(msg);
+    console.log("Sent: " + msg)
+    addMessage(msg);
+  } else {
+    console.log('Connection is closed');
+  }
+}
+// // Listen for enter in message box
+// sendMessageBox.addEventListener('keypress', function (e) {
+//     var event = e || window.event;
+//     var char = event.which || event.keyCode;
+//     if (char == '13')
+//         sendButton.click();
+// });
+// // Send message
+// sendButton.addEventListener('click', function () {
+//     if (conn && conn.open) {
+//         var msg = sendMessageBox.value;
+//         sendMessageBox.value = "";
+//         conn.send(msg);
+//         console.log("Sent: " + msg)
+//         addMessage(msg);
+//     } else {
+//         console.log('Connection is closed');
+//     }
+// });
+// // Start peer connection on click
+// connectButton.addEventListener('click', join);
+// initializeButton.addEventListener('click', initialize);

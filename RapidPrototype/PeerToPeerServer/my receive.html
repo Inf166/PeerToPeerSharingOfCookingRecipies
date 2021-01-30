@@ -8,11 +8,14 @@
     </head>
     <body>
         <h1>Receiver</h1>
+        <div id="my-id" style="font-weight: bold;" title="Copy this ID to the input on send.html.">ID:</div>
         <button type="button" id="initializeButton">Initialize</button>
         <input type="text" id="sendMessageBox" placeholder="Enter a message..." autofocus="true" />
-        <button type="button" id="sendButton">Send</button>
-        <div id="receiver-id" style="font-weight: bold;" title="Copy this ID to the input on send.html.">ID:</div>
-        
+        <button type="button" id="sendButton">Send</button> <br><br>
+        <span style="font-weight: bold">ID: </span>
+        <input type="text" id="receiver-id" title="Input the ID from receive.html">
+        <button id="connect-button">Connect</button>
+
         <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
         <script type="text/javascript">
 
@@ -20,8 +23,11 @@
                 var peer = null; // Own peer object
                 var peerId = null;
                 var conn = null;
-                var recvId = document.getElementById("receiver-id");
+                var isSender = false;
+                var myId = document.getElementById("my-id");
+                var recvIdInput = document.getElementById("receiver-id");
                 var sendMessageBox = document.getElementById("sendMessageBox");
+                var connectButton = document.getElementById("connect-button");
                 var sendButton = document.getElementById("sendButton");
                 var initializeButton = document.getElementById("initializeButton");
 
@@ -32,6 +38,7 @@
                  * peer object.
                  */
                  function initialize() {
+                    isSender = (recvIdInput.value.length != 0) ? true : false;
                     // Create own peer object with connection to shared PeerJS server
                     peer = new Peer(null, {
                         debug: 3,
@@ -58,26 +65,35 @@
                         }
 
                         console.log('ID: ' + peer.id);
-                        recvId.innerHTML = "ID: " + peer.id;
+                        myId.innerHTML = "ID: " + peer.id;
                         status.innerHTML = "Awaiting connection...";
                     });
                     peer.on('connection', function (c) {
-                        // Allow only a single connection
-                        if (conn && conn.open) {
+                        console.log('Connecting...');
+                        if(isSender){
+                            // Disallow incoming connections
                             c.on('open', function() {
-                                c.send("Already connected to another client");
+                            c.send('Sender does not accept incoming connections');
+                            setTimeout(function() { c.close(); }, 500);
+                            });
+                        } else {
+                            console.log('Pending Connection...');
+                            // Allow only a single connection
+                            if (conn && conn.open) {
+                            c.on('open', function() {
+                                c.send('Already connected to another client');
                                 setTimeout(function() { c.close(); }, 500);
                             });
                             return;
-                        }
+                            }
 
-                        conn = c;
-                        console.log("Connected to: " + conn.peer);
-                        status.innerHTML = "Connected";
-                        ready();
+                            conn = c;
+                            console.log('Connected to: ' + conn.peer);
+                            console.log('Connected');
+                            ready();
+                        }     
                     });
                     peer.on('disconnected', function () {
-                        status.innerHTML = "Connection lost. Please reconnect";
                         console.log('Connection lost. Please reconnect');
 
                         // Workaround for peer.reconnect deleting previous id
@@ -87,7 +103,6 @@
                     });
                     peer.on('close', function() {
                         conn = null;
-                        status.innerHTML = "Connection destroyed. Please refresh";
                         console.log('Connection destroyed');
                     });
                     peer.on('error', function (err) {
@@ -109,6 +124,34 @@
                         conn = null;
                     });
                 }
+                /**
+                 * Create the connection between the two Peers.
+                 *
+                 * Sets up callbacks that handle any events related to the
+                 * connection and data received on it.
+                 */
+                 function join() {
+                    // Close old connection
+                    if (conn) {
+                        conn.close();
+                    }
+
+                    // Create connection to destination peer specified in the input field
+                    conn = peer.connect(recvIdInput.value, {
+                        reliable: true
+                    });
+
+                    conn.on('open', function () {
+                        console.log("Connected to: " + conn.peer);
+                    });
+                    // Handle incoming data (messages only since this is the signal sender)
+                    conn.on('data', function (data) {
+                        addMessage(data);
+                    });
+                    conn.on('close', function () {
+                        status.innerHTML = "Connection closed";
+                    });
+                };
 
                 function addMessage(msg) {
                     var now = new Date();
@@ -149,6 +192,8 @@
                         console.log('Connection is closed');
                     }
                 });
+                // Start peer connection on click
+                connectButton.addEventListener('click', join);
                 initializeButton.addEventListener('click', initialize);
         </script>
     </body>
