@@ -169,8 +169,8 @@ var initializeButton = document.getElementById("initializeButton");
         }
 
         console.log('ID: ' + peer.id);
-        document.getElementById("my-id").value = "ID: " + peer.id;
-        status.innerHTML = "Awaiting connection...";
+        document.getElementById("my-id").innerHTML = "ID: " + peer.id;
+        console.log("Awaiting connection...");
     });
     peer.on('connection', function (c) {
         console.log('Connecting...');
@@ -224,7 +224,7 @@ function ready() {
         console.log("Data recieved: " + data);
     });
     conn.on('close', function () {
-        status.innerHTML = "Connection reset<br>Awaiting connection...";
+        console.log("Connection reset<br>Awaiting connection...");
         conn = null;
     });
 }
@@ -253,7 +253,7 @@ function ready() {
         addMessage(data);
     });
     conn.on('close', function () {
-        status.innerHTML = "Connection closed";
+        console.log("Connection closed");
     });
 };
 
@@ -287,25 +287,3 @@ function sendText() {
     console.log('Connection is closed');
   }
 }
-// // Listen for enter in message box
-// sendMessageBox.addEventListener('keypress', function (e) {
-//     var event = e || window.event;
-//     var char = event.which || event.keyCode;
-//     if (char == '13')
-//         sendButton.click();
-// });
-// // Send message
-// sendButton.addEventListener('click', function () {
-//     if (conn && conn.open) {
-//         var msg = sendMessageBox.value;
-//         sendMessageBox.value = "";
-//         conn.send(msg);
-//         console.log("Sent: " + msg)
-//         addMessage(msg);
-//     } else {
-//         console.log('Connection is closed');
-//     }
-// });
-// // Start peer connection on click
-// connectButton.addEventListener('click', join);
-// initializeButton.addEventListener('click', initialize);
