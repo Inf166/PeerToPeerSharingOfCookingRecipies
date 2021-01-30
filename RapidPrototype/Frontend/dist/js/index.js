@@ -1,10 +1,10 @@
 // Service Worker Registration
-window.addEventListener("load", () => {
-  if ("serviceWorker" in navigator) {
-      navigator.serviceWorker.register("../firebase-messaging-sw.js").then(registration => {
-          console.log("SW registered: ", registration);
+window.addEventListener('load', () => {
+  if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('../firebase-messaging-sw.js').then(registration => {
+          console.log('SW registered: ', registration);
       }).catch(registrationError => {
-          console.log("SW registration failed: ", registrationError);
+          console.log('SW registration failed: ', registrationError);
       });
   }
 });
@@ -14,18 +14,18 @@ let userloggedin = false;
 
 function login(){
 
-  var userEmail = document.getElementById("email_field_login").value;
-  var userPass = document.getElementById("password_field_login").value;
+  var userEmail = document.getElementById('email_field_login').value;
+  var userPass = document.getElementById('password_field_login').value;
 
   firebase.auth().signInWithEmailAndPassword(userEmail, userPass)
   .then((user) => {
-    window.location = "../"
+    window.location = '../'
     if (user != null) {
       email = user.email;
       photoUrl = user.photoURL;
       emailVerified = user.emailVerified;
       uid = user.uid;  
-      console.log("Hello " + email);
+      console.log('Hello ' + email);
       userloggedin = true;
     }
   }).catch(function(error) {
@@ -33,7 +33,7 @@ function login(){
     var errorCode = error.code;
     var errorMessage = error.message;
     console.log(errorCode);
-    window.alert("Error : " + errorMessage);
+    window.alert('Error : ' + errorMessage);
     userloggedin = false;
     // ...
   });
@@ -42,22 +42,22 @@ function login(){
 
 function signin(){
 
-  var userEmail = document.getElementById("email_field_signin").value;
-  // var userName = document.getElementById("name_field_signin").value;
-  var userPass = document.getElementById("password_field_signin").value;
+  var userEmail = document.getElementById('email_field_signin').value;
+  // var userName = document.getElementById('name_field_signin').value;
+  var userPass = document.getElementById('password_field_signin').value;
 
   firebase.auth().createUserWithEmailAndPassword(userEmail, userPass)
   .then(() => {
     firebase.auth().signInWithEmailAndPassword(userEmail, userPass)
     .then((user) => {
       userloggedin = true;
-      window.location = "../"
+      window.location = '../'
     }).catch(function(error) {
       // Handle Errors here.
       var errorCode = error.code;
       var errorMessage = error.message;
       console.log(errorCode);
-      window.alert("Error : " + errorMessage);
+      window.alert('Error : ' + errorMessage);
       // ...
     });
   })
@@ -65,7 +65,7 @@ function signin(){
     var errorCode = error.code;
     var errorMessage = error.message;
     console.log(errorCode);
-    window.alert("Error : " + errorMessage);
+    window.alert('Error : ' + errorMessage);
     // ..
   });
 // [END auth_signup_password]
@@ -74,7 +74,7 @@ function signin(){
 
 function logout(){
   firebase.auth().signOut().then(() => {
-    window.location = "../"
+    window.location = '../'
     userloggedin = false;
   });
 }
@@ -83,9 +83,9 @@ function checkUserLoginState() {
   firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
       // User is signed in.
-      console.log("A User was found");
-      document.getElementById("currentuser").style.display = "block";
-      document.getElementById("newuser").style.display = "none";
+      console.log('A User was found');
+      document.getElementById('currentuser').style.display = 'block';
+      document.getElementById('newuser').style.display = 'none';
       userloggedin = true;
 
       var user = firebase.auth().currentUser;
@@ -95,25 +95,25 @@ function checkUserLoginState() {
         photoUrl = user.photoURL;
         emailVerified = user.emailVerified;
         uid = user.uid;  
-        document.getElementById("greetUser").innerHTML = "Hallo " + email + "!";
-        console.log("Hello and Welcome " + email);
-        // document.getElementById("userprofileimage").setAttribute("src", photoUrl);
-        // console.log("UserProfile " + photoUrl);
+        document.getElementById('greetUser').innerHTML = 'Hallo ' + email + '!';
+        console.log('Hello and Welcome ' + email);
+        // document.getElementById('userprofileimage').setAttribute('src', photoUrl);
+        // console.log('UserProfile ' + photoUrl);
       }
   
     } else {
       // No user is signed in.
-      console.log("No user is signed in");
-      document.getElementById("currentuser").style.display = "none";
-      document.getElementById("newuser").style.display = "block";
+      console.log('No user is signed in');
+      document.getElementById('currentuser').style.display = 'none';
+      document.getElementById('newuser').style.display = 'block';
       userloggedin = false;
     }
   });
 }
 
 window.onload = () => {
-   console.log("Window Loaded");
-   if(document.body.contains(document.getElementById("currentuser")) || document.body.contains(document.getElementById("newuser")))checkUserLoginState();
+   console.log('Window Loaded');
+   if(document.body.contains(document.getElementById('currentuser')) || document.body.contains(document.getElementById('newuser')))checkUserLoginState();
 }
 
 // Peer to Peer Communication
@@ -124,35 +124,24 @@ var conn = null;
 var isSender = false;
 
 function initialize() {
-  isSender = (document.getElementById("otherpeerid").value.length != 0) ? true : false;
+  isSender = (document.getElementById('otherpeerid').value.length != 0) ? true : false;
   // Create own peer object with connection to shared PeerJS server
   peer = new Peer(null, {
-      debug: 3,
-      config: {
-        iceServers: [
-          {
-              urls: "stun:stun.stunprotocol.org"
-          },
-          {
-              urls: 'turn:numb.viagenie.ca',
-              credential: 'epws2020cobanmai',
-              username: 'joel_maximilian.mai@smail.th-koeln.de'
-          },
-      ]}    
+      debug: 3   
   });
 
-  peer.on("open", function (id) {
+  peer.on('open', function (id) {
       // Workaround for peer.reconnect deleting previous id
       if (peer.id === null) {
-          console.log("Received null id from peer open");
+          console.log('Received null id from peer open');
           peer.id = lastPeerId;
       } else {
           lastPeerId = peer.id;
       }
 
-      console.log("ID: " + peer.id);
-      document.getElementById("mypeerid").innerHTML = "My ID: " + peer.id;
-      if(!isSender)console.log("Awaiting connection...");
+      console.log('ID: ' + peer.id);
+      document.getElementById('mypeerid').innerHTML = 'My ID: ' + peer.id;
+      if(!isSender)console.log('Awaiting connection...');
       console.log('#######################');
       console.log(peer);
       console.log('#######################');
@@ -160,93 +149,93 @@ function initialize() {
       console.log(conn);
       console.log('#######################');
   });
-  peer.on("connection", function (c) {
-    console.log("Connecting...");
+  peer.on('connection', function (c) {
+    console.log('Connecting...');
       if(isSender){
         // Disallow incoming connections
-        c.on("open", function() {
-          c.send("Sender does not accept incoming connections");
+        c.on('open', function() {
+          c.send('Sender does not accept incoming connections');
           setTimeout(function() { c.close(); }, 500);
         });
       } else {
-        console.log("Pending Connection...");
+        console.log('Pending Connection...');
         // Allow only a single connection
         if (conn && conn.open) {
-          c.on("open", function() {
-              c.send("Already connected to another client");
+          c.on('open', function() {
+              c.send('Already connected to another client');
               setTimeout(function() { c.close(); }, 500);
           });
           return;
         }
 
         conn = c;
-        console.log("Connected to: " + conn.peer);
-        console.log("Connected");
+        console.log('Connected to: ' + conn.peer);
+        console.log('Connected');
         ready();
       }      
   });
-  peer.on("disconnected", function () {
-      console.log("Connection lost. Please reconnect");
+  peer.on('disconnected', function () {
+      console.log('Connection lost. Please reconnect');
 
       // Workaround for peer.reconnect deleting previous id
       peer.id = lastPeerId;
       peer._lastServerId = lastPeerId;
       peer.reconnect();
   });
-  peer.on("close", function() {
+  peer.on('close', function() {
       conn = null;
-      console.log("Connection destroyed");
+      console.log('Connection destroyed');
   });
-  peer.on("error", function (err) {
+  peer.on('error', function (err) {
       console.log(err);
-      alert("" + err);
+      alert('' + err);
   });
   
-  console.log("Client is Sender: " + isSender);
+  console.log('Client is Sender: ' + isSender);
   if(isSender){
     join();
   }
 };
 
 function ready() {
-  console.log("Connection ready...");
-  conn.on("data", function (data) {
-    console.log("Data recieved");
+  console.log('Connection ready...');
+  conn.on('data', function (data) {
+    console.log('Data recieved');
     addMessage(data);
   });
-  conn.on("close", function () {
-      document.getElementById("mypeerid").innerHTML.innerHTML = "Connection reset<br>Awaiting connection...";
+  conn.on('close', function () {
+      document.getElementById('mypeerid').innerHTML.innerHTML = 'Connection reset<br>Awaiting connection...';
       conn = null;
-      console.log("Connection closed");
+      console.log('Connection closed');
   });
 };
 
 function join() {
-  console.log("I did join() - nice! " + document.getElementById("otherpeerid").value);
+  console.log('I did join() - nice! ' + document.getElementById('otherpeerid').value);
   // Close old connection
-  if (conn) {
-      conn.close();
-  }
-  conn = peer.connect(document.getElementById("otherpeerid").value, {
+  // if (conn) {
+  //     conn.close();
+  // }
+  conn = peer.connect(document.getElementById('otherpeerid').value, {
       reliable: true
   });
-  console.log("Connection object after connecting to peer: " + conn)
-  conn.on("open", function () {
-      console.log("Connected to: " + conn.peer);
+  console.log('Connection object after connecting to peer: ' + conn)
+  conn.on('open', function () {
+      console.log('Connected to: ' + conn.peer);
 
-      conn.on("data", function (data) {
-        console.log("Data recieved");
+      conn.on('data', function (data) {
+        console.log('Data recieved');
         addMessage(data);
       });
 
-      conn.send("Hey " + document.getElementById("otherpeerid").value);
+      conn.send('Hey ' + document.getElementById('otherpeerid').value);
   });
-  conn.on("data", function (data) {
-    console.log("Data recieved");
+  conn.on('data', function (data) {
+    console.log('Data recieved');
     addMessage(data);
   });
-  conn.on("close", function () {
-    document.getElementById("mypeerid").innerHTML = "Connection closed";
+  conn.on('close', function () {
+    document.getElementById('mypeerid').innerHTML = 'Connection closed';
   });
 };
 
@@ -263,15 +252,17 @@ function addMessage(msg) {
 
   function addZero(t) {
       if (t < 10)
-          t = "0" + t;
+          t = '0' + t;
       return t;
   };
 
-  console.log(h + ":" + m + ":" + s + " " + msg);
+  console.log(h + ':' + m + ':' + s + ' ' + msg);
 };
 
 function sendText() {
+  console.log('#######CONNECTION OBJEKT########');
   console.log(conn);
-  conn.send(document.getElementById("chatText").value);
-  console.log("Text gesendet: " + document.getElementById("chatText").value);
-}
+  console.log('################################');
+  conn.send(document.getElementById('chatText').value);
+  console.log('Text gesendet: ' + document.getElementById('chatText').value);
+};
