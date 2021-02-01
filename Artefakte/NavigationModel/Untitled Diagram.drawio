@@ -1,1 +1,301 @@
-<mxfile host="app.diagrams.net" modified="2021-01-30T13:45:46.607Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.1 Safari/605.1.15" version="14.2.9" etag="eXWeReF60Yq-kWiS7aax" type="github"><diagram id="deJg4baaiuSE5cbJb8b9">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-02-01T14:35:38.366Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.1 Safari/605.1.15" etag="qXq3OUs9uVxUdymPI5r0" version="14.2.9" type="github">
+  <diagram id="deJg4baaiuSE5cbJb8b9" name="Page-1">
+    <mxGraphModel dx="1351" dy="921" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="G78z49IG1vQfpdma_BpT-58" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#99004D;" vertex="1" parent="1">
+          <mxGeometry x="820" y="60" width="220" height="440" as="geometry" />
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-34" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#99004D;" vertex="1" parent="1">
+          <mxGeometry x="140" y="320" width="210" height="490" as="geometry" />
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-18" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#99004D;" vertex="1" parent="1">
+          <mxGeometry x="405" y="70" width="215" height="170" as="geometry" />
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-10" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#99004D;" vertex="1" parent="1">
+          <mxGeometry x="530" y="280" width="215" height="200" as="geometry" />
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-1" value="Startseite" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="80" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-2" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="250" y="80" as="sourcePoint" />
+            <mxPoint x="250" y="10" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-3" value="" style="endArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="230" y="10" as="sourcePoint" />
+            <mxPoint x="230" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-4" value="Einstellungsübersicht" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="110" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-6" value="Rezeptübersicht" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="350" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-7" value="Profilübersicht" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="90" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-8" value="Meine Freunde" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="90" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-9" value="Rezept anklicken" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="565" y="414" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-13" value="" style="endArrow=classic;startArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="624.79" y="414" as="sourcePoint" />
+            <mxPoint x="624.29" y="374" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-14" value="Rezepte finden" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="580" y="290" width="90" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-16" value="Profilgestaltung" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="440" y="190" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-17" value="" style="endArrow=classic;startArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="G78z49IG1vQfpdma_BpT-16">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="180" as="sourcePoint" />
+            <mxPoint x="500" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-20" value="Übersetzung" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="420" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-21" value="Offline-Rezepte" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="730" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-22" value="Zutat-Direktbestellung" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="544" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-23" value="Rezept personalisieren" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="484" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-24" value="Rezept drucken" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="670" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-25" value="Rezept teilen" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="610" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-26" value="" style="endArrow=classic;startArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="230" y="420" as="sourcePoint" />
+            <mxPoint x="229.5" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-28" value="" style="endArrow=classic;startArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="290" y="510" as="sourcePoint" />
+            <mxPoint x="290" y="370" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="320" y="510" />
+              <mxPoint x="320" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-29" value="Einstellungen" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="480" y="80" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-30" value="" style="endArrow=classic;startArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="G78z49IG1vQfpdma_BpT-22">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="320" y="560" as="sourcePoint" />
+            <mxPoint x="290" y="370" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="320" y="564" />
+              <mxPoint x="320" y="510" />
+              <mxPoint x="320" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-31" value="" style="endArrow=classic;startArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="G78z49IG1vQfpdma_BpT-25" target="G78z49IG1vQfpdma_BpT-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="574" as="sourcePoint" />
+            <mxPoint x="300" y="370" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="320" y="630" />
+              <mxPoint x="320" y="520" />
+              <mxPoint x="320" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-32" value="" style="endArrow=classic;startArrow=classic;html=1;exitX=1;exitY=0.75;exitDx=0;exitDy=0;" edge="1" parent="1" source="G78z49IG1vQfpdma_BpT-24">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="640" as="sourcePoint" />
+            <mxPoint x="290" y="370" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="320" y="700" />
+              <mxPoint x="320" y="620" />
+              <mxPoint x="320" y="530" />
+              <mxPoint x="320" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-33" value="" style="endArrow=classic;startArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="G78z49IG1vQfpdma_BpT-21">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="290" y="710" as="sourcePoint" />
+            <mxPoint x="290" y="370" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="320" y="750" />
+              <mxPoint x="320" y="630" />
+              <mxPoint x="320" y="540" />
+              <mxPoint x="320" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-35" value="Rezept" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="150" y="320" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-41" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=1;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="G78z49IG1vQfpdma_BpT-9" target="G78z49IG1vQfpdma_BpT-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="440" y="219.29" as="sourcePoint" />
+            <mxPoint x="280" y="210" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="370" y="434" />
+              <mxPoint x="370" y="350" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-42" value="Rezeptvorschau" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="565" y="330" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-46" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;exitX=1;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="G78z49IG1vQfpdma_BpT-1" target="G78z49IG1vQfpdma_BpT-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300" y="130" as="sourcePoint" />
+            <mxPoint x="410" y="130" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="370" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-50" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="G78z49IG1vQfpdma_BpT-6" target="G78z49IG1vQfpdma_BpT-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="196" y="340" as="sourcePoint" />
+            <mxPoint x="239.29000000000002" y="160" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="90" y="370" />
+              <mxPoint x="90" y="110" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-51" value="" style="endArrow=classic;startArrow=classic;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="G78z49IG1vQfpdma_BpT-42" target="G78z49IG1vQfpdma_BpT-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="360" as="sourcePoint" />
+            <mxPoint x="300" y="150" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="380" y="350" />
+              <mxPoint x="380" y="100" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-52" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=1;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="G78z49IG1vQfpdma_BpT-1" target="G78z49IG1vQfpdma_BpT-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="300.0000000000002" y="118.57" as="sourcePoint" />
+            <mxPoint x="680" y="90" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="340" y="80" />
+              <mxPoint x="340" y="50" />
+              <mxPoint x="720" y="50" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-53" value="Kochplan erstellen" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="170" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-54" value="Rezept erstellen" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="240" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-55" value="Meine Rezepte" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="360" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-56" value="Meine Gruppen" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="300" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-57" value="Favoriten" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="850" y="420" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-59" value="Profil" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="890" y="60" width="40" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-61" value="" style="endArrow=classic;startArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="909.79" y="170" as="sourcePoint" />
+            <mxPoint x="909.29" y="130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-62" value="" style="endArrow=classic;startArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="G78z49IG1vQfpdma_BpT-57">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="969.9999999999998" y="479.9999999999998" as="sourcePoint" />
+            <mxPoint x="970.0000000000002" y="100" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1000" y="440" />
+              <mxPoint x="1000" y="360" />
+              <mxPoint x="1000" y="270" />
+              <mxPoint x="1000" y="100" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-63" value="" style="endArrow=classic;startArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="G78z49IG1vQfpdma_BpT-55">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="970" y="430" as="sourcePoint" />
+            <mxPoint x="970" y="100" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1000" y="380" />
+              <mxPoint x="1000" y="350" />
+              <mxPoint x="1000" y="260" />
+              <mxPoint x="1000" y="100" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-64" value="" style="endArrow=classic;startArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="G78z49IG1vQfpdma_BpT-56">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="990" y="380" as="sourcePoint" />
+            <mxPoint x="970" y="100" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1000" y="320" />
+              <mxPoint x="1000" y="210" />
+              <mxPoint x="1000" y="100" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-65" value="" style="endArrow=classic;startArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="G78z49IG1vQfpdma_BpT-54" target="G78z49IG1vQfpdma_BpT-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="990" y="330" as="sourcePoint" />
+            <mxPoint x="990" y="110" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="1000" y="260" />
+              <mxPoint x="1000" y="220" />
+              <mxPoint x="1000" y="100" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-66" value="" style="endArrow=classic;startArrow=classic;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.849;exitY=0.011;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="G78z49IG1vQfpdma_BpT-6" target="G78z49IG1vQfpdma_BpT-54">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="310" y="280" as="sourcePoint" />
+            <mxPoint x="775" y="255" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="272" y="260" />
+              <mxPoint x="400" y="260" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-69" value="" style="endArrow=classic;startArrow=classic;html=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="244.78999999999976" y="150" as="sourcePoint" />
+            <mxPoint x="244.29" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-70" value="Registrieren" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="185" y="150" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="G78z49IG1vQfpdma_BpT-71" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#99004D;" vertex="1" parent="1">
+          <mxGeometry x="642.5" y="65" width="155" height="90" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
