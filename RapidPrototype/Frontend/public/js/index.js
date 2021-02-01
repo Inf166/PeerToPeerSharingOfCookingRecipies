@@ -136,6 +136,12 @@ window.addEventListener('load', () => {
   function updatePublicUserPeerID (peerID) {
     ref.on('value', updateFriendIds, errUpdateDatabase);
   }
+  // update to show users this peer is not avaible
+  function updatePeerOffline() {
+    var result = ref.child(myKey).update({
+      "peerID": null
+    });
+  }
   // Handler for incoming data ( pushes or updates own peer ID )
   function updateFriendIds(data) {
     users = data.val();
@@ -175,6 +181,39 @@ window.addEventListener('load', () => {
   function errUpdateDatabase(err) {
     console.log('######## DATABASE UPDATE ERROR ########');
     console.log(err);
+  }
+  
+  function searchforfriends() {
+    var lookedForFriend = document.getElementById("search").value;
+    document.getElementById("friends-output").innerHTML = "";
+    document.getElementById("friends-output").innerHTML +=
+    (`<tr><th>Username</th><th>PeerID</th><th>Verbinden</th></tr>`);
+    if(lookedForFriend.length == 0) {
+      if (users != null) {
+        keys = Object.keys(users);
+        usersJSON = JSON.stringify(users);
+        for (var i = 0; i < keys.length; i++){
+          var k = keys[i];
+          if (users[k].uid != myUser.uid) {
+            document.getElementById("friends-output").innerHTML += 
+              (`<tr><td>${users[k].email}</td><td>${users[k].peerID}</td><td><button type="button" class="primary-button" onclick="makeFriendRequest("${k}")"><i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M624 208h-64v-64c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v64h-64c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h64v64c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-64h64c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zm-400 48c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"/></svg></i> Freund hinzuf&uuml;gen</button></td></tr>`);
+          }
+        }
+      }
+    } else {
+
+    }
+  }
+
+  function makeFriendRequest(keyOfFriend) {
+    var pathToMyFriendlist = `users/${myKey}/`
+    var snippet = database.ref(pathToMyFriendlist);
+    var userData = {
+      keyOfFriend: {
+        acceptedFriendRequest: false,
+      }
+    };
+    var result = ref.push(userData);
   }
 
 // Peer to Peer Communication
