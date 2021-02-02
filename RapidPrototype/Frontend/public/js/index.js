@@ -129,24 +129,29 @@ window.addEventListener('load', () => {
   // Init all global variables
   var database = firebase.database();
   var ref = database.ref('users');
+  var myUserObject = null;
   var myKey = null;
+  var myFriends = [];
   var users = null;
   var usersJSON = null;
   // called if user goes online (opens his WebRTC connection)
-  function updatePublicUserPeerID (peerID) {
-    ref.on('value', updateFriendIds, errUpdateDatabase);
+  function updatePublicUserPeerID () {
+    ref.on('value', updateDatabase, errUpdateDatabase);
   }
   // update to show users this peer is not avaible
   function updatePeerOffline() {
+    peer = null;
+    conn = null;
+    peerId = null;
     var result = ref.child(myKey).update({
-      "peerID": null
+      "peerID": peerId
     });
   }
   // Handler for incoming data ( pushes or updates own peer ID )
-  function updateFriendIds(data) {
+  function updateDatabase(data) {
     users = data.val();
-    var userAlreadyExists = false;
     console.log(users);
+    var userAlreadyExists = false;
     if(users != null) {
       keys = Object.keys(users);
       usersJSON = JSON.stringify(users);
@@ -154,6 +159,8 @@ window.addEventListener('load', () => {
         var k = keys[i];
         var userPeerID = users[k].peerID;
         if (users[k].uid == myUser.uid) {
+          myUserObject = users[k];
+          console.log(myUserObject);
           myKey = k;
           userAlreadyExists = true;
         }
@@ -161,18 +168,33 @@ window.addEventListener('load', () => {
         else { console.log('Skipped this User, because it was you.') }
       }
     }
-    console.log("My new Users Object");
-    console.log(users);
-    var userData = {
-      email: myUser.email,
-      uid: myUser.uid,
-      peerID: peer.id
-    };
     if(userAlreadyExists) {
-      var result = ref.child(myKey).update({
-        "peerID": peer.id
-      });
+      if(peer == null){
+        var result = ref.child(myKey).update({
+          "peerID": null
+        });
+      } else {
+        var result = ref.child(myKey).update({
+          "peerID": peer.id
+        });
+      }
+      if(myUserObject){
+        if(myUserObject["friends"] != undefined ){
+          myFriends = [];
+          Object.keys(myUserObject["friends"]).forEach((key) => {
+            myFriends.push(myUserObject["friends"][key]);
+          });
+          console.log('##### My Friends #####')
+          console.log(myFriends);
+        }
+      }
     } else {
+      var userData = {
+        email: myUser.email,
+        uid: myUser.uid,
+        peerID: peer.id
+      };
+      myUserObject = userData;
       var result = ref.push(userData);
       myKey = result.key;
     }
@@ -195,25 +217,63 @@ window.addEventListener('load', () => {
         for (var i = 0; i < keys.length; i++){
           var k = keys[i];
           if (users[k].uid != myUser.uid) {
-            document.getElementById("friends-output").innerHTML += 
-              (`<tr><td>${users[k].email}</td><td>${users[k].peerID}</td><td><button type="button" class="primary-button" onclick="makeFriendRequest("${k}")"><i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M624 208h-64v-64c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v64h-64c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h64v64c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-64h64c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zm-400 48c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"/></svg></i> Freund hinzuf&uuml;gen</button></td></tr>`);
+            if(containsFriend(k)){
+              document.getElementById("friends-output").innerHTML += 
+              (`<tr><td>${users[k].email}</td><td>${users[k].peerID}</td><td><button type="button" class="primary-button" onclick="">Zum Profil</button></td></tr>`);
+            } else {
+              document.getElementById("friends-output").innerHTML += 
+              (`<tr><td>${users[k].email}</td><td>${users[k].peerID}</td><td><button type="button" class="primary-button" onclick="makeFriendRequest('${k}')"><i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M624 208h-64v-64c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v64h-64c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h64v64c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16v-64h64c8.8 0 16-7.2 16-16v-32c0-8.8-7.2-16-16-16zm-400 48c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z"/></svg></i> Freund hinzuf&uuml;gen</button></td></tr>`);
+            }
+            
           }
         }
       }
     } else {
-
+      console.log("Specific Friendsearch is not yet implemented...")
     }
   }
 
   function makeFriendRequest(keyOfFriend) {
-    var pathToMyFriendlist = `users/${myKey}/`
-    var snippet = database.ref(pathToMyFriendlist);
-    var userData = {
-      keyOfFriend: {
-        acceptedFriendRequest: false,
+    console.log(keyOfFriend);
+    var userAlreadyExists = false;
+    var friends = {};
+    var friendsKeys = []
+    if(users != null) {
+      keys = Object.keys(users);
+      for (var i = 0; i < keys.length; i++){
+        var k = keys[i];
+        if (users[k].uid == myUser.uid) {
+          myKey = k;
+          friends = users[k].friends;
+          if(friends != undefined) friendsKeys = Object.keys(friends);
+          userAlreadyExists = true;
+        }
       }
+    }
+    console.log(friends);
+    console.log(friendsKeys);
+    console.log(friendsKeys.length)
+    if(friendsKeys.length == 0) {
+      friends = {0: keyOfFriend};
+    } else {
+      friends[friendsKeys.length++] = keyOfFriend;
+    }
+    var userData = {
+        "friends": friends,
     };
-    var result = ref.push(userData);
+    if(userAlreadyExists) {
+      var result = ref.child(myKey).update({
+        "friends": friends
+      });
+    }
+    searchforfriends();
+  }
+
+  function containsFriend(friendKey) {
+    for (let index = 0; index < myFriends.length; index++) {
+      if(myFriends[index]==friendKey) return true;      
+    }
+    return false;
   }
 
 // Peer to Peer Communication
@@ -309,13 +369,13 @@ window.addEventListener('load', () => {
       });
       peer.on('close', function() {
           conn = null;
-          updatePublicUserPeerID(null);
+          updatePublicUserPeerID();
           console.log('Connection destroyed');
       });
       peer.on('error', function (err) {
           console.log(err);
           alert('' + err);
-          updatePublicUserPeerID(null);
+          updatePublicUserPeerID();
       });
   };
 
@@ -330,7 +390,7 @@ window.addEventListener('load', () => {
       conn.on('close', function () {
           console.log("Connection reset<br>Awaiting connection...");
           conn = null;
-          updatePublicUserPeerID(null);
+          updatePublicUserPeerID();
       });
   }
   /**
