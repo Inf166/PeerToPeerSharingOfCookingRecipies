@@ -14,8 +14,6 @@ export default {
   name: "Profile",
   components: {
     UserLoginState
-  },
-mounted() {
   }
 };
 </script>

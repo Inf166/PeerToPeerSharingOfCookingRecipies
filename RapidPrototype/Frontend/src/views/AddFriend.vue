@@ -16,8 +16,8 @@
             </form>
             <form>
                 <span id="my-id" title="Copy this ID to the input on send.html.">If it works, your ID will show here</span>
-                <input type="text" id="receiver-id" title="Input the ID from receive.html" value="" placeholder="yiiqi6ipgr900000">
-                <button type="button" class="secondary-button" id="connect-button" onclick="join()"><i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"/></svg></i> Freund hinzuf&uuml;gen</button> 
+                <input type="text" id="receiver-id" title="Input the ID from receive.html" value="" placeholder="Friend ID goes here...">
+                <button type="button" class="secondary-button" id="connect-button" onclick="join()"><i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"/></svg></i> Verbindung aufbauen</button> 
             </form>
             <form>
                 <span>Hier eine Nachricht eingeben zum senden</span>

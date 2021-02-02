@@ -20,10 +20,11 @@
 </template>
 
 <script>
+import checkUserLoginState from '../mixins/checkUserLoginState';
 export default {
     name: "UserLoginState",
-    mounted() {
-    }
+    mixins: [checkUserLoginState]
+
 }
 </script>
 
