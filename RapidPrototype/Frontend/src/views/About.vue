@@ -46,7 +46,7 @@ export default {
     }
   },
   mounted() {
-    this.myPeer = peer.methods.initPeerJS();
+    this.myPeer = peer.methods.initPeerJS ();
   }
 };
 </script>

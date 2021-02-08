@@ -19,7 +19,7 @@
       </router-link>
     </div>
     <div class="content">
-      <router-view></router-view>
+      <router-view :myUser="myUser"></router-view>
       <Footer></Footer>
     </div>
   </div>
@@ -28,14 +28,30 @@
 // @ is an alias to /src
 import Footer from "@/components/Footer.vue";
 import initCloudMessaging from './mixins/initCloudMessaging';
+import getFirebaseUser from './mixins/getFirebaseUser';
 export default {
   name: "App",
   components: {
     Footer
   },
-  mixins: [initCloudMessaging],
+  data: function() {
+    return {
+      myUser: null
+    }
+  },
+  mixins: [initCloudMessaging,getFirebaseUser],
+  methods: {
+    updateUserObject: function updateUserObject() {
+      getFirebaseUser.methods.getFirebaseUser().then((user) => {
+        console.log(user);
+        this.myUser = user;
+      }).catch((error)=>{
+        console.log(error);
+      });
+    }
+  },
   mounted() {
-    
+    this.updateUserObject();
   }
 };
 </script>

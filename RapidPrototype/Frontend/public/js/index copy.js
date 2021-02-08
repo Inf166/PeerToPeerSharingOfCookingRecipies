@@ -276,180 +276,180 @@ function containsFriend(friendKey) {
   return false;
 }
 
-// Peer to Peer Communication
-// Set up variables
-var lastPeerId = null;
-var peer = null;
-var peerId = null;
-var conn = null;
-var isSender = false;
-var myId = document.getElementById("my-id");
-var recvIdInput = document.getElementById("receiver-id");
-var sendMessageBox = document.getElementById("sendMessageBox");
-var connectButton = document.getElementById("connect-button");
-var sendButton = document.getElementById("sendButton");
-var initializeButton = document.getElementById("initializeButton");
+// // Peer to Peer Communication
+// // Set up variables
+// var lastPeerId = null;
+// var peer = null;
+// var peerId = null;
+// var conn = null;
+// var isSender = false;
+// var myId = document.getElementById("my-id");
+// var recvIdInput = document.getElementById("receiver-id");
+// var sendMessageBox = document.getElementById("sendMessageBox");
+// var connectButton = document.getElementById("connect-button");
+// var sendButton = document.getElementById("sendButton");
+// var initializeButton = document.getElementById("initializeButton");
 
-/**
- * Create the Peer object for our end of the connection.
- *
- * Sets up callbacks that handle any events related to our
- * peer object.
- */
-  function initialize() {
-    myId = document.getElementById("my-id");
-    recvIdInput = document.getElementById("receiver-id");
-    sendMessageBox = document.getElementById("sendMessageBox");
-    connectButton = document.getElementById("connect-button");
-    sendButton = document.getElementById("sendButton");
-    initializeButton = document.getElementById("initializeButton");
-    isSender = (recvIdInput.value.length != 0) ? true : false;
-    // Create own peer object with connection to shared PeerJS server
-    peer = new Peer(null, {
-        debug: 3,
-        config: {
-            iceServers: [
-            {
-                urls: 'stun:stun.stunprotocol.org'
-            },
-            {
-                urls: 'turn:numb.viagenie.ca',
-                credential: 'epws2020cobanmai',
-                username: 'joel_maximilian.mai@smail.th-koeln.de'
-            },
-        ]}    
-    });
+// /**
+//  * Create the Peer object for our end of the connection.
+//  *
+//  * Sets up callbacks that handle any events related to our
+//  * peer object.
+//  */
+//   function initialize() {
+//     myId = document.getElementById("my-id");
+//     recvIdInput = document.getElementById("receiver-id");
+//     sendMessageBox = document.getElementById("sendMessageBox");
+//     connectButton = document.getElementById("connect-button");
+//     sendButton = document.getElementById("sendButton");
+//     initializeButton = document.getElementById("initializeButton");
+//     isSender = (recvIdInput.value.length != 0) ? true : false;
+//     // Create own peer object with connection to shared PeerJS server
+//     peer = new Peer(null, {
+//         debug: 3,
+//         config: {
+//             iceServers: [
+//             {
+//                 urls: 'stun:stun.stunprotocol.org'
+//             },
+//             {
+//                 urls: 'turn:numb.viagenie.ca',
+//                 credential: 'epws2020cobanmai',
+//                 username: 'joel_maximilian.mai@smail.th-koeln.de'
+//             },
+//         ]}    
+//     });
 
-    peer.on('open', function (id) {
-        // Workaround for peer.reconnect deleting previous id
-        if (peer.id === null) {
-            console.log('Received null id from peer open');
-            peer.id = lastPeerId;
-        } else {
-            lastPeerId = peer.id;
-        }
+//     peer.on('open', function (id) {
+//         // Workaround for peer.reconnect deleting previous id
+//         if (peer.id === null) {
+//             console.log('Received null id from peer open');
+//             peer.id = lastPeerId;
+//         } else {
+//             lastPeerId = peer.id;
+//         }
 
-        console.log('ID: ' + peer.id);
-        document.getElementById("my-id").innerHTML = "ID: " + peer.id;
-        if (myUser != null) updatePublicUserPeerID(peer.id);
-        console.log("Awaiting connection...");
-    });
-    peer.on('connection', function (c) {
-        console.log('Connecting...');
-        if(isSender){
-            // Disallow incoming connections
-            c.on('open', function() {
-            c.send('Sender does not accept incoming connections');
-            setTimeout(function() { c.close(); }, 500);
-            });
-        } else {
-            console.log('Pending Connection...');
-            // Allow only a single connection
-            if (conn && conn.open) {
-            c.on('open', function() {
-                c.send('Already connected to another client');
-                setTimeout(function() { c.close(); }, 500);
-            });
-            return;
-            }
+//         console.log('ID: ' + peer.id);
+//         document.getElementById("my-id").innerHTML = "ID: " + peer.id;
+//         if (myUser != null) updatePublicUserPeerID(peer.id);
+//         console.log("Awaiting connection...");
+//     });
+//     peer.on('connection', function (c) {
+//         console.log('Connecting...');
+//         if(isSender){
+//             // Disallow incoming connections
+//             c.on('open', function() {
+//             c.send('Sender does not accept incoming connections');
+//             setTimeout(function() { c.close(); }, 500);
+//             });
+//         } else {
+//             console.log('Pending Connection...');
+//             // Allow only a single connection
+//             if (conn && conn.open) {
+//             c.on('open', function() {
+//                 c.send('Already connected to another client');
+//                 setTimeout(function() { c.close(); }, 500);
+//             });
+//             return;
+//             }
 
-            conn = c;
-            console.log('Connected to: ' + conn.peer);
-            console.log('Connected');
-            ready();
-        }     
-    });
-    peer.on('disconnected', function () {
-        console.log('Connection lost. Please reconnect');
+//             conn = c;
+//             console.log('Connected to: ' + conn.peer);
+//             console.log('Connected');
+//             ready();
+//         }     
+//     });
+//     peer.on('disconnected', function () {
+//         console.log('Connection lost. Please reconnect');
 
-        // Workaround for peer.reconnect deleting previous id
-        peer.id = lastPeerId;
-        peer._lastServerId = lastPeerId;
-        peer.reconnect();
-    });
-    peer.on('close', function() {
-        conn.close();
-        updatePublicUserPeerID();
-        console.log('Connection destroyed');
-    });
-    peer.on('error', function (err) {
-        console.log(err);
-        alert('' + err);
-        updatePublicUserPeerID();
-    });
-};
+//         // Workaround for peer.reconnect deleting previous id
+//         peer.id = lastPeerId;
+//         peer._lastServerId = lastPeerId;
+//         peer.reconnect();
+//     });
+//     peer.on('close', function() {
+//         conn.close();
+//         updatePublicUserPeerID();
+//         console.log('Connection destroyed');
+//     });
+//     peer.on('error', function (err) {
+//         console.log(err);
+//         alert('' + err);
+//         updatePublicUserPeerID();
+//     });
+// };
 
-/**
-  * Triggered once a connection has been achieved.
-  * Defines callbacks to handle incoming data and connection events.
-  */
-function ready() {
-    conn.on('data', function (data) {
-        console.log("Data recieved: " + data);
-    });
-    conn.on('close', function () {
-        console.log("Connection reset<br>Awaiting connection...");
-        conn = null;
-        updatePublicUserPeerID();
-    });
-}
-/**
-  * Create the connection between the two Peers.
-  *
-  * Sets up callbacks that handle any events related to the
-  * connection and data received on it.
-  */
-  function join() {
-    // Close old connection
-    if (conn) {
-        conn.close();
-    }
+// /**
+//   * Triggered once a connection has been achieved.
+//   * Defines callbacks to handle incoming data and connection events.
+//   */
+// function ready() {
+//     conn.on('data', function (data) {
+//         console.log("Data recieved: " + data);
+//     });
+//     conn.on('close', function () {
+//         console.log("Connection reset<br>Awaiting connection...");
+//         conn = null;
+//         updatePublicUserPeerID();
+//     });
+// }
+// /**
+//   * Create the connection between the two Peers.
+//   *
+//   * Sets up callbacks that handle any events related to the
+//   * connection and data received on it.
+//   */
+//   function join() {
+//     // Close old connection
+//     if (conn) {
+//         conn.close();
+//     }
 
-    // Create connection to destination peer specified in the input field
-    conn = peer.connect(recvIdInput.value, {
-        reliable: true
-    });
+//     // Create connection to destination peer specified in the input field
+//     conn = peer.connect(recvIdInput.value, {
+//         reliable: true
+//     });
 
-    conn.on('open', function () {
-        console.log("Connected to: " + conn.peer);
-    });
-    // Handle incoming data (messages only since this is the signal sender)
-    conn.on('data', function (data) {
-        addMessage(data);
-    });
-    conn.on('close', function () {
-        console.log("Connection closed");
-    });
-};
-// format output on console
-function addMessage(msg) {
-    var now = new Date();
-    var h = now.getHours();
-    var m = addZero(now.getMinutes());
-    var s = addZero(now.getSeconds());
+//     conn.on('open', function () {
+//         console.log("Connected to: " + conn.peer);
+//     });
+//     // Handle incoming data (messages only since this is the signal sender)
+//     conn.on('data', function (data) {
+//         addMessage(data);
+//     });
+//     conn.on('close', function () {
+//         console.log("Connection closed");
+//     });
+// };
+// // format output on console
+// function addMessage(msg) {
+//     var now = new Date();
+//     var h = now.getHours();
+//     var m = addZero(now.getMinutes());
+//     var s = addZero(now.getSeconds());
 
-    if (h > 12)
-        h -= 12;
-    else if (h === 0)
-        h = 12;
+//     if (h > 12)
+//         h -= 12;
+//     else if (h === 0)
+//         h = 12;
 
-    function addZero(t) {
-        if (t < 10)
-            t = "0" + t;
-        return t;
-    };
+//     function addZero(t) {
+//         if (t < 10)
+//             t = "0" + t;
+//         return t;
+//     };
 
-    console.log(h + ':' + m + ':' + s + ' ' + msg);
-}
-// sendText (basic chat over console)
-function sendText() {
-  if (conn && conn.open) {
-    var msg = sendMessageBox.value;
-    sendMessageBox.value = "";
-    conn.send(msg);
-    console.log("Sent: " + msg)
-    addMessage(msg);
-  } else {
-    console.log('Connection is closed');
-  }
-}
+//     console.log(h + ':' + m + ':' + s + ' ' + msg);
+// }
+// // sendText (basic chat over console)
+// function sendText() {
+//   if (conn && conn.open) {
+//     var msg = sendMessageBox.value;
+//     sendMessageBox.value = "";
+//     conn.send(msg);
+//     console.log("Sent: " + msg)
+//     addMessage(msg);
+//   } else {
+//     console.log('Connection is closed');
+//   }
+// }
