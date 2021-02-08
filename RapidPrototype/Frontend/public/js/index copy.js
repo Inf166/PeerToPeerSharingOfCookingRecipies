@@ -368,7 +368,7 @@ var initializeButton = document.getElementById("initializeButton");
         peer.reconnect();
     });
     peer.on('close', function() {
-        conn = null;
+        conn.close();
         updatePublicUserPeerID();
         console.log('Connection destroyed');
     });
