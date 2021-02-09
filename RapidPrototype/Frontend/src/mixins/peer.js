@@ -2,13 +2,28 @@ import Peer from "../../node_modules/peerjs";
 export default {
     data: function() {
         return {
-
+            myPeerId: '',
+            myPeerObject: null
         }
     },
     computed: {
 
 	},
     methods: {
+        getPeerId: async function(peer){
+            return new Promise(function (resolve, reject) {
+                peer.on('open', function (peerID) {
+                    if (peerID) {
+                        resolve(peerID);
+                    } else {
+                        reject(Error('User could not be found.'));
+                    }
+                });
+            });
+        },
+        getPeerObject: function getPeerObject() {
+            return this.myPeerObject;
+        },
         sendMessage: function sendMessage(connection, message) {
             connection.send(message);
         },   
@@ -89,7 +104,8 @@ export default {
                 console.log("> Peer: on error");
                 console.log(error);
             });
-            return myPeer;
+            this.myPeerObject = myPeer
+            return this.myPeerObject;
         }
     },
     mounted() {

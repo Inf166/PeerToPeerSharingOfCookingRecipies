@@ -19,7 +19,7 @@
       </router-link>
     </div>
     <div class="content">
-      <router-view :myUser="myUser"></router-view>
+      <router-view :userName="myUserName" :userUid="myUid" :userPeerId="myPeerId" :userEmail="myEmail"></router-view>
       <Footer></Footer>
     </div>
   </div>
@@ -29,6 +29,7 @@
 import Footer from "@/components/Footer.vue";
 import initCloudMessaging from './mixins/initCloudMessaging';
 import getFirebaseUser from './mixins/getFirebaseUser';
+import peer from './mixins/peer';
 export default {
   name: "App",
   components: {
@@ -36,22 +37,68 @@ export default {
   },
   data: function() {
     return {
-      myUser: null
+      myUser: null,
+      myUserName: '',
+      myUid: '',
+      myEmail: '',
+      myPeer: null,
+      myPeerId: '',
+      myConnection: null,
+      receiverID: null,
+      chatText: null
     }
   },
-  mixins: [initCloudMessaging,getFirebaseUser],
+  mixins: [initCloudMessaging,getFirebaseUser, peer],
+  watch: {
+    myUser(newValue, oldValue) {
+      console.log("oldValue for myUser");
+      console.log(oldValue);
+      console.log("newValue for myUser");
+      console.log(newValue);
+      this.myUid = newValue.uid;
+      this.myUserName = newValue.displayName;
+      this.myEmail = newValue.email;
+    },
+    myPeer(newValue, oldValue) {
+      console.log("oldValue for myPeer");
+      console.log(oldValue);
+      console.log("newValue for myPeer");
+      console.log(newValue);
+      this.updateMyPeerId(); 
+
+    },
+    myPeerId(newValue, oldValue) {
+      console.log("oldValue for myPeerId");
+      console.log(oldValue);
+      console.log("newValue for myPeerId");
+      console.log(newValue);
+    }
+  },
+  computed: {
+
+  },
   methods: {
     updateUserObject: function updateUserObject() {
       getFirebaseUser.methods.getFirebaseUser().then((user) => {
-        console.log(user);
         this.myUser = user;
       }).catch((error)=>{
         console.log(error);
       });
-    }
+    },
+    updateMyPeer: function updateMyPeer() {
+      this.myPeer = peer.methods.initPeerJS();
+    },
+    updateMyPeerId: function updateMyPeerId() {
+      peer.methods.getPeerId(this.myPeer).then((PeerId) => {
+        this.myPeerId = PeerId;
+      }).catch((error)=>{
+        console.log(error);
+      });;
+    },
   },
   mounted() {
     this.updateUserObject();
+    this.updateMyPeer(); 
   }
 };
 </script>
