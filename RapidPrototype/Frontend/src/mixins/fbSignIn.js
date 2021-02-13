@@ -8,38 +8,31 @@ export default {
 
             firebase.auth().createUserWithEmailAndPassword(userEmail, userPass)
             .then(() => {
-                // user.sendEmailVerification().then(function() {
                     firebase.auth().signInWithEmailAndPassword(userEmail, userPass)
                         .then(() => {
                             var user = firebase.auth().currentUser;
                             user.updateProfile({
                                 displayName: userName
                               }).then(function() {
-                                console.log(user);
+                                console.log("> Firebase User: ", user);
                                 window.location = '../'
                               }).catch(function(error) {
                                 var errorCode = error.code;
                                 var errorMessage = error.message;
-                                console.log(errorCode);
-                                window.alert('Error : ' + errorMessage);
+                                console.log("Error Code: ",errorCode);
+                                window.alert('Error : ', errorMessage);
                               });
                         }).catch(function(error) {
                         var errorCode = error.code;
                         var errorMessage = error.message;
-                        console.log(errorCode);
+                        console.log("Error Code: ",errorCode);
                         window.alert('Error : ' + errorMessage);
                         });
-                // }).catch(function(error) {
-                //     var errorCode = error.code;
-                //     var errorMessage = error.message;
-                //     console.log(errorCode);
-                //     window.alert('Error : ' + errorMessage);
-                // });
             })
             .catch((error) => {
                 var errorCode = error.code;
                 var errorMessage = error.message;
-                console.log(errorCode);
+                console.log("Error Code: ",errorCode);
                 window.alert('Error : ' + errorMessage);
             });
         }

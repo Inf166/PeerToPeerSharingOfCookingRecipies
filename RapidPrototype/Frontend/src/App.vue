@@ -19,7 +19,19 @@
       </router-link>
     </div>
     <div class="content">
-      <router-view :userName="myUserName" :userUid="myUid" :userPeerId="myPeerId" :userEmail="myEmail"></router-view>
+      <router-view 
+        :userName="myUserName" 
+        :userUid="myUid" 
+        :userPeerId="myPeerId" 
+        :userEmail="myEmail" 
+        :myDatabase="myDatabase" 
+        :otherUsers="otherUsers"
+        :myKey="myKey"
+        :myFriends="myFriends"
+        :searchOutput="searchOutput"
+        @addFriend="onNewFriend"
+        @searchFriends="onSearchFriends"
+      ></router-view>
       <Footer></Footer>
     </div>
   </div>
@@ -30,6 +42,8 @@ import Footer from "@/components/Footer.vue";
 import initCloudMessaging from './mixins/initCloudMessaging';
 import getFirebaseUser from './mixins/getFirebaseUser';
 import peer from './mixins/peer';
+import fbDatabase from './mixins/fbDatabase';
+import fbDatabaseMaintain from './mixins/fbDatabaseMaintain';
 export default {
   name: "App",
   components: {
@@ -41,37 +55,56 @@ export default {
       myUserName: '',
       myUid: '',
       myEmail: '',
+
       myPeer: null,
       myPeerId: '',
       myConnection: null,
       receiverID: null,
-      chatText: null
+
+      chatText: null,
+
+      myDatabase: null,
+      otherUsers: null,
+      myKey:'',
+      myFriends: null,
+
+      searchOutput: [],
     }
   },
-  mixins: [initCloudMessaging,getFirebaseUser, peer],
+  mixins: [initCloudMessaging,getFirebaseUser, peer, fbDatabase, fbDatabaseMaintain],
   watch: {
     myUser(newValue, oldValue) {
-      console.log("oldValue for myUser");
-      console.log(oldValue);
-      console.log("newValue for myUser");
-      console.log(newValue);
+      console.log(`# WATCHER: myUser: ${oldValue} -> ${newValue}`);
       this.myUid = newValue.uid;
       this.myUserName = newValue.displayName;
       this.myEmail = newValue.email;
     },
     myPeer(newValue, oldValue) {
-      console.log("oldValue for myPeer");
-      console.log(oldValue);
-      console.log("newValue for myPeer");
-      console.log(newValue);
+      console.log(`# WATCHER: myPeer: ${oldValue} -> ${newValue}`);
       this.updateMyPeerId(); 
-
     },
     myPeerId(newValue, oldValue) {
-      console.log("oldValue for myPeerId");
-      console.log(oldValue);
-      console.log("newValue for myPeerId");
-      console.log(newValue);
+      console.log(`# WATCHER: myPeerId: ${oldValue} -> ${newValue}`);
+      this.updataDatabaseRef();
+    },
+    myDatabase(newValue, oldValue) {
+      console.log(`# WATCHER: myDatabase: ${oldValue} -> ${newValue}`);
+      this.updataOtherUsers();
+    },
+    otherUsers(newValue, oldValue) {
+      console.log(`# WATCHER: otherUsers: ${oldValue} -> ${newValue}`);
+      this.updateMyKey();
+      this.updateMyFriends();
+    },
+    myKey(newValue, oldValue) {
+      console.log(`# WATCHER: myKey: ${oldValue} -> ${newValue}`);
+    },
+    myFriends(newValue, oldValue) {
+      console.log(`# WATCHER: myFriends: ${oldValue} -> ${newValue}`);
+      this.updateOutput();
+    },
+    searchOutput(newValue, oldValue) {
+      console.log(`# WATCHER: searchOutput: ${oldValue} -> ${newValue}`);
     }
   },
   computed: {
@@ -81,9 +114,9 @@ export default {
     updateUserObject: function updateUserObject() {
       getFirebaseUser.methods.getFirebaseUser().then((user) => {
         this.myUser = user;
-        this.updateMyPeer(); 
+        this.updateMyPeer();
       }).catch((error)=>{
-        console.log(error);
+        console.log("ERROR: ", error);
       });
     },
     updateMyPeer: function updateMyPeer() {
@@ -93,7 +126,7 @@ export default {
       peer.methods.getPeerId(this.myPeer).then((PeerId) => {
         this.myPeerId = PeerId;
       }).catch((error)=>{
-        console.log(error);
+        console.log("ERROR: ", error);
       });;
     },
     closeConnections: function closeConnections(peer, conn) {
@@ -101,8 +134,41 @@ export default {
       this.myPeer = peer.methods.closePeer(peer);
       this.myPeerId = "";
     },
-    eventListener: function eventListener(event) {
-      console.log(event);
+    updataDatabaseRef: function updataDatabaseRef() {
+        this.myDatabase = fbDatabase.methods.initDatabase();
+    },
+    updataOtherUsers: function updataOtherUsers() {
+        fbDatabaseMaintain.methods.databaseOnValueHandler(this.myDatabase, this.myUid, this.myPeerId, this.myEmail, this.myName).then((userlist) => {
+            this.otherUsers = userlist;
+        }).catch((error)=>{
+          console.log("ERROR: ", error);
+        });
+    },
+    updateMyKey: function updateMyKey() {
+        fbDatabaseMaintain.methods.getUserKeyInDatabase(this.otherUsers, this.myUid).then((key) => {
+            this.myKey = key;
+        }).catch((error)=>{
+          console.log("ERROR: ", error);
+        });
+    },
+    updateMyFriends: function updateMyFriends() {
+        fbDatabaseMaintain.methods.getFriendListInDatabase(this.myDatabase, this.myKey).then((friends) => {
+            this.myFriends = friends;
+        }).catch((error)=>{
+          console.log("ERROR: ", error);
+        });
+    },
+    updateOutput: function updateOutput() {
+        this.searchOutput = fbDatabaseMaintain.methods.search(this.myUid, this.myKey, this.otherUsers);
+        console.log("> Search Output: ", this.searchOutput);
+    },
+    onNewFriend: function(value) {
+      console.log("> Event noticed: ", value);
+      this.updataOtherUsers();
+    },
+    onSearchFriends: function(value){
+      console.log("> You searched for: ", value);
+      this.updateOutput();
     }
   },
   mounted() {

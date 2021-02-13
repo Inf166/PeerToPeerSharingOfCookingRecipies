@@ -55,7 +55,6 @@ export default {
             return conn;
         },
         initPeerJS: function initPeerJS(){
-            console.log("Called initPeerJS() Method");
             var myPeer = new Peer(null, {
                 debug: 3,
                 config: {
@@ -71,20 +70,17 @@ export default {
                 ]}    
             });
             myPeer.on('open', function (peerID) {
-                console.log("> Peer: on open");
-                console.log(peerID);
+                console.log("> Peer: on open", peerID);
             });
             myPeer.on('connection', function (connection) {
-                console.log("> Peer: on connection");
-                console.log(connection);
+                console.log("> Peer: on connection", connection);
                 connection.on('open', function() {
-                    console.log("> Peer: Connection: on open " + connection.peer);
+                    console.log("> Peer: Connection: on open ", connection.peer);
                     connection.send("Hello other User.");
                     // Send User updated Recipies here.
                 });
                 connection.on('data', function(data) {
-                    console.log("> Peer: Connection: on data " + data);
-                    console.log(myPeer);
+                    console.log("> Peer: Connection: on data ", data);
                     // Handle User Requests here.
                     switch (data) {
                         case "Hello":
@@ -111,8 +107,7 @@ export default {
 
             });
             myPeer.on('error', function (error) {
-                console.log("> Peer: on error");
-                console.log(error);
+                console.log("> Peer: on error", error);
             });
             this.myPeerObject = myPeer
             return this.myPeerObject;

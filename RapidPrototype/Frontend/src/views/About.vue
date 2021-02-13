@@ -23,13 +23,6 @@ export default {
   methods: {
     establishConnection: function establishConnection() {
       this.myConnection = peer.methods.join(this.myPeer, this.receiverID);
-      console.log("#### #### #### ####");
-      console.log("Debug Block:");
-      console.log("MY PEER:");
-      console.log(this.myPeer);
-      console.log("MY CONNCECTION:");
-      console.log(this.myConnection);
-      console.log("#### #### #### ####");
     },
     sendChatText: function sendChatText() {
       if(this.myConnection){

@@ -7,12 +7,12 @@ export default {
 
             firebase.auth().signInWithEmailAndPassword(userEmail, userPass)
             .then((user) => {
-                console.log(user);
+                console.log("> Firebase User: ", user);
                 window.location = '../'
             }).catch(function(error) {
                 var errorCode = error.code;
                 var errorMessage = error.message;
-                console.log(errorCode);
+                console.log("Error Code: ",errorCode);
                 window.alert('Error : ' + errorMessage);
             });
         }

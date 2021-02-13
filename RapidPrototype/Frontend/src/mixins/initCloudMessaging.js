@@ -5,12 +5,11 @@ export default {
             const messaging = firebase.messaging();
         messaging.requestPermission()
         .then(function () {
-            console.log("Notification permission granted.");
             // get the token in the form of promise
             return messaging.getToken({vapidKey: 'BLp8X9VOtO33mCBL0PKzAmL38ldpCe781WRvmYvrmzxu4VTNGQtYFAx7dqjGn5PTEsFQcpXcAMgrFuYLwmrIYK0'})
         })
         .then(function(token) {
-            console.log(token);
+            console.log("> Got Token: ", token);
         })
         .catch(function (err) {
             console.log("Unable to get permission to notify.", err);
