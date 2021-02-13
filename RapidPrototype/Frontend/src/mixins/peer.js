@@ -44,6 +44,16 @@ export default {
             });
             return myConnection;
         },
+        closePeer: function closePeer(peer) {
+            peer.close();
+            peer = null;
+            return peer;
+        },
+        closeConn: function closeConn(conn) {
+            conn.close();
+            conn = null;
+            return conn;
+        },
         initPeerJS: function initPeerJS(){
             console.log("Called initPeerJS() Method");
             var myPeer = new Peer(null, {

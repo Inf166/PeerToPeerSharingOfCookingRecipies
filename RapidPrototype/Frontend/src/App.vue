@@ -81,6 +81,7 @@ export default {
     updateUserObject: function updateUserObject() {
       getFirebaseUser.methods.getFirebaseUser().then((user) => {
         this.myUser = user;
+        this.updateMyPeer(); 
       }).catch((error)=>{
         console.log(error);
       });
@@ -95,10 +96,17 @@ export default {
         console.log(error);
       });;
     },
+    closeConnections: function closeConnections(peer, conn) {
+      this.myConnection = peer.methods.closeConn(conn);
+      this.myPeer = peer.methods.closePeer(peer);
+      this.myPeerId = "";
+    },
+    eventListener: function eventListener(event) {
+      console.log(event);
+    }
   },
   mounted() {
     this.updateUserObject();
-    this.updateMyPeer(); 
   }
 };
 </script>
