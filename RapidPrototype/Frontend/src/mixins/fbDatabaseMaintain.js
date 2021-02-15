@@ -67,12 +67,22 @@ export default {
                 reject(Error('User could not be found, so no Key.'));
             });
         },
-        getFriendListInDatabase: async function(databaseRef, myKey) {
+        getFriendListInDatabase: async function(otherUsers, myKey) {
             return new Promise(function (resolve, reject) {
-                databaseRef.child(myKey).once('value').then((snapshot) => {
-                    var friendList = (snapshot.val() && snapshot.val().friends) || 'Anonymous';
-                    resolve(friendList);
-                  });
+                if(otherUsers != null) {
+                    var keys = Object.keys(otherUsers);
+                    for (var i = 0; i < keys.length; i++){
+                      var k = keys[i];
+                      if (myKey == k) {
+                        if(otherUsers[k].friends != undefined) {
+                            resolve(otherUsers[k].friends);
+                        } else {
+                            resolve([]);
+                        }
+                      }
+                    }
+                }
+                resolve([]);
                 reject(Error('User could not be found, so no Key.'));
             });
         },

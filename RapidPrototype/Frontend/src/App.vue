@@ -23,6 +23,7 @@
         :userName="myUserName" 
         :userUid="myUid" 
         :userPeerId="myPeerId" 
+        :isOnline="isOnline"
         :userEmail="myEmail" 
         :myDatabase="myDatabase" 
         :otherUsers="otherUsers"
@@ -31,6 +32,8 @@
         :searchOutput="searchOutput"
         @addFriend="onNewFriend"
         @searchFriends="onSearchFriends"
+        @refreshPeers="onRefreshPeers"
+        @changeNetworkStatus="onchangeNetworkStatus"
       ></router-view>
       <Footer></Footer>
     </div>
@@ -60,6 +63,7 @@ export default {
       myPeerId: '',
       myConnection: null,
       receiverID: null,
+      isOnline: false,
 
       chatText: null,
 
@@ -94,14 +98,12 @@ export default {
     otherUsers(newValue, oldValue) {
       console.log(`# WATCHER: otherUsers: ${oldValue} -> ${newValue}`);
       this.updateMyKey();
-      this.updateMyFriends();
     },
     myKey(newValue, oldValue) {
       console.log(`# WATCHER: myKey: ${oldValue} -> ${newValue}`);
     },
     myFriends(newValue, oldValue) {
       console.log(`# WATCHER: myFriends: ${oldValue} -> ${newValue}`);
-      this.updateOutput();
     },
     searchOutput(newValue, oldValue) {
       console.log(`# WATCHER: searchOutput: ${oldValue} -> ${newValue}`);
@@ -125,14 +127,21 @@ export default {
     updateMyPeerId: function updateMyPeerId() {
       peer.methods.getPeerId(this.myPeer).then((PeerId) => {
         this.myPeerId = PeerId;
+        this.isOnline = true
       }).catch((error)=>{
+        this.isOnline = false;
         console.log("ERROR: ", error);
       });;
     },
-    closeConnections: function closeConnections(peer, conn) {
-      this.myConnection = peer.methods.closeConn(conn);
-      this.myPeer = peer.methods.closePeer(peer);
+    closeConnections: function closeConnections() {
+      // if(ppeer != undefined){
+      //   this.myPeer = null;      
       this.myPeerId = "";
+      //   if(pconn != undefined) {
+      //     this.myConnection = null;
+      //   }
+      // }
+      this.isOnline = false;
     },
     updataDatabaseRef: function updataDatabaseRef() {
         this.myDatabase = fbDatabase.methods.initDatabase();
@@ -147,12 +156,13 @@ export default {
     updateMyKey: function updateMyKey() {
         fbDatabaseMaintain.methods.getUserKeyInDatabase(this.otherUsers, this.myUid).then((key) => {
             this.myKey = key;
+            this.updateMyFriends();
         }).catch((error)=>{
           console.log("ERROR: ", error);
         });
     },
     updateMyFriends: function updateMyFriends() {
-        fbDatabaseMaintain.methods.getFriendListInDatabase(this.myDatabase, this.myKey).then((friends) => {
+        fbDatabaseMaintain.methods.getFriendListInDatabase(this.otherUsers, this.myKey).then((friends) => {
             this.myFriends = friends;
         }).catch((error)=>{
           console.log("ERROR: ", error);
@@ -165,10 +175,23 @@ export default {
     onNewFriend: function(value) {
       console.log("> Event noticed: ", value);
       this.updataOtherUsers();
+      this.updateOutput();
+      this.updateMyFriends();
     },
     onSearchFriends: function(value){
       console.log("> You searched for: ", value);
+      this.updataOtherUsers();
       this.updateOutput();
+      this.updateMyFriends();
+    },
+    onRefreshPeers: function() {
+      for(var friend in this.myFriends) {
+        console.log(this.otherUsers[this.myFriends[friend]].peerID);
+        this.myConnection = peer.methods.join(this.myPeer, this.otherUsers[this.myFriends[friend]].peerID);
+      }
+    },
+    onchangeNetworkStatus: function() {
+      this.closeConnections(this.myPeer, this.myConnection);
     }
   },
   mounted() {
@@ -470,10 +493,6 @@ i {
 .search-button:hover {
   border-color: var(--higlight-orange);
 }
-
-.savedrecipe {
-
-}
 .recipe-title {
   color: var(--main-bg-color);
 }
@@ -527,17 +546,11 @@ i {
   display: flex;
   display: -webkit-flex; /* Safari */  
 }
-.ingredient-list {
-  
-}
 .ingredient-list tr td{
   padding-top: 1rem;
 }
 .ingredient-list tr > :first-child {
   font-weight: 700;
-}
-.instructions-list {
-  
 }
 .instructions-list tr td{
   padding-top: 1rem;
@@ -566,18 +579,6 @@ i {
   }
   .recipe-teaser {
     grid-template-rows: 1fr 300px 100px;
-  }
-  .recipe-teaser-img {
-
-  }
-  .recipe-teaser-img img {
-
-  }
-  .recipe-teaser-desc {
-
-  }
-  .recipe-teaser-buttons {
-
   }
   button {
     padding: 0.5rem;

@@ -42,6 +42,7 @@ export default {
             myConnection.on('close', function () {
                 console.log("Connection closed");
             });
+            myConnection.send("send-recipies");
             return myConnection;
         },
         closePeer: function closePeer(peer) {
