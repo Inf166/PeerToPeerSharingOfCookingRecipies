@@ -11,12 +11,14 @@
     "restTime": 15,
     "difficultyLevel": "simpel",
     "portion": 2,
-    "Ingredients": [
+    "ingredients": [
         {
             "name": "flour",
             "amount": "500",
             "unit": "g",
-            "origin": "Rewe",
+            "origin": [
+                "Rewe"
+            ],
             "alternativeIngredients": [
                 {
                     "name": "Dinkel",

@@ -19,21 +19,10 @@
       </router-link>
     </div>
     <div class="content">
-      <router-view 
-        :userName="myUserName" 
-        :userUid="myUid" 
-        :userPeerId="myPeerId" 
-        :isOnline="isOnline"
-        :userEmail="myEmail" 
-        :myDatabase="myDatabase" 
-        :otherUsers="otherUsers"
-        :myKey="myKey"
-        :myFriends="myFriends"
-        :searchOutput="searchOutput"
-        @addFriend="onNewFriend"
-        @searchFriends="onSearchFriends"
-        @refreshPeers="onRefreshPeers"
-        @changeNetworkStatus="onchangeNetworkStatus"
+      <router-view
+      @updateFriendlist="onUpdateFriendlist"
+      @searchFriends="onSearchFriends"
+      @changeNetworkStatus="onchangeNetworkStatus"
       ></router-view>
       <Footer></Footer>
     </div>
@@ -47,6 +36,7 @@ import getFirebaseUser from './mixins/getFirebaseUser';
 import peer from './mixins/peer';
 import fbDatabase from './mixins/fbDatabase';
 import fbDatabaseMaintain from './mixins/fbDatabaseMaintain';
+
 export default {
   name: "App",
   components: {
@@ -54,147 +44,146 @@ export default {
   },
   data: function() {
     return {
-      myUser: null,
-      myUserName: '',
-      myUid: '',
-      myEmail: '',
-
-      myPeer: null,
-      myPeerId: '',
-      myConnection: null,
-      receiverID: null,
-      isOnline: false,
-
       chatText: null,
-
-      myDatabase: null,
-      otherUsers: null,
-      myKey:'',
-      myFriends: null,
-
-      searchOutput: [],
     }
   },
   mixins: [initCloudMessaging,getFirebaseUser, peer, fbDatabase, fbDatabaseMaintain],
   watch: {
-    myUser(newValue, oldValue) {
-      console.log(`# WATCHER: myUser: ${oldValue} -> ${newValue}`);
-      this.myUid = newValue.uid;
-      this.myUserName = newValue.displayName;
-      this.myEmail = newValue.email;
-    },
-    myPeer(newValue, oldValue) {
-      console.log(`# WATCHER: myPeer: ${oldValue} -> ${newValue}`);
-      this.updateMyPeerId(); 
-    },
-    myPeerId(newValue, oldValue) {
-      console.log(`# WATCHER: myPeerId: ${oldValue} -> ${newValue}`);
-      this.updataDatabaseRef();
-    },
-    myDatabase(newValue, oldValue) {
-      console.log(`# WATCHER: myDatabase: ${oldValue} -> ${newValue}`);
-      this.updataOtherUsers();
-    },
-    otherUsers(newValue, oldValue) {
-      console.log(`# WATCHER: otherUsers: ${oldValue} -> ${newValue}`);
-      this.updateMyKey();
-    },
-    myKey(newValue, oldValue) {
-      console.log(`# WATCHER: myKey: ${oldValue} -> ${newValue}`);
-    },
-    myFriends(newValue, oldValue) {
-      console.log(`# WATCHER: myFriends: ${oldValue} -> ${newValue}`);
-    },
-    searchOutput(newValue, oldValue) {
-      console.log(`# WATCHER: searchOutput: ${oldValue} -> ${newValue}`);
-    }
   },
   computed: {
+    myUser() {
+      return this.$store.getters.myUser;
+    },
+    myUserName() {
+      return this.$store.getters.myUserName;
+    },
+    myUid() {
+      return this.$store.getters.myUid;
+    },
+    myEmail() {
+      return this.$store.getters.myEmail;
+    },
 
+    myPeer() {
+      return this.$store.getters.myPeer;
+    },
+    myPeerId() {
+      return this.$store.getters.myPeerId;
+    },
+    myConnection() {
+      return this.$store.getters.myConnection;
+    },
+    receiverID() {
+      return this.$store.getters.receiverID;
+    },
+    isOnline() {
+      return this.$store.getters.isOnline;
+    },
+
+    myDatabase() {
+      return this.$store.getters.myDatabase;
+    },
+    users() {
+      return this.$store.getters.users;
+    },
+    myKey() {
+      return this.$store.getters.myKey;
+    },
+    myFriends() {
+      return this.$store.getters.myFriends;
+    },
+
+    searchOutput() {
+      return this.$store.getters.searchOutput;
+    },
+    myRecipies() {
+      return this.$store.getters.myRecipies;
+    }
   },
   methods: {
     updateUserObject: function updateUserObject() {
+      console.log("### Update User Object");
       getFirebaseUser.methods.getFirebaseUser().then((user) => {
-        this.myUser = user;
+        this.$store.dispatch('updateUser', user)
         this.updateMyPeer();
       }).catch((error)=>{
         console.log("ERROR: ", error);
       });
     },
     updateMyPeer: function updateMyPeer() {
-      this.myPeer = peer.methods.initPeerJS();
+      console.log("### Update Peer");
+      peer.methods.initPeerJS().then((peer) => {
+        this.$store.dispatch('updatePeer', peer)
+        this.updateMyPeerId();
+      }).catch((error)=>{
+        console.log("ERROR: ", error);
+      });
     },
     updateMyPeerId: function updateMyPeerId() {
-      peer.methods.getPeerId(this.myPeer).then((PeerId) => {
-        this.myPeerId = PeerId;
-        this.isOnline = true
+      console.log("### Update Peer ID");
+      peer.methods.getPeerId(this.myPeer).then((peerId) => {
+        this.$store.dispatch('updatePeerId', peerId)
+        this.updateDatabase();
       }).catch((error)=>{
-        this.isOnline = false;
         console.log("ERROR: ", error);
-      });;
+      });
     },
     closeConnections: function closeConnections() {
-      // if(ppeer != undefined){
-      //   this.myPeer = null;      
-      this.myPeerId = "";
-      //   if(pconn != undefined) {
-      //     this.myConnection = null;
-      //   }
-      // }
-      this.isOnline = false;
+      console.log("### Close Connection");
+      this.$store.dispatch('updatePeerId', "");
     },
-    updataDatabaseRef: function updataDatabaseRef() {
-        this.myDatabase = fbDatabase.methods.initDatabase();
+    updateDatabase: function updateDatabase() {
+      console.log("### Update Database");
+      const database = fbDatabase.methods.initDatabase();
+      this.$store.dispatch('updateDatabase', database)
+      this.updateUsers();
     },
-    updataOtherUsers: function updataOtherUsers() {
-        fbDatabaseMaintain.methods.databaseOnValueHandler(this.myDatabase, this.myUid, this.myPeerId, this.myEmail, this.myName).then((userlist) => {
-            this.otherUsers = userlist;
-        }).catch((error)=>{
-          console.log("ERROR: ", error);
-        });
+    updateUsers: function updateUsers() {
+      console.log("### Update Users");
+      fbDatabaseMaintain.methods.databaseOnValueHandler(this.myDatabase, this.myUid, this.myPeerId, this.myEmail, this.myName).then((userlist) => {
+        this.$store.dispatch('updateUsers', userlist)
+        this.updateMyKey();
+      }).catch((error)=>{
+        console.log("ERROR: ", error);
+      });
     },
     updateMyKey: function updateMyKey() {
-        fbDatabaseMaintain.methods.getUserKeyInDatabase(this.otherUsers, this.myUid).then((key) => {
-            this.myKey = key;
-            this.updateMyFriends();
-        }).catch((error)=>{
-          console.log("ERROR: ", error);
-        });
+      console.log("### Update Key");
+      fbDatabaseMaintain.methods.getUserKeyInDatabase(this.users, this.myUid).then((key) => {
+        this.$store.dispatch('updateKey', key)
+        this.updateMyFriends();
+      }).catch((error)=>{
+        console.log("ERROR: ", error);
+      });
     },
     updateMyFriends: function updateMyFriends() {
-        fbDatabaseMaintain.methods.getFriendListInDatabase(this.otherUsers, this.myKey).then((friends) => {
-            this.myFriends = friends;
-        }).catch((error)=>{
-          console.log("ERROR: ", error);
-        });
+      console.log("### Update Friendlist");
+      fbDatabaseMaintain.methods.getFriendListInDatabase(this.users, this.myKey).then((friends) => {
+        this.$store.dispatch('updateFriends', friends);
+        this.updateOutput();
+      }).catch((error)=>{
+        console.log("ERROR: ", error);
+      });
     },
     updateOutput: function updateOutput() {
-        this.searchOutput = fbDatabaseMaintain.methods.search(this.myUid, this.myKey, this.otherUsers);
-        console.log("> Search Output: ", this.searchOutput);
+      console.log("### Update Output");
+      const output = fbDatabaseMaintain.methods.search(this.myUid, this.myKey, this.users);
+      this.$store.dispatch('updateOutput', output);
     },
-    onNewFriend: function(value) {
+    onUpdateFriendlist: function(value) {
       console.log("> Event noticed: ", value);
-      this.updataOtherUsers();
-      this.updateOutput();
-      this.updateMyFriends();
+      this.updateUsers();
     },
     onSearchFriends: function(value){
       console.log("> You searched for: ", value);
-      this.updataOtherUsers();
-      this.updateOutput();
-      this.updateMyFriends();
-    },
-    onRefreshPeers: function() {
-      for(var friend in this.myFriends) {
-        console.log(this.otherUsers[this.myFriends[friend]].peerID);
-        this.myConnection = peer.methods.join(this.myPeer, this.otherUsers[this.myFriends[friend]].peerID);
-      }
+      this.updateUsers();
     },
     onchangeNetworkStatus: function() {
       this.closeConnections(this.myPeer, this.myConnection);
     }
   },
   mounted() {
+    console.log("### Mounted");
     this.updateUserObject();
   }
 };

@@ -4,7 +4,8 @@ import "./registerServiceWorker";
 import router from "./router";
 import LoadScript from 'vue-plugin-load-script';
 import firebase from 'firebase';
-import store from './store';
+
+import { store } from './store/store';
 
 Vue.config.productionTip = false;
 Vue.use(LoadScript);
@@ -25,7 +26,7 @@ firebase.analytics();
 
 new Vue({
   router,
-  store: store,
+  store,
   render: h => h(App)
 }).$mount("#app");
 

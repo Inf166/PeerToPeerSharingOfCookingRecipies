@@ -1,6 +1,10 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
+import getters from './getters';
+import mutations from './mutations';
+import actions from './actions';
+
 Vue.use(Vuex);
 
 export const store = new Vuex.Store({
@@ -17,12 +21,16 @@ export const store = new Vuex.Store({
         isOnline: false,
 
         myDatabase: null,
-        Users: null,
+        users: null,
         myKey:'',
         myFriends: null,
 
         searchOutput: [],
 
         myRecipies: [],
-    }
+        tempRecipe: {}
+    },
+    getters,
+    mutations,
+    actions,
 });

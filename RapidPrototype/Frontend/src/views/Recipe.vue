@@ -22,13 +22,13 @@
       <span>{{myJson.portion}} Portionen</span>
     <h2 class="recipe-title"> Zutaten</h2>
       <table class="ingredient-list">
-        <tr v-for="name in myJson.Ingredients" :key="name" >
-          <td>{{name.amount}} {{name.unit}}</td>
-          <td>{{name.name}}</td>
-          <td v-if="name.alternativeIngredients">
+        <tr v-for="(ingredient, index) in myJson.ingredients" :key="index" >
+          <td>{{ingredient.amount}} {{ingredient.unit}}</td>
+          <td>{{ingredient.name}}</td>
+          <td v-if="ingredient.alternativeIngredients">
             <button class="alt-ingredient-btn">
               <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M440.65 12.57l4 82.77A247.16 247.16 0 0 0 255.83 8C134.73 8 33.91 94.92 12.29 209.82A12 12 0 0 0 24.09 224h49.05a12 12 0 0 0 11.67-9.26 175.91 175.91 0 0 1 317-56.94l-101.46-4.86a12 12 0 0 0-12.57 12v47.41a12 12 0 0 0 12 12H500a12 12 0 0 0 12-12V12a12 12 0 0 0-12-12h-47.37a12 12 0 0 0-11.98 12.57zM255.83 432a175.61 175.61 0 0 1-146-77.8l101.8 4.87a12 12 0 0 0 12.57-12v-47.4a12 12 0 0 0-12-12H12a12 12 0 0 0-12 12V500a12 12 0 0 0 12 12h47.35a12 12 0 0 0 12-12.6l-4.15-82.57A247.17 247.17 0 0 0 255.83 504c121.11 0 221.93-86.92 243.55-201.82a12 12 0 0 0-11.8-14.18h-49.05a12 12 0 0 0-11.67 9.26A175.86 175.86 0 0 1 255.83 432z"/></svg></i>
-              Austauschen durch: {{name.alternativeIngredients[0].name}}
+              Austauschen durch: {{ingredient.alternativeIngredients[0].name}}
             </button>
           </td>
         </tr>
@@ -79,7 +79,7 @@
 
     <h2 class="recipe-title">Benötigte Haushaltsgeräte</h2>
     <table class="ingredient-list">
-      <tr v-for="name in myJson.householdUtensils" :key="name" >
+      <tr v-for="(name, index) in myJson.householdUtensils" :key="index" >
           <td>{{name.name}}</td>
       </tr>
       <!-- <tr>
@@ -97,7 +97,7 @@
       
        <h2 class="recipe-title"> Zubereitung</h2>
        <table class="instructions-list">
-        <tr v-for="step in myJson.recipeInstructions" :key="step" >
+        <tr v-for="(step, index) in myJson.recipeInstructions" :key="index" >
           <td width="10%">{{step.step}}. Schritt</td>
            <td width="90%">{{step.description}}</td>
         </tr>
@@ -124,7 +124,7 @@
     <hr>
 
    <h2 class="recipe-title">Geschichtlicher Hinweis</h2>
-       <p v-for="step in myJson.recipeInstructions" :key="step">
+       <p v-for="(step, index) in myJson.recipeInstructions" :key="index">
          <span v-for="text in step.historicalNote" :key="text">{{text.text}} <span>{{text.author}}</span></span>
        </p>
        <!-- <p>
@@ -135,7 +135,7 @@
   <hr>
 
    <h2 class="recipe-title">Tipps und Tricks</h2>
-        <p v-for="step in myJson.recipeInstructions" :key="step">
+        <p v-for="(step, index) in myJson.recipeInstructions" :key="index">
           <span v-for="text in step.tipsAndTricks" :key="text">{{text.text}} <span>{{text.author}}</span></span>
         </p>
        <!-- <p>Den Teig während der Zubereitung nicht lange stehen lassen, denn er wird sonst fest und lässt sich kaum noch bearbeiten. 

@@ -1,10 +1,7 @@
 import Peer from "../../node_modules/peerjs";
 export default {
     data: function() {
-        return {
-            myPeerId: '',
-            myPeerObject: null
-        }
+        
     },
     computed: {
 
@@ -12,17 +9,8 @@ export default {
     methods: {
         getPeerId: async function(peer){
             return new Promise(function (resolve, reject) {
-                peer.on('open', function (peerID) {
-                    if (peerID) {
-                        resolve(peerID);
-                    } else {
-                        reject(Error('User could not be found.'));
-                    }
-                });
+                (peer.id != undefined) ? resolve(peer.id) : reject("Fehler, PeerID konnte nicht geladen werden");
             });
-        },
-        getPeerObject: function getPeerObject() {
-            return this.myPeerObject;
         },
         sendMessage: function sendMessage(connection, message) {
             connection.send(message);
@@ -56,62 +44,64 @@ export default {
             return conn;
         },
         initPeerJS: function initPeerJS(){
-            var myPeer = new Peer(null, {
-                debug: 3,
-                config: {
-                    iceServers: [
-                    {
-                        urls: 'stun:stun.stunprotocol.org'
-                    },
-                    {
-                        urls: 'turn:numb.viagenie.ca',
-                        credential: 'epws2020cobanmai',
-                        username: 'joel_maximilian.mai@smail.th-koeln.de'
-                    },
-                ]}    
-            });
-            myPeer.on('open', function (peerID) {
-                console.log("> Peer: on open", peerID);
-            });
-            myPeer.on('connection', function (connection) {
-                console.log("> Peer: on connection", connection);
-                connection.on('open', function() {
-                    console.log("> Peer: Connection: on open ", connection.peer);
-                    connection.send("Hello other User.");
-                    // Send User updated Recipies here.
+            return new Promise(function (resolve, reject) {
+                var myPeer = new Peer(null, {
+                    debug: 3,
+                    config: {
+                        iceServers: [
+                        {
+                            urls: 'stun:stun.stunprotocol.org'
+                        },
+                        {
+                            urls: 'turn:numb.viagenie.ca',
+                            credential: 'epws2020cobanmai',
+                            username: 'joel_maximilian.mai@smail.th-koeln.de'
+                        },
+                    ]}    
                 });
-                connection.on('data', function(data) {
-                    console.log("> Peer: Connection: on data ", data);
-                    // Handle User Requests here.
-                    switch (data) {
-                        case "Hello":
-                            connection.send("Hello to you Sir!");
-                            break;
-                        case "Bye":
-                            connection.send("Have a nice Day Sir!");
-                            break;
-                        default:
-                          connection.send("No Answer found to that command.")
-                          break;
-                      }
+                myPeer.on('open', function (peerID) {
+                    console.log("> Peer: on open", peerID);
+                    resolve(myPeer);
                 });
-                connection.on('close', function() {
-                    console.log("> Peer: Connection: on close");
+                myPeer.on('connection', function (connection) {
+                    console.log("> Peer: on connection", connection);
+                    connection.on('open', function() {
+                        console.log("> Peer: Connection: on open ", connection.peer);
+                        connection.send("Hello other User.");
+                        // Send User updated Recipies here.
+                    });
+                    connection.on('data', function(data) {
+                        console.log("> Peer: Connection: on data ", data);
+                        // Handle User Requests here.
+                        switch (data) {
+                            case "Hello":
+                                connection.send("Hello to you Sir!");
+                                break;
+                            case "Bye":
+                                connection.send("Have a nice Day Sir!");
+                                break;
+                            default:
+                              connection.send("No Answer found to that command.")
+                              break;
+                          }
+                    });
+                    connection.on('close', function() {
+                        console.log("> Peer: Connection: on close");
+                    });
+                });
+                myPeer.on('disconnected', function () {
+                    console.log("> Peer: on disconnected");
+    
+                });
+                myPeer.on('close', function () {
+                    console.log("> Peer: on close");
+    
+                });
+                myPeer.on('error', function (error) {
+                    reject(error);
+                    console.log("> Peer: on error", error);
                 });
             });
-            myPeer.on('disconnected', function () {
-                console.log("> Peer: on disconnected");
-
-            });
-            myPeer.on('close', function () {
-                console.log("> Peer: on close");
-
-            });
-            myPeer.on('error', function (error) {
-                console.log("> Peer: on error", error);
-            });
-            this.myPeerObject = myPeer
-            return this.myPeerObject;
         }
     },
     mounted() {
