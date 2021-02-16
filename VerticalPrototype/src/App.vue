@@ -36,6 +36,7 @@ import getFirebaseUser from './mixins/getFirebaseUser';
 import peer from './mixins/peer';
 import fbDatabase from './mixins/fbDatabase';
 import fbDatabaseMaintain from './mixins/fbDatabaseMaintain';
+import Peer from "../node_modules/peerjs";
 
 export default {
   name: "App",
@@ -95,24 +96,84 @@ export default {
 
     searchOutput() {
       return this.$store.getters.searchOutput;
-    },
-    myRecipies() {
-      return this.$store.getters.myRecipies;
     }
   },
   methods: {
     updateUserObject: function updateUserObject() {
       console.log("### Update User Object");
       getFirebaseUser.methods.getFirebaseUser().then((user) => {
+        console.log(user);
         this.$store.dispatch('updateUser', user)
         this.updateMyPeer();
       }).catch((error)=>{
         console.log("ERROR: ", error);
       });
     },
+    initializePeer: async function initializePeer(store) {
+      return new Promise(function (resolve, reject) {
+        var myPeer = new Peer(null, {
+            debug: 0,
+            config: {
+                iceServers: [
+                {
+                    urls: 'stun:stun.stunprotocol.org'
+                },
+                {
+                    urls: 'turn:numb.viagenie.ca',
+                    credential: 'epws2020cobanmai',
+                    username: 'joel_maximilian.mai@smail.th-koeln.de'
+                },
+            ]}    
+        });
+        myPeer.on('open', function (peerID) {
+            console.log("> Peer: on open", peerID);
+            resolve(myPeer);
+        });
+        myPeer.on('connection', function (connection) {
+            console.log("> Peer: on connection", connection);
+            connection.on('open', function() {
+                console.log("> Peer: Connection: on open ", connection.peer);
+                connection.send("GET/RECIPIES");
+            });
+            connection.on('data', function(data) {
+                console.log("> Peer: Connection: on data ", data);
+                switch (data) {
+                  case "GET/RECIPIES":
+                      store.getters.myRecipies.then((myRecipies) => {
+                        console.log(myRecipies);
+                      });
+                      // if(this.$store.getters.myRecipies.length > 0) {
+                      //   this.$store.getters.myRecipies.forEach(recipe => {
+                      //     connection.send(recipe);
+                      //   });
+                      // }
+                      break;
+                  default:
+                    connection.send("No Answer found to that command.")
+                    break;
+                }   
+            });
+            connection.on('close', function() {
+                console.log("> Peer: Connection: on close");
+            });
+        });
+        myPeer.on('disconnected', function () {
+            console.log("> Peer: on disconnected");
+
+        });
+        myPeer.on('close', function () {
+            console.log("> Peer: on close");
+
+        });
+        myPeer.on('error', function (error) {
+            reject(error);
+            console.log("> Peer: on error", error);
+        });
+    });
+    },
     updateMyPeer: function updateMyPeer() {
       console.log("### Update Peer");
-      peer.methods.initPeerJS().then((peer) => {
+      this.initializePeer(this.store).then((peer) => {
         this.$store.dispatch('updatePeer', peer)
         this.updateMyPeerId();
       }).catch((error)=>{
@@ -122,7 +183,7 @@ export default {
     updateMyPeerId: function updateMyPeerId() {
       console.log("### Update Peer ID");
       peer.methods.getPeerId(this.myPeer).then((peerId) => {
-        this.$store.dispatch('updatePeerId', peerId)
+        this.$store.dispatch('updatePeerId', peerId);
         this.updateDatabase();
       }).catch((error)=>{
         console.log("ERROR: ", error);
@@ -140,7 +201,8 @@ export default {
     },
     updateUsers: function updateUsers() {
       console.log("### Update Users");
-      fbDatabaseMaintain.methods.databaseOnValueHandler(this.myDatabase, this.myUid, this.myPeerId, this.myEmail, this.myName).then((userlist) => {
+      fbDatabaseMaintain.methods.databaseOnValueHandler(this.myDatabase, this.myUid, this.myPeerId, this.myEmail, this.myUserName).then((userlist) => {
+        console.log(userlist);
         this.$store.dispatch('updateUsers', userlist)
         this.updateMyKey();
       }).catch((error)=>{
@@ -179,7 +241,7 @@ export default {
       this.updateUsers();
     },
     onchangeNetworkStatus: function() {
-      this.closeConnections(this.myPeer, this.myConnection);
+      // this.closeConnections(this.myPeer, this.myConnection);
     }
   },
   mounted() {

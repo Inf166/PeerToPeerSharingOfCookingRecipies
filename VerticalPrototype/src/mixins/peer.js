@@ -22,15 +22,16 @@ export default {
 
             myConnection.on('open', function () {
                 console.log("Connected to: " + myConnection.peer);
+                myConnection.send("GET/RECIPIES");
             });
             // Handle incoming data (messages only since this is the signal sender)
             myConnection.on('data', function (data) {
+                console.log("> Peer: Connection: on data ", data);
                 console.log(data);
             });
             myConnection.on('close', function () {
                 console.log("Connection closed");
             });
-            myConnection.send("send-recipies");
             return myConnection;
         },
         closePeer: function closePeer(peer) {
@@ -46,7 +47,7 @@ export default {
         initPeerJS: function initPeerJS(){
             return new Promise(function (resolve, reject) {
                 var myPeer = new Peer(null, {
-                    debug: 3,
+                    debug: 0,
                     config: {
                         iceServers: [
                         {
@@ -67,23 +68,9 @@ export default {
                     console.log("> Peer: on connection", connection);
                     connection.on('open', function() {
                         console.log("> Peer: Connection: on open ", connection.peer);
-                        connection.send("Hello other User.");
-                        // Send User updated Recipies here.
                     });
                     connection.on('data', function(data) {
                         console.log("> Peer: Connection: on data ", data);
-                        // Handle User Requests here.
-                        switch (data) {
-                            case "Hello":
-                                connection.send("Hello to you Sir!");
-                                break;
-                            case "Bye":
-                                connection.send("Have a nice Day Sir!");
-                                break;
-                            default:
-                              connection.send("No Answer found to that command.")
-                              break;
-                          }
                     });
                     connection.on('close', function() {
                         console.log("> Peer: Connection: on close");

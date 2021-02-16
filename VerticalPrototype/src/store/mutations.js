@@ -41,4 +41,7 @@ export default {
         toBeUpdatedRecipe = editedRecipe;
         state.myRecipies.push(toBeUpdatedRecipe);
     },
+    addFriendRecipies(state, newRecipies) {
+        state.friendRecipies = newRecipies;
+    }
 }

@@ -42,8 +42,10 @@ export default {
     searchOutput(state) {
         return state.searchOutput;
     },
-    allRecipies(state) {
-        return state.myRecipies;
+    myRecipies(state) {
+        return new Promise ((resolve)=>{
+            resolve(state.myRecipies)
+        });
     },
     newRecipies(state) {
         return state.myRecipies.filter(recipe => {
@@ -52,5 +54,8 @@ export default {
     },
     tempRecipe(state) {
         return state.tempRecipe;
+    },
+    friendRecipies(state) {
+        return state.friendRecipies;
     },
 }

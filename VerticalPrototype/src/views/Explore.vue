@@ -65,8 +65,16 @@ export default {
   methods: {
     refreshPeers() {
       for(var friend in this.myFriends) {
-         this.myConnection = peer.methods.join(this.myPeer, this.users[this.myFriends[friend]].peerID);
-       }
+        this.myConnection = peer.methods.join(this.myPeer, this.users[this.myFriends[friend]].peerID);
+        // peer.methods.fetchPeer(this.myPeer, this.users[this.myFriends[friend]].peerID).then((conn) => {
+        //   peer.methods.getRecipiesFromPeer(conn).then((data) => {
+        //     this.$store.dispatch('addFriendRecipies', data).then(() => {
+        //             console.log("### Updated new friend Recipies")
+        //             console.log(this.$store.getters.friendRecipies);
+        //         });
+        //   });
+        // });  
+      }
     },
     changeNetworkStatus() {
       this.$emit('changeNetworkStatus');

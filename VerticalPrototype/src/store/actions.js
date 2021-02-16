@@ -31,4 +31,8 @@ export default {
     addTempRecipe(context, payload) {    
         context.commit('addTempRecipe', payload);
     },
+
+    addFriendRecipies(context, payload) {
+        context.commit('addFriendRecipies', payload);
+    }
 } 

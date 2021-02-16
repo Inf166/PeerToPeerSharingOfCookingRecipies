@@ -28,6 +28,7 @@ export const store = new Vuex.Store({
         searchOutput: [],
 
         myRecipies: [],
+        friendRecipies: [],
         tempRecipe: {}
     },
     getters,
