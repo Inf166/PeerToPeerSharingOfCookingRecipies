@@ -7,6 +7,29 @@ export default {
 
 	},
     methods: {
+        fetchJoin: async function fetchJoin(peer ,receiverID) {        
+            return new Promise((resolve, reject) => {
+                var myConnection = peer.connect(receiverID, {
+                    reliable: true
+                });
+                myConnection.on('open', function () {
+                    console.log("Connected to: " + myConnection.peer);
+                    myConnection.send("GET/RECIPIES");
+                });
+                // Handle incoming data (messages only since this is the signal sender)
+                myConnection.on('data', function (data) {
+                    console.log("> Peer: Connection: on data ", data);
+                    resolve(data);
+                });
+                myConnection.on('close', function () {
+                    console.log("Connection closed");
+                });
+                myConnection.on('error', function (err) {
+                    console.log("Connection error");
+                    reject(err);
+                });
+            });            
+        },
         getPeerId: async function(peer){
             return new Promise(function (resolve, reject) {
                 (peer.id != undefined) ? resolve(peer.id) : reject("Fehler, PeerID konnte nicht geladen werden");
@@ -22,7 +45,6 @@ export default {
 
             myConnection.on('open', function () {
                 console.log("Connected to: " + myConnection.peer);
-                myConnection.send("GET/RECIPIES");
             });
             // Handle incoming data (messages only since this is the signal sender)
             myConnection.on('data', function (data) {

@@ -544,6 +544,9 @@ export default {
       var temp = this.$store.getters.tempRecipe;
       console.log(temp);
       this.$store.dispatch('addRecipe', temp).then(() => {
+        this.$emit('newRecipe');
+        this.$store.dispatch('addTempRecipe', {}).then(() => {
+        });
         alert("Rezept gespeichert!");
       });
       console.log(this.$store.getters.myRecipies);
@@ -553,7 +556,6 @@ export default {
         var check = confirm('Wollen Sie die Bearbeitung des Rezepts wirklich abbrechen?'); 
           if (check == true) {
             this.$store.dispatch('addTempRecipe', {}).then(() => {
-              window.location = '../'
             });
           }
       } else {

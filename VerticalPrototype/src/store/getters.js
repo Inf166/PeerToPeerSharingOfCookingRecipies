@@ -43,9 +43,7 @@ export default {
         return state.searchOutput;
     },
     myRecipies(state) {
-        return new Promise ((resolve)=>{
-            resolve(state.myRecipies)
-        });
+        return state.myRecipies
     },
     newRecipies(state) {
         return state.myRecipies.filter(recipe => {

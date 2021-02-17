@@ -23,6 +23,7 @@
       @updateFriendlist="onUpdateFriendlist"
       @searchFriends="onSearchFriends"
       @changeNetworkStatus="onchangeNetworkStatus"
+      @newRecipe="onNewRecipe"
       ></router-view>
       <Footer></Footer>
     </div>
@@ -96,20 +97,22 @@ export default {
 
     searchOutput() {
       return this.$store.getters.searchOutput;
+    },
+    myRecipiesGetter() {
+      return this.$store.getters.myRecipies;
     }
   },
   methods: {
     updateUserObject: function updateUserObject() {
       console.log("### Update User Object");
       getFirebaseUser.methods.getFirebaseUser().then((user) => {
-        console.log(user);
         this.$store.dispatch('updateUser', user)
         this.updateMyPeer();
       }).catch((error)=>{
         console.log("ERROR: ", error);
       });
     },
-    initializePeer: async function initializePeer(store) {
+    initializePeer: async function initializePeer() {
       return new Promise(function (resolve, reject) {
         var myPeer = new Peer(null, {
             debug: 0,
@@ -129,34 +132,6 @@ export default {
             console.log("> Peer: on open", peerID);
             resolve(myPeer);
         });
-        myPeer.on('connection', function (connection) {
-            console.log("> Peer: on connection", connection);
-            connection.on('open', function() {
-                console.log("> Peer: Connection: on open ", connection.peer);
-                connection.send("GET/RECIPIES");
-            });
-            connection.on('data', function(data) {
-                console.log("> Peer: Connection: on data ", data);
-                switch (data) {
-                  case "GET/RECIPIES":
-                      store.getters.myRecipies.then((myRecipies) => {
-                        console.log(myRecipies);
-                      });
-                      // if(this.$store.getters.myRecipies.length > 0) {
-                      //   this.$store.getters.myRecipies.forEach(recipe => {
-                      //     connection.send(recipe);
-                      //   });
-                      // }
-                      break;
-                  default:
-                    connection.send("No Answer found to that command.")
-                    break;
-                }   
-            });
-            connection.on('close', function() {
-                console.log("> Peer: Connection: on close");
-            });
-        });
         myPeer.on('disconnected', function () {
             console.log("> Peer: on disconnected");
 
@@ -173,8 +148,9 @@ export default {
     },
     updateMyPeer: function updateMyPeer() {
       console.log("### Update Peer");
-      this.initializePeer(this.store).then((peer) => {
-        this.$store.dispatch('updatePeer', peer)
+      this.initializePeer().then((peer) => {
+        this.$store.dispatch('updatePeer', peer);
+        this.onNewRecipe();
         this.updateMyPeerId();
       }).catch((error)=>{
         console.log("ERROR: ", error);
@@ -242,6 +218,30 @@ export default {
     },
     onchangeNetworkStatus: function() {
       // this.closeConnections(this.myPeer, this.myConnection);
+    },
+    onNewRecipe: function() {
+      var recepies = this.myRecipiesGetter;
+      this.myPeer.on('connection', function (connection) {
+            console.log("> Peer: on connection", connection);
+            connection.on('open', function() {
+                console.log("> Peer: Connection: on open ", connection.peer);
+            });
+            connection.on('data', function(data) {
+                console.log("> Peer: Connection: on data ", data);
+                switch (data) {
+                  case "GET/RECIPIES":
+                      console.log("Serving other User my Recipies");
+                        connection.send(recepies);
+                      break;
+                  default:
+                    connection.send("No Answer found to that command.")
+                    break;
+                }   
+            });
+            connection.on('close', function() {
+                console.log("> Peer: Connection: on close");
+            });
+        });
     }
   },
   mounted() {
