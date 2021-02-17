@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+// import VuexPersistence from 'vuex-persist'
 // import createPersistedState from "vuex-persistedstate";
 // import createCache from 'vuex-cache';
 // import createMutationsSharer from "vuex-shared-mutations";
@@ -10,9 +11,15 @@ import actions from './actions';
 
 Vue.use(Vuex);
 
+// const vuexLocal = new VuexPersistence({
+//     supportCircular: true,
+//     storage: window.localStorage
+//   });
+
 export const store = new Vuex.Store({
     plugins: [
-        // createPersistedState(),
+        // vuexLocal.plugin
+        // createPersistedState,
         // createCache(),
         // createMutationsSharer({ predicate: ["mutation1", "mutation2"] })
     ],

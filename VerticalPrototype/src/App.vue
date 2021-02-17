@@ -38,6 +38,7 @@ import peer from './mixins/peer';
 import fbDatabase from './mixins/fbDatabase';
 import fbDatabaseMaintain from './mixins/fbDatabaseMaintain';
 import Peer from "../node_modules/peerjs";
+// import {parse, stringify} from 'flatted';
 
 export default {
   name: "App",
