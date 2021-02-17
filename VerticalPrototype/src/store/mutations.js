@@ -28,6 +28,51 @@ export default {
     updateOutput(state, output) {
         state.searchOutput = output;
     },
+    addPreferencesDifficultyLevel(state, preference) {
+        var oldPreferences = state.myPreferencesDifficultyLevel;
+        var containsAlready = false;
+        oldPreferences.forEach((pref) => {
+            if(pref.name == preference) {
+                pref.value++;
+                containsAlready = true;
+            }
+        });
+        if(!containsAlready) {
+            oldPreferences.push({name: preference, value: 1});
+        }
+        state.myPreferencesDifficultyLevel = oldPreferences;
+        console.log(state.myPreferencesDifficultyLevel);
+    },
+    addPreferencesCategories(state, preference) {
+        var oldPreferences = state.myPreferencesCategories;
+        var containsAlready = false;
+        oldPreferences.forEach((pref) => {
+            if(pref.name == preference) {
+                pref.value++;
+                containsAlready = true;
+            }
+        });
+        if(!containsAlready) {
+            oldPreferences.push({name: preference, value: 1});
+        }
+        state.myPreferencesCategories = oldPreferences;
+        console.log(state.myPreferencesCategories);
+    },
+    addPreferencesIngredients(state, preference) {
+        var oldPreferences = state.myPreferencesIngredients;
+        var containsAlready = false;
+        oldPreferences.forEach((pref) => {
+            if(pref.name == preference) {
+                pref.value++;
+                containsAlready = true;
+            }
+        });
+        if(!containsAlready) {
+            oldPreferences.push({name: preference, value: 1});
+        }
+        state.myPreferencesIngredients = oldPreferences;
+        console.log(state.myPreferencesIngredients);
+    },
     addRecipe(state, newRecipe) {
         state.myRecipies.push(newRecipe);
     },

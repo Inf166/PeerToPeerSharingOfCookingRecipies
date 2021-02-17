@@ -95,8 +95,27 @@ export default {
           console.log("Got Recipies from peer: ");
           console.log(data);
           data.forEach(element => {
-            //TODO Filter through recipes and make user guesses on which Recipe he might like more
             this.$store.dispatch("addFriendRecipies", element);
+            // Adding preferences
+            for (var prop in element) {
+              console.log(prop);
+              if(prop == "categories") {
+                var categories = element[prop];
+                categories.forEach((category) => {
+                  this.$store.dispatch('addPreferencesCategories', category.name);
+                });
+              }
+              if(prop == "ingredients") {
+                var ingredients = element[prop];
+                ingredients.forEach((ingredient) => {
+                  this.$store.dispatch('addPreferencesIngredients', ingredient.name);
+                });
+              }
+              if(prop == "difficultyLevel") {
+                console.log("Schwierigkeitsgrad: ", element[prop]);
+                this.$store.dispatch('addPreferencesDifficultyLevel', element[prop]);
+              }
+            }
           });
           console.log(this.friendRecipies);
         });  

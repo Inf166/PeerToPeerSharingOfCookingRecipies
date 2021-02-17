@@ -44,6 +44,15 @@ export const store = new Vuex.Store({
 
         myRecipies: [],
         friendRecipies: [],
+        myPreferencesCategories: [
+            {name: 'test', value: '100'}
+        ],
+        myPreferencesIngredients: [
+            {name: 'test', value: '100'}
+        ],
+        myPreferencesDifficultyLevel: [
+            {name: 'test', value: '100'}
+        ],
         tempRecipe: {}
     },
     getters,

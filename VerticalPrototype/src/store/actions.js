@@ -24,7 +24,15 @@ export default {
     updateOutput(context, payload) {
         context.commit('updateOutput', payload);
     },
-    
+    addPreferencesCategories(context, payload) {
+        context.commit('addPreferencesCategories', payload);
+    },
+    addPreferencesIngredients(context, payload) {
+        context.commit('addPreferencesIngredients', payload);
+    },
+    addPreferencesDifficultyLevel(context, payload) {
+        context.commit('addPreferencesDifficultyLevel', payload);
+    },
     addRecipe(context, payload) {    // statt context.commit ginge auch context => context - und dann context.context.commit(....)
         context.commit('addRecipe', payload);
     },

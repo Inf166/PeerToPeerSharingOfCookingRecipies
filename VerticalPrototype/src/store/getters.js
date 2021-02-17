@@ -42,8 +42,17 @@ export default {
     searchOutput(state) {
         return state.searchOutput;
     },
+    myPreferencesDifficultyLevel(state) {
+        return state.myPreferencesDifficultyLevel;
+    },
+    myPreferencesCategories(state) {
+        return state.myPreferencesCategories;
+    },
+    myPreferencesIngredients(state) {
+        return state.myPreferencesIngredients;
+    },
     myRecipies(state) {
-        return state.myRecipies
+        return state.myRecipies;
     },
     newRecipies(state) {
         return state.myRecipies.filter(recipe => {
