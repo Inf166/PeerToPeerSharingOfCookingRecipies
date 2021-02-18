@@ -1,0 +1,19 @@
+
+Todo:
+  ☐ Add show Recipes in Fullpage
+  ☐ Update dummy recipies in store.js and EPWS2020CobanMai/VerticalPrototype/src/assets/spaghetti.json
+  ☐ Update Proof of Concept documentation
+  ☐ Update Projektplan
+  ☐ Präsentation
+  ☐ Fix later
+    ☐ Add persistant state of vuex store 
+    ☐ Fix border for edited Inputs in New Recipe 
+    ☐ Fix Hero Slider 
+    ☐ Fix mobile View 
+    ☐ Enhance suggestions 
+    ☐ Add Cloud store for mutiple device usage 
+    ☐ Enhance Caching 
+    ☐ Refactor Code 
+    ☐ Relaunch Styles 
+    ☐ Rename Project to "Unser Kochbuch" 
+  

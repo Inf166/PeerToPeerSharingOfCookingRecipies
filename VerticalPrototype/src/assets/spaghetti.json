@@ -755,13 +755,13 @@
     "@type": "Recipe",
     "id": "TestRezept9",
     "title": "Omlett",
-    "description": "Ein leckeres Eigericht",
+    "description": "Ein leckeres Nudelgericht",
     "datePublished": "2021-2-17 18:41:27",
     "isNew": false,
     "categories": [
       { "name": "Frühstück" },
       { "name": "Vorspeise" },
-      { "name": "Landküche" }
+      { "name": "Landküchte" }
     ],
     "author": { "name": "Melanie Müllerchen" },
     "portion": "2",
