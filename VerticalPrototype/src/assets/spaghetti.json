@@ -824,7 +824,7 @@
         "historicalNote": [
           {
             "author": "",
-            "text": "Eier besser an der Pfanne aufschlagen und nich am Kopf des Bruders..."
+            "text": ""
           }
         ]
       },
@@ -1509,7 +1509,7 @@
           { "name": "Hit" }
         ],
         "alternativeIngredients": [
-          { "name": "Aubergine", "amount": "50", "unit": "g", "origin": "" }
+          { "name": "", "amount": "50", "unit": "g", "origin": "" }
         ]
       },
       {
@@ -1847,5 +1847,7 @@
       }
     ]
   }
+
 ]
+
         
