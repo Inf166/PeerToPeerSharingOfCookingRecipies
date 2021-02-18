@@ -2,8 +2,8 @@
 Todo:
   Add show Recipes in Fullpage
   ☐ Update dummy recipies in store.js and EPWS2020CobanMai/VerticalPrototype/src/assets/spaghetti.json
-  ☐ Update Proof of Concept documentation
-  ☐ Update Projektplan
+  Update Proof of Concept documentation
+  Update Projektplan
   ☐ Präsentation
   ☐ Fix later
     ☐ Add persistant state of vuex store 
