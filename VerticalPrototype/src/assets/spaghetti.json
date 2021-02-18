@@ -1465,27 +1465,27 @@
   {
     "@type": "Recipe",
     "id": "TestRezept8",
-    "title": "Sparghetti Carbonara von Oma",
-    "description": "Ein leckeres Nudelgericht",
-    "datePublished": "2021-2-17 18:41:27",
+    "title": "Jagodzianki von Oma",
+    "description": "Jagodzianki - polnische Blaubeerbrötchen",
+    "datePublished": "2020-11-20 13:53:37",
     "isNew": false,
     "categories": [
-      { "name": "Hauptspeise" },
-      { "name": "Nudelgericht" },
-      { "name": "Italienisch" }
+      { "name": "Nachspeisespeise" },
+      { "name": "Gebäck" },
+      { "name": "Polnisch" }
     ],
-    "author": { "name": "Melanie Müllerchen" },
-    "portion": "2",
-    "difficultyLevel": "mittel",
+    "author": { "name": "Stefanie Müller" },
+    "portion": "12",
+    "difficultyLevel": "simpel",
     "householdUtensils": [
         { "name": "Pfanne" }, 
         { "name": "Topf" }
     ],
     "ingredients": [
       {
-        "name": "Spaghetti",
-        "amount": "1",
-        "unit": "pck",
+        "name": "Blaubeeren",
+        "amount": "200",
+        "unit": "Gramm",
         "origins": [
           { "name": "Rewe" },
           { "name": "Lidl" },
@@ -1497,31 +1497,163 @@
         ]
       },
       {
-        "name": "Speck",
-        "amount": "1",
-        "unit": "pck",
-        "origins": [{ "name": "Metzger" }],
+        "name": "Milch, lauwarm",
+        "amount": "200",
+        "unit": "Milliliter",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" }
+        ],
         "alternativeIngredients": [
           { "name": "Aubergine", "amount": "50", "unit": "g", "origin": "" }
         ]
       },
       {
-        "name": "Eier",
-        "amount": "3",
-        "unit": "stk",
-        "origins": [{ "name": "Überall" }],
+        "name": "Mehl",
+        "amount": "500",
+        "unit": "Gramm",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" }
+        ],
         "alternativeIngredients": [
           { "name": "", "amount": "", "unit": "", "origin": "" }
         ]
-      }
+      },
+      {
+        "name": "Zucker",
+        "amount": "100",
+        "unit": "Gramm",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" }
+        ],
+        "alternativeIngredients": [
+          { "name": "Braunzucker", "amount": "80", "unit": "Gramm", "origin": [
+            { "name": "Rewe" },
+            { "name": "Lidl" },
+            { "name": "Aldi" },
+            { "name": "Hit" }
+          ] 
+        }
+        ]
+      },
+      {
+        "name": "Trockenhefe",
+        "amount": "1",
+        "unit": "Packung",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" }
+        ],
+        "alternativeIngredients": [
+          { "name": "frische Hefe", "amount": "1/2", "unit": "Packung", "origin": [
+            { "name": "Rewe" },
+            { "name": "Lidl" },
+            { "name": "Aldi" },
+            { "name": "Hit" }
+          ] 
+        },
+        {
+          "name": "Salz",
+          "amount": "1",
+          "unit": "Priese",
+          "origins": [
+            { "name": "Rewe" },
+            { "name": "Lidl" },
+            { "name": "Aldi" },
+            { "name": "Hit" }
+          ],
+          "alternativeIngredients": [
+            { "name": "", "amount": "", "unit": "", "origin": "" }
+        ]
+      },
+      {
+        "name": "Ei",
+        "amount": "1",
+        "unit": "Stück",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" }
+        ],
+        "alternativeIngredients": [
+          { "name": "", "amount": "", "unit": "", "origin": "" }
+      ]
+    },
+    {
+      "name": "Vanillezucker",
+      "amount": "1",
+      "unit": "Stück",
+      "origins": [
+        { "name": "Rewe" },
+        { "name": "Lidl" },
+        { "name": "Aldi" },
+        { "name": "Hit" }
+      ],
+      "alternativeIngredients": [
+        { "name": "", "amount": "", "unit": "", "origin": "" }
+     ]
+    },
+    {
+      "name": "Butter",
+      "amount": "80",
+      "unit": "Gramm",
+      "origins": [
+        { "name": "Rewe" },
+        { "name": "Lidl" },
+        { "name": "Aldi" },
+        { "name": "Hit" }
+      ],
+      "alternativeIngredients": [
+        { "name": "", "amount": "", "unit": "", "origin": "" }
+     ]
+    },
+    {
+      "name": "Mehl",
+      "amount": "",
+      "unit": "",
+      "origins": [
+        { "name": "Rewe" },
+        { "name": "Lidl" },
+        { "name": "Aldi" },
+        { "name": "Hit" }
+      ],
+      "alternativeIngredients": [
+        { "name": "", "amount": "", "unit": "", "origin": "" }
+     ]
+    },
+    {
+      "name": "Milch",
+      "amount": "",
+      "unit": "",
+      "origins": [
+        { "name": "Rewe" },
+        { "name": "Lidl" },
+        { "name": "Aldi" },
+        { "name": "Hit" }
+      ],
+      "alternativeIngredients": [
+        { "name": "", "amount": "", "unit": "", "origin": "" }
+     ]
+    }
     ],
-    "prepTime": "2",
-    "restTime": "1",
-    "cookTime": "15",
+    "prepTime": "10",
+    "restTime": "90",
+    "cookTime": "20",
     "recipeInstructions": [
       {
         "step": 1,
-        "description": "Spaghetti in gesalzenem Wasser für 8 min kochen. Dann abgießen und in die Pfanne geben ",
+        "description": "Das Mehl mit Zucker, Vanillezucker und Salz und Hefe vermengen. Die lauwarme Milch und das Ei zugeben und verrühren. Zuletzt die warme, zerlassene Butter unterrühren und zu einem glatten Teig kneten.",
         "tipsAndTricks": [
             { 
                 "author": "", 
@@ -1537,22 +1669,28 @@
       },
       {
         "step": 2,
-        "description": "Eier aufschlagen und zu den Spaghetti in die Pfanne geben",
+        "description": "In einer bemehlten Schüssel abgedeckt an einem warmen Ort gehen lassen, bis sich das Volumen des Teigs etwa verdoppelt hat.",
         "tipsAndTricks": [
-          { "author": "Melanie Müllerchen", "text": "Eier sollten aus Bodenhaltung sein." }
+          { "author": "Stefanie Müller", "text": "Teig aufgehen lassen ca. 1,5 Std. bei Raumtemperatur, ca. 30 - 40 min. im kurz auf 40 °C angeheizten Backofen)" }
         ],
         "historicalNote": [
           {
             "author": "",
-            "text": "Eier besser an der Pfanne aufschlagen und nich am Kopf des Bruders..."
+            "text": ""
           }
         ]
       },
       {
         "step": 3,
-        "description": "Speck dazu geben und mindestens solange anbraten bis die Eier sämig werden.",
+        "description": "Den Teig auf einer bemehlten Fläche ausrollen und in 12 - 16 Portionen schneiden. Die Blaubeeren waschen, abtropfen und 4 - 6 Beeren pro Teilchen mit Teig umhüllen. Den Teig sorgfältig und glatt verschließen, damit die Beeren beim Backen nicht auslaufen.",
         "tipsAndTricks": [{ "author": "", "text": "" }],
         "historicalNote": [{ "author": "", "text": "" }]
+      },
+      {
+        "step": 4,
+        "description": "Ovale Laibchen formen und auf mit Backpapier ausgelegtes Blech legen. Ggf. noch mal 10 - 15 min. gehen lassen. Im vorgeheizten Ofen bei 200 °C (Ober-/Unterhitze) 18 - 20 min. backen.",
+        "tipsAndTricks": [{ "author": "Stefanie Müller", "text": "Mama hat vor dem Backen die Oberseite immer mit Milch bestriechen." }],
+        "historicalNote": [{ "author": "Stefanie Müller", "text": "Mama hat diese leckeren Brötchen immer an unseren Geburtstagen gebacken." }]
       }
     ]
   },
@@ -1651,3 +1789,4 @@
     ]
   }
 ]
+        
