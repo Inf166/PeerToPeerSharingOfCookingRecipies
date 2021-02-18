@@ -1280,26 +1280,29 @@
     "@type": "Recipe",
     "id": "TestRezept7",
     "title": "Piroggee",
-    "description": "Ein leckeres Piroggee Gericht auf Polnischer Art",
-    "datePublished": "2021-2-17 18:41:27",
+    "description": "Piroggeen, die traditionelle russische Küche",
+    "datePublished": "2020-11-10 08:23:28",
     "isNew": false,
     "categories": [
       { "name": "Hauptspeise" },
       { "name": "Piroggee" },
-      { "name": "Polnisch" }
+      { "name": "Russisch" }
     ],
-    "author": { "name": "Melanie Müllerchen" },
-    "portion": "2",
-    "difficultyLevel": "mittel",
+    "author": { "name": "Alex Müller" },
+    "portion": "4",
+    "difficultyLevel": "schwer",
     "householdUtensils": [
         { "name": "Pfanne" }, 
-        { "name": "Topf" }
+        { "name": "Topf" },
+        { "name": "Glas" },
+        { "name": "Gabel" },
+        { "name": "Teigrolle" }
     ],
     "ingredients": [
       {
-        "name": "Spaghetti",
-        "amount": "1",
-        "unit": "pck",
+        "name": "Mehl",
+        "amount": "350",
+        "unit": "Gramm",
         "origins": [
           { "name": "Rewe" },
           { "name": "Lidl" },
@@ -1311,31 +1314,120 @@
         ]
       },
       {
-        "name": "Speck",
+        "name": "Ei",
         "amount": "1",
-        "unit": "pck",
+        "unit": "Stück",
         "origins": [{ "name": "Metzger" }],
         "alternativeIngredients": [
           { "name": "Aubergine", "amount": "50", "unit": "g", "origin": "" }
         ]
       },
       {
-        "name": "Eier",
+        "name": "lauwarmes Wasser",
+        "amount": "130",
+        "unit": "Milliliter",
+        "origins": [{ "name": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" }
+        ],
+        "alternativeIngredients": [
+          { "name": "", "amount": "", "unit": "", "origin": "" }
+        ]
+      },
+      {
+        "name": "Kartoffeln",
+        "amount": "600",
+        "unit": "Gramm",
+        "origins": [{ "name": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" }
+        ],
+        "alternativeIngredients": [
+          { "name": "", "amount": "", "unit": "", "origin": "" }
+        ]
+      },
+      {
+        "name": "Quark",
+        "amount": "250",
+        "unit": "Gramm",
+        "origins": [{ "name": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" }
+        ],
+        "alternativeIngredients": [
+          { "name": "", "amount": "", "unit": "", "origin": "" }
+        ]
+      },
+      {
+        "name": "Zwiebel",
+        "amount": "1",
+        "unit": "Stück",
+        "origins": [{ "name": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" }
+        ],
+        "alternativeIngredients": [
+          { "name": "", "amount": "", "unit": "", "origin": "" }
+        ]
+      },
+      {
+        "name": "Butter",
         "amount": "3",
-        "unit": "stk",
-        "origins": [{ "name": "Überall" }],
+        "unit": "Esslöffel",
+        "origins": [{ "name": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" }
+        ],
+        "alternativeIngredients": [
+          { "name": "", "amount": "", "unit": "", "origin": "" }
+        ]
+      },
+      {
+        "name": "Saure Sahne",
+        "amount": "200",
+        "unit": "Milliliter",
+        "origins": [{ "name": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" }
+        ],
+        "alternativeIngredients": [
+          { "name": "", "amount": "", "unit": "", "origin": "" }
+        ]
+      },
+      {
+        "name": "Salz und Pfeffer, grob gemahlener",
+        "amount": "",
+        "unit": "",
+        "origins": [{ "name": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" }
+        ],
         "alternativeIngredients": [
           { "name": "", "amount": "", "unit": "", "origin": "" }
         ]
       }
     ],
-    "prepTime": "2",
+    "prepTime": "75",
     "restTime": "1",
-    "cookTime": "15",
+    "cookTime": "3",
     "recipeInstructions": [
       {
         "step": 1,
-        "description": "Spaghetti in gesalzenem Wasser für 8 min kochen. Dann abgießen und in die Pfanne geben ",
+        "description": "Für die Füllung die Kartoffeln schälen, waschen und in Salzwasser gar kochen. Die heißen Kartoffeln zu einer glatten Masse verarbeiten. Die Zwiebel hacken und in 1 EL Butter goldgelb rösten. Den Quark glatt rühren. Kartoffeln, Quark und die Zwiebeln zusammen mit dem Fett in eine Schüssel geben, sehr gut glatt verrühren und mit Salz und Pfeffer abschmecken. Der Teig soll keine Quark- oder Kartoffelklümpchen enthalten. ",
         "tipsAndTricks": [
             { 
                 "author": "", 
@@ -1351,20 +1443,20 @@
       },
       {
         "step": 2,
-        "description": "Eier aufschlagen und zu den Spaghetti in die Pfanne geben",
+        "description": "In eine große Schüssel das Mehl, das Ei, das Wasser und etwas Salz geben und einen glatten Teig kneten. In 2 Portionen teilen. Dann den Teig auf einer bemehlten Arbeitsfläche dünn ausrollen. Mit einem Glas Kreise von 7 - 8 cm Durchmesser ausstechen. In die Mitte von jedem Teigkreis einen gehäuften Teelöffel Füllung geben, dann den Teig zu Halbmonden umklappen und die Ränder mit einer Gabel sorgfältig andrücken. Aufpassen, dass die Füllung nicht an die Ränder kommt!",
         "tipsAndTricks": [
-          { "author": "Melanie Müllerchen", "text": "Eier sollten aus Bodenhaltung sein." }
+          { "author": "", "text": "." }
         ],
         "historicalNote": [
           {
             "author": "",
-            "text": "Eier besser an der Pfanne aufschlagen und nich am Kopf des Bruders..."
+            "text": ""
           }
         ]
       },
       {
         "step": 3,
-        "description": "Speck dazu geben und mindestens solange anbraten bis die Eier sämig werden.",
+        "description": "Die Piroggen in reichlich siedendem Wasser in einem flachen Topf kochen. Vorsichtig umrühren und wenn sie an der Oberfläche schwimmen, noch 2 - 3 Minuten kochen lassen. Mit einem Schaumlöffel heraus nehmen. Mit 2 Esslöfffel heißer Butter servieren. Separat dicke Sahne dazu reichen. Die kalten Piroggen kann man in Butter oder Schmalz braten.",
         "tipsAndTricks": [{ "author": "", "text": "" }],
         "historicalNote": [{ "author": "", "text": "" }]
       }
