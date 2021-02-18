@@ -2,8 +2,8 @@
   {
     "@type": "Recipe",
     "id": "TestRezept1",
-    "title": "Sparghetti Carbonara",
-    "description": "Ein leckeres Nudelgericht",
+    "title": "Spaghetti Carbonara",
+    "description": "Ein super einfaches Nudelgericht für jeden, der es schnell haben möchte. ",
     "datePublished": "2021-2-17 18:41:27",
     "isNew": false,
     "categories": [
@@ -11,23 +11,27 @@
       { "name": "Nudelgericht" },
       { "name": "Italienisch" }
     ],
-    "author": { "name": "Melanie Müllerchen" },
-    "portion": "2",
-    "difficultyLevel": "mittel",
+    "author": { "name": "Melanie Müller" },
+    "portion": "4",
+    "difficultyLevel": "simpel",
     "householdUtensils": [
         { "name": "Pfanne" }, 
-        { "name": "Topf" }
+        { "name": "Topf" },
+        { "name": "Schneebesen" },
+        { "name": "Schneidebrett" }
     ],
     "ingredients": [
       {
-        "name": "Spaghetti",
+        "name": "Spaghetti", 
         "amount": "1",
         "unit": "pck",
+        
         "origins": [
           { "name": "Rewe" },
           { "name": "Lidl" },
           { "name": "Aldi" },
-          { "name": "Hit" }
+          { "name": "Hit" },
+          { "name": "Edeka" }
         ],
         "alternativeIngredients": [
           { "name": "", "amount": "", "unit": "", "origin": "" }
@@ -35,8 +39,8 @@
       },
       {
         "name": "Speck",
-        "amount": "1",
-        "unit": "pck",
+        "amount": "200",
+        "unit": "g",
         "origins": [{ "name": "Metzger" }],
         "alternativeIngredients": [
           { "name": "Aubergine", "amount": "50", "unit": "g", "origin": "" }
@@ -44,21 +48,81 @@
       },
       {
         "name": "Eier",
-        "amount": "3",
+        "amount": "4",
         "unit": "stk",
-        "origins": [{ "name": "Überall" }],
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" },
+          { "name": "Edeka" }
+        ],
+        "alternativeIngredients": [
+          { "name": "", "amount": "", "unit": "", "origin": "" }
+        ]
+      },
+      {
+        "name": "Speck",
+        "amount": "200",
+        "unit": "g",
+        "origins": [{ "name": "Metzger" }],
+        "alternativeIngredients": [
+          { "name": "Aubergine", "amount": "50", "unit": "g", "origin": "" }
+        ]
+      },
+      {
+        "name": "Butter",
+        "amount": "50",
+        "unit": "g",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" },
+          { "name": "Edeka" }
+        ],
+        "alternativeIngredients": [
+          { "name": "", "amount": "", "unit": "", "origin": "" }
+        ]
+      },
+      {
+        "name": "Muskat",
+        "amount": "1",
+        "unit": "priese",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" },
+          { "name": "Edeka" }
+        ],
+        "alternativeIngredients": [
+          { "name": "", "amount": "", "unit": "", "origin": "" }
+        ]
+      },
+      {
+        "name": "Salz und Pfeffer",
+        "amount": "",
+        "unit": "",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" },
+          { "name": "Edeka" }
+        ],
         "alternativeIngredients": [
           { "name": "", "amount": "", "unit": "", "origin": "" }
         ]
       }
     ],
-    "prepTime": "2",
+    "prepTime": "4",
     "restTime": "1",
     "cookTime": "15",
     "recipeInstructions": [
       {
         "step": 1,
-        "description": "Spaghetti in gesalzenem Wasser für 8 min kochen. Dann abgießen und in die Pfanne geben ",
+        "description": "Die Pasta in reichlich Salzwasser bissfest kochen",
         "tipsAndTricks": [
             { 
                 "author": "", 
@@ -74,20 +138,33 @@
       },
       {
         "step": 2,
-        "description": "Eier aufschlagen und zu den Spaghetti in die Pfanne geben",
+        "description": "Den Schinken in Würfel schneiden und in wenig Butter anbraten.",
         "tipsAndTricks": [
-          { "author": "Melanie Müllerchen", "text": "Eier sollten aus Bodenhaltung sein." }
+          { "author": "", 
+            "text": "" }
         ],
         "historicalNote": [
           {
             "author": "",
-            "text": "Eier besser an der Pfanne aufschlagen und nich am Kopf des Bruders..."
+            "text": ""
           }
         ]
       },
       {
         "step": 3,
         "description": "Speck dazu geben und mindestens solange anbraten bis die Eier sämig werden.",
+        "tipsAndTricks": [{ "author": "Melanie Müller", "text": "Eier sollten am besten Freilandhaltung sein." }],
+        "historicalNote": [{ "author": "", "text": "" }]
+      },
+      {
+        "step": 4,
+        "description": "Eigelb in einer großen Schüssel mit Salz, Pfeffer und Muskat verquirlen. Die Butter schaumig rühren und gut unter das Eigelb mischen. Die Schinkenwürfel und den geriebenen Käse gründlich unterrühren.",
+        "tipsAndTricks": [{ "author": "Melanie Müller", "text": "Damit die Butter schaumig gerührt werden kann, sollte man den Schneebesen benutzen." }],
+        "historicalNote": [{ "author": "", "text": "" }]
+      },
+      {
+        "step": 5,
+        "description": "Wenn die Nudeln gar sind, abgießen, sofort zu der Mischung in die Schüssel geben, nochmal alles gründlich durchmischen, dann sogleich servieren.",
         "tipsAndTricks": [{ "author": "", "text": "" }],
         "historicalNote": [{ "author": "", "text": "" }]
       }
