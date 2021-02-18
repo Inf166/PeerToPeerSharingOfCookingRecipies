@@ -1,15 +1,3 @@
-## Proof of Concept Bezeichnung
-#### Aus welchem Projektrisiko leitet sich der PoC ab?
-#### Was wird wie umgesetzt?
-#### Exit-Kriterien - Erfolgsfall
-#### Fail-Kriterien - Misserfolg
-#### Fallbacks - alternative Lösungsansätze
-#### Dokumentation
-##### Welche Exit- und Fail-Kriterien sind eingetroffen
-##### (Optional:) Welche Gründe gab es für den Misserfolg
-
-***
-
 ## PWA aus Vue.js Komponenten
 #### Aus welchem Projektrisiko leitet sich der PoC ab?
 * Einfaches Finden und Installieren der PWA
