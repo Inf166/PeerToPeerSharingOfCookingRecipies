@@ -65,4 +65,12 @@ export default {
     friendRecipies(state) {
         return state.friendRecipies;
     },
+    prefrencedRecipies(state) {
+        var myPrefsDiff = state.myPreferencesDifficultyLevel;
+        var myPrefCates = state.myPreferencesCategories;
+        var myPrefIngrs = state.myPreferencesIngredients;
+        var unCheckedRecipies = state.friendRecipies;
+        
+        return ;
+    },
 }

@@ -142,6 +142,7 @@ export default {
 
         });
         myPeer.on('error', function (error) {
+            document.getElementById("refresh-icon").classList.remove("spinnin");
             reject(error);
             console.log("> Peer: on error", error);
         });
@@ -155,6 +156,7 @@ export default {
         this.updateMyPeerId();
       }).catch((error)=>{
         console.log("ERROR: ", error);
+        document.getElementById("refresh-icon").classList.remove("spinnin");
       });
     },
     updateMyPeerId: function updateMyPeerId() {
@@ -552,6 +554,10 @@ i {
   display: grid;
   grid-template-columns: 300px 1fr;
   grid-template-rows: 1fr 300px 1fr;
+  border: 1px solid var(--main-grey-color);
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
 }
 .recipe-teaser-img {
   grid-column: 1 / 2;

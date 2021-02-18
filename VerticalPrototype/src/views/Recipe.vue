@@ -150,12 +150,18 @@
 
 
 <script>
-import json from "../assets/recipe.json"
       export default{
           data(){
               return{
-                  myJson: json
+                  myJson: this.recipe
               }
+          },
+          props: ['recipe'],
+          computed: {
+
+          },
+          mounted() {
+            console.log(this.recipe);
           }
       }
 </script>

@@ -76,6 +76,9 @@ export default {
     addRecipe(state, newRecipe) {
         state.myRecipies.push(newRecipe);
     },
+    removeFromMyRecipies(state, index) {
+        state.myRecipies.splice(index, 1);
+    },
     addTempRecipe(state, tempRecipe) {
         state.tempRecipe = (tempRecipe);
     },
@@ -88,5 +91,8 @@ export default {
     },
     addFriendRecipies(state, newRecipies) {
         state.friendRecipies.push(newRecipies);
-    }
+    },
+    removeRecipeFromFriendRecipies(state, index) {
+        state.friendRecipies.splice(index, 1);
+    },
 }
