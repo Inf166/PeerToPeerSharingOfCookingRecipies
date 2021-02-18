@@ -67,10 +67,32 @@ Es kam leider hin und wieder vor das das manuelle leeren des Caches notwendig wa
 * Nutzer können sich über alternativen ein und ausloggen
 #### Dokumentation
 Das An und Abmelden so wie das Registrieren funktioniert bereits, jedoch ist es noch nicht möglich die Daten zu überprüfen: also zu gewährleisten das die angegebene Email Adresse wirklich zu dem Nutzer gehört. Die Implementierung der Authentifizierung und Push Benachrichtigungen haben etwa ein einhalb Wochen gedauert, daher sind wir im Verzug.
-P2P ist noch nicht implementiert.
+Die P2P Kommunikation verläuft folgendermaßen:
+1. Nutzer melden sich über firebase an (oder registrieren sich)
+2. Nutzer wählen unter Freunde hinzufügen ihre Freunde aus
+3. Nutzer gehen auf Explore und aktualisieren die peers
+4. Rezepte der online verfügbaren Freunde werden geladen und angezeigt
+
+*Was passiert unter der Haube?*
+Im angemeldeten Zustand wird eine Verbindung zum Peer2Peer Broker aufgebaut und eine PeerId erhalten.
+Diese wird im Firebase Realtime Database hinterlegt zusammen mit den allgemeinen Nutzerdaten.
+Wird man nun als Freund hinzugefügt wird auch die aktuellste peerId gesichert.
+Werden nun die Rezepte der Freunde abgefragt, wird eine p2p Verbindung zu dem aktuell genutzten Gerät des Freundes aufgebaut und es wird nach neuen Rezepten gefragt.
+Der Freund antwortet mit dem Array der Rezepte und der Empfänger speichert diese unter Rezepten seiner Freunde.
+Geht einer Offline (Verbindung zum Freund wird unterbrochen) - so ist die p2p Verbindung geschlossen und es werden keine Rezepte mehr ausgetauscht.
+
+*Was funktioniert noch nicht?*
+Rezepte werden nur temporär im Vuex Store gesichert. Wir haben mit 4 VueJs Plugins experimentiert um die gespeicherten Rezepte auch persistent, also auch nach Schließen der Anwendung, zu sichern, leider ohne Erfolg.
+
 ##### Welche Exit- und Fail-Kriterien sind eingetroffen
+* Nutzer können sich ein uns ausloggen und haben dann Zugriff auf ihre Rezepte.
+* Nutzer können anderen Peers Rezepte schicken
+* Nutzer haben keinen Zugriff auf ihre Rezepte nach schließen der Anwendung
+* Geräte lassen sich nicht synchronisieren
+* Nutzer können Rezepte drucken
+* Nutzer können die Rezepte nicht exportieren und privat sichern.
 ##### (Optional:) Welche Gründe gab es für den Misserfolg
-P2P ist recht aufwendig für das Web und wir sind noch nicht soweit gekommen
+Es scheint so als würden die Nutzerobjekte von Firebase als auch die Peer Objekte von PeerJS circular JSONs sein, was dazu führt, dass die Plugins Fehler werfen und auch die JSON Files zu parsen oder zu stringlifyen hat nichts geholfen. Die Erweiterung Flatten hat leider auch keinen Erfolg gebracht.
 ***
 ## Rezeptvorschläge
 #### Aus welchem Projektrisiko leitet sich der PoC ab?
@@ -95,9 +117,22 @@ P2P ist recht aufwendig für das Web und wir sind noch nicht soweit gekommen
 * Die Anforderungen für den PoC werden angepasst
 * Es wurden alternative Wege gefunden Nutzer zur Interaktion mit dem System zu motivieren.
 #### Dokumentation
+Wie bereits bei der WebRTC PoC Dokumentation beschrieben, ist zwar das Anlegen, temporär speichern sowie der Austausch möglich, jedoch nicht das persistente Speichern der Rezepte auch nach Schließen der Anwendung oder Abmelden des Nutzers.
+Das Errechnen der Präferenzen der Nutzer funtkioniert, wird alledings auch nicht dauerhaft gespeichert.
+Wird ein Rezept eines Freundes gespeichert oder man selber fügt ein Rezept seiner Sammlung hinzu so wird die Kategorie, der Schwierigkeitsgrad und die verwendeten Zutaten ausgelesen und das Vorkommen innerhalb des Arrays der Nutzer-Präferenzen inkrementiert.
+Wird jetzt ein Request nach Vorschlägen ausgeführt, so prüft die App ob ein oder mehrere Rezepte der Freunde/Familie den Präferenzen des Nutzers gerecht wird und gibt dieses unter dem Pfad Explore als Vorschlag aus.
 ##### Welche Exit- und Fail-Kriterien sind eingetroffen
+* Rezepte können angelegt werden
+* Rezepte können (temporär) gespeichert werden
+* Rezepte können versendet und empfangen werden
+* Rezepte werden ausgewertet
+* Präferenzen werden für jeden aktiven Nutzer errechnet
+* Die Ausgabe von Vorschlägen funktioniert
+* Rezepte lassen sich in voller Größe anzeigen
+* Rezepte könnnen gedruckt werden
+* Die Ansicht oder Vorschau von Rezepten ist dynamisch und wenn ein Rezept gespeichert oder hinzugefügt wird, aktualisiert sich die gesamte Ansicht der App.
 ##### (Optional:) Welche Gründe gab es für den Misserfolg
-
+Die Anwendungslogik ist unserer Meinung nach noch nicht komplex genug um präzise auf die Nutzerpräferenzen einzugehen, allerdings haben wir sie nach besten Gewissen und Erfahrung programmiert und fertiggestellt. Verbesserungsmöglichkeiten sind nicht auszuschließen, sondern eher gewünscht, die Anwendungslogik soll mit der Zeit iteriert werden und sich mit Sammeln der Nutzererfahrungen dynamisch weiterentwickeln.
 ***
 
 ## Alternative Zutatenvorschläge
@@ -118,8 +153,14 @@ P2P ist recht aufwendig für das Web und wir sind noch nicht soweit gekommen
 #### Fallbacks - alternative Lösungsansätze
 * Die Anforderungen an Alternative Zutaten müssen überarbeitet werden.
 #### Dokumentation
+Gibt ein Nutzer Alternative Zutaten beim erstellen eines Rezepts an, so werden diese dem Rezept und der Zutat zugeordnet. Auch bei anderen Familienmitgliedern werden diese dann als Vorschlag angezeigt.
 ##### Welche Exit- und Fail-Kriterien sind eingetroffen
+* Das Anlegen alternativer Zutaten funktioniert
+* Das Ausgeben alternativer Zutaten funktioniert
+* Das Anwenden alternativer Zutaten funktioniert nicht
 ##### (Optional:) Welche Gründe gab es für den Misserfolg
+Zeitmangel, um es kurz zu machen. Sicherlich wäre die Implementierung nicht all zu kompliziert, aber mit unter all den Anderen Features mussten wir Prioritäten setzen und Abstriche machen.
+Des Weiteren müssen wir uns Gedanken dazu machen wie wir das Anwenden umsetzen wollen, denn ganz simpel ist das mit der Versionierung kombiniert nicht.
 
 ***
 
@@ -162,6 +203,34 @@ P2P ist recht aufwendig für das Web und wir sind noch nicht soweit gekommen
 * Die Erweiterungen müssen überarbeitet/überdacht werden.
 #### Dokumentation
 ##### Welche Exit- und Fail-Kriterien sind eingetroffen
+* [FAILED] Das System soll Nutzern die Möglichkeit bieten, Zutaten zu priorisieren (Wichtig für das Rezept).
+  * [FAILED] Bei dem angeben einer Zutat sollen Nutzer die Möglichkeit haben diese zu Priorisieren/die Wichtigkeit hervorzuheben.
+  * [FAILED] Auch nach der Angabe sollen diese Erweiterungen noch getätigt werden können.
+* [ERFOLG] Das System soll Nutzern die Möglichkeit bieten, die Herkunft/Verfügbarkeit über einer Zutat anzugeben/anzuzeigen.
+  * [ERFOLG] Bei dem angeben einer Zutat sollen Nutzer die Möglichkeit haben die Herkunft/Verfügbarkeit über einer Zutat anzugeben/anzuzeigen.
+  * [FAILED] Auch nach der Angabe sollen diese Erweiterungen noch getätigt werden können.
+* [FAILED] Das System soll Nutzern die Möglichkeit bieten, Rezepte offline anzulegen und erst später zu synchronisieren/teilen.
+  * [FAILED] Die PWA muss die Möglichkeit haben Rezepte lokal zwischen zu speichern/Cachen und dann nach Bedarf zu teilen.
+* [FAILED] Das System soll Nutzern die Möglichkeit bieten, Mengenangaben zu vereinheitlichen und leichter umsetzbar zu machen.
+  * [FAILED] Das System muss über die verschiedenen Mengeneinheiten Datensätze haben und die Umrechnung bestenfalls lokal effektiv durchführen.
+* [ERFOLG] Das System soll Nutzern die Möglichkeit bieten, benötigte Haushaltsgeräte anzugeben/anzuzeigen.
+  * [ERFOLG] Bei dem angeben eines Rezepts sollen Nutzer die Möglichkeit haben benötigte Haushaltsgeräte anzugeben/anzuzeigen.
+  * [FAILED] Auch nach der Angabe sollen diese Erweiterungen noch getätigt werden können.
+* [ERFOLG] Das System soll Nutzern die Möglichkeit bieten, Rezepte um Kommentare und Tipps sowie Feedback zu erweitern.
+  * [FAILED] Das System muss Nutzern an den passenden Stellen die Möglichkeit einer Texteingabe sowie das Teilen dieser anbieten.
+* [FAILED] Das System soll Nutzern die Möglichkeit bieten, häufig genutzte Zutaten als "Vorratskammer" anzuzeigen.
+  *[ERFOLG] Das System muss die Zutaten in geteilten Rezepten auslesen und deren Häufigkeit berechnen sowie einen Schwellwert errechnen können.
+  * [FAILED] Das System braucht einen Bereich in dem es die Erkenntnisse mit den Nutzern teilen kann.
+* [FAILED] Das System soll Nutzern die Möglichkeit bieten, die Farben der PWA selbst zu gestalten (Personalisierung).
+  *[ERFOLG] Die PWA muss in der Lage sein sich selbst zu aktualisieren um die Benutzer Bedürfnisse adäquat zu stillen.
+* [FAILED] Das System soll Nutzern die Möglichkeit bieten, Rezepte übersetzen zu lassen.
+  * [FAILED] Das System benötigt die Integration eines zuverlässigen Übersetzers und muss die zu Übersetzende Sprache als auch die Ausgabe Sprache erkennen/übermittelt bekommen.
 ##### (Optional:) Welche Gründe gab es für den Misserfolg
+Die meisten der Failkriterien kommen auf Grund von Zeitmangel zustande. Die Implementierung der P2P Kommunikation und die scheinbar fehlende Kooperation der Firebase Dienste oder VueJs Plugins hat die Implementierung nicht wirklich erleichtert.
+Abschließend können wir festhalten, dass dieses Entwicklungsprojekt uns vieles gelehrt hat,
+aber wir gerne auch mehr noch gemacht und gelernt hätten.
 
+Trotz der nicht vollständigen abarbeitung unserer Featureliste sind wir sehr stolz auf unseren Vertikalen Prototypen, der trotz der brutal langen Implementierungszeiten und vielen Nachtsessions steht und tatsächlich die oben genannten Exit Kriterien erfüllt.
+
+Mit Stolz präsentieren wir "Mein Kochbuch", eine PWA auf Basis von dem dynamischen Framework VueJS, die P2P Kommunikation nutzt um den Rezept austausch zu ermöglichen und modernes Static Website Hosting nutzt um sie für Nutzer erreichbar zu machen, sowie die Sicherheit der Authentifizierung durch etablierte Paradigmen von Google.
 ***
