@@ -788,7 +788,7 @@
         ]
       }
     ],
-    "prepTime": "10",
+    "prepTime": "30",
     "restTime": "15",
     "cookTime": "33",
     "recipeInstructions": [
@@ -864,26 +864,29 @@
     "@type": "Recipe",
     "id": "TestRezept5",
     "title": "Pizza Carbonara",
-    "description": "Ein leckeres Nudelgericht",
-    "datePublished": "2021-2-17 18:41:27",
+    "description": "Pizza Carbonara wie von der Pizzeria",
+    "datePublished": "2021-1-8 19:13:27",
     "isNew": false,
     "categories": [
       { "name": "Hauptspeise" },
       { "name": "Pizza" },
       { "name": "Italienisch" }
     ],
-    "author": { "name": "Melanie Müllerchen" },
-    "portion": "2",
+    "author": { "name": "Jürgen Müller" },
+    "portion": "4",
     "difficultyLevel": "mittel",
     "householdUtensils": [
         { "name": "Pfanne" }, 
-        { "name": "Topf" }
+        { "name": "Topf" },
+        { "name": "Schneidebrett" },
+        { "name": "Pizzablech"},
+        { "name": "Kartoffelstampfer" }
     ],
     "ingredients": [
       {
-        "name": "Spaghetti",
-        "amount": "1",
-        "unit": "pck",
+        "name": "Mehl",
+        "amount": "450",
+        "unit": "Gramm",
         "origins": [
           { "name": "Rewe" },
           { "name": "Lidl" },
@@ -895,31 +898,135 @@
         ]
       },
       {
-        "name": "Speck",
-        "amount": "1",
-        "unit": "pck",
-        "origins": [{ "name": "Metzger" }],
+        "name": "Hefe",
+        "amount": "5",
+        "unit": "Gramm",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" }
+        ],
         "alternativeIngredients": [
-          { "name": "Aubergine", "amount": "50", "unit": "g", "origin": "" }
+          { "name": "", "amount": "50", "unit": "g", "origin": "" }
         ]
       },
       {
-        "name": "Eier",
-        "amount": "3",
-        "unit": "stk",
-        "origins": [{ "name": "Überall" }],
+        "name": "Salz",
+        "amount": "1",
+        "unit": "Teelöffel",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" }
+        ],
         "alternativeIngredients": [
           { "name": "", "amount": "", "unit": "", "origin": "" }
         ]
+      },
+      {
+        "name": "Wasser",
+        "amount": "250",
+        "unit": "Milliliter",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" }
+        ],
+        "alternativeIngredients": [
+          { "name": "", "amount": "", "unit": "", "origin": "" }
+        ]
+      },
+      {
+        "name": "Olivenöl",
+        "amount": "",
+        "unit": "",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" }
+        ],
+        "alternativeIngredients": [
+          { "name": "Sonnenblumenöl", "amount": "", "unit": "", "origin": [
+            { "name": "Rewe" },
+            { "name": "Lidl" },
+            { "name": "Aldi" },
+            { "name": "Hit" }
+          ] }
+        ]
+      },
+      {
+        "name": "Schmand",
+        "amount": "250",
+        "unit": "Gramm",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" }
+        ],
+        "alternativeIngredients": [
+          { "name": "", "amount": "", "unit": "", "origin": "" }
+        ]
+      },
+      {
+        "name": "Käse(Gouda), gerieben",
+        "amount": "200",
+        "unit": "Gramm",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" }
+        ],
+        "alternativeIngredients": [
+          { "name": "Gratinkäse", "amount": "200", "unit": "Gramm", "origin": [
+            { "name": "Rewe" },
+            { "name": "Lidl" },
+            { "name": "Aldi" },
+            { "name": "Hit" }
+          ] }
+        ]
+      },
+      {
+        "name": "Kochschinken, hauchdünner",
+        "amount": "120",
+        "unit": "Gramm",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" }
+        ],
+        "alternativeIngredients": [
+          { "name": "", "amount": "", "unit": "", "origin":"" }
+        ]
+      },
+      {
+        "name": "Champignons",
+        "amount": "150",
+        "unit": "Gramm",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" }
+        ],
+        "alternativeIngredients": [
+          { "name": "", "amount": "", "unit": "", "origin":"" }
+        ]
       }
     ],
-    "prepTime": "2",
-    "restTime": "1",
-    "cookTime": "15",
+    "prepTime": "20",
+    "restTime": "60",
+    "cookTime": "25",
     "recipeInstructions": [
       {
         "step": 1,
-        "description": "Spaghetti in gesalzenem Wasser für 8 min kochen. Dann abgießen und in die Pfanne geben ",
+        "description": "Aus Mehl, Hefe, Salz, Wasser und etwas Olivenöl einen Teig zubereiten. Den Teig ca. 45 Minuten ruhen lassen. Anschließend nochmals durchkneten und dünn auf einem Backblech ausrollen und mit einer Gabel einstechen.",
         "tipsAndTricks": [
             { 
                 "author": "", 
@@ -935,21 +1042,21 @@
       },
       {
         "step": 2,
-        "description": "Eier aufschlagen und zu den Spaghetti in die Pfanne geben",
+        "description": "Die Champignons putzen und in dünne Scheiben hobeln oder schneiden.",
         "tipsAndTricks": [
-          { "author": "Melanie Müllerchen", "text": "Eier sollten aus Bodenhaltung sein." }
+          { "author": "", "text": "" }
         ],
         "historicalNote": [
           {
-            "author": "",
-            "text": "Eier besser an der Pfanne aufschlagen und nich am Kopf des Bruders..."
+            "author": "Jürgen Müller",
+            "text": "Opa Karl hat die Pizza mit weißen Champignons am meisten gemocht."
           }
         ]
       },
       {
         "step": 3,
-        "description": "Speck dazu geben und mindestens solange anbraten bis die Eier sämig werden.",
-        "tipsAndTricks": [{ "author": "", "text": "" }],
+        "description": "Den Schmand mit Salz verrühren und abschmecken. Anschließend auf dem Pizzateig verteilen. Dann den Käse gleichmäßig darüber streuen. Danach den Schinken und die Champignons darüber verteilen. Bei 200° (Ober- und Unterhitze) ca. 20 - 25 Minuten backen, bis der Teig knusprig ist.",
+        "tipsAndTricks": [{ "author": "Jürgen Müller", "text": "Je nach Belieben ein Ei in die Mitte der Pizza geben und mitbacken. Das schmeckt immer besonders lecker." }],
         "historicalNote": [{ "author": "", "text": "" }]
       }
     ]
