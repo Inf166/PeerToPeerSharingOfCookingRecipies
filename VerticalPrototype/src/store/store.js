@@ -892,13 +892,13 @@ export const store = new Vuex.Store({
           ],
         friendRecipies: [],
         myPreferencesCategories: [
-            {name: 'test', value: '100'}
+          {name: 'test', value: '0'},
         ],
         myPreferencesIngredients: [
-            {name: 'test', value: '100'}
+          {name: 'test', value: '0'},
         ],
         myPreferencesDifficultyLevel: [
-            {name: 'test', value: '100'}
+          {name: 'test', value: '0'},
         ],
         tempRecipe: {}
     },
