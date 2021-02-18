@@ -4,7 +4,7 @@
     "id": "TestRezept1",
     "title": "Spaghetti Carbonara",
     "description": "Ein super einfaches Nudelgericht für jeden, der es schnell haben möchte. ",
-    "datePublished": "2021-2-17 18:41:27",
+    "datePublished": "2020-1-7 20:21:57",
     "isNew": false,
     "categories": [
       { "name": "Hauptspeise" },
@@ -23,7 +23,7 @@
     "ingredients": [
       {
         "name": "Spaghetti", 
-        "amount": "5",
+        "amount": "500",
         "unit": "g",
         
         "origins": [
@@ -174,8 +174,8 @@
     "@type": "Recipe",
     "id": "TestRezept2",
     "title": "Spaghetti all arrabiata",
-    "description": "Ein leckeres Nudelgericht",
-    "datePublished": "2021-2-17 18:41:27",
+    "description": "Spaghetti mit rotem Pesto und Schafskäse. Mmmhh, so ein himmlischer Geschmack!",
+    "datePublished": "2021-2-2 10:51:30",
     "isNew": false,
     "categories": [
       { "name": "Hauptspeise" },
@@ -188,7 +188,8 @@
     "householdUtensils": [
         { "name": "Pfanne" }, 
         { "name": "Topf"},
-        { "name": "Schneidebrett" }
+        { "name": "Schneidebrett" },
+        { "name": "Küchensieb" }
     ],
     "ingredients": [
       {
@@ -395,16 +396,16 @@
   {
     "@type": "Recipe",
     "id": "TestRezept3",
-    "title": "Sparghetti und Pesto",
-    "description": "Ein leckeres Nudelgericht",
-    "datePublished": "2021-2-17 18:41:27",
+    "title": "Spaghetti mit rotem Pesto und Schafskäse",
+    "description": "Ein unkompliziertes, jedoch geschmackvolles Nudelgericht",
+    "datePublished": "2021-2-10 16:23:17",
     "isNew": false,
     "categories": [
       { "name": "Hauptspeise" },
       { "name": "Nudelgericht" },
       { "name": "Italienisch" }
     ],
-    "author": { "name": "Melanie Müllerchen" },
+    "author": { "name": "Luisa Müller" },
     "portion": "2",
     "difficultyLevel": "mittel",
     "householdUtensils": [
@@ -414,8 +415,8 @@
     "ingredients": [
       {
         "name": "Spaghetti",
-        "amount": "1",
-        "unit": "pck",
+        "amount": "250",
+        "unit": "g",
         "origins": [
           { "name": "Rewe" },
           { "name": "Lidl" },
@@ -427,21 +428,149 @@
         ]
       },
       {
-        "name": "Speck",
-        "amount": "1",
-        "unit": "pck",
-        "origins": [{ "name": "Metzger" }],
+        "name": "Pesto, rotes",
+        "amount": "150",
+        "unit": "g",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" }
+        ],
         "alternativeIngredients": [
           { "name": "Aubergine", "amount": "50", "unit": "g", "origin": "" }
         ]
       },
       {
-        "name": "Eier",
-        "amount": "3",
-        "unit": "stk",
-        "origins": [{ "name": "Überall" }],
+        "name": "Schafskäse",
+        "amount": "125",
+        "unit": "g",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" },
+          { "name": "Edeka" }
+        ],
         "alternativeIngredients": [
-          { "name": "", "amount": "", "unit": "", "origin": "" }
+          { "name": "Feta-Käse", "amount": "125", "unit": "g", "origin": [
+            { "name": "Rewe" },
+            { "name": "Lidl" },
+            { "name": "Aldi" },
+            { "name": "Hit" },
+            { "name": "Edeka" }
+            ] 
+          }
+        ]
+      },
+      {
+        "name": "Tomaten",
+        "amount": "2",
+        "unit": "Stück",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" },
+          { "name": "Edeka" }
+        ],
+        "alternativeIngredients": [
+          { "name": "Tomatenmark", "amount": "100", "unit": "g", "origin": [
+            { "name": "Rewe" },
+            { "name": "Lidl" },
+            { "name": "Aldi" },
+            { "name": "Hit" },
+            { "name": "Edeka" }
+            ] 
+          }
+        ]
+      },
+      {
+        "name": "Balsamico",
+        "amount": "2",
+        "unit": "EL",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" },
+          { "name": "Edeka" }
+        ],
+        "alternativeIngredients": [
+          { "name": "Rotweinessig", "amount": "1", "unit": "EL", "origin": [
+            { "name": "Rewe" },
+            { "name": "Lidl" },
+            { "name": "Aldi" },
+            { "name": "Hit" },
+            { "name": "Edeka" }
+            ] 
+          }
+        ]
+      },
+      {
+        "name": "Sonnenblumennöl",
+        "amount": "2",
+        "unit": "EL",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" },
+          { "name": "Edeka" }
+        ],
+        "alternativeIngredients": [
+          { "name": "Olivenöl", "amount": "1", "unit": "EL", "origin": [
+            { "name": "Rewe" },
+            { "name": "Lidl" },
+            { "name": "Aldi" },
+            { "name": "Hit" },
+            { "name": "Edeka" }
+            ] 
+          }
+        ]
+      },
+      {
+        "name": "Gewürzmischung",
+        "amount": "",
+        "unit": "",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" },
+          { "name": "Edeka" }
+        ],
+        "alternativeIngredients": [
+          { "name": "Salz,Pfeffer und Kräuter", "amount": "", "unit": "", "origin": [
+            { "name": "Rewe" },
+            { "name": "Lidl" },
+            { "name": "Aldi" },
+            { "name": "Hit" },
+            { "name": "Edeka" }
+            ] 
+          }
+        ]
+      },
+      {
+        "name": "Parmesan",
+        "amount": "50",
+        "unit": "g",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" },
+          { "name": "Edeka" }
+        ],
+        "alternativeIngredients": [
+          { "name": "Grana Padano", "amount": "50", "unit": "g", "origin": [
+            { "name": "Rewe" },
+            { "name": "Lidl" },
+            { "name": "Aldi" },
+            { "name": "Hit" },
+            { "name": "Edeka" }
+            ] 
+          }
         ]
       }
     ],
@@ -451,7 +580,7 @@
     "recipeInstructions": [
       {
         "step": 1,
-        "description": "Spaghetti in gesalzenem Wasser für 8 min kochen. Dann abgießen und in die Pfanne geben ",
+        "description": "Die Tomaten waschen, in kleine Würfel schneiden und mit dem Tomatengewürzsalz nach Geschmack würzen und Balsamico dazugeben. Die Tomaten ca. 1 Stunde im Kühlschrank ziehen lassen.",
         "tipsAndTricks": [
             { 
                 "author": "", 
@@ -467,20 +596,26 @@
       },
       {
         "step": 2,
-        "description": "Eier aufschlagen und zu den Spaghetti in die Pfanne geben",
+        "description": "Den Schafskäse ebenfalls in kleine Würfel schneiden. Die Spaghetti nach Anleitung in Salzwasser al dente kochen und im Küchensieb abgießen.",
         "tipsAndTricks": [
-          { "author": "Melanie Müllerchen", "text": "Eier sollten aus Bodenhaltung sein." }
+          { "author": "Luisa Müller", "text": "Die Nudeln nicht abschrecken (!)." }
         ],
         "historicalNote": [
           {
             "author": "",
-            "text": "Eier besser an der Pfanne aufschlagen und nich am Kopf des Bruders..."
+            "text": ""
           }
         ]
       },
       {
         "step": 3,
-        "description": "Speck dazu geben und mindestens solange anbraten bis die Eier sämig werden.",
+        "description": "Nach dem Abtropfen die Nudel wieder in den leeren, jetzt kalten Topf geben und mit dem Pesto und etwas Öl durchmischen. Anschließend den Schafskäse vorsichtig unterheben.",
+        "tipsAndTricks": [{ "author": "", "text": "" }],
+        "historicalNote": [{ "author": "", "text": "" }]
+      },
+      {
+        "step": 4,
+        "description": "Die Spaghetti auf vorgewärmte Teller anrichten und die kalten Tomatenstücke je nach gewünschter Menge auf die Nudeln geben.Das Ganze nach Geschmack mit Parmesan bestreuen und servieren.",
         "tipsAndTricks": [{ "author": "", "text": "" }],
         "historicalNote": [{ "author": "", "text": "" }]
       }
