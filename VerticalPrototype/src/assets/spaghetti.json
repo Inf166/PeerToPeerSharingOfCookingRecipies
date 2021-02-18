@@ -1064,27 +1064,28 @@
   {
     "@type": "Recipe",
     "id": "TestRezept6",
-    "title": "Noccis und Schweinemedalions",
-    "description": "Ein leckeres Schweinegericht",
-    "datePublished": "2021-2-17 18:41:27",
+    "title": "Türkische Pizza",
+    "description": "Die türkische Pizza- einfach unglaublich lecker",
+    "datePublished": "2021-1-3 20:22:17",
     "isNew": false,
     "categories": [
       { "name": "Hauptspeise" },
       { "name": "Landküche" },
-      { "name": "Polnisch" }
+      { "name": "Türkisch" }
     ],
-    "author": { "name": "Melanie Müllerchen" },
-    "portion": "2",
+    "author": { "name": "Angelika Müller" },
+    "portion": "3",
     "difficultyLevel": "mittel",
     "householdUtensils": [
         { "name": "Pfanne" }, 
-        { "name": "Topf" }
+        { "name": "Topf" },
+        { "name": "Silex Multigrill" }
     ],
     "ingredients": [
       {
-        "name": "Spaghetti",
-        "amount": "1",
-        "unit": "pck",
+        "name": "Mehl",
+        "amount": "200",
+        "unit": "Gramm",
         "origins": [
           { "name": "Rewe" },
           { "name": "Lidl" },
@@ -1096,31 +1097,151 @@
         ]
       },
       {
-        "name": "Speck",
-        "amount": "1",
-        "unit": "pck",
-        "origins": [{ "name": "Metzger" }],
+        "name": "frische Hefe",
+        "amount": "1/2",
+        "unit": "Stück",
+        "origins": [{ "name": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" }
+        ],
         "alternativeIngredients": [
-          { "name": "Aubergine", "amount": "50", "unit": "g", "origin": "" }
+          { "name": "Trockene Hefe", "amount": "1", "unit": "Packung", "origin": [
+            { "name": "Rewe" },
+            { "name": "Lidl" },
+            { "name": "Aldi" },
+            { "name": "Hit" }
+          ] 
+        }
         ]
       },
       {
-        "name": "Eier",
-        "amount": "3",
-        "unit": "stk",
-        "origins": [{ "name": "Überall" }],
+        "name": "lauwarmes Wasser",
+        "amount": "125",
+        "unit": "Milliliter",
+        "origins": [{ "name": [
+          { "name": "Trockene Hefe", "amount": "1", "unit": "Packung", "origin": [
+            { "name": "Rewe" },
+            { "name": "Lidl" },
+            { "name": "Aldi" },
+            { "name": "Hit" }
+          ],
+        "alternativeIngredients": [
+          { "name": "", "amount": "", "unit": "", "origin": "" }
+        ]
+      },
+      {
+        "name": "Salz",
+        "amount": "1",
+        "unit": "Priese",
+        "origins": [
+            { "name": "Rewe" },
+            { "name": "Lidl" },
+            { "name": "Aldi" },
+            { "name": "Hit" }
+          ],
+        "alternativeIngredients": [
+          { "name": "Trockene Hefe", "amount": "1", "unit": "Packung", "origin": [
+            { "name": "Rewe" },
+            { "name": "Lidl" },
+            { "name": "Aldi" },
+            { "name": "Hit" }
+          ] }
+        ]
+      },
+      {
+        "name": "Öl",
+        "amount": "1",
+        "unit": "Esslöffel",
+        "origins": [{ "name": [
+            { "name": "Rewe" },
+            { "name": "Lidl" },
+            { "name": "Aldi" },
+            { "name": "Hit" }
+          ],
+        "alternativeIngredients": [
+          { "name": "", "amount": "", "unit": "", "origin": "" }
+        ]
+      },
+      {
+        "name": "Zwiebel",
+        "amount": "1",
+        "unit": "Stück",
+        "origins": [{ "name": [
+            { "name": "Rewe" },
+            { "name": "Lidl" },
+            { "name": "Aldi" },
+            { "name": "Hit" }
+          ],
+        "alternativeIngredients": [
+          { "name": "", "amount": "", "unit": "", "origin": "" }
+        ]
+      },
+      {
+        "name": "Knoblauchzehe",
+        "amount": "2",
+        "unit": "Stück",
+        "origins": [{ "name": [
+            { "name": "Rewe" },
+            { "name": "Lidl" },
+            { "name": "Aldi" },
+            { "name": "Hit" }
+          ],
+        "alternativeIngredients": [
+          { "name": "", "amount": "", "unit": "", "origin": "" }
+        ]
+      },
+      {
+        "name": "Kräuter (Oregano, Minze, Basilikum, Thymian, getr. und frische Petersilie, Salz und Pfeffer",
+        "amount": "",
+        "unit": "",
+        "origins": [{ "name": [
+            { "name": "Rewe" },
+            { "name": "Lidl" },
+            { "name": "Aldi" },
+            { "name": "Hit" }
+          ],
+        "alternativeIngredients": [
+          { "name": "", "amount": "", "unit": "", "origin": "" }
+        ]
+      },
+      {
+        "name": "Hackfleisch vom Rind",
+        "amount": "150",
+        "unit": "Gramm",
+        "origins": [{ "name": [
+            { "name": "Rewe" },
+            { "name": "Lidl" },
+            { "name": "Aldi" },
+            { "name": "Hit" }
+          ],
+        "alternativeIngredients": [
+          { "name": "", "amount": "", "unit": "", "origin": "" }
+        ]
+      },
+      {
+        "name": "Tomaten aus der Dose",
+        "amount": "1/2",
+        "unit": "Stück",
+        "origins": [{ "name": [
+            { "name": "Rewe" },
+            { "name": "Lidl" },
+            { "name": "Aldi" },
+            { "name": "Hit" }
+          ],
         "alternativeIngredients": [
           { "name": "", "amount": "", "unit": "", "origin": "" }
         ]
       }
     ],
-    "prepTime": "2",
+    "prepTime": "10",
     "restTime": "1",
-    "cookTime": "15",
+    "cookTime": "5",
     "recipeInstructions": [
       {
         "step": 1,
-        "description": "Spaghetti in gesalzenem Wasser für 8 min kochen. Dann abgießen und in die Pfanne geben ",
+        "description": "Mehl, Hefe, lauwarmes Wasser, Salz und Öl zu einem glatten Teig verkneten. Aus dem Teig 3 gleich große Kugeln formen und diese auf einer bemehlten Arbeitsplatte mit dem Nudelholz dünn ausrollen. ",
         "tipsAndTricks": [
             { 
                 "author": "", 
@@ -1136,22 +1257,22 @@
       },
       {
         "step": 2,
-        "description": "Eier aufschlagen und zu den Spaghetti in die Pfanne geben",
+        "description": "Das Hackfleisch mit Zwiebel, Knoblauchzehe, Tomaten, Öl, Kräuter (Oregano, Minze, Basilikum, Thymian, getr. und frische Petersilie, Salz und Pfeffer gründlich vermischen.",
         "tipsAndTricks": [
           { "author": "Melanie Müllerchen", "text": "Eier sollten aus Bodenhaltung sein." }
         ],
         "historicalNote": [
           {
             "author": "",
-            "text": "Eier besser an der Pfanne aufschlagen und nich am Kopf des Bruders..."
+            "text": ""
           }
         ]
       },
       {
         "step": 3,
-        "description": "Speck dazu geben und mindestens solange anbraten bis die Eier sämig werden.",
-        "tipsAndTricks": [{ "author": "", "text": "" }],
-        "historicalNote": [{ "author": "", "text": "" }]
+        "description": "Silex Multigrill mit Backpapier belegen, die Teigfladen darauf legen, den Belag dünn darauf verteilen. In 5 Minuten sollten die türkische Pizzen in Silex fertig sein.",
+        "tipsAndTricks": [{ "author": "Angelika Müller", "text": "Im Ofen kann man die Pizzen auch backen, jedoch schmeckt es im Multigrill viel besser! Das verspreche ich euch!" }],
+        "historicalNote": [{ "author": "Angelika Müller", "text": "Oma hat die türkische Pizza immer im Silex Multigrill gemacht. Diesen Tipp hat sie von ihrer türkischen Freundin erfahren und gibt es seit dem immer mit." }]
       }
     ]
   },
