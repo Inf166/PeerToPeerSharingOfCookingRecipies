@@ -24,7 +24,7 @@
       {
         "name": "Spaghetti", 
         "amount": "500",
-        "unit": "g",
+        "unit": "Gramm",
         
         "origins": [
           { "name": "Rewe" },
@@ -40,16 +40,16 @@
       {
         "name": "Speck",
         "amount": "200",
-        "unit": "g",
+        "unit": "Gramm",
         "origins": [{ "name": "Metzger" }],
         "alternativeIngredients": [
-          { "name": "Aubergine", "amount": "50", "unit": "g", "origin": "" }
+          { "name": "Aubergine", "amount": "50", "unit": "Gramm", "origin": "" }
         ]
       },
       {
         "name": "Eier",
         "amount": "4",
-        "unit": "stk",
+        "unit": "Stück",
         "origins": [
           { "name": "Rewe" },
           { "name": "Lidl" },
@@ -64,16 +64,16 @@
       {
         "name": "Speck",
         "amount": "200",
-        "unit": "g",
+        "unit": "Gramm",
         "origins": [{ "name": "Metzger" }],
         "alternativeIngredients": [
-          { "name": "Aubergine", "amount": "50", "unit": "g", "origin": "" }
+          { "name": "Aubergine", "amount": "50", "unit": "Gramm", "origin": "" }
         ]
       },
       {
         "name": "Butter",
         "amount": "50",
-        "unit": "g",
+        "unit": "Gramm",
         "origins": [
           { "name": "Rewe" },
           { "name": "Lidl" },
@@ -88,7 +88,7 @@
       {
         "name": "Muskat",
         "amount": "1",
-        "unit": "priese",
+        "unit": "Priese",
         "origins": [
           { "name": "Rewe" },
           { "name": "Lidl" },
@@ -195,7 +195,7 @@
       {
         "name": "Spaghetti",
         "amount": "500",
-        "unit": "g",
+        "unit": "Gramm",
         "origins": [
           { "name": "Rewe" },
           { "name": "Lidl" },
@@ -226,7 +226,7 @@
       {
         "name": "Sonnenblumenöl",
         "amount": "2",
-        "unit": "EL",
+        "unit": "Esslöffel",
         "origins": [
           { "name": "Rewe" },
           { "name": "Lidl" },
@@ -236,7 +236,7 @@
         ],
         "alternativeIngredients": 
         [
-          { "name": "Olivenöl", "amount": "1", "unit": "EL", 
+          { "name": "Olivenöl", "amount": "1", "unit": "Esslöffel", 
             "origin": [
             { "name": "Rewe" },
             { "name": "Lidl" },
@@ -250,7 +250,7 @@
       {
         "name": "Tomaten",
         "amount": "400",
-        "unit": "g",
+        "unit": "Gramm",
         "origins": [
           { "name": "Rewe" },
           { "name": "Lidl" },
@@ -259,7 +259,7 @@
           { "name": "Edeka" }
         ],
         "alternativeIngredients": [
-          { "name": "Tomatenmark", "amount": "500", "unit": "g", 
+          { "name": "Tomatenmark", "amount": "500", "unit": "Gramm", 
             "origin": [
             { "name": "Rewe" },
             { "name": "Lidl" },
@@ -271,7 +271,7 @@
         {
           "name": "Butter",
           "amount": "2",
-          "unit": "EL",
+          "unit": "Esslöffel",
           "origins": [
             { "name": "Rewe" },
             { "name": "Lidl" },
@@ -295,7 +295,7 @@
             { "name": "Edeka" }
           ],
           "alternativeIngredients": [
-            { "name": "Ingwer", "amount": "20", "unit": "g", 
+            { "name": "Ingwer", "amount": "20", "unit": "Gramm", 
               "origin": [
             { "name": "Rewe" },
             { "name": "Lidl" },
@@ -324,7 +324,7 @@
         {
           "name": "Pecorino, gerieben",
           "amount": "100",
-          "unit": "g",
+          "unit": "Gramm",
           "origins": [
             { "name": "Rewe" },
             { "name": "Lidl" },
@@ -333,7 +333,7 @@
             { "name": "Edeka"}
           ],
           "alternativeIngredients": [
-            { "name": "Parmesan", "amount": "100", "unit": "g", "origin": [
+            { "name": "Parmesan", "amount": "100", "unit": "Gramm", "origin": [
               { "name": "Rewe" },
               { "name": "Lidl" },
               { "name": "Aldi" },
@@ -346,8 +346,8 @@
       ]
       }
     ],
-    "prepTime": "10",
-    "restTime": "5",
+    "prepTime": "6",
+    "restTime": "1",
     "cookTime": "15",
     "recipeInstructions": [
       {
@@ -416,7 +416,7 @@
       {
         "name": "Spaghetti",
         "amount": "250",
-        "unit": "g",
+        "unit": "Gramm",
         "origins": [
           { "name": "Rewe" },
           { "name": "Lidl" },
@@ -430,7 +430,7 @@
       {
         "name": "Pesto, rotes",
         "amount": "150",
-        "unit": "g",
+        "unit": "Gramm",
         "origins": [
           { "name": "Rewe" },
           { "name": "Lidl" },
@@ -438,13 +438,13 @@
           { "name": "Hit" }
         ],
         "alternativeIngredients": [
-          { "name": "Aubergine", "amount": "50", "unit": "g", "origin": "" }
+          { "name": "Aubergine", "amount": "50", "unit": "Gramm", "origin": "" }
         ]
       },
       {
         "name": "Schafskäse",
         "amount": "125",
-        "unit": "g",
+        "unit": "Gramm",
         "origins": [
           { "name": "Rewe" },
           { "name": "Lidl" },
@@ -453,7 +453,7 @@
           { "name": "Edeka" }
         ],
         "alternativeIngredients": [
-          { "name": "Feta-Käse", "amount": "125", "unit": "g", "origin": [
+          { "name": "Feta-Käse", "amount": "125", "unit": "Gramm", "origin": [
             { "name": "Rewe" },
             { "name": "Lidl" },
             { "name": "Aldi" },
@@ -475,7 +475,7 @@
           { "name": "Edeka" }
         ],
         "alternativeIngredients": [
-          { "name": "Tomatenmark", "amount": "100", "unit": "g", "origin": [
+          { "name": "Tomatenmark", "amount": "100", "unit": "Gramm", "origin": [
             { "name": "Rewe" },
             { "name": "Lidl" },
             { "name": "Aldi" },
@@ -488,7 +488,7 @@
       {
         "name": "Balsamico",
         "amount": "2",
-        "unit": "EL",
+        "unit": "Esslöffel",
         "origins": [
           { "name": "Rewe" },
           { "name": "Lidl" },
@@ -497,7 +497,7 @@
           { "name": "Edeka" }
         ],
         "alternativeIngredients": [
-          { "name": "Rotweinessig", "amount": "1", "unit": "EL", "origin": [
+          { "name": "Rotweinessig", "amount": "1", "unit": "Esslöffel", "origin": [
             { "name": "Rewe" },
             { "name": "Lidl" },
             { "name": "Aldi" },
@@ -510,7 +510,7 @@
       {
         "name": "Sonnenblumennöl",
         "amount": "2",
-        "unit": "EL",
+        "unit": "Esslöffel",
         "origins": [
           { "name": "Rewe" },
           { "name": "Lidl" },
@@ -519,7 +519,7 @@
           { "name": "Edeka" }
         ],
         "alternativeIngredients": [
-          { "name": "Olivenöl", "amount": "1", "unit": "EL", "origin": [
+          { "name": "Olivenöl", "amount": "1", "unit": "Esslöffel", "origin": [
             { "name": "Rewe" },
             { "name": "Lidl" },
             { "name": "Aldi" },
@@ -554,7 +554,7 @@
       {
         "name": "Parmesan",
         "amount": "50",
-        "unit": "g",
+        "unit": "Gramm",
         "origins": [
           { "name": "Rewe" },
           { "name": "Lidl" },
@@ -563,7 +563,7 @@
           { "name": "Edeka" }
         ],
         "alternativeIngredients": [
-          { "name": "Grana Padano", "amount": "50", "unit": "g", "origin": [
+          { "name": "Grana Padano", "amount": "50", "unit": "Gramm", "origin": [
             { "name": "Rewe" },
             { "name": "Lidl" },
             { "name": "Aldi" },
@@ -574,8 +574,8 @@
         ]
       }
     ],
-    "prepTime": "2",
-    "restTime": "1",
+    "prepTime": "7",
+    "restTime": "60",
     "cookTime": "15",
     "recipeInstructions": [
       {
@@ -625,26 +625,28 @@
     "@type": "Recipe",
     "id": "TestRezept4",
     "title": "Pizza Margaritha",
-    "description": "Ein leckeres Pizzagericht",
-    "datePublished": "2021-2-17 18:41:27",
+    "description": "Pizza Margaritha - nach Italienischer Art",
+    "datePublished": "2020-30-12 12:11:26",
     "isNew": false,
     "categories": [
       { "name": "Hauptspeise" },
       { "name": "Pizza" },
       { "name": "Italienisch" }
     ],
-    "author": { "name": "Melanie Müllerchen" },
+    "author": { "name": "Stefanie Lamm" },
     "portion": "2",
     "difficultyLevel": "mittel",
     "householdUtensils": [
-        { "name": "Pfanne" }, 
-        { "name": "Topf" }
+        { "name": "Pfanne" },
+        { "name": "Schneidebrett" },
+        { "name": "Pizzablech"},
+        { "name": "Kartoffelstampfer" }
     ],
     "ingredients": [
       {
-        "name": "Spaghetti",
-        "amount": "1",
-        "unit": "pck",
+        "name": "Mehl",
+        "amount": "450",
+        "unit": "Gramm",
         "origins": [
           { "name": "Rewe" },
           { "name": "Lidl" },
@@ -656,31 +658,143 @@
         ]
       },
       {
-        "name": "Speck",
+        "name": "Trockenhefe",
         "amount": "1",
-        "unit": "pck",
-        "origins": [{ "name": "Metzger" }],
+        "unit": "Packung",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" }
+        ],
         "alternativeIngredients": [
-          { "name": "Aubergine", "amount": "50", "unit": "g", "origin": "" }
+          { "name": "frische Hefe", "amount": "1/2", "unit": "Stück", "origin": [
+            { "name": "Rewe" },
+            { "name": "Lidl" },
+            { "name": "Aldi" },
+            { "name": "Hit" }
+          ] 
+        }
         ]
       },
       {
-        "name": "Eier",
-        "amount": "3",
-        "unit": "stk",
-        "origins": [{ "name": "Überall" }],
+        "name": "Salz",
+        "amount": "1",
+        "unit": "TL",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" }
+        ],
+        "alternativeIngredients": [
+          { "name": "", "amount": "", "unit": "", "origin": "" }
+        ]
+      },
+      {
+        "name": "lauwarmes Wasser",
+        "amount": "325",
+        "unit": "Milliliter",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" }
+        ],
+        "alternativeIngredients": [
+          { "name": "", "amount": "", "unit": "", "origin": "" }
+        ]
+      },
+      {
+        "name": "Tomaten aus der Dose",
+        "amount": "400",
+        "unit": "Milliliter",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" }
+        ],
+        "alternativeIngredients": [
+          { "name": "", "amount": "", "unit": "", "origin": "" }
+        ]
+      },
+      {
+        "name": "Knoblauchzehe",
+        "amount": "1",
+        "unit": "Stück",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" }
+        ],
+        "alternativeIngredients": [
+          { "name": "", "amount": "", "unit": "", "origin": "" }
+        ]
+      },
+      {
+        "name": "Mozarella",
+        "amount": "2",
+        "unit": "Packungen",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" }
+        ],
+        "alternativeIngredients": [
+          { "name": "Gratinkäse", "amount": "200", "unit": "Gramm", "origin": [
+            { "name": "Rewe" },
+            { "name": "Lidl" },
+            { "name": "Aldi" },
+            { "name": "Hit" }
+          ] 
+        }
+        ]
+      },
+      {
+        "name": "Sonnenblumenöl",
+        "amount": "",
+        "unit": "",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" }
+        ],
+        "alternativeIngredients": [
+          { "name": "Olivenöl", "amount": "", "unit": "", "origin": [
+            { "name": "Rewe" },
+            { "name": "Lidl" },
+            { "name": "Aldi" },
+            { "name": "Hit" }
+          ] 
+        }
+        ]
+      },
+      {
+        "name": "Salz und Pfeffer",
+        "amount": "",
+        "unit": "",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" }
+        ],
         "alternativeIngredients": [
           { "name": "", "amount": "", "unit": "", "origin": "" }
         ]
       }
     ],
-    "prepTime": "2",
-    "restTime": "1",
-    "cookTime": "15",
+    "prepTime": "10",
+    "restTime": "15",
+    "cookTime": "33",
     "recipeInstructions": [
       {
         "step": 1,
-        "description": "Spaghetti in gesalzenem Wasser für 8 min kochen. Dann abgießen und in die Pfanne geben ",
+        "description": "Als erstes eine große Pfanne erhitzen und etwas Olivenöl hineingeben. Die Knoblauchzehen mit der flachen Seite des Messers andrücken, schälen und in feine Scheiben schneiden. Bei niedriger (!) Hitze (also 2-3 von 10) glasig anbraten. Das dauert ca. 10 Minuten, wobei der Knoblauch keinesfalls Farbe annehmen soll, nur leicht gelblich und glasig werden.",
         "tipsAndTricks": [
             { 
                 "author": "", 
@@ -696,7 +810,7 @@
       },
       {
         "step": 2,
-        "description": "Eier aufschlagen und zu den Spaghetti in die Pfanne geben",
+        "description": "In der Zwischenzeit lauwarmes (wichtig!) Wasser in eine Schüssel geben, dazu die Hefe hineingeben. Das Ganze mit einer Gabel gut verrühren und 5-8 Minuten stehen lassen.",
         "tipsAndTricks": [
           { "author": "Melanie Müllerchen", "text": "Eier sollten aus Bodenhaltung sein." }
         ],
@@ -709,10 +823,41 @@
       },
       {
         "step": 3,
-        "description": "Speck dazu geben und mindestens solange anbraten bis die Eier sämig werden.",
+        "description": "Mehl in eine große Schüssel geben und das Salz einstreuen. Jetzt in der Mitte eine Mulde bilden und das Wasser mit der Hefe in die Mulde gießen und vorerst mit einer Gabel mit kreisförmigen Bewegungen unterrühren. Wenn das Rühren nicht mehr funktioniert, da der Teig eine zähe Konsistenz gekriegt hat, auf eine gut (!) bemehlte Fläche legen und jetzt kräftig kneten. Also wirklich mindestens 10 Minuten lang, bis der Teig sich geschmeidig und glatt anfühlt. Das ist die wichtigste Stelle für einen gelungenen Teig - also Mühe geben! Dann den Teig für 15 Minuten abgedeckt an einem warmen Ort gehen lassen. Dabei mit Mehl bestreuen und mit Klarsichtfolie abdecken, damit sich keine harte Kruste bildet.",
+        "tipsAndTricks": [{ "author": "", "text": "" }],
+        "historicalNote": [{ "author": "", "text": "" }]
+      },
+      {
+        "step": 4,
+        "description": "Wenn der Knoblauch glasig geworden ist, die Dosentomaten hinzufügen und mit Salz abschmecken. Das Ganze soll 5-20 Minuten köcheln. ",
+        "tipsAndTricks": [{ "author": "Stefanie Lamm", "text": "Sollte die Soße zu trocken erscheinen, etwas Wasser hinzufügen - bei mir ist sie meist doch eher zu flüssig, so dass sie noch ein bisschen einkochen muss." }],
+        "historicalNote": [{ "author": "", "text": "" }]
+      },
+      {
+        "step": 5,
+        "description": "Jetzt schon mal den Backofen auf die höchste Stufe (also 250°C Ober- und Unterhitze, keine Umluft) vorheizen. Dann pro Pizza ein ca. orangen- oder grapefruitgroßes Stück Teig abreißen (der Teig sollte bisher etwas aufgegangen sein) und auf einer gut bemehlten Oberfläche mit dem Nudelholz dünn ausrollen. Also wirklich dünn, um eine italienische Pizza zu bekommen. Wichtig ist, dass Sie immer schön Mehl benutzen, damit der Teig nicht am Nudelholz oder an der Tischplatte klebt.",
+        "tipsAndTricks": [{ "author": "Stefanie Lamm", "text": "Es ist ganz wichtig, dass der Ofen sehr heiß ist, bevor die Pizza reinkommt - dies entspricht eher dem Optimum, also einem Steinofen." }],
+        "historicalNote": [{ "author": "", "text": "" }]
+      },
+      {
+        "step": 6,
+        "description": "Inzwischen die reduzierte Tomatensoße nochmals abschmecken (es fehlt praktisch immer etwas Salz), etwas pfeffern, das Stückchen Butter hinzufügen und verrühren, bis es geschmolzen ist.",
+        "tipsAndTricks": [{ "author": "Stefanie Lamm", "text": "Die Soße püriere ich immer mit einem Kartoffelstampfer, sodass sie nicht so glatt wird wie mit einem Mixer, jedoch auch nicht zu große Stückchen enthält, damit sie sich auf dem Teigboden leichter verteilen lässt." }],
+        "historicalNote": [{ "author": "", "text": "" }]
+      },
+      {
+        "step": 7,
+        "description": "Nun den Teigboden auf ein Backblech (mit Backpapier) legen. Jetzt ca. einen Schöpflöffel Soße auf dem Teig gleichmäßig verteilen. Den Mozzarella mit den Händen zerreißen (guter Mozzarella ist relativ weich und lässt sich schwer schneiden) und gleichmäßig auf der Pizza verteilen. Darüber noch ein paar Tropfen Öl träufeln und ab in den heißen Ofen. Wichtig: Auf die unterste Schiene!",
+        "tipsAndTricks": [{ "author": "Stefanie Lamm", "text": "Damit das Backpapier nicht verrutscht, einfach vier kleine Stückchen vom Teig in die vier Ecken des Blechs unter das Papier legen und fest draufdrücken (wie Knete). Die werden beim Backen mehr oder weniger verbrennen, hinterlassen jedoch kaum Spuren." }],
+        "historicalNote": [{ "author": "", "text": "" }]
+      },
+      {
+        "step": 8,
+        "description": "War der Ofen richtig heiß ist und der Teig dünn ausgerollt, braucht die Pizza nicht lange.        Nach 7-12 Minuten sollte der Käse geschmolzen und leicht gebräunt sein. Dunkle, fast schwarze Stellen am Teigrand sind nicht schlimm - solang es nicht der ganze Rand ist.Ist alles gut gelaufen, sollte die Pizza an zwei Enden gehalten so kross und dünn sein, dass sie nicht in der Mitte einknickt.",
         "tipsAndTricks": [{ "author": "", "text": "" }],
         "historicalNote": [{ "author": "", "text": "" }]
       }
+
     ]
   },
   {
