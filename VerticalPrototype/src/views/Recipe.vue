@@ -161,5 +161,19 @@
 </script>
 
 <style>
-
+  table {
+    border-spacing: 0.5rem 1rem;
+  }
+  table th {
+    text-align: left;
+    font-weight: bold;
+    color: var(--main-bg-color);
+    border-bottom: 0.25rem solid var(--main-bg-color);
+  }
+  table td {
+    text-align: left;
+    vertical-align: center;
+    color: var(--main-black-color);
+    border-bottom: 1px dotted var(--main-grey-color);
+  }
 </style>

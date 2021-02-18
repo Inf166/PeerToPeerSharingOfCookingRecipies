@@ -11,7 +11,9 @@
       { "name": "Nudelgericht" },
       { "name": "Italienisch" }
     ],
-    "author": { "name": "Melanie Müller" },
+    "author": [
+      { "name": "Melanie Müller" }
+    ],
     "portion": "4",
     "difficultyLevel": "simpel",
     "householdUtensils": [
@@ -182,7 +184,7 @@
       { "name": "Nudelgericht" },
       { "name": "Italienisch" }
     ],
-    "author": { "name": "Hans Müller" },
+    "author": [{ "name": "Hans Müller" }],
     "portion": "4",
     "difficultyLevel": "simpel",
     "householdUtensils": [
@@ -333,13 +335,18 @@
             { "name": "Edeka"}
           ],
           "alternativeIngredients": [
-            { "name": "Parmesan", "amount": "100", "unit": "Gramm", "origin": [
-              { "name": "Rewe" },
-              { "name": "Lidl" },
-              { "name": "Aldi" },
-              { "name": "Hit" },
-              { "name": "Edeka"}
-            ] 
+            { 
+              "name": "Parmesan", 
+              "amount": "100", 
+              "unit": "Gramm", 
+              "origin": 
+              [
+                { "name": "Rewe" },
+                { "name": "Lidl" },
+                { "name": "Aldi" },
+                { "name": "Hit" },
+                { "name": "Edeka"}
+              ] 
             }
           ]
         }
@@ -405,7 +412,7 @@
       { "name": "Nudelgericht" },
       { "name": "Italienisch" }
     ],
-    "author": { "name": "Luisa Müller" },
+    "author": [{ "name": "Luisa Müller" }],
     "portion": "2",
     "difficultyLevel": "mittel",
     "householdUtensils": [
@@ -633,7 +640,7 @@
       { "name": "Pizza" },
       { "name": "Italienisch" }
     ],
-    "author": { "name": "Stefanie Lamm" },
+    "author": [{ "name": "Stefanie Lamm" }],
     "portion": "2",
     "difficultyLevel": "mittel",
     "householdUtensils": [
@@ -872,7 +879,7 @@
       { "name": "Pizza" },
       { "name": "Italienisch" }
     ],
-    "author": { "name": "Jürgen Müller" },
+    "author": [{ "name": "Jürgen Müller" }],
     "portion": "4",
     "difficultyLevel": "mittel",
     "householdUtensils": [
@@ -1073,7 +1080,7 @@
       { "name": "Landküche" },
       { "name": "Türkisch" }
     ],
-    "author": { "name": "Angelika Müller" },
+    "author": [{ "name": "Angelika Müller" }],
     "portion": "3",
     "difficultyLevel": "mittel",
     "householdUtensils": [
@@ -1081,7 +1088,8 @@
         { "name": "Topf" },
         { "name": "Silex Multigrill" }
     ],
-    "ingredients": [
+    "ingredients": 
+    [
       {
         "name": "Mehl",
         "amount": "200",
@@ -1100,7 +1108,7 @@
         "name": "frische Hefe",
         "amount": "1/2",
         "unit": "Stück",
-        "origins": [{ "name": [
+        "origins": [
           { "name": "Rewe" },
           { "name": "Lidl" },
           { "name": "Aldi" },
@@ -1120,8 +1128,7 @@
         "name": "lauwarmes Wasser",
         "amount": "125",
         "unit": "Milliliter",
-        "origins": [{ "name": [
-          { "name": "Trockene Hefe", "amount": "1", "unit": "Packung", "origin": [
+        "origins": [
             { "name": "Rewe" },
             { "name": "Lidl" },
             { "name": "Aldi" },
@@ -1142,19 +1149,14 @@
             { "name": "Hit" }
           ],
         "alternativeIngredients": [
-          { "name": "Trockene Hefe", "amount": "1", "unit": "Packung", "origin": [
-            { "name": "Rewe" },
-            { "name": "Lidl" },
-            { "name": "Aldi" },
-            { "name": "Hit" }
-          ] }
+          { "name": "", "amount": "", "unit": "", "origin": "" }
         ]
       },
       {
         "name": "Öl",
         "amount": "1",
         "unit": "Esslöffel",
-        "origins": [{ "name": [
+        "origins": [
             { "name": "Rewe" },
             { "name": "Lidl" },
             { "name": "Aldi" },
@@ -1168,7 +1170,7 @@
         "name": "Zwiebel",
         "amount": "1",
         "unit": "Stück",
-        "origins": [{ "name": [
+        "origins": [
             { "name": "Rewe" },
             { "name": "Lidl" },
             { "name": "Aldi" },
@@ -1182,7 +1184,7 @@
         "name": "Knoblauchzehe",
         "amount": "2",
         "unit": "Stück",
-        "origins": [{ "name": [
+        "origins": [
             { "name": "Rewe" },
             { "name": "Lidl" },
             { "name": "Aldi" },
@@ -1196,7 +1198,7 @@
         "name": "Kräuter (Oregano, Minze, Basilikum, Thymian, getr. und frische Petersilie, Salz und Pfeffer",
         "amount": "",
         "unit": "",
-        "origins": [{ "name": [
+        "origins": [
             { "name": "Rewe" },
             { "name": "Lidl" },
             { "name": "Aldi" },
@@ -1210,7 +1212,7 @@
         "name": "Hackfleisch vom Rind",
         "amount": "150",
         "unit": "Gramm",
-        "origins": [{ "name": [
+        "origins": [
             { "name": "Rewe" },
             { "name": "Lidl" },
             { "name": "Aldi" },
@@ -1224,7 +1226,7 @@
         "name": "Tomaten aus der Dose",
         "amount": "1/2",
         "unit": "Stück",
-        "origins": [{ "name": [
+        "origins": [
             { "name": "Rewe" },
             { "name": "Lidl" },
             { "name": "Aldi" },
@@ -1288,7 +1290,7 @@
       { "name": "Piroggee" },
       { "name": "Russisch" }
     ],
-    "author": { "name": "Alex Müller" },
+    "author": [{ "name": "Alex Müller" }],
     "portion": "4",
     "difficultyLevel": "schwer",
     "householdUtensils": [
@@ -1326,7 +1328,7 @@
         "name": "lauwarmes Wasser",
         "amount": "130",
         "unit": "Milliliter",
-        "origins": [{ "name": [
+        "origins": [
           { "name": "Rewe" },
           { "name": "Lidl" },
           { "name": "Aldi" },
@@ -1340,7 +1342,7 @@
         "name": "Kartoffeln",
         "amount": "600",
         "unit": "Gramm",
-        "origins": [{ "name": [
+        "origins": [
           { "name": "Rewe" },
           { "name": "Lidl" },
           { "name": "Aldi" },
@@ -1354,7 +1356,7 @@
         "name": "Quark",
         "amount": "250",
         "unit": "Gramm",
-        "origins": [{ "name": [
+        "origins": [
           { "name": "Rewe" },
           { "name": "Lidl" },
           { "name": "Aldi" },
@@ -1368,7 +1370,7 @@
         "name": "Zwiebel",
         "amount": "1",
         "unit": "Stück",
-        "origins": [{ "name": [
+        "origins": [
           { "name": "Rewe" },
           { "name": "Lidl" },
           { "name": "Aldi" },
@@ -1382,7 +1384,7 @@
         "name": "Butter",
         "amount": "3",
         "unit": "Esslöffel",
-        "origins": [{ "name": [
+        "origins": [
           { "name": "Rewe" },
           { "name": "Lidl" },
           { "name": "Aldi" },
@@ -1396,7 +1398,7 @@
         "name": "Saure Sahne",
         "amount": "200",
         "unit": "Milliliter",
-        "origins": [{ "name": [
+        "origins": [
           { "name": "Rewe" },
           { "name": "Lidl" },
           { "name": "Aldi" },
@@ -1410,7 +1412,7 @@
         "name": "Salz und Pfeffer, grob gemahlener",
         "amount": "",
         "unit": "",
-        "origins": [{ "name": [
+        "origins": [
           { "name": "Rewe" },
           { "name": "Lidl" },
           { "name": "Aldi" },
@@ -1474,7 +1476,7 @@
       { "name": "Gebäck" },
       { "name": "Polnisch" }
     ],
-    "author": { "name": "Stefanie Müller" },
+    "author": [{ "name": "Stefanie Müller" }],
     "portion": "12",
     "difficultyLevel": "simpel",
     "householdUtensils": [
@@ -1555,25 +1557,30 @@
           { "name": "Hit" }
         ],
         "alternativeIngredients": [
-          { "name": "frische Hefe", "amount": "1/2", "unit": "Packung", "origin": [
-            { "name": "Rewe" },
-            { "name": "Lidl" },
-            { "name": "Aldi" },
-            { "name": "Hit" }
-          ] 
-        },
-        {
-          "name": "Salz",
-          "amount": "1",
-          "unit": "Priese",
-          "origins": [
-            { "name": "Rewe" },
-            { "name": "Lidl" },
-            { "name": "Aldi" },
-            { "name": "Hit" }
-          ],
-          "alternativeIngredients": [
-            { "name": "", "amount": "", "unit": "", "origin": "" }
+          { "name": "frische Hefe", 
+            "amount": "1/2", 
+            "unit": "Packung", 
+            "origin": [
+              { "name": "Rewe" },
+              { "name": "Lidl" },
+              { "name": "Aldi" },
+              { "name": "Hit" }
+            ] 
+          }
+        ]
+      },
+      {
+        "name": "Salz",
+        "amount": "1",
+        "unit": "Priese",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" }
+        ],
+        "alternativeIngredients": [
+          { "name": "", "amount": "", "unit": "", "origin": "" }
         ]
       },
       {
@@ -1706,7 +1713,7 @@
       { "name": "Vorspeise" },
       { "name": "Landküche" }
     ],
-    "author": { "name": "Georg Müller" },
+    "author": [{ "name": "Georg Müller" }],
     "portion": "1",
     "difficultyLevel": "simpel",
     "householdUtensils": [
