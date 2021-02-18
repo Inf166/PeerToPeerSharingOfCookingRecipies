@@ -23,8 +23,8 @@
     "ingredients": [
       {
         "name": "Spaghetti", 
-        "amount": "1",
-        "unit": "pck",
+        "amount": "5",
+        "unit": "g",
         
         "origins": [
           { "name": "Rewe" },
@@ -173,7 +173,7 @@
   {
     "@type": "Recipe",
     "id": "TestRezept2",
-    "title": "Sparghetti Rabiata",
+    "title": "Spaghetti all arrabiata",
     "description": "Ein leckeres Nudelgericht",
     "datePublished": "2021-2-17 18:41:27",
     "isNew": false,
@@ -182,54 +182,176 @@
       { "name": "Nudelgericht" },
       { "name": "Italienisch" }
     ],
-    "author": { "name": "Melanie Müllerchen" },
-    "portion": "2",
-    "difficultyLevel": "mittel",
+    "author": { "name": "Hans Müller" },
+    "portion": "4",
+    "difficultyLevel": "simpel",
     "householdUtensils": [
         { "name": "Pfanne" }, 
-        { "name": "Topf" }
+        { "name": "Topf"},
+        { "name": "Schneidebrett" }
     ],
     "ingredients": [
       {
         "name": "Spaghetti",
-        "amount": "1",
-        "unit": "pck",
+        "amount": "500",
+        "unit": "g",
         "origins": [
           { "name": "Rewe" },
           { "name": "Lidl" },
           { "name": "Aldi" },
-          { "name": "Hit" }
+          { "name": "Hit" },
+          { "name": "Edeka" }
+
         ],
         "alternativeIngredients": [
           { "name": "", "amount": "", "unit": "", "origin": "" }
         ]
       },
       {
-        "name": "Speck",
+        "name": "Zwiebel",
         "amount": "1",
-        "unit": "pck",
-        "origins": [{ "name": "Metzger" }],
-        "alternativeIngredients": [
-          { "name": "Aubergine", "amount": "50", "unit": "g", "origin": "" }
-        ]
-      },
-      {
-        "name": "Eier",
-        "amount": "3",
-        "unit": "stk",
-        "origins": [{ "name": "Überall" }],
+        "unit": "Stück",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" },
+          { "name": "Edeka" }
+        ],
         "alternativeIngredients": [
           { "name": "", "amount": "", "unit": "", "origin": "" }
         ]
+      },
+      {
+        "name": "Sonnenblumenöl",
+        "amount": "2",
+        "unit": "EL",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" },
+          { "name": "Edeka" }
+        ],
+        "alternativeIngredients": 
+        [
+          { "name": "Olivenöl", "amount": "1", "unit": "EL", 
+            "origin": [
+            { "name": "Rewe" },
+            { "name": "Lidl" },
+            { "name": "Aldi" },
+            { "name": "Hit" },
+            { "name": "Edeka"}
+            ] 
+          }
+       ]
+      },
+      {
+        "name": "Tomaten",
+        "amount": "400",
+        "unit": "g",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" },
+          { "name": "Edeka" }
+        ],
+        "alternativeIngredients": [
+          { "name": "Tomatenmark", "amount": "500", "unit": "g", 
+            "origin": [
+            { "name": "Rewe" },
+            { "name": "Lidl" },
+            { "name": "Aldi" },
+            { "name": "Hit" },
+            { "name": "Edeka" }
+          ]
+        },
+        {
+          "name": "Butter",
+          "amount": "2",
+          "unit": "EL",
+          "origins": [
+            { "name": "Rewe" },
+            { "name": "Lidl" },
+            { "name": "Aldi" },
+            { "name": "Hit" },
+            { "name": "Edeka" }
+          ],
+          "alternativeIngredients": [
+            { "name": "", "amount": "", "unit": "", "origin": "" }
+          ]
+        },
+        {
+          "name": "Chilischoten",
+          "amount": "2",
+          "unit": "Stück",
+          "origins": [
+            { "name": "Rewe" },
+            { "name": "Lidl" },
+            { "name": "Aldi" },
+            { "name": "Hit" },
+            { "name": "Edeka" }
+          ],
+          "alternativeIngredients": [
+            { "name": "Ingwer", "amount": "20", "unit": "g", 
+              "origin": [
+            { "name": "Rewe" },
+            { "name": "Lidl" },
+            { "name": "Aldi" },
+            { "name": "Hit" },
+            { "name": "Edeka" }
+            ] 
+          }
+          ]
+        },
+        {
+          "name": "Salz und Pfeffer",
+          "amount": "",
+          "unit": "",
+          "origins": [
+            { "name": "Rewe" },
+            { "name": "Lidl" },
+            { "name": "Aldi" },
+            { "name": "Hit" },
+            { "name": "Edeka" }
+          ],
+          "alternativeIngredients": [
+            { "name": "", "amount": "", "unit": "", "origin": "" }
+          ]
+        },
+        {
+          "name": "Pecorino, gerieben",
+          "amount": "100",
+          "unit": "g",
+          "origins": [
+            { "name": "Rewe" },
+            { "name": "Lidl" },
+            { "name": "Aldi" },
+            { "name": "Hit" },
+            { "name": "Edeka"}
+          ],
+          "alternativeIngredients": [
+            { "name": "Parmesan", "amount": "100", "unit": "g", "origin": [
+              { "name": "Rewe" },
+              { "name": "Lidl" },
+              { "name": "Aldi" },
+              { "name": "Hit" },
+              { "name": "Edeka"}
+            ] 
+            }
+          ]
+        }
+      ]
       }
     ],
-    "prepTime": "2",
-    "restTime": "1",
+    "prepTime": "10",
+    "restTime": "5",
     "cookTime": "15",
     "recipeInstructions": [
       {
         "step": 1,
-        "description": "Spaghetti in gesalzenem Wasser für 8 min kochen. Dann abgießen und in die Pfanne geben ",
+        "description": "Zwiebel und Knoblauch schälen und fein würfeln. Die Chilischoten waschen, trocken tupfen, der Länge nach halbieren, entkernen und fein würfeln. ",
         "tipsAndTricks": [
             { 
                 "author": "", 
@@ -245,20 +367,26 @@
       },
       {
         "step": 2,
-        "description": "Eier aufschlagen und zu den Spaghetti in die Pfanne geben",
+        "description": "Die Butter in einem Topf heiß schäumend erhitzen. Zwiebel- und Chilischotenwürfel dazugeben und sie darin unter ständigem Rühren anbraten. Die Tomaten abtropfen lassen, etwas zerkleinern und zur Zwiebelmischung geben. Das ganze gut miteinander verrühren und aufkochen lasse. Die Hitze reduzieren. Die Sauce etwa 10 Minuten köcheln lassen, salzen und pfeffern.",
         "tipsAndTricks": [
-          { "author": "Melanie Müllerchen", "text": "Eier sollten aus Bodenhaltung sein." }
+          { "author": "", "text": "" }
         ],
         "historicalNote": [
           {
-            "author": "",
-            "text": "Eier besser an der Pfanne aufschlagen und nich am Kopf des Bruders..."
+            "author": "Hans Müller",
+            "text": "Oma Melanie hat dieses leckere Rezept uns im Kindesalter fast jeden Sonntag zubereitet, damit wir glücklich in die Woche starten können"
           }
         ]
       },
       {
         "step": 3,
-        "description": "Speck dazu geben und mindestens solange anbraten bis die Eier sämig werden.",
+        "description": "Inzwischen die Spaghetti in reichlich kochendem Salzwasser nach Packungsanleitung in etwa 10 Minuten bissfest garen. Sie in einem Sieb abtropfen lassen und mit dem Öl vermengen",
+        "tipsAndTricks": [{ "author": "", "text": "" }],
+        "historicalNote": [{ "author": "", "text": "" }]
+      },
+      {
+        "step": 4,
+        "description": "Die Nudeln in einer Schüssel locker mit der Sauce vermengen, auf 4 Teller verteilen und mit dem Pecorino bestreuen.",
         "tipsAndTricks": [{ "author": "", "text": "" }],
         "historicalNote": [{ "author": "", "text": "" }]
       }
@@ -832,13 +960,13 @@
     "@type": "Recipe",
     "id": "TestRezept9",
     "title": "Omlett",
-    "description": "Ein leckeres Nudelgericht",
+    "description": "Ein leckeres Eigericht",
     "datePublished": "2021-2-17 18:41:27",
     "isNew": false,
     "categories": [
       { "name": "Frühstück" },
       { "name": "Vorspeise" },
-      { "name": "Landküchte" }
+      { "name": "Landküche" }
     ],
     "author": { "name": "Melanie Müllerchen" },
     "portion": "2",
