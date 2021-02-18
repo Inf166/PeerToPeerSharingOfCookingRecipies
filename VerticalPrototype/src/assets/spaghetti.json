@@ -1697,27 +1697,27 @@
   {
     "@type": "Recipe",
     "id": "TestRezept9",
-    "title": "Omlett",
-    "description": "Ein leckeres Eigericht",
-    "datePublished": "2021-2-17 18:41:27",
+    "title": "Low Carb Omelett",
+    "description": "Low Carb kann auch sehr gut schmecken! ",
+    "datePublished": "2020-10-10 21:41:22",
     "isNew": false,
     "categories": [
       { "name": "Frühstück" },
       { "name": "Vorspeise" },
       { "name": "Landküche" }
     ],
-    "author": { "name": "Melanie Müllerchen" },
-    "portion": "2",
-    "difficultyLevel": "mittel",
+    "author": { "name": "Georg Müller" },
+    "portion": "1",
+    "difficultyLevel": "simpel",
     "householdUtensils": [
         { "name": "Pfanne" }, 
         { "name": "Topf" }
     ],
     "ingredients": [
       {
-        "name": "Spaghetti",
+        "name": "Paprikaschote",
         "amount": "1",
-        "unit": "pck",
+        "unit": "Esslöffel",
         "origins": [
           { "name": "Rewe" },
           { "name": "Lidl" },
@@ -1729,31 +1729,83 @@
         ]
       },
       {
-        "name": "Speck",
+        "name": "Frühlingszwiebel",
         "amount": "1",
-        "unit": "pck",
-        "origins": [{ "name": "Metzger" }],
+        "unit": "Esslöffel",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" }
+        ],
         "alternativeIngredients": [
-          { "name": "Aubergine", "amount": "50", "unit": "g", "origin": "" }
+          { "name": "", "amount": "", "unit": "", "origin": "" }
         ]
       },
       {
         "name": "Eier",
-        "amount": "3",
-        "unit": "stk",
-        "origins": [{ "name": "Überall" }],
+        "amount": "2",
+        "unit": "Stück",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" }
+        ],
+        "alternativeIngredients": [
+          { "name": "", "amount": "", "unit": "", "origin": "" }
+        ]
+      },
+      {
+        "name": "Salz",
+        "amount": "",
+        "unit": "",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" }
+        ],
+        "alternativeIngredients": [
+          { "name": "", "amount": "", "unit": "", "origin": "" }
+        ]
+      },
+      {
+        "name": "Käse",
+        "amount": "1",
+        "unit": "Esslöffel",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" }
+        ],
+        "alternativeIngredients": [
+          { "name": "", "amount": "", "unit": "", "origin": "" }
+        ]
+      },
+      {
+        "name": "Olivenöl",
+        "amount": "1",
+        "unit": "Teelöffel",
+        "origins": [
+          { "name": "Rewe" },
+          { "name": "Lidl" },
+          { "name": "Aldi" },
+          { "name": "Hit" }
+        ],
         "alternativeIngredients": [
           { "name": "", "amount": "", "unit": "", "origin": "" }
         ]
       }
     ],
-    "prepTime": "2",
+    "prepTime": "5",
     "restTime": "1",
-    "cookTime": "15",
+    "cookTime": "5",
     "recipeInstructions": [
       {
         "step": 1,
-        "description": "Spaghetti in gesalzenem Wasser für 8 min kochen. Dann abgießen und in die Pfanne geben ",
+        "description": "Die Eier in einer Schüssel mit einer Prise Salz verquirlen.",
         "tipsAndTricks": [
             { 
                 "author": "", 
@@ -1769,20 +1821,20 @@
       },
       {
         "step": 2,
-        "description": "Eier aufschlagen und zu den Spaghetti in die Pfanne geben",
+        "description": "Eine Pfanne mit dem Öl erhitzen. Die verquirlten Eier in die Pfanne geben und mit Käse, Paprika und Frühlingszwiebeln belegen.",
         "tipsAndTricks": [
-          { "author": "Melanie Müllerchen", "text": "Eier sollten aus Bodenhaltung sein." }
+          { "author": "", "text": "" }
         ],
         "historicalNote": [
           {
             "author": "",
-            "text": "Eier besser an der Pfanne aufschlagen und nich am Kopf des Bruders..."
+            "text": ""
           }
         ]
       },
       {
         "step": 3,
-        "description": "Speck dazu geben und mindestens solange anbraten bis die Eier sämig werden.",
+        "description": "Den Herd ausschalten, die Pfanne mit einem Teller abdecken und in der Resthitze ziehen lassen, bis das Ei gestockt ist.",
         "tipsAndTricks": [{ "author": "", "text": "" }],
         "historicalNote": [{ "author": "", "text": "" }]
       }
