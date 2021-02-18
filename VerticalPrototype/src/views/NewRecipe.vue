@@ -547,12 +547,30 @@ export default {
       var temp = this.$store.getters.tempRecipe;
       console.log(temp);
       this.$store.dispatch('addRecipe', temp).then(() => {
+        for (var prop in temp) {
+          if(prop == "categories") {
+            var categories = temp[prop];
+            categories.forEach((category) => {
+              this.$store.dispatch('addPreferencesCategories', category.name);
+            });
+          }
+          if(prop == "ingredients") {
+            var ingredients = temp[prop];
+            ingredients.forEach((ingredient) => {
+              this.$store.dispatch('addPreferencesIngredients', ingredient.name);
+            });
+          }
+          if(prop == "difficultyLevel") {
+            console.log("Schwierigkeitsgrad: ", temp[prop]);
+            this.$store.dispatch('addPreferencesDifficultyLevel', temp[prop]);
+          }
+        }
+        console.log(JSON.stringify(temp));
         this.$emit('newRecipe');
         this.$store.dispatch('addTempRecipe', {}).then(() => {
         });
         alert("Rezept gespeichert!");
       });
-      console.log(JSON.stringify(this.$store.getters.myRecipies));
     },
     goToStep(prevPage, nextPage) {
       if(prevPage == null && nextPage == null) {
