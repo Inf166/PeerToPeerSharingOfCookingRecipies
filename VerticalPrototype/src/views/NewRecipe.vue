@@ -113,17 +113,17 @@
         <input type="number" v-model="ingredient.amount" value="" id="zutatmenge" @change="toggleColor('zutatmenge')" placeholder="2">
         <label for="einheit">Ein welcher Einheit ist deine Angabe?</label> 
         <select  name="einheit" v-model="ingredient.unit" id="zutateinheit" @change="toggleColor('zutateinheit')">
-          <option value="stk">Stück</option>
-          <option value="mg">Milligramm</option>
-          <option value="g">Gramm</option>
-          <option value="kg">Kilogramm</option>
-          <option value="cl">Centiliter</option>
-          <option value="ml">Milliliter</option>
-          <option value="l">Liter</option>
-          <option value="pck">Packungen</option>
-          <option value="prise">Prisen</option>
-          <option value="tl">Teelöffel</option>
-          <option value="el">Esslöffel</option>
+          <option value="Stück">Stück</option>
+          <option value="Milligramm">Milligramm</option>
+          <option value="Gramm">Gramm</option>
+          <option value="Kilogramm">Kilogramm</option>
+          <option value="Centiliter">Centiliter</option>
+          <option value="Milliliter">Milliliter</option>
+          <option value="Liter">Liter</option>
+          <option value="Packungen">Packungen</option>
+          <option value="Prisen">Prisen</option>
+          <option value="Teelöffel">Teelöffel</option>
+          <option value="Esslöffel">Esslöffel</option>
         </select>
         <div v-for="(origin,i) in ingredient.origins" :key="'origin-'+i">
           <label for="zutatherkunft">Wo ist die Zutat erwerbbar?</label>
@@ -141,17 +141,17 @@
             <input type="number" v-model="altIng.amount" id="altzutatmenge" @change="toggleColor('altzutatmenge')" value="" placeholder="2">
             <label for="altEinheit">Ein welcher Einheit ist deine Angabe?</label> 
             <select v-model="altIng.unit" id="altzutateinheit" @change="toggleColor('altzutateinheit')">
-              <option value="stk">Stück</option>
-              <option value="mg">Milligramm</option>
-              <option value="g">Gramm</option>
-              <option value="kg">Kilogramm</option>
-              <option value="cl">Centiliter</option>
-              <option value="ml">Milliliter</option>
-              <option value="l">Liter</option>
-              <option value="pck">Packungen</option>
-              <option value="prise">Prisen</option>
-              <option value="tl">Teelöffel</option>
-              <option value="el">Esslöffel</option>
+              <option value="Stück">Stück</option>
+              <option value="Milligramm">Milligramm</option>
+              <option value="Gramm">Gramm</option>
+              <option value="Kilogramm">Kilogramm</option>
+              <option value="Centiliter">Centiliter</option>
+              <option value="Milliliter">Milliliter</option>
+              <option value="Liter">Liter</option>
+              <option value="Packungen">Packungen</option>
+              <option value="Prisen">Prisen</option>
+              <option value="Teelöffel">Teelöffel</option>
+              <option value="Esslöffel">Esslöffel</option>
             </select>
             <div class="recipe-actions-buttons rm-spacer">
               <button type="button" class="other-button" @click="removeAltIng(index, t)" v-show="t || ( !t && ingredient.alternativeIngredients.length > 1)"><i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"/></svg></i> Alternative Zuatat entfernen</button>
