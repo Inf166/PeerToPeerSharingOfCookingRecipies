@@ -42,7 +42,7 @@ export const store = new Vuex.Store({
 
         searchOutput: [],
 
-        myRecipies: [
+        myRecipes: [
           {
             "@type": "Recipe",
             "id": "TestRezept1",
@@ -1890,7 +1890,7 @@ export const store = new Vuex.Store({
             ]
           }
         ],
-        friendRecipies: [],
+        friendRecipes: [],
         myPreferencesCategories: [
           {name: 'test', value: '0'},
         ],

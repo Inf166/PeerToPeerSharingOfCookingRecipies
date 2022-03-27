@@ -1,5 +1,5 @@
 export default {
-    // computed -> this.$store.getters.allRecipies || import { mapGetters } from 'vuex' - computed -> ...mapGetters({all: 'allRecipies', new: 'newRecipies'})
+    // computed -> this.$store.getters.allRecipes || import { mapGetters } from 'vuex' - computed -> ...mapGetters({all: 'allRecipes', new: 'newRecipes'})
     myUser(state) {
         return state.myUser;
     },
@@ -51,25 +51,25 @@ export default {
     myPreferencesIngredients(state) {
         return state.myPreferencesIngredients;
     },
-    myRecipies(state) {
-        return state.myRecipies;
+    myRecipes(state) {
+        return state.myRecipes;
     },
-    newRecipies(state) {
-        return state.myRecipies.filter(recipe => {
+    newRecipes(state) {
+        return state.myRecipes.filter(recipe => {
             return recipe.isNew;
         });
     },
     tempRecipe(state) {
         return state.tempRecipe;
     },
-    friendRecipies(state) {
-        return state.friendRecipies;
+    friendRecipes(state) {
+        return state.friendRecipes;
     },
-    prefrencedRecipies(state) {
+    prefrencedRecipes(state) {
         var myPrefsDiff = state.myPreferencesDifficultyLevel;
         var myPrefCates = state.myPreferencesCategories;
         var myPrefIngrs = state.myPreferencesIngredients;
-        var unCheckedRecipies = state.friendRecipies;
+        var unCheckedRecipes = state.friendRecipes;
         const maxDiff = myPrefsDiff.reduce(function(prev, current) {
             return (prev.value > current.value) ? prev : current
         });
@@ -82,15 +82,15 @@ export default {
         console.log("🔥 Most liked Difficulty Level: ", maxDiff);
         console.log("🔥 Most liked Category: ",maxCates);
         console.log("🔥 Most liked Ingredient: ",maxIngrs);
-        var unCheckedKeys = Object.keys(unCheckedRecipies);
+        var unCheckedKeys = Object.keys(unCheckedRecipes);
         var unCheckedLength = unCheckedKeys.length;
-        var suggestedRecipies = [];
+        var suggestedRecipes = [];
         var hasCat, hasDiff, hasIngr = false;
         for (let index = 0; index < unCheckedLength; index++) {
-            for (var prop in unCheckedRecipies[index]) {
+            for (var prop in unCheckedRecipes[index]) {
                 if(prop == "categories") {
                     console.log("✅ Am in Categories...");
-                    var categories = unCheckedRecipies[index][prop];
+                    var categories = unCheckedRecipes[index][prop];
                     categories.forEach((category) => {
                         if(category.name == maxCates.name) {
                             console.log(`💭 Are those Equal Categories? ${maxCates.name}:${category.name}`);
@@ -100,7 +100,7 @@ export default {
                 }
                 if(prop == "ingredients") {
                     console.log("✅ Am in ingredients...");
-                    var ingredients = unCheckedRecipies[index][prop];
+                    var ingredients = unCheckedRecipes[index][prop];
                     ingredients.forEach((ingredient) => {
                         if(ingredient.name == maxIngrs.name) {
                             console.log(`💭 Are those Equal Ingredients? ${maxIngrs.name}:${ingredient.name}`);
@@ -110,18 +110,18 @@ export default {
                 }
                 if(prop == "difficultyLevel") {
                     console.log("✅ Am in DifficultyLevel...");
-                    if(unCheckedRecipies[index][prop]==maxDiff.name) {
-                        console.log(`💭 Are those Equal Difficulty Levels? ${maxDiff.name}:${unCheckedRecipies[index][prop]}`);
+                    if(unCheckedRecipes[index][prop]==maxDiff.name) {
+                        console.log(`💭 Are those Equal Difficulty Levels? ${maxDiff.name}:${unCheckedRecipes[index][prop]}`);
                         hasDiff = true;
                     }
                 }
             }
             if(hasCat && hasDiff && hasIngr) {
-                suggestedRecipies.push(unCheckedRecipies[index]);
+                suggestedRecipes.push(unCheckedRecipes[index]);
                 hasCat, hasDiff, hasIngr = false;
             }
         }
-        console.log(suggestedRecipies);
-        return suggestedRecipies;
+        console.log(suggestedRecipes);
+        return suggestedRecipes;
     },
 }

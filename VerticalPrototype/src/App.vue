@@ -5,7 +5,7 @@
         <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"/></svg></i>
         <span class="nav-label">Entdecken</span>
       </router-link>
-      <router-link to="/savedrecipies">
+      <router-link to="/savedrecipes">
         <i><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!-- Font Awesome Free 5.15.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) --><path d="M0 512V48C0 21.49 21.49 0 48 0h288c26.51 0 48 21.49 48 48v464L192 400 0 512z"/></svg></i>
         <span class="nav-label">Gespeicherte Rezepte</span>
       </router-link>
@@ -99,8 +99,8 @@ export default {
     searchOutput() {
       return this.$store.getters.searchOutput;
     },
-    myRecipiesGetter() {
-      return this.$store.getters.myRecipies;
+    myRecipesGetter() {
+      return this.$store.getters.myRecipes;
     }
   },
   methods: {
@@ -223,7 +223,7 @@ export default {
       // this.closeConnections(this.myPeer, this.myConnection);
     },
     onNewRecipe: function() {
-      var recepies = this.myRecipiesGetter;
+      var recepies = this.myRecipesGetter;
       this.myPeer.on('connection', function (connection) {
             console.log("> Peer: on connection", connection);
             connection.on('open', function() {
@@ -233,7 +233,7 @@ export default {
                 console.log("> Peer: Connection: on data ", data);
                 switch (data) {
                   case "GET/RECIPIES":
-                      console.log("Serving other User my Recipies");
+                      console.log("Serving other User my Recipes");
                         connection.send(recepies);
                       break;
                   default:

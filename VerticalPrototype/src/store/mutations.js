@@ -74,25 +74,25 @@ export default {
         console.log(state.myPreferencesIngredients);
     },
     addRecipe(state, newRecipe) {
-        state.myRecipies.push(newRecipe);
+        state.myRecipes.push(newRecipe);
     },
-    removeFromMyRecipies(state, index) {
-        state.myRecipies.splice(index, 1);
+    removeFromMyRecipes(state, index) {
+        state.myRecipes.splice(index, 1);
     },
     addTempRecipe(state, tempRecipe) {
         state.tempRecipe = (tempRecipe);
     },
     updateRecipe(state, editedRecipe) {
-        var toBeUpdatedRecipe = state.myRecipies.find(recipe => {
+        var toBeUpdatedRecipe = state.myRecipes.find(recipe => {
             return recipe.name == editedRecipe.name;
         });
         toBeUpdatedRecipe = editedRecipe;
-        state.myRecipies.push(toBeUpdatedRecipe);
+        state.myRecipes.push(toBeUpdatedRecipe);
     },
-    addFriendRecipies(state, newRecipies) {
-        state.friendRecipies.push(newRecipies);
+    addFriendRecipes(state, newRecipes) {
+        state.friendRecipes.push(newRecipes);
     },
-    removeRecipeFromFriendRecipies(state, index) {
-        state.friendRecipies.splice(index, 1);
+    removeRecipeFromFriendRecipes(state, index) {
+        state.friendRecipes.splice(index, 1);
     },
 }

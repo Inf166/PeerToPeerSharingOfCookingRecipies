@@ -17,7 +17,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "fbc1f657b2a55750c60e1e8693ebee86",
-    "url": "/data/cached/recipies/recipe-template.json"
+    "url": "/data/cached/recipes/recipe-template.json"
   },
   {
     "revision": "b6783ce1a6de8ce267990b3232cbf124",

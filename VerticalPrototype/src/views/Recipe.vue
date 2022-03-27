@@ -101,19 +101,19 @@
         }
         return output;
       },
-      myRecipies() {
-        return this.$store.getters.myRecipies;
+      myRecipes() {
+        return this.$store.getters.myRecipes;
       },
-      friendRecipies() {
-        return this.$store.getters.friendRecipies;
+      friendRecipes() {
+        return this.$store.getters.friendRecipes;
       }
     },
     methods: {
       checkIfIsSaved() {
         console.log(this.showRecipe);
-        var keys = Object.keys(this.myRecipies);
+        var keys = Object.keys(this.myRecipes);
         for (let index = 0; index < keys.length; index++) {
-          if(this.myRecipies[index].id == this.showRecipe.id) {
+          if(this.myRecipes[index].id == this.showRecipe.id) {
             this.showSaveButton = false;
             return this.showSaveButton;
           }
@@ -121,35 +121,35 @@
         return this.showSaveButton;
       },
       saveFriendRecipe(recipeId) {
-        var fRecipies = this.friendRecipies;
-        var fKeys = Object.keys(fRecipies);
+        var fRecipes = this.friendRecipes;
+        var fKeys = Object.keys(fRecipes);
         let index, i = 0;
         for (i = 0; i < fKeys.length; i++) {
-          if(fRecipies[i].id == recipeId) {
+          if(fRecipes[i].id == recipeId) {
             index = i;
           }
         }
-        this.$store.dispatch('addRecipe', this.friendRecipies[index]).then(() => {
-          for (var prop in this.friendRecipies[index]) {
+        this.$store.dispatch('addRecipe', this.friendRecipes[index]).then(() => {
+          for (var prop in this.friendRecipes[index]) {
             if(prop == "categories") {
-              var categories = this.friendRecipies[index][prop];
+              var categories = this.friendRecipes[index][prop];
               categories.forEach((category) => {
                 this.$store.dispatch('addPreferencesCategories', category.name);
               });
             }
             if(prop == "ingredients") {
-              var ingredients = this.friendRecipies[index][prop];
+              var ingredients = this.friendRecipes[index][prop];
               ingredients.forEach((ingredient) => {
                 this.$store.dispatch('addPreferencesIngredients', ingredient.name);
               });
             }
             if(prop == "difficultyLevel") {
-              console.log("Schwierigkeitsgrad: ", this.friendRecipies[index][prop]);
-              this.$store.dispatch('addPreferencesDifficultyLevel', this.friendRecipies[index][prop]);
+              console.log("Schwierigkeitsgrad: ", this.friendRecipes[index][prop]);
+              this.$store.dispatch('addPreferencesDifficultyLevel', this.friendRecipes[index][prop]);
             }
           }
-          this.$store.dispatch('removeRecipeFromFriendRecipies', index);
-          this.$store.getters.prefrencedRecipies;
+          this.$store.dispatch('removeRecipeFromFriendRecipes', index);
+          this.$store.getters.prefrencedRecipes;
           this.checkIfIsSaved();  
         });
       }

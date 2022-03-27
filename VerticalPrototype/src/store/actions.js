@@ -36,17 +36,17 @@ export default {
     addRecipe(context, payload) {    // statt context.commit ginge auch context => context - und dann context.context.commit(....)
         context.commit('addRecipe', payload);
     },
-    removeFromMyRecipies(context, payload) {
-        context.commit('removeFromMyRecipies', payload);
+    removeFromMyRecipes(context, payload) {
+        context.commit('removeFromMyRecipes', payload);
     },
     addTempRecipe(context, payload) {    
         context.commit('addTempRecipe', payload);
     },
 
-    addFriendRecipies(context, payload) {
-        context.commit('addFriendRecipies', payload);
+    addFriendRecipes(context, payload) {
+        context.commit('addFriendRecipes', payload);
     },
-    removeRecipeFromFriendRecipies(context, payload) {
-        context.commit('removeRecipeFromFriendRecipies', payload);
+    removeRecipeFromFriendRecipes(context, payload) {
+        context.commit('removeRecipeFromFriendRecipes', payload);
     },
 } 
