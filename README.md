@@ -1,3 +1,12 @@
+<p>
+    <a href="https://badges.pufler.dev" alt="https://badges.pufler.dev">
+        <img alt="https://badges.pufler.dev/updated/inf166/pwa-peer-to-peer-sharing-recipes?style=for-the-badge&color=yellow"    src="https://badges.pufler.dev/updated/inf166/pwa-peer-to-peer-sharing-recipes?style=for-the-badge&color=yellow">
+    </a>
+    <a href="https://badges.pufler.dev" alt="https://badges.pufler.dev">
+        <img alt="https://badges.pufler.dev/created/inf166/pwa-peer-to-peer-sharing-recipes?style=for-the-badge&color=green" src="https://badges.pufler.dev/created/inf166/pwa-peer-to-peer-sharing-recipes?style=for-the-badge&color=green">
+    </a>
+</p>
+
 EPWS2020CobanMai </br></br>
 [![forthebadge](https://forthebadge.com/images/badges/makes-people-smile.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/for-you.svg)](https://forthebadge.com)</br> 
 
